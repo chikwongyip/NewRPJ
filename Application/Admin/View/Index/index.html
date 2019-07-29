@@ -12,10 +12,11 @@
 		/**退出系统**/
 		function logout(){
 			if(confirm("您确定要退出本系统吗？")){
-				window.location.href = "login.html";
+				var url = "{:U('Admin/Login/login')}";
+				window.location.href = url;
 			}
 		}
-		
+
 		/**获得当前日期**/
 		function  getDate01(){
 			var time = new Date();
@@ -28,7 +29,7 @@
 			document.getElementById("yue_fen").innerHTML =  myYear + "." + myMonth;
 			document.getElementById("day_day").innerHTML =  myYear + "." + myMonth + "." + myDay;
 		}
-		
+
 		/**加入收藏夹**/
 		function addfavorite(){
 			var ua = navigator.userAgent.toLowerCase();
@@ -41,12 +42,12 @@
 			 }else{
 			  	art.dialog({icon:'error', title:'友情提示', drag:false, resize:false, content:'添加失败，请用ctrl+D进行添加', ok:true,});
 			 }
-		} 
+		}
 	</script>
 	<script type="text/javascript">
 		/* zTree插件加载目录的处理  */
 		var zTree;
-		
+
 		var setting = {
 				view: {
 					dblClickExpand: false,
@@ -67,10 +68,10 @@
 				callback: {
 	// 				beforeExpand: beforeExpand,
 	// 				onExpand: onExpand,
-					onClick: zTreeOnClick			
+					onClick: zTreeOnClick
 				}
 		};
-		 
+
 		var curExpandNode = null;
 		function beforeExpand(treeId, treeNode) {
 			var pNode = curExpandNode ? curExpandNode.getParentNode():null;
@@ -89,7 +90,7 @@
 			if (!pNode) {
 				singlePath(treeNode);
 			}
-	
+
 		}
 		function singlePath(newNode) {
 			if (newNode === curExpandNode) return;
@@ -131,11 +132,11 @@
 			}
 			curExpandNode = newNode;
 		}
-	
+
 		function onExpand(event, treeId, treeNode) {
 			curExpandNode = treeNode;
 		}
-		
+
 		/** 用于捕获节点被点击的事件回调函数  **/
 		function zTreeOnClick(event, treeId, treeNode) {
 			var zTree = $.fn.zTree.getZTreeObj("dleft_tab1");
@@ -153,19 +154,19 @@
 			}
 		    // 跳到该节点下对应的路径, 把当前资源ID(resourceID)传到后台，写进Session
 		    rightMain(treeNode.accessPath);
-		    
+
 		    if( treeNode.isParent ){
 			    $('#here_area').html('当前位置：'+treeNode.getParentNode().resourceName+'&nbsp;>&nbsp;<span style="color:#1A5CC6">'+treeNode.resourceName+'</span>');
 		    }else{
 			    $('#here_area').html('当前位置：系统&nbsp;>&nbsp;<span style="color:#1A5CC6">'+treeNode.resourceName+'</span>');
 		    }
 		};
-		
+
 		/* 上方菜单 */
 		function switchTab(tabpage,tabid){
-		var oItem = document.getElementById(tabpage).getElementsByTagName("li"); 
+		var oItem = document.getElementById(tabpage).getElementsByTagName("li");
 		    for(var i=0; i<oItem.length; i++){
-		        var x = oItem[i];    
+		        var x = oItem[i];
 		        x.className = "";
 			}
 			if('left_tab1' == tabid){
@@ -180,10 +181,10 @@
 				$(document).ajaxStart(onStart).ajaxSuccess(onStop);
 				// 异步加载"其他"下的菜单
 				loadMenu('QITAMOKUAI', 'dleft_tab1');
-			} 
+			}
 		}
-		
-		
+
+
 		$(document).ready(function(){
 			$(document).ajaxStart(onStart).ajaxSuccess(onStop);
 			/** 默认异步加载"业务模块"目录  **/
@@ -194,34 +195,17 @@
 				zTree.expandAll(true);
 			}
 		});
-		
+
 		function loadMenu(resourceType, treeObj){
-			/*$.ajax({
-				type:"POST",
-				url:"${dynamicURL}/authority/modelPart.action?resourceType=" + resourceType,
-				dataType : "json",
-				success:function(data){
-					// 如果返回数据不为空，加载"业务模块"目录
-					if(data != null){
-						// 将返回的数据赋给zTree
-						$.fn.zTree.init($("#"+treeObj), setting, data);
- 						alert(treeObj);
-						zTree = $.fn.zTree.getZTreeObj(treeObj);
-						if( zTree ){
-							// 默认展开所有节点
-							zTree.expandAll(true);
-						}
-					}
-				}
-			});*/
+			var attachURL = "{:U('Admin/Attachment/attachment_list')}"
             data = [{"accessPath":"","checked":false,"delFlag":0,"parentID":1,"resourceCode":"","resourceDesc":"","resourceGrade":2,"resourceID":3,"resourceName":"基础数据","resourceOrder":0,"resourceType":""},
-           
+
             {"accessPath":"house_list.html","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":7,"resourceName":"公司修改","resourceOrder":0,"resourceType":""},
-			{"accessPath":"loupanchart.html","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":8,"resourceName":"品牌管理","resourceOrder":0,"resourceType":""},
-			{"accessPath":"loupanchart.html","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":9,"resourceName":"产品管理","resourceOrder":0,"resourceType":""},
-			{"accessPath":"loupanchart.html","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":10,"resourceName":"介绍管理","resourceOrder":0,"resourceType":""},
-			{"accessPath":"loupanchart.html","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":10,"resourceName":"新闻管理","resourceOrder":0,"resourceType":""},
-			{"accessPath":"loupanchart.html","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":10,"resourceName":"附件下载管理","resourceOrder":0,"resourceType":""}];
+						{"accessPath":"loupanchart.html","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":8,"resourceName":"品牌管理","resourceOrder":0,"resourceType":""},
+						{"accessPath":"loupanchart.html","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":9,"resourceName":"产品管理","resourceOrder":0,"resourceType":""},
+						{"accessPath":"loupanchart.html","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":10,"resourceName":"介绍管理","resourceOrder":0,"resourceType":""},
+						{"accessPath":"loupanchart.html","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":10,"resourceName":"新闻管理","resourceOrder":0,"resourceType":""},
+						{"accessPath":attachURL,"checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":10,"resourceName":"附件上传","resourceOrder":0,"resourceType":""}];
             // 如果返回数据不为空，加载"业务模块"目录
             if(data != null){
                 // 将返回的数据赋给zTree
@@ -234,12 +218,12 @@
                 }
             }
 		}
-		
+
 		//ajax start function
 		function onStart(){
 			$("#ajaxDialog").show();
 		}
-		
+
 		//ajax stop function
 		function onStop(){
 	// 		$("#ajaxDialog").dialog("close");
@@ -267,7 +251,7 @@
 						<img alt="今天是" src="__PUBLIC__/images/common/date.jpg">：
 						<span id="day_day"></span>
 					</li>
-				</ul> 
+				</ul>
 			</div>
 			<div id="top_close">
 				<a href="javascript:void(0);" onclick="logout();" target="_parent">
@@ -285,13 +269,13 @@
 				</li> -->
 				<li id="left_tab2" onClick="javascript:switchTab('TabPage2','left_tab2');" title="系统管理">
 					<img alt="系统管理" title="系统管理" src="__PUBLIC__/images/common/2.jpg" width="33" height="31">
-				</li>	
+				</li>
 				<!-- <li id="left_tab3" onClick="javascript:switchTab('TabPage2','left_tab3');" title="其他">
 					<img alt="其他" title="其他" src="__PUBLIC__/images/common/3.jpg" width="33" height="31">
 				</li> -->
 			</ul>
-			
-			
+
+
 			<div id="nav_show" style="position:absolute; bottom:0px; padding:10px;">
 				<a href="javascript:;" id="show_hide_btn">
 					<img alt="显示/隐藏" title="显示/隐藏" src="__PUBLIC__/images/common/nav_hide.png" width="35" height="35">
@@ -323,13 +307,13 @@
 				// 显示侧边栏
 				switchSysBar(true);
 			});
-			
+
 			// 显示隐藏侧边栏
 			$("#show_hide_btn").click(function() {
 		        switchSysBar();
 		    });
 		});
-		
+
 		/**隐藏或者显示侧边栏**/
 		function switchSysBar(flag){
 			var side = $('#side');
@@ -361,11 +345,9 @@
 	 	<span id="here_area">当前位置：系统&nbsp;>&nbsp;系统介绍</span>
 	</div>
     <div id="main">
-			
+
       	<iframe name="right" id="rightMain" src="{$url}" frameborder="no" scrolling="auto" width="100%" height="100%" allowtransparency="true"/>
     </div>
 
 </body>
 </html>
-   
- 

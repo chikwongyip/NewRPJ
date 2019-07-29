@@ -2,19 +2,19 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script type="text/javascript" src="/rpj/Public/scripts/jquery/jquery-1.7.1.js"></script>
-<link href="/rpj/Public/style/authority/basic_layout.css" rel="stylesheet" type="text/css">
-<link href="/rpj/Public/style/authority/common_style.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="/rpj/Public/scripts/authority/commonAll.js"></script>
-<script type="text/javascript" src="/rpj/Public/scripts/fancybox/jquery.fancybox-1.3.4.js"></script>
-<script type="text/javascript" src="/rpj/Public/scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-<link rel="stylesheet" type="text/css" href="/rpj/Public/style/authority/jquery.fancybox-1.3.4.css" media="screen"></link>
-<script type="text/javascript" src="/rpj/Public/scripts/artDialog/artDialog.js?skin=default"></script>
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/jquery/jquery-1.7.1.js"></script>
+<link href="/chikwong/NewRPJ/Public/style/authority/basic_layout.css" rel="stylesheet" type="text/css">
+<link href="/chikwong/NewRPJ/Public/style/authority/common_style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/authority/commonAll.js"></script>
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/fancybox/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="/chikwong/NewRPJ/Public/style/authority/jquery.fancybox-1.3.4.css" media="screen"></link>
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/artDialog/artDialog.js?skin=default"></script>
 <title>信息管理系统</title>
 <script type="text/javascript">
 	$(document).ready(function(){
 		/** 新增   **/
-		
+
 	    $("#addBtn").fancybox({
 	    	'href'  : 'Attachment_edit.html',
 	    	'width' : 733,
@@ -22,11 +22,11 @@
 	        'type' : 'iframe',
 	        'hideOnOverlayClick' : false,
 	        'showCloseButton' : false,
-	        'onClosed' : function() { 
+	        'onClosed' : function() {
 	        	window.location.href = 'Attachment_list.html';
 	        }
 	    });
-		
+
 	    /** 导入  **/
 	    $("#importBtn").fancybox({
 	    	'href'  : '/xngzf/archives/importFangyuan.action',
@@ -35,11 +35,11 @@
 	        'type' : 'iframe',
 	        'hideOnOverlayClick' : false,
 	        'showCloseButton' : false,
-	        'onClosed' : function() { 
+	        'onClosed' : function() {
 	        	window.location.href = 'house_list.html';
 	        }
 	    });
-		
+
 	    /**编辑   **/
 	    $("a.edit").fancybox({
 	    	'width' : 733,
@@ -47,7 +47,7 @@
 	        'type' : 'iframe',
 	        'hideOnOverlayClick' : false,
 	        'showCloseButton' : false,
-	        'onClosed' : function() { 
+	        'onClosed' : function() {
 	        	window.location.href = 'house_list.html';
 	        }
 	    });
@@ -62,9 +62,9 @@
 
 	/** 新增   **/
 	function add(){
-		$("#submitForm").attr("action", "/xngzf/archives/luruFangyuan.action").submit();	
+		$("#submitForm").attr("action", "/xngzf/archives/luruFangyuan.action").submit();
 	}
-	 
+
 	/** Excel导出  **/
 	function exportExcel(){
 		if( confirm('您确定要导出吗？') ){
@@ -77,19 +77,19 @@
 //	 			alert(fyXqCode);
 				$("#fyXqName").val(fyXqName);
 			}
-			$("#submitForm").attr("action", "/xngzf/archives/exportExcelFangyuan.action").submit();	
+			$("#submitForm").attr("action", "/xngzf/archives/exportExcelFangyuan.action").submit();
 		}
 	}
-	
+
 	/** 删除 **/
 	function del(fyID){
 		// 非空判断
 		if(fyID == '') return;
 		if(confirm("您确定要删除吗？")){
-			$("#submitForm").attr("action", "/xngzf/archives/delFangyuan.action?fyID=" + fyID).submit();			
+			$("#submitForm").attr("action", "/xngzf/archives/delFangyuan.action?fyID=" + fyID).submit();
 		}
 	}
-	
+
 	/** 批量删除 **/
 	function batchDel(){
 		if($("input[name='IDCheck']:checked").size()<=0){
@@ -127,7 +127,7 @@
 	function jumpNormalPage(page){
 		$("#submitForm").attr("action", "house_list.html?page=" + page).submit();
 	}
-	
+
 	/** 输入页跳转 **/
 	function jumpInputPage(totalPage){
 		// 如果“跳转页数”不为空
@@ -159,7 +159,7 @@
 				<div class="ui_text_indent">
 					<div id="box_border">
 						<div id="box_bottom">
-							<input type="button" value="新增" class="ui_input_btn01" id="addBtn" /> 
+							<input type="button" value="新增" class="ui_input_btn01" id="addBtn" />
 						</div>
 					</div>
 				</div>
@@ -182,7 +182,7 @@
 									<a href="house_edit.html?fyID=14458579642011" class="edit">编辑</a> 
 									<a href="javascript:del('14458579642011');">删除</a>
 								</td>
-							</tr>			
+							</tr>
 					</table>
 				</div>
 				<div class="ui_tb_h30">
@@ -197,18 +197,18 @@
 					</div>
 					<div class="ui_frt">
 						<!--    如果是第一页，则只显示下一页、尾页 -->
-						
+
 							<input type="button" value="首页" class="ui_input_btn01" />
 							<input type="button" value="上一页" class="ui_input_btn01" />
 							<input type="button" value="下一页" class="ui_input_btn01"
 								onclick="jumpNormalPage(2);" />
 							<input type="button" value="尾页" class="ui_input_btn01"
 								onclick="jumpNormalPage(9);" />
-						
-						
-						
+
+
+
 						<!--     如果是最后一页，则只显示首页、上一页 -->
-						
+
 						转到第<input type="text" id="jumpNumTxt" class="ui_input_txt01" />页
 							 <input type="button" class="ui_input_btn01" value="跳转" onclick="jumpInputPage(9);" />
 					</div>
