@@ -43,7 +43,8 @@ class AttachmentController extends Controller {
       $model->delete($id);
       $attachement = $model->select();
       $this->assign('attach',$attachement);
-      $this->display();
+      $this->display('Attachment_list');
+      //attachment_list();
 
     }
 

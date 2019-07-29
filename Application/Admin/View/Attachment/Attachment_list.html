@@ -88,9 +88,11 @@
 		// 非空判断
 		if(fyID == '') return;
 		if(confirm("您确定要删除吗？")){
-			var delURL = "{:U('admin/attachment/attachment_del', 'id="+String(fyID)+"')}";
-			$("#submitForm").attr("action", delURL).submit();
-			$("#submitForm").attr("action", "/xngzf/archives/delFangyuan.action?fyID=" + fyID).submit();
+
+			var url = "{:U('admin/attachment/attachment_del')}?id="+fyID;
+			//$("#submitForm").attr("action", delURL).submit();
+			//$("#submitForm").attr("action", "/xngzf/archives/delFangyuan.action?fyID=" + fyID).submit();
+			window.location.href=url;
 		}
 	}
 
