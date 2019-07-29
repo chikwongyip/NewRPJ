@@ -88,6 +88,8 @@
 		// 非空判断
 		if(fyID == '') return;
 		if(confirm("您确定要删除吗？")){
+			var delURL = "<?php echo U('admin/attachment/attachment_del', 'id="+String(fyID)+"');?>";
+			$("#submitForm").attr("action", delURL).submit();
 			$("#submitForm").attr("action", "/xngzf/archives/delFangyuan.action?fyID=" + fyID).submit();
 		}
 	}
@@ -176,15 +178,15 @@
 							<th>产品附件</th>
 							<th>操作</th>
 						</tr>
-							<tr>
-								<td><input type="checkbox" name="IDCheck" value="14458579642011" class="acb" /></td>
-								<td>城中区</td>
-								<td>瑞景河畔16号楼1-111</td>
+						<?php if(is_array($attach)): foreach($attach as $key=>$a): ?><tr>
+								<td><input type="checkbox" name="ID" value="<?php echo ($a["id"]); ?>" class="acb" /></td>
+								<td><?php echo ($a["name"]); ?></td>
+								<td><?php echo ($a["url"]); ?></td>
 								<td>
 									<a href="house_edit.html?fyID=14458579642011" class="edit">编辑</a>
-									<a href="javascript:del('14458579642011');">删除</a>
+									<a href="javascript:del(<?php echo ($a["id"]); ?>);">删除</a>
 								</td>
-							</tr>
+							</tr><?php endforeach; endif; ?>
 					</table>
 				</div>
 				<div class="ui_tb_h30">
