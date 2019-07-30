@@ -15,8 +15,14 @@ class AttachmentController extends Controller {
                 $this->error($upload->getError());
             }else{
 
-                $model->name = $_GET('name');
-                $model->url = $info['url']['savepath'].$info['url']['savename'];
+                $model->name = $_POST["name"];
+                //var_dump($info['savepath']);
+                //var_dump('Upload/'.$info['savepath'].$info['savename']);
+                $model->url = 'Upload/'.$info['savepath'].$info['savename'];
+                //$model->url = 'Upload/'.$info['savepath'].$info['savename'];
+                //$mode->add();
+                // $model->name = $_GET('name');
+                //$model->url = $info['url']['savepath'].$info['url']['savename'];
                 $model->add();
             }
         }else {
