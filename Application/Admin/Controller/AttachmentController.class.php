@@ -44,9 +44,28 @@ class AttachmentController extends Controller {
 
     public function attachment_edit($id){
       $model = M('Rpj_attachment');
-      $item = $model->where("id = $id")->select();
+      $item = $model->find($id);
       $this->assign('item',$item);
       $this->display();
+    }
+
+    public function attachment_submit(){
+      $model = M('Rpj_attachment');
+
+      if(IS_POST){
+        $id = $_POST["id"];
+        $model->find($id);
+        if ($_POST["name"] != null) {
+            $model->name = $_POST["name"];
+            $model->save();
+            echo "更新成功";
+        }else{
+            echo "更新失败";
+        }
+
+        $this->display('Attachment_edit');
+        //$attachementItem->name = $_POST["name"];
+      }
     }
 
 }

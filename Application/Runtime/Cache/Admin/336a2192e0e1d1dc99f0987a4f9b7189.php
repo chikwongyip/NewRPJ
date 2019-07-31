@@ -15,11 +15,11 @@
 		/*
 		 * 提交
 		 */
-		$("#submitbutton").click(function() {
-			if(validateForm()){
-				checkFyFhSubmit();
-			}
-		});
+		// $("#submitbutton").click(function() {
+		// 	if(validateForm()){
+		// 		checkFyFhSubmit();
+		// 	}
+		// });
 
 		/*
 		 * 取消
@@ -136,7 +136,7 @@
 </script>
 </head>
 <body>
-<form id="submitForm" name="submitForm" action="<?php echo U('admin/attachment/attachment_edit');?>" method="post">
+<form id="submitForm" name="submitForm" action="<?php echo U('admin/attachment/attachment_submit');?>" method="post" enctype="multipart/form-data">
 	<input type="hidden" name="fyID" value="14458625716623" id="fyID"/>
 	<div id="container">
 		<div id="nav_links">
@@ -151,27 +151,29 @@
 			<table  cellspacing="0" cellpadding="0" width="100%" align="left" border="0">
 
 
+				<input type="hidden" name="id" value="<?php echo ($item["id"]); ?>" id="id"/>
 				<tr>
 					<td class="ui_text_rt">附件名称</td>
 					<td class="ui_text_lt">
-						<input type="text" id="name" name="name" value=" " class="ui_input_txt02"/>
+						<input type="text" name="name" value="<?php echo ($item["name"]); ?>" class="ui_input_txt02"/>
 					</td>
 				</tr>
-				<tr>
+				<!-- <tr>
 					<td class="ui_text_rt">附件</td>
 					<td class="ui_text_lt">
-						<input type="file" name="url" size="35" />
+						<input type="file" name="url" size="35" value="<?php echo ($a["url"]); ?>" />
 					</td>
-				</tr>
-
+				</tr> -->
 				<tr>
 					<td>&nbsp;</td>
 					<td class="ui_text_lt">
-						&nbsp;<input id="submitbutton" type="button" value="提交" class="ui_input_btn01"/>
-						&nbsp;<input id="cancelbutton" type="button" value="取消" class="ui_input_btn01"/>
+						&nbsp;<input id="submitbutton" type="submit" value="提交" class="ui_input_btn01"/>
+						&nbsp;<input id="cancelbutton" type="submit" value="取消" class="ui_input_btn01"/>
 					</td>
 				</tr>
+
 			</table>
+
 		</div>
 	</div>
 </form>

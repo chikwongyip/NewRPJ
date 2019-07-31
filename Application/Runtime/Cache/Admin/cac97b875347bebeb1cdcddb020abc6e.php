@@ -50,7 +50,7 @@
 	        'hideOnOverlayClick' : false,
 	        'showCloseButton' : false,
 	        'onClosed' : function() {
-	        	window.location.href = 'house_list.html';
+	        	window.location.href = listURL;
 	        }
 	    });
 	});
@@ -185,7 +185,7 @@
 								<td><?php echo ($a["name"]); ?></td>
 								<td><?php echo ($a["url"]); ?></td>
 								<td>
-									<a href="<?php echo U('admin/attachment/attachment_edit?id=$a.id');?>" class="edit">编辑</a>
+									<a href="<?php echo U('admin/attachment/attachment_edit',array('id'=>$a[id]));?>" class="edit">编辑</a>
 									<a href="javascript:del(<?php echo ($a["id"]); ?>);">删除</a>
 								</td>
 							</tr><?php endforeach; endif; ?>
