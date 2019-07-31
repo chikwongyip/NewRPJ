@@ -2,17 +2,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script type="text/javascript" src="/NewRPJ/Public/scripts/jquery/jquery-1.7.1.js"></script>
-<link href="/NewRPJ/Public/style/authority/basic_layout.css" rel="stylesheet" type="text/css">
-<link href="/NewRPJ/Public/style/authority/common_style.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="/NewRPJ/Public/scripts/authority/commonAll.js"></script>
-<script type="text/javascript" src="/NewRPJ/Public/scripts/fancybox/jquery.fancybox-1.3.4.js"></script>
-<script type="text/javascript" src="/NewRPJ/Public/scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-<link rel="stylesheet" type="text/css" href="/NewRPJ/Public/style/authority/jquery.fancybox-1.3.4.css" media="screen"></link>
-<script type="text/javascript" src="/NewRPJ/Public/scripts/artDialog/artDialog.js?skin=default"></script>
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/jquery/jquery-1.7.1.js"></script>
+<link href="/chikwong/NewRPJ/Public/style/authority/basic_layout.css" rel="stylesheet" type="text/css">
+<link href="/chikwong/NewRPJ/Public/style/authority/common_style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/authority/commonAll.js"></script>
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/fancybox/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="/chikwong/NewRPJ/Public/style/authority/jquery.fancybox-1.3.4.css" media="screen"></link>
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/artDialog/artDialog.js?skin=default"></script>
 <title>信息管理系统</title>
 <script type="text/javascript">
-	var addURL = "<?php echo U('admin/attachment/attachment_edit');?>"
+	var addURL = "<?php echo U('admin/attachment/attachment_add');?>"
 	var listURL = "<?php echo U('admin/attachment/attachment_list');?>"
 	$(document).ready(function(){
 		/** 新增   **/
@@ -185,7 +185,7 @@
 								<td><?php echo ($a["name"]); ?></td>
 								<td><?php echo ($a["url"]); ?></td>
 								<td>
-									<a href="house_edit.html?fyID=14458579642011" class="edit">编辑</a>
+									<a href="<?php echo U('admin/attachment/attachment_edit?id=$a.id');?>" class="edit">编辑</a>
 									<a href="javascript:del(<?php echo ($a["id"]); ?>);">删除</a>
 								</td>
 							</tr><?php endforeach; endif; ?>

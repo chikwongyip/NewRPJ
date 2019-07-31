@@ -12,7 +12,7 @@
 <script type="text/javascript" src="__PUBLIC__/scripts/artDialog/artDialog.js?skin=default"></script>
 <title>信息管理系统</title>
 <script type="text/javascript">
-	var addURL = "{:U('admin/attachment/attachment_edit')}"
+	var addURL = "{:U('admin/attachment/attachment_add')}"
 	var listURL = "{:U('admin/attachment/attachment_list')}"
 	$(document).ready(function(){
 		/** 新增   **/
@@ -186,7 +186,7 @@
 								<td>{$a.name}</td>
 								<td>{$a.url}</td>
 								<td>
-									<a href="house_edit.html?fyID=14458579642011" class="edit">编辑</a>
+									<a href="{:U('admin/attachment/attachment_edit?id=$a.id')}" class="edit">编辑</a>
 									<a href="javascript:del({$a.id});">删除</a>
 								</td>
 							</tr>
