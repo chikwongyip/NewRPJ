@@ -2,7 +2,7 @@
 namespace Admin\Controller;
 use Think\Controller;
 class AttachmentController extends Controller {
-    public function attachment_edit(){
+    public function attachment_add(){
         $model = M('Rpj_attachment');
         if(IS_POST){
             $upload = new \Think\Upload();
@@ -14,16 +14,10 @@ class AttachmentController extends Controller {
             if(!$info){
                 $this->error($upload->getError());
             }else{
-
                 $model->name = $_POST["name"];
-                //var_dump($info['savepath']);
-                //var_dump('Upload/'.$info['savepath'].$info['savename']);
                 $model->url = 'Upload/'.$info['savepath'].$info['savename'];
-                //$model->url = 'Upload/'.$info['savepath'].$info['savename'];
-                //$mode->add();
-                // $model->name = $_GET('name');
-                //$model->url = $info['url']['savepath'].$info['url']['savename'];
                 $model->add();
+                $this->display();
             }
         }else {
 
@@ -36,7 +30,6 @@ class AttachmentController extends Controller {
       $attachement = $model->select();
       $this->assign('attach',$attachement);
       $this->display();
-
     }
 
     //删除附件
@@ -47,8 +40,13 @@ class AttachmentController extends Controller {
       $attachement = $model->select();
       $this->assign('attach',$attachement);
       $this->display('Attachment_list');
-      //attachment_list();
+    }
 
+    public function attachment_edit($id){
+      $model = M('Rpj_attachment');
+      $item = $model->where("id = $id")->select();
+      $this->assign('item',$item);
+      $this->display();
     }
 
 }

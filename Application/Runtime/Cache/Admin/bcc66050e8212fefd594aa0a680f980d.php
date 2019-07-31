@@ -136,7 +136,7 @@
 </script>
 </head>
 <body>
-<form id="submitForm" name="submitForm" action="<?php echo U('admin/attachment/attachment_edit');?>" method="post" enctype="multipart/form-data">
+<form id="submitForm" name="submitForm" action="<?php echo U('admin/attachment/attachment_add');?>" method="post" enctype="multipart/form-data">
 	<input type="hidden" name="fyID" value="14458625716623" id="fyID"/>
 	<div id="container">
 		<div id="nav_links">
