@@ -15,7 +15,7 @@ class LoginController extends Controller {
           $this->error('密码错误','',1);
         }else{
           cookie('username',$userInfo['username']);
-          $this->success('登陆成功','/NewRPJ/index.php/Admin/Index/index',1);
+          $this->success('登陆成功','/NewRPJ/index.php/Admin/Index/index',0);
         }
 
       }
