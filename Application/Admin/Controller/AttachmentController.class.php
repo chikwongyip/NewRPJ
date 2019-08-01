@@ -8,14 +8,14 @@ class AttachmentController extends Controller {
             $upload = new \Think\Upload();
             $upload->maxSize = 3145728;
             $upload->exts = array('jpg', 'gif', 'png', 'jpeg','pdf');// 设置附件上传类型
-            $upload->rootPath  =     './Upload/'; // 设置附件上传根目录
+            $upload->rootPath  =     './Application/Upload/'; // 设置附件上传根目录
             $upload->savePath  =     ''; // 设置附件上传（子）目录
             $info = $upload->uploadOne($_FILES['url']);
             if(!$info){
                 $this->error($upload->getError());
             }else{
                 $model->name = $_POST["name"];
-                $model->url = 'Upload/'.$info['savepath'].$info['savename'];
+                $model->url = '.../Application/Upload//'.$info['savepath'].$info['savename'];
                 $model->add();
                 $this->display();
             }
