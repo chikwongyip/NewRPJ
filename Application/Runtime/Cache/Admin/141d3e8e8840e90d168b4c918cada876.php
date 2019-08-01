@@ -89,7 +89,7 @@
 		if(fyID == '') return;
 		if(confirm("您确定要删除吗？")){
 
-			var url = "<?php echo U('admin/attachment/attachment_del');?>?id="+fyID;
+			var url = "<?php echo U('admin/brand/brand_del');?>?brand_id="+fyID;
 			//$("#submitForm").attr("action", delURL).submit();
 			//$("#submitForm").attr("action", "/xngzf/archives/delFangyuan.action?fyID=" + fyID).submit();
 			window.location.href=url;
@@ -185,8 +185,8 @@
 								<td><?php echo ($list["brand_name"]); ?></td>
 								<td><img src="<?php echo ($list["brand_image"]); ?>" width="50" height="50"/></td>
 								<td>
-									<a href="<?php echo U('admin/attachment/attachment_edit',array('id'=>$a[id]));?>" class="edit">编辑</a>
-									<a href="javascript:del(<?php echo ($a["id"]); ?>);">删除</a>
+									<a href="<?php echo U('admin/brand/brand_edit',array('brand_id'=>$list[brand_id]));?>" class="edit">编辑</a>
+									<a href="javascript:del(<?php echo ($list["brand_id"]); ?>);">删除</a>
 								</td>
 							</tr><?php endforeach; endif; ?>
 					</table>
