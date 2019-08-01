@@ -136,7 +136,7 @@
 </script>
 </head>
 <body>
-<form id="submitForm" name="submitForm" action="<?php echo U('admin/attachment/attachment_submit');?>" method="post" enctype="multipart/form-data">
+<form id="submitForm" name="submitForm" action="<?php echo U('admin/brand/brand_submit');?>" method="post" enctype="multipart/form-data">
 	<input type="hidden" name="fyID" value="14458625716623" id="fyID"/>
 	<div id="container">
 		<div id="nav_links">
@@ -151,11 +151,11 @@
 			<table  cellspacing="0" cellpadding="0" width="100%" align="left" border="0">
 
 
-				<input type="hidden" name="id" value="<?php echo ($item["id"]); ?>" id="id"/>
+				<input type="hidden" name="brand_id" value="<?php echo ($item["brand_id"]); ?>" id="id"/>
 				<tr>
 					<td class="ui_text_rt">附件名称</td>
 					<td class="ui_text_lt">
-						<input type="text" name="name" value="<?php echo ($item["brand_name"]); ?>" class="ui_input_txt02"/>
+						<input type="text" name="brand_name" value="<?php echo ($item["brand_name"]); ?>" class="ui_input_txt02"/>
 					</td>
 				</tr>
 				<!-- <tr>

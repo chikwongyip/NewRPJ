@@ -33,7 +33,7 @@ class BrandController extends Controller{
     $item = $model->find($brand_id);
     $this->assign('item',$item);
     $this->display();
-    
+
   }
 
   public function brand_list(){
@@ -49,5 +49,24 @@ class BrandController extends Controller{
     $attachement = $model->select();
     $this->assign('brand_list',$brand);
     $this->display('brand_list');
+  }
+
+  public function brand_submit(){
+    $model = M('Rpj_brand');
+
+    if(IS_POST){
+      $id = $_POST["brand_id"];
+      $model->find($id);
+      if ($_POST["brand_id"] != null) {
+          $model->brand_name = $_POST["brand_name"];
+          $model->save();
+          echo "更新成功";
+      }else{
+          echo "更新失败";
+      }
+
+      $this->display('brand_edit');
+      //$attachementItem->name = $_POST["name"];
+    }
   }
 }
