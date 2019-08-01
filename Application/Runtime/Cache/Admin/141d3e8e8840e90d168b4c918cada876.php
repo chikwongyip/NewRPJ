@@ -2,14 +2,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/jquery/jquery-1.7.1.js"></script>
-<link href="/chikwong/NewRPJ/Public/style/authority/basic_layout.css" rel="stylesheet" type="text/css">
-<link href="/chikwong/NewRPJ/Public/style/authority/common_style.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/authority/commonAll.js"></script>
-<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/fancybox/jquery.fancybox-1.3.4.js"></script>
-<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-<link rel="stylesheet" type="text/css" href="/chikwong/NewRPJ/Public/style/authority/jquery.fancybox-1.3.4.css" media="screen"></link>
-<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/artDialog/artDialog.js?skin=default"></script>
+<script type="text/javascript" src="/NewRPJ/Public/scripts/jquery/jquery-1.7.1.js"></script>
+<link href="/NewRPJ/Public/style/authority/basic_layout.css" rel="stylesheet" type="text/css">
+<link href="/NewRPJ/Public/style/authority/common_style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/NewRPJ/Public/scripts/authority/commonAll.js"></script>
+<script type="text/javascript" src="/NewRPJ/Public/scripts/fancybox/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="/NewRPJ/Public/scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="/NewRPJ/Public/style/authority/jquery.fancybox-1.3.4.css" media="screen"></link>
+<script type="text/javascript" src="/NewRPJ/Public/scripts/artDialog/artDialog.js?skin=default"></script>
 <title>信息管理系统</title>
 <script type="text/javascript">
 	var addURL = "<?php echo U('admin/brand/brand_add');?>"
@@ -183,7 +183,7 @@
 						<?php if(is_array($brand_list)): foreach($brand_list as $key=>$list): ?><tr>
 								<td><input type="checkbox" name="brand_id" value="<?php echo ($list["brand_id"]); ?>" class="acb" /></td>
 								<td><?php echo ($list["brand_name"]); ?></td>
-								<td><img src="<?php echo ($list["brand_image"]); ?>" width="50" height="50"/></td>
+								<td><img src="/NewRPJ<?php echo ($list["brand_image"]); ?>" width="50" height="50"/></td>
 								<td>
 									<a href="<?php echo U('admin/brand/brand_edit',array('brand_id'=>$list[brand_id]));?>" class="edit">编辑</a>
 									<a href="javascript:del(<?php echo ($list["brand_id"]); ?>);">删除</a>

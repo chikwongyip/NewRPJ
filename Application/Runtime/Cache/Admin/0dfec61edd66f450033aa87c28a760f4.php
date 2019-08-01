@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>RPJ-后台系统</title>
-<link href="/chikwong/NewRPJ/Public/style/authority/login_css.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/jquery/jquery-1.7.1.js"></script>
+<link href="/NewRPJ/Public/style/authority/login_css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/NewRPJ/Public/scripts/jquery/jquery-1.7.1.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
 		$("#login_sub").click(function(){

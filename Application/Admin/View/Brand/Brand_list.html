@@ -184,7 +184,7 @@
 							<tr>
 								<td><input type="checkbox" name="brand_id" value="{$list.brand_id}" class="acb" /></td>
 								<td>{$list.brand_name}</td>
-								<td><img src="{$list.brand_image}" width="50" height="50"/></td>
+								<td><img src="__ROOT__{$list.brand_image}" width="50" height="50"/></td>
 								<td>
 									<a href="{:U('admin/brand/brand_edit',array('brand_id'=>$list[brand_id]))}" class="edit">编辑</a>
 									<a href="javascript:del({$list.brand_id});">删除</a>
