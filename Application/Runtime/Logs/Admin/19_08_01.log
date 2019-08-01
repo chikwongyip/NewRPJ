@@ -1905,3 +1905,230 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001362s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001498s ]
 
+[ 2019-08-01T12:19:04+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/brand/brand_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0518s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0524s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\141d3e8e8840e90d168b4c918cada876.php 第 188 行.
+NOTIC: [8] Undefined variable: a D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\141d3e8e8840e90d168b4c918cada876.php 第 188 行.
+NOTIC: [8] Undefined variable: a D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\141d3e8e8840e90d168b4c918cada876.php 第 189 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001005s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001062s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001574s ]
+
+[ 2019-08-01T12:20:26+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/brand/brand_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000870s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0503s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0484s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\141d3e8e8840e90d168b4c918cada876.php 第 188 行.
+NOTIC: [8] Undefined variable: a D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\141d3e8e8840e90d168b4c918cada876.php 第 188 行.
+NOTIC: [8] Undefined variable: a D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\141d3e8e8840e90d168b4c918cada876.php 第 189 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044393s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000961s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001058s ]
+
+[ 2019-08-01T12:20:29+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/brand/brand_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0518s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0517s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000337s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\141d3e8e8840e90d168b4c918cada876.php 第 188 行.
+NOTIC: [8] Undefined variable: a D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\141d3e8e8840e90d168b4c918cada876.php 第 188 行.
+NOTIC: [8] Undefined variable: a D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\141d3e8e8840e90d168b4c918cada876.php 第 189 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015238s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000881s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000971s ]
+
+[ 2019-08-01T12:23:25+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/brand/brand_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0500s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0483s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\141d3e8e8840e90d168b4c918cada876.php 第 188 行.
+NOTIC: [8] Undefined variable: a D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\141d3e8e8840e90d168b4c918cada876.php 第 188 行.
+NOTIC: [8] Undefined variable: a D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\141d3e8e8840e90d168b4c918cada876.php 第 189 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000802s ]
+
+[ 2019-08-01T12:25:33+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/brand/brand_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0634s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0511s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\141d3e8e8840e90d168b4c918cada876.php 第 188 行.
+NOTIC: [8] Undefined variable: a D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\141d3e8e8840e90d168b4c918cada876.php 第 188 行.
+NOTIC: [8] Undefined variable: a D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\141d3e8e8840e90d168b4c918cada876.php 第 189 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008990s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000743s ]
+
+[ 2019-08-01T12:25:36+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/brand/brand_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0505s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0529s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\141d3e8e8840e90d168b4c918cada876.php 第 188 行.
+NOTIC: [8] Undefined variable: a D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\141d3e8e8840e90d168b4c918cada876.php 第 188 行.
+NOTIC: [8] Undefined variable: a D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\141d3e8e8840e90d168b4c918cada876.php 第 189 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000780s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000864s ]
+
+[ 2019-08-01T12:27:48+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/brand/brand_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0508s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028597s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000843s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000903s ]
+
+[ 2019-08-01T12:28:07+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/brand/brand_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0478s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xampp\htdocs\chikwong\NewRPJ\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `rpj_brand` (`brand_name`,`brand_image`) VALUES (' kindle2','./Application/Upload/2019-08-01/5d426a5799da8.png') [ RunTime:0.0499s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010760s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000911s ]
+
+[ 2019-08-01T12:28:22+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/brand/brand_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0521s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0507s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\141d3e8e8840e90d168b4c918cada876.php 第 188 行.
+NOTIC: [8] Undefined variable: a D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\141d3e8e8840e90d168b4c918cada876.php 第 188 行.
+NOTIC: [8] Undefined variable: a D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\141d3e8e8840e90d168b4c918cada876.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\141d3e8e8840e90d168b4c918cada876.php 第 188 行.
+NOTIC: [8] Undefined variable: a D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\141d3e8e8840e90d168b4c918cada876.php 第 188 行.
+NOTIC: [8] Undefined variable: a D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\141d3e8e8840e90d168b4c918cada876.php 第 189 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006581s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001086s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001175s ]
+
+[ 2019-08-01T12:28:23+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/brand/Application/Upload/2019-08-01/5d426a5799da8.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+
