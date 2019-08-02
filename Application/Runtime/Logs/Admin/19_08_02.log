@@ -826,3 +826,918 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000348s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000377s ]
 
+[ 2019-08-02T12:19:30+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006680s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006719s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000619s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000680s ]
+
+[ 2019-08-02T12:19:30+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/Introduce/introduce.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008093s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000693s ]
+
+[ 2019-08-02T14:06:53+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001123s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006910s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006948s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000780s ]
+
+[ 2019-08-02T14:06:53+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/Introduce/introduce.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000542s ]
+
+[ 2019-08-02T14:07:11+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000753s ]
+
+[ 2019-08-02T14:07:11+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/Introduce/introduce.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006499s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000696s ]
+
+[ 2019-08-02T14:07:14+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/brand/brand_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0503s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0508s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Use of undefined constant brand_id - assumed 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\141d3e8e8840e90d168b4c918cada876.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059347s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2019-08-02T14:07:16+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/company/company_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004526s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000374s ]
+
+[ 2019-08-02T15:54:02+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001241s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001306s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001086s ]
+
+[ 2019-08-02T15:54:02+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/Introduce/introduce.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010666s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000907s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000989s ]
+
+[ 2019-08-02T15:54:45+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000747s ]
+
+[ 2019-08-02T15:54:45+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/Introduce/introduce.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008332s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008413s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000664s ]
+
+[ 2019-08-02T16:37:26+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000759s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009617s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009689s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001145s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001317s ]
+
+[ 2019-08-02T16:37:26+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/Introduce/introduce.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005452s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000406s ]
+
+[ 2019-08-02T16:37:28+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/company/company_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+
+[ 2019-08-02T16:40:34+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001943s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000831s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000923s ]
+
+[ 2019-08-02T16:40:34+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/Introduce/introduce.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000767s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000838s ]
+
+[ 2019-08-02T16:40:36+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/company/company_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0524s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0662s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011591s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011697s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000698s ]
+
+[ 2019-08-02T16:43:46+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/Attachment/attachment_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `rpj_attachment` [ RunTime:0.0583s ]
+SQL: SELECT * FROM `rpj_attachment`  [ RunTime:0.0544s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000873s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000994s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\cac97b875347bebeb1cdcddb020abc6e.php 第 188 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\cac97b875347bebeb1cdcddb020abc6e.php 第 188 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\cac97b875347bebeb1cdcddb020abc6e.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077667s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001450s ]
+
+[ 2019-08-02T16:43:49+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/index/loupanchart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+ERR: 非法操作:loupanchart
+
+[ 2019-08-02T16:43:50+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/brand/brand_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0503s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0499s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Use of undefined constant brand_id - assumed 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\141d3e8e8840e90d168b4c918cada876.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006844s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000689s ]
+
+[ 2019-08-02T16:43:53+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/company/company_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0497s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0483s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017654s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001133s ]
+
+[ 2019-08-02T16:44:53+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006536s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000812s ]
+
+[ 2019-08-02T16:44:53+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/Introduce/introduce.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010442s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000817s ]
+
+[ 2019-08-02T16:44:56+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/company/company_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0508s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0502s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015957s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000677s ]
+
+[ 2019-08-02T16:46:24+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005631s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005673s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000844s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000926s ]
+
+[ 2019-08-02T16:46:24+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/Introduce/introduce.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000883s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007539s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007623s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000701s ]
+
+[ 2019-08-02T16:46:25+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/company/company_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0517s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0507s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010187s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000374s ]
+
+[ 2019-08-02T16:47:59+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/company/company_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0506s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0490s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000575s ]
+NOTIC: [8] Undefined index: logo D:\xampp\htdocs\chikwong\NewRPJ\Application\Admin\Controller\CompanyController.class.php 第 31 行.
+SQL: UPDATE `rpj_company` SET `name`='广州瑞谱佳科技有限公司',`description`='  广州瑞谱佳科技有限公司主要经营实验室仪器设备和耗材。我们代理和经销许多著名国外厂商的优质产品，主要的客户是制药、教育及科研等领域。 广州瑞谱佳科技有限公司立足华南，作为专业的服务型供应商，我们致力于为客户提供世界上先进的产品和专业的服务。我们的品牌资源有： Merckmillipore（超纯水、血清、细胞培养基、微生物检测、超滤、生命科学部门产品等）；美国ThermoFisher Scientific公司（Sorvall离心机、Forma箱体及安全柜、Nalgene塑料制品、Nunc细胞培养耗材、Fisherbrand及Labserv实验室耗材及小型仪器，ABgene试剂耗材等）；Leica公司（显微镜、组织处理设备等）；德国耶拿Analytik Jena（原子吸收光谱仪，拉曼光谱仪等）',`icp`='粤ICP备17010798号-1',`logo`=NULL,`tel`='134-3027-1095',`address`='广州市黄埔区夏园学校路28号1-7层' WHERE `id` = 1 [ RunTime:0.0522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000635s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000690s ]
+
+[ 2019-08-02T16:48:58+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005519s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000509s ]
+
+[ 2019-08-02T16:48:58+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/Introduce/introduce.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001197s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000625s ]
+
+[ 2019-08-02T16:49:03+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/company/company_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0510s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0518s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000247s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000375s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018050s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018219s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001164s ]
+
+[ 2019-08-02T16:49:22+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/company/company_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0505s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0516s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000720s ]
+NOTIC: [8] Undefined index: logo D:\xampp\htdocs\chikwong\NewRPJ\Application\Admin\Controller\CompanyController.class.php 第 31 行.
+SQL: UPDATE `rpj_company` SET `name`='广州瑞谱佳科技有限公司',`description`='   广州瑞谱佳科技有限公司主要经营实验室仪器设备和耗材。我们代理和经销许多著名国外厂商的优质产品，主要的客户是制药、教育及科研等领域。 广州瑞谱佳科技有限公司立足华南，作为专业的服务型供应商，我们致力于为客户提供世界上先进的产品和专业的服务。我们的品牌资源有： Merckmillipore（超纯水、血清、细胞培养基、微生物检测、超滤、生命科学部门产品等）；美国ThermoFisher Scientific公司（Sorvall离心机、Forma箱体及安全柜、Nalgene塑料制品、Nunc细胞培养耗材、Fisherbrand及Labserv实验室耗材及小型仪器，ABgene试剂耗材等）；Leica公司（显微镜、组织处理设备等）；德国耶拿Analytik Jena（原子吸收光谱仪，拉曼光谱仪等） ',`icp`='粤ICP备17010798号-1',`logo`=NULL,`tel`='134-3027-1095',`address`='广州市黄埔区夏园学校路28号1-7层' WHERE `id` = 1 [ RunTime:0.0507s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000562s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000602s ]
+
+[ 2019-08-02T16:49:34+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/company/company_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0490s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0512s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011294s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000693s ]
+NOTIC: [8] Undefined index: logo D:\xampp\htdocs\chikwong\NewRPJ\Application\Admin\Controller\CompanyController.class.php 第 31 行.
+SQL: UPDATE `rpj_company` SET `name`='广州瑞谱佳科技有限公司',`description`='   广州瑞谱佳科技有限公司主要经营实验室仪器设备和耗材。我们代理和经销许多著名国外厂商的优质产品，主要的客户是制药、教育及科研等领域。 广州瑞谱佳科技有限公司立足华南，作为专业的服务型供应商，我们致力于为客户提供世界上先进的产品和专业的服务。我们的品牌资源有： Merckmillipore（超纯水、血清、细胞培养基、微生物检测、超滤、生命科学部门产品等）；美国ThermoFisher Scientific公司（Sorvall离心机、Forma箱体及安全柜、Nalgene塑料制品、Nunc细胞培养耗材、Fisherbrand及Labserv实验室耗材及小型仪器，ABgene试剂耗材等）；Leica公司（显微镜、组织处理设备等）；德国耶拿Analytik Jena（原子吸收光谱仪，拉曼光谱仪等） ',`icp`='粤ICP备17010798号-1',`logo`=NULL,`tel`='134-3027-10951',`address`='广州市黄埔区夏园学校路28号1-7层' WHERE `id` = 1 [ RunTime:0.0517s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000656s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000714s ]
+
+[ 2019-08-02T16:49:56+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/company/company_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0529s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0511s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001154s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001275s ]
+
+[ 2019-08-02T16:50:06+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/company/company_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0498s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0520s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006937s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000280s ]
+NOTIC: [8] Undefined index: logo D:\xampp\htdocs\chikwong\NewRPJ\Application\Admin\Controller\CompanyController.class.php 第 31 行.
+SQL: UPDATE `rpj_company` SET `name`='广州瑞谱佳科技有限公司',`description`='    广州瑞谱佳科技有限公司主要经营实验室仪器设备和耗材。我们代理和经销许多著名国外厂商的优质产品，主要的客户是制药、教育及科研等领域。 广州瑞谱佳科技有限公司立足华南，作为专业的服务型供应商，我们致力于为客户提供世界上先进的产品和专业的服务。我们的品牌资源有： Merckmillipore（超纯水、血清、细胞培养基、微生物检测、超滤、生命科学部门产品等）；美国ThermoFisher Scientific公司（Sorvall离心机、Forma箱体及安全柜、Nalgene塑料制品、Nunc细胞培养耗材、Fisherbrand及Labserv实验室耗材及小型仪器，ABgene试剂耗材等）；Leica公司（显微镜、组织处理设备等）；德国耶拿Analytik Jena（原子吸收光谱仪，拉曼光谱仪等）  ',`icp`='粤ICP备17010798号-1',`logo`=NULL,`tel`='134-3027-109512',`address`='广州市黄埔区夏园学校路28号1-7层' WHERE `id` = 1 [ RunTime:0.0495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2019-08-02T16:54:08+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/company/company_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0490s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0510s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000381s ]
+NOTIC: [8] Undefined index: logo D:\xampp\htdocs\chikwong\NewRPJ\Application\Admin\Controller\CompanyController.class.php 第 31 行.
+SQL: UPDATE `rpj_company` SET `name`='广州瑞谱佳科技有限公司',`description`='    广州瑞谱佳科技有限公司主要经营实验室仪器设备和耗材。我们代理和经销许多著名国外厂商的优质产品，主要的客户是制药、教育及科研等领域。 广州瑞谱佳科技有限公司立足华南，作为专业的服务型供应商，我们致力于为客户提供世界上先进的产品和专业的服务。我们的品牌资源有： Merckmillipore（超纯水、血清、细胞培养基、微生物检测、超滤、生命科学部门产品等）；美国ThermoFisher Scientific公司（Sorvall离心机、Forma箱体及安全柜、Nalgene塑料制品、Nunc细胞培养耗材、Fisherbrand及Labserv实验室耗材及小型仪器，ABgene试剂耗材等）；Leica公司（显微镜、组织处理设备等）；德国耶拿Analytik Jena（原子吸收光谱仪，拉曼光谱仪等）  ',`icp`='粤ICP备17010798号-1',`logo`=NULL,`tel`='134-3027-10951',`address`='广州市黄埔区夏园学校路28号1-7层' WHERE `id` = 1 [ RunTime:0.0496s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000849s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000920s ]
+
+[ 2019-08-02T16:54:11+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/company/company_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0524s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0614s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000236s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000399s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020208s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000579s ]
+NOTIC: [8] Undefined index: logo D:\xampp\htdocs\chikwong\NewRPJ\Application\Admin\Controller\CompanyController.class.php 第 31 行.
+SQL: UPDATE `rpj_company` SET `name`='广州瑞谱佳科技有限公司',`description`='     广州瑞谱佳科技有限公司主要经营实验室仪器设备和耗材。我们代理和经销许多著名国外厂商的优质产品，主要的客户是制药、教育及科研等领域。 广州瑞谱佳科技有限公司立足华南，作为专业的服务型供应商，我们致力于为客户提供世界上先进的产品和专业的服务。我们的品牌资源有： Merckmillipore（超纯水、血清、细胞培养基、微生物检测、超滤、生命科学部门产品等）；美国ThermoFisher Scientific公司（Sorvall离心机、Forma箱体及安全柜、Nalgene塑料制品、Nunc细胞培养耗材、Fisherbrand及Labserv实验室耗材及小型仪器，ABgene试剂耗材等）；Leica公司（显微镜、组织处理设备等）；德国耶拿Analytik Jena（原子吸收光谱仪，拉曼光谱仪等）   ',`icp`='粤ICP备17010798号-1',`logo`=NULL,`tel`='134-3027-109512',`address`='广州市黄埔区夏园学校路28号1-7层' WHERE `id` = 1 [ RunTime:0.0549s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001239s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001314s ]
+
+[ 2019-08-02T16:54:14+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006484s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001480s ]
+
+[ 2019-08-02T16:54:14+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/Introduce/introduce.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008390s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001995s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002064s ]
+
+[ 2019-08-02T16:54:16+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/company/company_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0548s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0508s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014700s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000984s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001087s ]
+
+[ 2019-08-02T16:54:31+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/company/company_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0489s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0480s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009050s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009115s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000427s ]
+NOTIC: [8] Undefined index: logo D:\xampp\htdocs\chikwong\NewRPJ\Application\Admin\Controller\CompanyController.class.php 第 31 行.
+SQL: UPDATE `rpj_company` SET `name`='广州瑞谱佳科技有限公司',`description`='  广州瑞谱佳科技有限公司主要经营实验室仪器设备和耗材。我们代理和经销许多著名国外厂商的优质产品，主要的客户是制药、教育及科研等领域。 广州瑞谱佳科技有限公司立足华南，作为专业的服务型供应商，我们致力于为客户提供世界上先进的产品和专业的服务。我们的品牌资源有： Merckmillipore（超纯水、血清、细胞培养基、微生物检测、超滤、生命科学部门产品等）；美国ThermoFisher Scientific公司（Sorvall离心机、Forma箱体及安全柜、Nalgene塑料制品、Nunc细胞培养耗材、Fisherbrand及Labserv实验室耗材及小型仪器，ABgene试剂耗材等）；Leica公司（显微镜、组织处理设备等）；德国耶拿Analytik Jena（原子吸收光谱仪，拉曼光谱仪等）    ',`icp`='粤ICP备17010798号-1',`logo`=NULL,`tel`='134-3027-109512',`address`='广州市黄埔区夏园学校路28号1-7层' WHERE `id` = 1 [ RunTime:0.0487s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000868s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2019-08-02T16:54:56+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/company/company_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0521s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0511s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000253s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000383s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021955s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001127s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001244s ]
+
+[ 2019-08-02T16:54:58+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/brand/brand_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0498s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0484s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Use of undefined constant brand_id - assumed 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\141d3e8e8840e90d168b4c918cada876.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009668s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000819s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000905s ]
+

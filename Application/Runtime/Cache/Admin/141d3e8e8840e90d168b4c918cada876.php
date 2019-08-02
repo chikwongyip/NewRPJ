@@ -176,8 +176,8 @@
 						<tr>
 							<th width="30"><input type="checkbox" id="all" onclick="selectOrClearAllCheckbox(this);" />
 							</th>
-							<th>产品名称</th>
-							<th>产品附件</th>
+							<th>品牌名称</th>
+							<th>品牌logo</th>
 							<th>操作</th>
 						</tr>
 						<?php if(is_array($brand_list)): foreach($brand_list as $key=>$list): ?><tr>
