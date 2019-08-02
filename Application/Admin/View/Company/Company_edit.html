@@ -158,68 +158,49 @@
 </head>
 <body>
 	<form id="submitForm" name="submitForm" action="" method="post">
-		<input type="hidden" name="allIDCheck" value="" id="allIDCheck"/>
-		<input type="hidden" name="fangyuanEntity.fyXqName" value="" id="fyXqName"/>
+		<input type="hidden" name="id" value="" id="id"/>
 		<div id="container">
-			<div class="ui_content">
-				<div class="ui_text_indent">
-					<div id="box_border">
-						<div id="box_bottom">
-							<input type="button" value="新增" class="ui_input_btn01" id="addBtn" />
-						</div>
-					</div>
-				</div>
-			</div>
 			<div class="ui_content">
 				<div class="ui_tb">
 					<table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
 						<tr>
-							<th width="30"><input type="checkbox" id="all" onclick="selectOrClearAllCheckbox(this);" />
-							</th>
-							<th>品牌名称</th>
-							<th>品牌logo</th>
-							<th>操作</th>
+							<td class="ui_text_rt">公司名称</td>
+							<td class="ui_text_lt">
+								<input type="text" name="name" value="" class="ui_input_txt02"/>
+							</td>
 						</tr>
-						<foreach name="brand_list" item="list">
-							<tr>
-								<td><input type="checkbox" name="brand_id" value="{$list.brand_id}" class="acb" /></td>
-								<td>{$list.brand_name}</td>
-								<td><img src="__ROOT__{$list.brand_image}" width="50" height="50"/></td>
-								<td>
-									<a href="{:U('admin/brand/brand_edit',array('brand_id'=>$list[brand_id]))}" class="edit">编辑</a>
-									<a href="javascript:del({$list.brand_id});">删除</a>
-								</td>
-							</tr>
-						</foreach>
+						<tr>
+							<td class="ui_text_rt">备案编号</td>
+							<td class="ui_text_lt">
+								<input type="text" name="icp" value="" class="ui_input_txt02"/>
+							</td>
+						</tr>
+						<tr>
+							<td class="ui_text_rt">联系电话</td>
+							<td class="ui_text_lt">
+								<input type="text" name="tel" value="" class="ui_input_txt02"/>
+							</td>
+						</tr>
+						<tr>
+							<td class="ui_text_rt">联系地址</td>
+							<td class="ui_text_lt">
+								<input type="text" name="address" value="" class="ui_input_txt02"/>
+							</td>
+						</tr>
+						<tr>
+							<td class="ui_text_rt">公司Logo</td>
+							<td class="ui_text_lt">
+								<input type="file" name="logo" size="35" value="" />
+							</td>
+						</tr>
+						<tr>
+							<td class="ui_text_rt">公司简介</td>
+							<td class="ui_text_lt">
+								<textarea rows="5" cols="100" name="description" value=""> </textarea>
+							</td>
+						</tr>
+
 					</table>
-				</div>
-				<div class="ui_tb_h30">
-					<div class="ui_flt" style="height: 30px; line-height: 30px;">
-						共有
-						<span class="ui_txt_bold04">90</span>
-						条记录，当前第
-						<span class="ui_txt_bold04">1
-						/
-						9</span>
-						页
-					</div>
-					<div class="ui_frt">
-						<!--    如果是第一页，则只显示下一页、尾页 -->
-
-							<input type="button" value="首页" class="ui_input_btn01" />
-							<input type="button" value="上一页" class="ui_input_btn01" />
-							<input type="button" value="下一页" class="ui_input_btn01"
-								onclick="jumpNormalPage(2);" />
-							<input type="button" value="尾页" class="ui_input_btn01"
-								onclick="jumpNormalPage(9);" />
-
-
-
-						<!--     如果是最后一页，则只显示首页、上一页 -->
-
-						转到第<input type="text" id="jumpNumTxt" class="ui_input_txt01" />页
-							 <input type="button" class="ui_input_btn01" value="跳转" onclick="jumpInputPage(9);" />
-					</div>
 				</div>
 			</div>
 		</div>

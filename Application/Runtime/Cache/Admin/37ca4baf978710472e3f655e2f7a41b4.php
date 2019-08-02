@@ -1,19 +1,19 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script type="text/javascript" src="__PUBLIC__/scripts/jquery/jquery-1.7.1.js"></script>
-<link href="__PUBLIC__/style/authority/basic_layout.css" rel="stylesheet" type="text/css">
-<link href="__PUBLIC__/style/authority/common_style.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="__PUBLIC__/scripts/authority/commonAll.js"></script>
-<script type="text/javascript" src="__PUBLIC__/scripts/fancybox/jquery.fancybox-1.3.4.js"></script>
-<script type="text/javascript" src="__PUBLIC__/scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-<link rel="stylesheet" type="text/css" href="__PUBLIC__/style/authority/jquery.fancybox-1.3.4.css" media="screen"></link>
-<script type="text/javascript" src="__PUBLIC__/scripts/artDialog/artDialog.js?skin=default"></script>
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/jquery/jquery-1.7.1.js"></script>
+<link href="/chikwong/NewRPJ/Public/style/authority/basic_layout.css" rel="stylesheet" type="text/css">
+<link href="/chikwong/NewRPJ/Public/style/authority/common_style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/authority/commonAll.js"></script>
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/fancybox/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="/chikwong/NewRPJ/Public/style/authority/jquery.fancybox-1.3.4.css" media="screen"></link>
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/artDialog/artDialog.js?skin=default"></script>
 <title>信息管理系统</title>
 <script type="text/javascript">
-	var addURL = "{:U('admin/brand/brand_add')}"
-	var listURL = "{:U('admin/brand/brand_list')}"
+	var addURL = "<?php echo U('admin/brand/brand_add');?>"
+	var listURL = "<?php echo U('admin/brand/brand_list');?>"
 	$(document).ready(function(){
 		/** 新增   **/
 
@@ -89,7 +89,7 @@
 		if(fyID == '') return;
 		if(confirm("您确定要删除吗？")){
 
-			var url = "{:U('admin/brand/brand_del')}?brand_id="+fyID;
+			var url = "<?php echo U('admin/brand/brand_del');?>?brand_id="+fyID;
 			//$("#submitForm").attr("action", delURL).submit();
 			//$("#submitForm").attr("action", "/xngzf/archives/delFangyuan.action?fyID=" + fyID).submit();
 			window.location.href=url;
@@ -158,68 +158,49 @@
 </head>
 <body>
 	<form id="submitForm" name="submitForm" action="" method="post">
-		<input type="hidden" name="allIDCheck" value="" id="allIDCheck"/>
-		<input type="hidden" name="fangyuanEntity.fyXqName" value="" id="fyXqName"/>
+		<input type="hidden" name="id" value="" id="id"/>
 		<div id="container">
-			<div class="ui_content">
-				<div class="ui_text_indent">
-					<div id="box_border">
-						<div id="box_bottom">
-							<input type="button" value="新增" class="ui_input_btn01" id="addBtn" />
-						</div>
-					</div>
-				</div>
-			</div>
 			<div class="ui_content">
 				<div class="ui_tb">
 					<table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
 						<tr>
-							<th width="30"><input type="checkbox" id="all" onclick="selectOrClearAllCheckbox(this);" />
-							</th>
-							<th>品牌名称</th>
-							<th>品牌logo</th>
-							<th>操作</th>
+							<td class="ui_text_rt">公司名称</td>
+							<td class="ui_text_lt">
+								<input type="text" name="name" value="" class="ui_input_txt02"/>
+							</td>
 						</tr>
-						<foreach name="brand_list" item="list">
-							<tr>
-								<td><input type="checkbox" name="brand_id" value="{$list.brand_id}" class="acb" /></td>
-								<td>{$list.brand_name}</td>
-								<td><img src="__ROOT__{$list.brand_image}" width="50" height="50"/></td>
-								<td>
-									<a href="{:U('admin/brand/brand_edit',array('brand_id'=>$list[brand_id]))}" class="edit">编辑</a>
-									<a href="javascript:del({$list.brand_id});">删除</a>
-								</td>
-							</tr>
-						</foreach>
+						<tr>
+							<td class="ui_text_rt">备案编号</td>
+							<td class="ui_text_lt">
+								<input type="text" name="icp" value="" class="ui_input_txt02"/>
+							</td>
+						</tr>
+						<tr>
+							<td class="ui_text_rt">联系电话</td>
+							<td class="ui_text_lt">
+								<input type="text" name="tel" value="" class="ui_input_txt02"/>
+							</td>
+						</tr>
+						<tr>
+							<td class="ui_text_rt">联系地址</td>
+							<td class="ui_text_lt">
+								<input type="text" name="address" value="" class="ui_input_txt02"/>
+							</td>
+						</tr>
+						<tr>
+							<td class="ui_text_rt">公司Logo</td>
+							<td class="ui_text_lt">
+								<input type="file" name="logo" size="35" value="" />
+							</td>
+						</tr>
+						<tr>
+							<td class="ui_text_rt">公司简介</td>
+							<td class="ui_text_lt">
+								<textarea rows="5" cols="100" name="description" value=""> </textarea>
+							</td>
+						</tr>
+
 					</table>
-				</div>
-				<div class="ui_tb_h30">
-					<div class="ui_flt" style="height: 30px; line-height: 30px;">
-						共有
-						<span class="ui_txt_bold04">90</span>
-						条记录，当前第
-						<span class="ui_txt_bold04">1
-						/
-						9</span>
-						页
-					</div>
-					<div class="ui_frt">
-						<!--    如果是第一页，则只显示下一页、尾页 -->
-
-							<input type="button" value="首页" class="ui_input_btn01" />
-							<input type="button" value="上一页" class="ui_input_btn01" />
-							<input type="button" value="下一页" class="ui_input_btn01"
-								onclick="jumpNormalPage(2);" />
-							<input type="button" value="尾页" class="ui_input_btn01"
-								onclick="jumpNormalPage(9);" />
-
-
-
-						<!--     如果是最后一页，则只显示首页、上一页 -->
-
-						转到第<input type="text" id="jumpNumTxt" class="ui_input_txt01" />页
-							 <input type="button" class="ui_input_btn01" value="跳转" onclick="jumpInputPage(9);" />
-					</div>
 				</div>
 			</div>
 		</div>
