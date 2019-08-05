@@ -136,7 +136,7 @@
 </script>
 </head>
 <body>
-<form id="submitForm" name="submitForm" action="<?php echo U('admin/attachment/attachment_add');?>" method="post" enctype="multipart/form-data">
+<form id="submitForm" name="submitForm" action="<?php echo U('admin/attachment/attachment_submit');?>" method="post" enctype="multipart/form-data">
 	<input type="hidden" name="fyID" value="14458625716623" id="fyID"/>
 	<div id="container">
 		<div id="nav_links">
@@ -151,19 +151,31 @@
 			<table  cellspacing="0" cellpadding="0" width="100%" align="left" border="0">
 
 
+				<input type="hidden" name="news_id" value="<?php echo ($new_list["news_id"]); ?>" id="id"/>
 				<tr>
-					<td class="ui_text_rt">附件名称</td>
+					<td class="ui_text_rt">新闻标题</td>
 					<td class="ui_text_lt">
-						<input type="text" name="name" value=" " class="ui_input_txt02"/>
+						<input type="text" name="news_title" value="<?php echo ($news_list["news_title"]); ?>" class="ui_input_txt02"/>
 					</td>
 				</tr>
 				<tr>
-					<td class="ui_text_rt">附件 </td>
+					<td class="ui_text_rt">是否热门新闻</td>
 					<td class="ui_text_lt">
-						<input type="file" name="url" size="35" />
+						<input type="checkbox" name="is_hot" value="<?php echo ($news_list["is_hot"]); ?>" />
 					</td>
 				</tr>
-
+				<tr>
+					<td class="ui_text_rt">新闻内容</td>
+					<td class="ui_text_lt">
+						<textarea rows="10" cols="80" name="news_content" value=""><?php echo ($news_list["news_content"]); ?> </textarea>
+					</td>
+				</tr>
+				<!-- <tr>
+					<td class="ui_text_rt">附件</td>
+					<td class="ui_text_lt">
+						<input type="file" name="url" size="35" value="<?php echo ($a["url"]); ?>" />
+					</td>
+				</tr> -->
 				<tr>
 					<td>&nbsp;</td>
 					<td class="ui_text_lt">
@@ -171,7 +183,9 @@
 						&nbsp;<input id="cancelbutton" type="submit" value="取消" class="ui_input_btn01"/>
 					</td>
 				</tr>
+
 			</table>
+
 		</div>
 	</div>
 </form>

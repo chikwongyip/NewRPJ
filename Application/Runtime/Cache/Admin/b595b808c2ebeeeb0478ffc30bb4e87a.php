@@ -200,13 +200,14 @@
 			var attachURL = "<?php echo U('Admin/Attachment/attachment_list');?>"
 			var brandURL = "<?php echo U('Admin/brand/brand_list');?>"
 			var companyURL = "<?php echo U('Admin/company/company_edit');?>"
+			var newsURL = "<?php echo U('Admin/news/news_list');?>"
             data = [{"accessPath":"","checked":false,"delFlag":0,"parentID":1,"resourceCode":"","resourceDesc":"","resourceGrade":2,"resourceID":3,"resourceName":"基础数据","resourceOrder":0,"resourceType":""},
 
             {"accessPath":companyURL,"checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":7,"resourceName":"公司修改","resourceOrder":0,"resourceType":""},
 						{"accessPath":brandURL,"checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":8,"resourceName":"品牌管理","resourceOrder":0,"resourceType":""},
 						{"accessPath":"loupanchart.html","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":9,"resourceName":"产品管理","resourceOrder":0,"resourceType":""},
 						{"accessPath":"loupanchart.html","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":10,"resourceName":"介绍管理","resourceOrder":0,"resourceType":""},
-						{"accessPath":"loupanchart.html","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":10,"resourceName":"新闻管理","resourceOrder":0,"resourceType":""},
+						{"accessPath":newsURL,"checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":10,"resourceName":"新闻管理","resourceOrder":0,"resourceType":""},
 						{"accessPath":attachURL,"checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":10,"resourceName":"附件上传","resourceOrder":0,"resourceType":""}];
             // 如果返回数据不为空，加载"业务模块"目录
             if(data != null){

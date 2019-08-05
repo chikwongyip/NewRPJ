@@ -136,8 +136,8 @@
 </script>
 </head>
 <body>
-<form id="submitForm" name="submitForm" action="<?php echo U('admin/attachment/attachment_add');?>" method="post" enctype="multipart/form-data">
-	<input type="hidden" name="fyID" value="14458625716623" id="fyID"/>
+<form id="submitForm" name="submitForm" action="<?php echo U('admin/news/news_add');?>" method="post" enctype="multipart/form-data">
+	<input type="hidden" name="news_id" value="" id="new_id"/>
 	<div id="container">
 		<div id="nav_links">
 			当前位置：基础数据&nbsp;>&nbsp;<span style="color: #1A5CC6;">附件编辑</span>
@@ -152,17 +152,29 @@
 
 
 				<tr>
-					<td class="ui_text_rt">附件名称</td>
+					<td class="ui_text_rt">新闻标题</td>
 					<td class="ui_text_lt">
-						<input type="text" name="name" value=" " class="ui_input_txt02"/>
+						<input type="text" name="news_title" value=" " class="ui_input_txt02"/>
 					</td>
 				</tr>
 				<tr>
-					<td class="ui_text_rt">附件 </td>
+					<td class="ui_text_rt">是否热门新闻</td>
+					<td class="ui_text_lt">
+						<input type="checkbox" name="is_hot" value="X" />
+					</td>
+				</tr>
+				<tr>
+					<td class="ui_text_rt">新闻内容</td>
+					<td class="ui_text_lt">
+						<textarea rows="10" cols="80" name="news_content" value=""> </textarea>
+					</td>
+				</tr>
+				<!-- <tr>
+					<td class="ui_text_rt">附件</td>
 					<td class="ui_text_lt">
 						<input type="file" name="url" size="35" />
 					</td>
-				</tr>
+				</tr> -->
 
 				<tr>
 					<td>&nbsp;</td>
