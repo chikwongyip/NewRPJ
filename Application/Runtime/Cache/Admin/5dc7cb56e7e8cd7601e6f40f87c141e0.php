@@ -180,7 +180,7 @@
 							<th>操作</th>
 						</tr>
 						<?php if(is_array($news_list)): foreach($news_list as $key=>$list): ?><tr>
-								<td><input type="checkbox" name="is_hot" value="X" class="acb" checked="<?php echo ($list["is_hot"]); ?>" /></td>
+								<td><input type="checkbox" name="is_hot" value="X" class="acb" checked="{if($list.is_hot!=null)<?php echo ($list["is_hot"]); ?>}" /></td>
 								<td><?php echo ($list["news_title"]); ?></td>
 								<td><?php echo ($list["news_content"]); ?></td>
 								<td>

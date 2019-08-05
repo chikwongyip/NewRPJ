@@ -19,6 +19,7 @@ class NewsController extends Controller {
     public function news_list(){
       $model = M('Rpj_news');
       $news_list = $model->select();
+      var_dump($news_list);
       $this->assign('news_list',$news_list);
       $this->display();
     }
@@ -26,6 +27,7 @@ class NewsController extends Controller {
     public function news_edit($news_id){
       $model = M('Rpj_news');
       $news_list = $model->find($news_id);
+
       $this->assign('news_list',$news_list);
       $this->display();
     }

@@ -181,7 +181,7 @@
 						</tr>
 						<foreach name="news_list" item="list">
 							<tr>
-								<td><input type="checkbox" name="is_hot" value="X" class="acb" checked="{$list.is_hot}" /></td>
+								<td><input type="checkbox" name="is_hot" value="X" class="acb" checked="{if($list.is_hot!=null){$list.is_hot}}" /></td>
 								<td>{$list.news_title}</td>
 								<td>{$list.news_content}</td>
 								<td>
