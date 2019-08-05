@@ -33,17 +33,19 @@ class NewsController extends Controller {
     public function news_submit(){
       if(IS_POST){
         $model = M('Rpj_news');
-        $id = $_POST["news_id"];
-        $model->find($id);
-        if ($_POST["name"] != null) {
-            $model->news_name = $_POST["news_name"];
-            $model->news_content = $_POST["news_content"];
-            $model->is_hot = $_POST["is_hot"];
-            $model->save();
-            echo "更新成功";
-        }else{
-            echo "更新失败";
+        $news_id = $_POST['news_id'];
+
+        $model->find($news_id);
+        $model->news_title = $_POST['news_title'];
+        $model->news_content = $_POST['news_content'];
+        var_dump($_POST['is_hot']);
+        if ($_POST['is_hot'] == "X"){
+          $model->is_hot = "checked";
+        }else {
+          $model->is_hot = 'null';
         }
+        $model->save();
+        echo "更新成功";
         $this->display('News_edit');
       }
     }

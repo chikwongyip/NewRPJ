@@ -136,8 +136,8 @@
 </script>
 </head>
 <body>
-<form id="submitForm" name="submitForm" action="{:U('admin/attachment/attachment_submit')}" method="post" enctype="multipart/form-data">
-	<input type="hidden" name="fyID" value="14458625716623" id="fyID"/>
+<form id="submitForm" name="submitForm" action="{:U('admin/news/news_submit')}" method="post" enctype="multipart/form-data">
+
 	<div id="container">
 		<div id="nav_links">
 			当前位置：基础数据&nbsp;>&nbsp;<span style="color: #1A5CC6;">附件编辑</span>
@@ -151,7 +151,7 @@
 			<table  cellspacing="0" cellpadding="0" width="100%" align="left" border="0">
 
 
-				<input type="hidden" name="news_id" value="{$new_list.news_id}" id="id"/>
+				<input type="hidden" name="news_id" value="{$news_list.news_id}" id="news_id"/>
 				<tr>
 					<td class="ui_text_rt">新闻标题</td>
 					<td class="ui_text_lt">
@@ -161,7 +161,7 @@
 				<tr>
 					<td class="ui_text_rt">是否热门新闻</td>
 					<td class="ui_text_lt">
-						<input type="checkbox" name="is_hot" value="{$news_list.is_hot}" />
+						<input type="checkbox" name="is_hot" value="X" checked="{$new_list.is_hot}" />
 					</td>
 				</tr>
 				<tr>
@@ -170,12 +170,6 @@
 						<textarea rows="10" cols="80" name="news_content" value=""> {$news_list.news_content} </textarea>
 					</td>
 				</tr>
-				<!-- <tr>
-					<td class="ui_text_rt">附件</td>
-					<td class="ui_text_lt">
-						<input type="file" name="url" size="35" value="{$a.url}" />
-					</td>
-				</tr> -->
 				<tr>
 					<td>&nbsp;</td>
 					<td class="ui_text_lt">
