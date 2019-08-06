@@ -9,6 +9,7 @@ class NewsController extends Controller {
         $model->news_content = $_POST["news_content"];
         if ($_POST["is_hot"]=="X") {
           $model->is_hot = "checked";
+          $model->is_hotx = "X";
         }
         $model->date = date("Y-m-d");
         $model->add();
@@ -45,6 +46,7 @@ class NewsController extends Controller {
           $model->is_hot = "checked";
         }else {
           $model->is_hot = 'null';
+          $model->is_hotx = 'X';
         }
         $model->save();
         echo "更新成功";
