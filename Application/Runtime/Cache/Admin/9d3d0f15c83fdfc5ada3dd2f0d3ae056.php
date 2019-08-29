@@ -12,8 +12,8 @@
 <script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/artDialog/artDialog.js?skin=default"></script>
 <title>信息管理系统</title>
 <script type="text/javascript">
-	var addURL = "<?php echo U('admin/attachment/attachment_add');?>"
-	var listURL = "<?php echo U('admin/attachment/attachment_list');?>"
+	var addURL = "<?php echo U('admin/appfield/appfield_add');?>"
+	var listURL = "<?php echo U('admin/appfield/appfield_list');?>"
 	$(document).ready(function(){
 		/** 新增   **/
 
@@ -89,7 +89,7 @@
 		if(fyID == '') return;
 		if(confirm("您确定要删除吗？")){
 
-			var url = "<?php echo U('admin/attachment/attachment_del');?>?id="+fyID;
+			var url = "<?php echo U('admin/appfield/appfield_del');?>?app_id="+fyID;
 			//$("#submitForm").attr("action", delURL).submit();
 			//$("#submitForm").attr("action", "/xngzf/archives/delFangyuan.action?fyID=" + fyID).submit();
 			window.location.href=url;
@@ -176,17 +176,17 @@
 						<tr>
 							<th width="30"><input type="checkbox" id="all" onclick="selectOrClearAllCheckbox(this);" />
 							</th>
-							<th>产品名称</th>
-							<th>产品附件</th>
+							<th>应用领域ID</th>
+							<th>应用领域名称</th>
 							<th>操作</th>
 						</tr>
-						<?php if(is_array($attach)): foreach($attach as $key=>$a): ?><tr>
-								<td><input type="checkbox" name="ID" value="<?php echo ($a["id"]); ?>" class="acb" /></td>
-								<td><?php echo ($a["name"]); ?></td>
-								<td><?php echo ($a["url"]); ?></td>
+						<?php if(is_array($appList)): foreach($appList as $key=>$a): ?><tr>
+								<td><input type="checkbox" name="ID" value="<?php echo ($a["app_id"]); ?>" class="acb" /></td>
+								<td><?php echo ($a["app_id"]); ?></td>
+								<td><?php echo ($a["app_name"]); ?></td>
 								<td>
-									<a href="<?php echo U('admin/attachment/attachment_edit',array('id'=>$a[id]));?>" class="edit">编辑</a>
-									<a href="javascript:del(<?php echo ($a["id"]); ?>);">删除</a>
+									<a href="<?php echo U('admin/appfield/appfield_edit',array('app_id'=>$a[app_id]));?>" class="edit">编辑</a>
+									<a href="javascript:del(<?php echo ($a["app_id"]); ?>);">删除</a>
 								</td>
 							</tr><?php endforeach; endif; ?>
 					</table>
