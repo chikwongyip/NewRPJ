@@ -176,18 +176,25 @@
 						<tr>
 							<th width="30"><input type="checkbox" id="all" onclick="selectOrClearAllCheckbox(this);" />
 							</th>
-							<th>应用领域ID</th>
-							<th>应用领域名称</th>
+							<th>产品名称</th>
+							<th>商标</th>
+							<th>产品描述</th>
+							<th>产品图片</th>
+							<th>产品型号</th>
+							<th>产品视讯</th>
 							<th>操作</th>
 						</tr>
-						<foreach name="appList" item="a">
+						<foreach name="product" item="a">
 							<tr>
-								<td><input type="checkbox" name="ID" value="{$a.app_id}" class="acb" /></td>
-								<td>{$a.app_id}</td>
-								<td>{$a.app_name}</td>
+								<td><input type="checkbox" name="ID" value="{$a.product_id}" class="acb" /></td>
+								<td>{$a.product_name}</td>
+								<td>{$a.product_logo}</td>
+								<td>{$a.product_desc}</td>
+								<td>{$a.product_pic}</td>
+								<td>{$a.product_model}</td>
 								<td>
-									<a href="{:U('admin/appfield/appfield_edit',array('app_id'=>$a[app_id]))}" class="edit">编辑</a>
-									<a href="javascript:del({$a.app_id});">删除</a>
+									<a href="{:U('admin/appfield/appfield_edit',array('product_id'=>$a[product_id]))}" class="edit">编辑</a>
+									<a href="javascript:del({$a.product_id});">删除</a>
 								</td>
 							</tr>
 						</foreach>
