@@ -1,19 +1,19 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script type="text/javascript" src="__PUBLIC__/scripts/jquery/jquery-1.7.1.js"></script>
-<link href="__PUBLIC__/style/authority/basic_layout.css" rel="stylesheet" type="text/css">
-<link href="__PUBLIC__/style/authority/common_style.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="__PUBLIC__/scripts/authority/commonAll.js"></script>
-<script type="text/javascript" src="__PUBLIC__/scripts/fancybox/jquery.fancybox-1.3.4.js"></script>
-<script type="text/javascript" src="__PUBLIC__/scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-<link rel="stylesheet" type="text/css" href="__PUBLIC__/style/authority/jquery.fancybox-1.3.4.css" media="screen"></link>
-<script type="text/javascript" src="__PUBLIC__/scripts/artDialog/artDialog.js?skin=default"></script>
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/jquery/jquery-1.7.1.js"></script>
+<link href="/chikwong/NewRPJ/Public/style/authority/basic_layout.css" rel="stylesheet" type="text/css">
+<link href="/chikwong/NewRPJ/Public/style/authority/common_style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/authority/commonAll.js"></script>
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/fancybox/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="/chikwong/NewRPJ/Public/style/authority/jquery.fancybox-1.3.4.css" media="screen"></link>
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/artDialog/artDialog.js?skin=default"></script>
 <title>信息管理系统</title>
 <script type="text/javascript">
-	var addURL = "{:U('admin/product/product_add')}"
-	var listURL = "{:U('admin/product/product_list')}"
+	var addURL = "<?php echo U('admin/product/product_add');?>"
+	var listURL = "<?php echo U('admin/product/product_list');?>"
 	$(document).ready(function(){
 		/** 新增   **/
 
@@ -89,7 +89,7 @@
 		if(fyID == '') return;
 		if(confirm("您确定要删除吗？")){
 
-			var url = "{:U('admin/appfield/appfield_del')}?app_id="+fyID;
+			var url = "<?php echo U('admin/appfield/appfield_del');?>?app_id="+fyID;
 			//$("#submitForm").attr("action", delURL).submit();
 			//$("#submitForm").attr("action", "/xngzf/archives/delFangyuan.action?fyID=" + fyID).submit();
 			window.location.href=url;
@@ -185,25 +185,19 @@
 							<th>产品视讯</th>
 							<th>操作</th>
 						</tr>
-						<foreach name="product" item="a">
-							<tr>
-								<td><input type="checkbox" name="ID" value="{$a.product_id}" class="acb" /></td>
-								<td>{$a.product_name}</td>
-								<foreach name="brand" item="b">
-									<if condition="$b.brand_id eq $a.product_id">
-										<td>{$b.brand_name}</td>
-									</if>
-								</foreach>
-								<td>{$a.product_logo}</td>
-								<td>{$a.product_desc}</td>
-								<td>{$a.product_pic}</td>
-								<td>{$a.product_model}</td>
+						<?php if(is_array($product)): foreach($product as $key=>$a): ?><tr>
+								<td><input type="checkbox" name="ID" value="<?php echo ($a["product_id"]); ?>" class="acb" /></td>
+								<td><?php echo ($a["product_name"]); ?></td>
+								<?php if(is_array($brand)): foreach($brand as $key=>$b): if($b["brand_id"] == $a.product_id): ?><td><?php echo ($b["brand_name"]); ?></td><?php endif; endforeach; endif; ?>
+								<td><?php echo ($a["product_logo"]); ?></td>
+								<td><?php echo ($a["product_desc"]); ?></td>
+								<td><?php echo ($a["product_pic"]); ?></td>
+								<td><?php echo ($a["product_model"]); ?></td>
 								<td>
-									<a href="{:U('admin/product/product_edit',array('product_id'=>$a[product_id]))}" class="edit">编辑</a>
-									<a href="javascript:del({$a.product_id});">删除</a>
+									<a href="<?php echo U('admin/product/product_edit',array('product_id'=>$a[product_id]));?>" class="edit">编辑</a>
+									<a href="javascript:del(<?php echo ($a["product_id"]); ?>);">删除</a>
 								</td>
-							</tr>
-						</foreach>
+							</tr><?php endforeach; endif; ?>
 					</table>
 				</div>
 				<div class="ui_tb_h30">

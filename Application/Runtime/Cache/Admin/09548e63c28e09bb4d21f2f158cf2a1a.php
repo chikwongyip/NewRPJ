@@ -136,7 +136,7 @@
 </script>
 </head>
 <body>
-<form id="submitForm" name="submitForm" action="<?php echo U('admin/brand/brand_add');?>" method="post" enctype="multipart/form-data">
+<form id="submitForm" name="submitForm" action="<?php echo U('admin/product/product_add');?>" method="post" enctype="multipart/form-data">
 	<input type="hidden" name="fyID" value="14458625716623" id="fyID"/>
 	<div id="container">
 		<div id="nav_links">
@@ -150,19 +150,58 @@
 		<div class="ui_content">
 			<table  cellspacing="0" cellpadding="0" width="100%" align="left" border="0">
 
+				<tr>
+					<td class="ui_text_lt">产品名称</td>
+					<td class="ui_text_lt">
+						<input type="text" name="product_name" value=" " class="ui_input_txt02"/>
+					</td>
+				</tr>
 
 				<tr>
-					<td class="ui_text_rt">品牌名称</td>
-					<td class="ui_text_lt">
-						<input type="text" name="brand_name" value=" " class="ui_input_txt02"/>
-					</td>
+						<td class="ui_text_lt">选择品牌</td>
+						<td class="ui_text_lt">
+							<select name="brand_id">
+								<?php if(is_array($brand)): foreach($brand as $key=>$a): ?><option name = "<?php echo ($a["brand_id"]); ?>" value ="<?php echo ($a["brand_name"]); ?>"><?php echo ($a["brand_name"]); ?></option><?php endforeach; endif; ?>
+							</select>
+						</td>
 				</tr>
+
 				<tr>
-					<td class="ui_text_rt">品牌logo</td>
+					<td class="ui_text_lt">产品描述</td>
 					<td class="ui_text_lt">
-						<input type="file" name="brand_image" size="35" />
+						<textarea rows="5" cols="50" name="product_desc" value=""> </textarea>
 					</td>
 				</tr>
+
+				<tr>
+					<td class="ui_text_lt">产品规格</td>
+					<td class="ui_text_lt">
+						<textarea rows="5" cols="50" name="product_standard" value=""> </textarea>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="ui_text_lt">产品Logo</td>
+					<td class="ui_text_lt">
+						<input type="file" name="product_logo" size="35" value="" />
+					</td>
+				</tr>
+
+				<tr>
+					<td class="ui_text_lt">产品图片</td>
+					<td class="ui_text_lt">
+						<input type="file" name="product_pic" size="35" value="" />
+					</td>
+				</tr>
+
+				<tr>
+					<td class="ui_text_lt">产品视频地址</td>
+					<td class="ui_text_lt">
+						<input type="file" name="product_video" size="35" value="" />
+					</td>
+				</tr>
+
+
 
 				<tr>
 					<td>&nbsp;</td>

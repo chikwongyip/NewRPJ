@@ -136,7 +136,7 @@
 </script>
 </head>
 <body>
-<form id="submitForm" name="submitForm" action="{:U('admin/appfield/appfield_add')}" method="post" enctype="multipart/form-data">
+<form id="submitForm" name="submitForm" action="{:U('admin/product/product_add')}" method="post" enctype="multipart/form-data">
 	<input type="hidden" name="fyID" value="14458625716623" id="fyID"/>
 	<div id="container">
 		<div id="nav_links">
@@ -151,11 +151,59 @@
 			<table  cellspacing="0" cellpadding="0" width="100%" align="left" border="0">
 
 				<tr>
-					<td class="ui_text_rt">应用领域名称</td>
+					<td class="ui_text_lt">产品名称</td>
 					<td class="ui_text_lt">
-						<input type="text" name="app_name" value=" " class="ui_input_txt02"/>
+						<input type="text" name="product_name" value=" " class="ui_input_txt02"/>
 					</td>
 				</tr>
+
+				<tr>
+						<td class="ui_text_lt">选择品牌</td>
+						<td class="ui_text_lt">
+							<select name="brand_id">
+								<foreach name="brand" item="a">
+  								<option name = "{$a.brand_id}" value ="{$a.brand_name}">{$a.brand_name}</option>
+							  </foreach>
+							</select>
+						</td>
+				</tr>
+
+				<tr>
+					<td class="ui_text_lt">产品描述</td>
+					<td class="ui_text_lt">
+						<textarea rows="5" cols="50" name="product_desc" value=""> </textarea>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="ui_text_lt">产品规格</td>
+					<td class="ui_text_lt">
+						<textarea rows="5" cols="50" name="product_standard" value=""> </textarea>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="ui_text_lt">产品Logo</td>
+					<td class="ui_text_lt">
+						<input type="file" name="product_logo" size="35" value="" />
+					</td>
+				</tr>
+
+				<tr>
+					<td class="ui_text_lt">产品图片</td>
+					<td class="ui_text_lt">
+						<input type="file" name="product_pic" size="35" value="" />
+					</td>
+				</tr>
+
+				<tr>
+					<td class="ui_text_lt">产品视频地址</td>
+					<td class="ui_text_lt">
+						<input type="file" name="product_video" size="35" value="" />
+					</td>
+				</tr>
+
+
 
 				<tr>
 					<td>&nbsp;</td>

@@ -202,12 +202,13 @@
 			var companyURL = "<?php echo U('Admin/company/company_edit');?>"
 			var newsURL = "<?php echo U('Admin/news/news_list');?>"
 			var appfiledURL = "<?php echo U('Admin/appfield/appfield_list');?>"
+			var productURL = "<?php echo U('Admin/product/product_list');?>"
             data = [{"accessPath":"","checked":false,"delFlag":0,"parentID":1,"resourceCode":"","resourceDesc":"","resourceGrade":2,"resourceID":3,"resourceName":"基础数据","resourceOrder":0,"resourceType":""},
 
             {"accessPath":companyURL,"checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":7,"resourceName":"公司修改","resourceOrder":0,"resourceType":""},
 						{"accessPath":brandURL,"checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":8,"resourceName":"品牌管理","resourceOrder":0,"resourceType":""},
 						{"accessPath":appfiledURL,"checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":9,"resourceName":"应用领域管理","resourceOrder":0,"resourceType":""},
-						{"accessPath":"loupanchart.html","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":10,"resourceName":"产品管理","resourceOrder":0,"resourceType":""},
+						{"accessPath":productURL,"checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":10,"resourceName":"产品管理","resourceOrder":0,"resourceType":""},
 						{"accessPath":"loupanchart.html","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":11,"resourceName":"产品应用领域管理","resourceOrder":0,"resourceType":""},
 						{"accessPath":"loupanchart.html","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":12,"resourceName":"产品附件管理","resourceOrder":0,"resourceType":""},
 						{"accessPath":newsURL,"checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":13,"resourceName":"新闻管理","resourceOrder":0,"resourceType":""},
