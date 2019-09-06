@@ -160,8 +160,17 @@
 				<tr>
 						<td class="ui_text_lt">选择品牌</td>
 						<td class="ui_text_lt">
-							<select name="brand_id">
+							<select name="brand_name">
 								<?php if(is_array($brand)): foreach($brand as $key=>$a): ?><option name = "<?php echo ($a["brand_id"]); ?>" value ="<?php echo ($a["brand_name"]); ?>"><?php echo ($a["brand_name"]); ?></option><?php endforeach; endif; ?>
+							</select>
+						</td>
+				</tr>
+
+				<tr>
+						<td class="ui_text_lt">应用领域</td>
+						<td class="ui_text_lt">
+							<select name="app_name">
+								<?php if(is_array($app)): foreach($app as $key=>$a): ?><option name = "<?php echo ($a["app_id"]); ?>" value ="<?php echo ($a["app_name"]); ?>"><?php echo ($a["app_name"]); ?></option><?php endforeach; endif; ?>
 							</select>
 						</td>
 				</tr>
@@ -197,10 +206,9 @@
 				<tr>
 					<td class="ui_text_lt">产品视频地址</td>
 					<td class="ui_text_lt">
-						<input type="file" name="product_video" size="35" value="" />
+						<input type="text" name="product_video" value=" " class="ui_input_txt02"/>
 					</td>
 				</tr>
-
 
 
 				<tr>
