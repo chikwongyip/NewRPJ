@@ -136,8 +136,8 @@
 </script>
 </head>
 <body>
-<form id="submitForm" name="submitForm" action="{:U('admin/appfield/appfield_submit')}" method="post" enctype="multipart/form-data">
-	<input type="hidden" name="fyID" value="14458625716623" id="fyID"/>
+<form id="submitForm" name="submitForm" action="{:U('admin/product/product_submit')}" method="post" enctype="multipart/form-data">
+	<input type="hidden" name="product_id" value="{$product.product_id}" id="fyID"/>
 	<div id="container">
 		<div id="nav_links">
 			当前位置：基础数据&nbsp;>&nbsp;<span style="color: #1A5CC6;">附件编辑</span>
@@ -149,11 +149,46 @@
 		</div>
 		<div class="ui_content">
 			<table  cellspacing="0" cellpadding="0" width="100%" align="left" border="0">
-				<input type="hidden" name="app_id" value="{$appList.app_id}" id="id"/>
 				<tr>
-					<td class="ui_text_rt">应用领域名称</td>
+					<td class="ui_text_lt">产品名称</td>
 					<td class="ui_text_lt">
-						<input type="text" name="app_name" value="{$appList.app_name}" class="ui_input_txt02"/>
+						<input type="text" name="product_name" value="{$product.product_name}" class="ui_input_txt02"/>
+					</td>
+				</tr>
+				<tr>
+					<td class="ui_text_lt">产品描述</td>
+					<td class="ui_text_lt">
+						<textarea rows="5" cols="50" name="product_desc" value=" ">{$product.product_desc}</textarea>
+					</td>
+				</tr>
+				<tr>
+					<td class="ui_text_lt">产品规格</td>
+					<td class="ui_text_lt">
+						<textarea rows="5" cols="50" name="product_standard" value=" ">{$product.product_standard}</textarea>
+					</td>
+				</tr>
+				<tr>
+					<td class="ui_text_lt">产品型号</td>
+					<td class="ui_text_lt">
+						 <input type="text" name="product_model" value="{$product.product_model}" class="ui_input_txt02"/>
+					</td>
+				</tr>
+				<tr>
+					<td class="ui_text_lt">产品Logo</td>
+					<td class="ui_text_lt">
+						<input type="file" name="product_logo" size="35" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td class="ui_text_lt">产品图片</td>
+					<td class="ui_text_lt">
+						<input type="file" name="product_pic" size="35" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td class="ui_text_lt">产品视频地址</td>
+					<td class="ui_text_lt">
+						<input type="text" name="product_video" value=" {$product.product_video}" class="ui_input_txt02"/>
 					</td>
 				</tr>
 				<tr>
@@ -163,12 +198,9 @@
 						&nbsp;<input id="cancelbutton" type="submit" value="取消" class="ui_input_btn01"/>
 					</td>
 				</tr>
-
 			</table>
-
 		</div>
 	</div>
 </form>
-
 </body>
 </html>

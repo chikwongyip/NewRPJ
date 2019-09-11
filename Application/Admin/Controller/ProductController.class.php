@@ -18,12 +18,15 @@ class ProductController extends Controller {
         $product_id = $idMax+1;
         $modelProduct->product_id = $product_id;
         $modelProduct->product_name = $_POST["product_name"];
-        $modelProduct->product_desc = $_POST["product_dec"];
+        $modelProduct->product_desc = $_POST["product_desc"];
         $modelProduct->product_standard = $_POST["product_standard"];
         $modelProduct->product_model = $_POST["product_model"];
         $modelProduct->product_video = $_POST["product_video"];
-        $modelProduct->brand_id=$modelBrand->where("brand_name='%s'",$_POST["brand_name"])->field('brand_id')->find();
-        $modelProduct->app_id=$modelApp->where("app_name='%s'",$_POST["app_name"])->field('app_id')->find();
+        $brand_id = $modelBrand->where("brand_name='%s'",$_POST["brand_name"])->field('brand_id')->find();
+        $modelProduct->brand_id = (int)$brand_id["brand_id"];
+        $app_id = $modelApp->where("app_name='%s'",$_POST["app_name"])->field('app_id')->find();
+        $modelProduct->app_id = (int)$app_id["app_id"];
+
         //处理文件
         $upload = new \Think\Upload();
         $upload->maxSize = 3145728;
@@ -52,19 +55,29 @@ class ProductController extends Controller {
 
     public function product_list(){
       $modelProduct = M('Rpj_product');
-      $modelBrand = M('Rpj_brand');
-      $product = $modelProduct->select();
-      $brand = $modelBrand->select();
+      $product = $modelProduct
+                  ->join('rpj_brand ON rpj_product.brand_id = rpj_brand.brand_id')
+                  ->select();
       $this->assign('product',$product);
-      $this->assign('brand',$brand);
       $this->display();
     }
 
     public function product_del($product_id){
+      $model = M('Rpj_product');
+      $model->delete($product_id);
+      $product = $model
+                  ->join('rpj_brand ON rpj_product.brand_id = rpj_brand.brand_id')
+                  ->select();
+      $this->assign('product',$product);
       $this->display('product_list');
     }
 
     public function product_edit($product_id){
+      $model = M('Rpj_product');
+      $product = $model
+                  ->join('rpj_brand ON rpj_product.brand_id = rpj_brand.brand_id')
+                  ->find($product_id);
+      $this->assign('product',$product);
       $this->display();
     }
 

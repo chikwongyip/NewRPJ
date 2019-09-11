@@ -136,8 +136,8 @@
 </script>
 </head>
 <body>
-<form id="submitForm" name="submitForm" action="<?php echo U('admin/product/product_add');?>" method="post" enctype="multipart/form-data">
-	<input type="hidden" name="fyID" value="14458625716623" id="fyID"/>
+<form id="submitForm" name="submitForm" action="<?php echo U('admin/product/product_submit');?>" method="post" enctype="multipart/form-data">
+	<input type="hidden" name="product_id" value="<?php echo ($product["product_id"]); ?>" id="fyID"/>
 	<div id="container">
 		<div id="nav_links">
 			当前位置：基础数据&nbsp;>&nbsp;<span style="color: #1A5CC6;">附件编辑</span>
@@ -152,41 +152,25 @@
 				<tr>
 					<td class="ui_text_lt">产品名称</td>
 					<td class="ui_text_lt">
-						<input type="text" name="product_name" value=" " class="ui_input_txt02"/>
+						<input type="text" name="product_name" value="<?php echo ($product["product_name"]); ?>" class="ui_input_txt02"/>
 					</td>
-				</tr>
-				<tr>
-						<td class="ui_text_lt">选择品牌</td>
-						<td class="ui_text_lt">
-							<select name="brand_name">
-								<?php if(is_array($brand)): foreach($brand as $key=>$a): ?><option name = "<?php echo ($a["brand_id"]); ?>" value ="<?php echo ($a["brand_name"]); ?>"><?php echo ($a["brand_name"]); ?></option><?php endforeach; endif; ?>
-							</select>
-						</td>
-				</tr>
-				<tr>
-						<td class="ui_text_lt">应用领域</td>
-						<td class="ui_text_lt">
-							<select name="app_name">
-								<?php if(is_array($app)): foreach($app as $key=>$a): ?><option name = "<?php echo ($a["app_id"]); ?>" value ="<?php echo ($a["app_name"]); ?>"><?php echo ($a["app_name"]); ?></option><?php endforeach; endif; ?>
-							</select>
-						</td>
 				</tr>
 				<tr>
 					<td class="ui_text_lt">产品描述</td>
 					<td class="ui_text_lt">
-						<textarea rows="5" cols="50" name="product_desc" value=""> </textarea>
+						<textarea rows="5" cols="50" name="product_desc" value=" "><?php echo ($product["product_desc"]); ?></textarea>
 					</td>
 				</tr>
 				<tr>
 					<td class="ui_text_lt">产品规格</td>
 					<td class="ui_text_lt">
-						<textarea rows="5" cols="50" name="product_standard" value=""> </textarea>
+						<textarea rows="5" cols="50" name="product_standard" value=" "><?php echo ($product["product_standard"]); ?></textarea>
 					</td>
 				</tr>
 				<tr>
 					<td class="ui_text_lt">产品型号</td>
 					<td class="ui_text_lt">
-						 <input type="text" name="product_model" value=" " class="ui_input_txt02"/>
+						 <input type="text" name="product_model" value="<?php echo ($product["product_model"]); ?>" class="ui_input_txt02"/>
 					</td>
 				</tr>
 				<tr>
@@ -204,7 +188,7 @@
 				<tr>
 					<td class="ui_text_lt">产品视频地址</td>
 					<td class="ui_text_lt">
-						<input type="text" name="product_video" value=" " class="ui_input_txt02"/>
+						<input type="text" name="product_video" value=" <?php echo ($product["product_video"]); ?>" class="ui_input_txt02"/>
 					</td>
 				</tr>
 				<tr>

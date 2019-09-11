@@ -89,7 +89,7 @@
 		if(fyID == '') return;
 		if(confirm("您确定要删除吗？")){
 
-			var url = "{:U('admin/appfield/appfield_del')}?app_id="+fyID;
+			var url = "{:U('admin/product/product_del')}?product_id="+fyID;
 			//$("#submitForm").attr("action", delURL).submit();
 			//$("#submitForm").attr("action", "/xngzf/archives/delFangyuan.action?fyID=" + fyID).submit();
 			window.location.href=url;
@@ -182,6 +182,7 @@
 							<th>产品描述</th>
 							<th>产品图片</th>
 							<th>产品型号</th>
+							<th>产品规格</th>
 							<th>产品视讯</th>
 							<th>操作</th>
 						</tr>
@@ -189,15 +190,13 @@
 							<tr>
 								<td><input type="checkbox" name="ID" value="{$a.product_id}" class="acb" /></td>
 								<td>{$a.product_name}</td>
-								<foreach name="brand" item="b">
-									<if condition="$b.brand_id eq $a.product_id">
-										<td>{$b.brand_name}</td>
-									</if>
-								</foreach>
+								<td>{$a.brand_name}</td>
 								<td>{$a.product_logo}</td>
 								<td>{$a.product_desc}</td>
 								<td>{$a.product_pic}</td>
 								<td>{$a.product_model}</td>
+								<td>{$a.product_standard}</td>
+								<td>{$a.product_video}</td>
 								<td>
 									<a href="{:U('admin/product/product_edit',array('product_id'=>$a[product_id]))}" class="edit">编辑</a>
 									<a href="javascript:del({$a.product_id});">删除</a>

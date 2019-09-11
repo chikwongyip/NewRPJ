@@ -89,7 +89,7 @@
 		if(fyID == '') return;
 		if(confirm("您确定要删除吗？")){
 
-			var url = "<?php echo U('admin/appfield/appfield_del');?>?app_id="+fyID;
+			var url = "<?php echo U('admin/product/product_del');?>?product_id="+fyID;
 			//$("#submitForm").attr("action", delURL).submit();
 			//$("#submitForm").attr("action", "/xngzf/archives/delFangyuan.action?fyID=" + fyID).submit();
 			window.location.href=url;
@@ -182,17 +182,20 @@
 							<th>产品描述</th>
 							<th>产品图片</th>
 							<th>产品型号</th>
+							<th>产品规格</th>
 							<th>产品视讯</th>
 							<th>操作</th>
 						</tr>
 						<?php if(is_array($product)): foreach($product as $key=>$a): ?><tr>
 								<td><input type="checkbox" name="ID" value="<?php echo ($a["product_id"]); ?>" class="acb" /></td>
 								<td><?php echo ($a["product_name"]); ?></td>
-								<?php if(is_array($brand)): foreach($brand as $key=>$b): if($b["brand_id"] == $a.product_id): ?><td><?php echo ($b["brand_name"]); ?></td><?php endif; endforeach; endif; ?>
+								<td><?php echo ($a["brand_name"]); ?></td>
 								<td><?php echo ($a["product_logo"]); ?></td>
 								<td><?php echo ($a["product_desc"]); ?></td>
 								<td><?php echo ($a["product_pic"]); ?></td>
 								<td><?php echo ($a["product_model"]); ?></td>
+								<td><?php echo ($a["product_standard"]); ?></td>
+								<td><?php echo ($a["product_video"]); ?></td>
 								<td>
 									<a href="<?php echo U('admin/product/product_edit',array('product_id'=>$a[product_id]));?>" class="edit">编辑</a>
 									<a href="javascript:del(<?php echo ($a["product_id"]); ?>);">删除</a>
