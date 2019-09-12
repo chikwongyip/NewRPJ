@@ -77,11 +77,46 @@ class ProductController extends Controller {
       $product = $model
                   ->join('rpj_brand ON rpj_product.brand_id = rpj_brand.brand_id')
                   ->find($product_id);
+
       $this->assign('product',$product);
       $this->display();
     }
 
     public function product_submit(){
+      $model = M('Rpj_product');
+      if (IS_POST) {
+        $model->find($_POST['product_id']);
+        $model->product_name = $_POST['product_name'];
+        $model->product_desc = $_POST['prodcut_desc'];
+        $model->product_standard = $_POST['prodcut_standard'];
+        $mode->product_model = $_POST['product_model'];
+        $model->product_video = $_POST['product_video'];
+        $upload = new \Think\Upload();
+        $upload->maxSize = 3145728;
+        $upload->exts = array('jpg', 'gif', 'png', 'jpeg','pdf');// 设置附件上传类型
+        $upload->rootPath  =     './Application/Upload/product/'; // 设置附件上传根目录
+        $upload->savePath  =     ''; // 设置附件上传（子）目录
+
+        if ($_FILES['product_logo'] != null) {
+          $info = $upload->uploadOne($_FILES['product_logo']);
+          if(!$info){
+              $this->error($upload->getError());
+          }else{
+              $model->product_logo = '/Application/Upload/product/'.$info['savepath'].$info['savename'];
+          }
+        }
+
+        if ($_FILES['product_pic'] != null) {
+          $info = $upload->uploadOne($_FILES['product_pic']);
+          if(!$info){
+              $this->error($upload->getError());
+          }else{
+              $model->product_pic = '/Application/Upload/product/'.$info['savepath'].$info['savename'];
+          }
+        }
+
+        $model->save();
+      }
       $this->display('product_edit');
     }
 
