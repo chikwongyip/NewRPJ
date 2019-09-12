@@ -87,17 +87,17 @@ class ProductController extends Controller {
       if (IS_POST) {
         $model->find($_POST['product_id']);
         $model->product_name = $_POST['product_name'];
-        $model->product_desc = $_POST['prodcut_desc'];
-        $model->product_standard = $_POST['prodcut_standard'];
-        $mode->product_model = $_POST['product_model'];
+        $model->product_desc = $_POST['product_desc'];
+        $model->product_standard = $_POST['product_standard'];
+        $model->product_model = $_POST['product_model'];
         $model->product_video = $_POST['product_video'];
         $upload = new \Think\Upload();
         $upload->maxSize = 3145728;
         $upload->exts = array('jpg', 'gif', 'png', 'jpeg','pdf');// 设置附件上传类型
         $upload->rootPath  =     './Application/Upload/product/'; // 设置附件上传根目录
         $upload->savePath  =     ''; // 设置附件上传（子）目录
-
-        if ($_FILES['product_logo'] != null) {
+        // var_dump($_FILES['product_logo']['name']);exit;
+        if ($_FILES['product_logo']['name'] != null) {
           $info = $upload->uploadOne($_FILES['product_logo']);
           if(!$info){
               $this->error($upload->getError());
@@ -106,7 +106,7 @@ class ProductController extends Controller {
           }
         }
 
-        if ($_FILES['product_pic'] != null) {
+        if ($_FILES['product_pic']['name'] != null) {
           $info = $upload->uploadOne($_FILES['product_pic']);
           if(!$info){
               $this->error($upload->getError());
