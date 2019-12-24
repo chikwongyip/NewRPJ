@@ -12,8 +12,8 @@
 <script type="text/javascript" src="/NewRPJ/Public/scripts/artDialog/artDialog.js?skin=default"></script>
 <title>信息管理系统</title>
 <script type="text/javascript">
-	var addURL = "<?php echo U('admin/attachment/attachment_add');?>"
-	var listURL = "<?php echo U('admin/attachment/attachment_list');?>"
+	var addURL = "<?php echo U('admin/prodatt/prodatt_add');?>"
+	var listURL = "<?php echo U('admin/prodatt/prodatt_list');?>"
 	$(document).ready(function(){
 		/** 新增   **/
 

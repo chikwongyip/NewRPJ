@@ -136,7 +136,7 @@
 </script>
 </head>
 <body>
-<form id="submitForm" name="submitForm" action="{:U('admin/attachment/attachment_add')}" method="post" enctype="multipart/form-data">
+<form id="submitForm" name="submitForm" action="{:U('admin/prodatt/prodatt_add')}" method="post" enctype="multipart/form-data">
 	<input type="hidden" name="fyID" value="14458625716623" id="fyID"/>
 	<div id="container">
 		<div id="nav_links">
@@ -149,7 +149,18 @@
 		</div>
 		<div class="ui_content">
 			<table  cellspacing="0" cellpadding="0" width="100%" align="left" border="0">
-
+				<tr>
+					<td class="ui_text_rt">
+						<label for="pet-select">产品选择</label>
+				  </td>
+					<td class="ui_text_lt">
+						<select id="prod-select">
+							<foreach name="product" item="a">
+						    <option value="{$a.product_id}">{$a.product_name}</option>
+							</foreach>
+						</select>
+				  </td>
+				</tr>
 
 				<tr>
 					<td class="ui_text_rt">附件名称</td>

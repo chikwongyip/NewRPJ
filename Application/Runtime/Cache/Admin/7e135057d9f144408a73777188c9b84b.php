@@ -136,7 +136,7 @@
 </script>
 </head>
 <body>
-<form id="submitForm" name="submitForm" action="<?php echo U('admin/attachment/attachment_add');?>" method="post" enctype="multipart/form-data">
+<form id="submitForm" name="submitForm" action="<?php echo U('admin/prodatt/prodatt_add');?>" method="post" enctype="multipart/form-data">
 	<input type="hidden" name="fyID" value="14458625716623" id="fyID"/>
 	<div id="container">
 		<div id="nav_links">
@@ -149,7 +149,16 @@
 		</div>
 		<div class="ui_content">
 			<table  cellspacing="0" cellpadding="0" width="100%" align="left" border="0">
-
+				<tr>
+					<td class="ui_text_rt">
+						<label for="pet-select">产品选择</label>
+				  </td>
+					<td class="ui_text_lt">
+						<select id="prod-select">
+							<?php if(is_array($product)): foreach($product as $key=>$a): ?><option value="<?php echo ($a["product_id"]); ?>"><?php echo ($a["product_name"]); ?></option><?php endforeach; endif; ?>
+						</select>
+				  </td>
+				</tr>
 
 				<tr>
 					<td class="ui_text_rt">附件名称</td>
