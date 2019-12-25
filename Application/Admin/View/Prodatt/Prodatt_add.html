@@ -151,10 +151,10 @@
 			<table  cellspacing="0" cellpadding="0" width="100%" align="left" border="0">
 				<tr>
 					<td class="ui_text_rt">
-						<label for="pet-select">产品选择</label>
+						<label for="prod-select">产品选择</label>
 				  </td>
 					<td class="ui_text_lt">
-						<select id="prod-select">
+						<select id="prod-select" name="product_id">
 							<foreach name="product" item="a">
 						    <option value="{$a.product_id}">{$a.product_name}</option>
 							</foreach>
