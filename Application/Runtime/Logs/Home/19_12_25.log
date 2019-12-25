@@ -1,0 +1,68 @@
+[ 2019-12-25T15:00:55+08:00 ] ::1 /chikwong/NewRPJ/index.php?Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000320s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2019-12-25T15:01:09+08:00 ] ::1 /chikwong/NewRPJ/index.php?Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000140s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2019-12-25T15:01:53+08:00 ] ::1 /chikwong/NewRPJ/index.php?Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000342s ]
+
+[ 2019-12-25T15:02:58+08:00 ] ::1 /chikwong/NewRPJ/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000357s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000411s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000551s ]
+
