@@ -89,7 +89,7 @@
 		if(fyID == '') return;
 		if(confirm("您确定要删除吗？")){
 
-			var url = "<?php echo U('admin/attachment/attachment_del');?>?id="+fyID;
+			var url = "<?php echo U('admin/prodatt/prodatt_del');?>?att_id="+fyID;
 			//$("#submitForm").attr("action", delURL).submit();
 			//$("#submitForm").attr("action", "/xngzf/archives/delFangyuan.action?fyID=" + fyID).submit();
 			window.location.href=url;
@@ -177,16 +177,18 @@
 							<th width="30"><input type="checkbox" id="all" onclick="selectOrClearAllCheckbox(this);" />
 							</th>
 							<th>产品名称</th>
+							<th>产品附件名称</th>
 							<th>产品附件</th>
 							<th>操作</th>
 						</tr>
-						<?php if(is_array($attach)): foreach($attach as $key=>$a): ?><tr>
-								<td><input type="checkbox" name="ID" value="<?php echo ($a["id"]); ?>" class="acb" /></td>
+						<?php if(is_array($productAtt)): foreach($productAtt as $key=>$a): ?><tr>
+								<td><input type="checkbox" name="ID" value="<?php echo ($a["att_id"]); ?>" class="acb" /></td>
+								<td><?php echo ($a["product_name"]); ?></td>
 								<td><?php echo ($a["name"]); ?></td>
 								<td><?php echo ($a["url"]); ?></td>
 								<td>
-									<a href="<?php echo U('admin/attachment/attachment_edit',array('id'=>$a[id]));?>" class="edit">编辑</a>
-									<a href="javascript:del(<?php echo ($a["id"]); ?>);">删除</a>
+									<a href="<?php echo U('admin/prodatt/prodatt_edit',array('att_id'=>$a[att_id]));?>" class="edit">编辑</a>
+									<a href="javascript:del(<?php echo ($a["att_id"]); ?>);">删除</a>
 								</td>
 							</tr><?php endforeach; endif; ?>
 					</table>
