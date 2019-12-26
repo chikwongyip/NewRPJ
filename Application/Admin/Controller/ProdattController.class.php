@@ -23,18 +23,16 @@ class ProdattController extends Controller{
       $upload = new \Think\Upload();
       $upload->maxSize = 3145728;
       $upload->exts = array('jpg', 'gif', 'png', 'jpeg','pdf');// 设置附件上传类型
-      $upload->rootPath  =     './Application/Upload/prodatt/'; // 设置附件上传根目录
+      $upload->rootPath  =     './Upload/prodatt/'; // 设置附件上传根目录
       $upload->savePath  =     ''; // 设置附件上传（子）目录
       $info = $upload->uploadOne($_FILES['url']);
       if(!$info){
           $this->error($upload->getError());
       }else{
-         $modelProdatt->url = '/Application/Upload/prodatt/'.$info['savepath'].$info['savename'];
+         $modelProdatt->url = '/Upload/prodatt/'.$info['savepath'].$info['savename'];
       }
-      if ($modelProdatt->product_id != null) {
-          $modelProduct->add();
-      }
-      //$modelProduct->add();
+
+      $modelProdatt->add();
     }
     $this->assign('product',$product);
     $this->display();
