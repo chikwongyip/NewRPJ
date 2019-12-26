@@ -17,33 +17,24 @@ class ProdattController extends Controller{
     $modelProdatt = M('Rpj_prod_att');
     if (IS_POST) {
       //处理text
-      // var_dump($modelProdatt);
-      var_dump($_GET['prod-select']);
-      // $modelProdatt->name = $_POST["name"];
-      // $modelProdatt->product_id = (int)$app_id["app_id"];
-
+      $modelProdatt->product_id = $_POST["product_id"];
+      $modelProdatt->name = $_POST["name"];
       //处理文件
-      // $upload = new \Think\Upload();
-      // $upload->maxSize = 3145728;
-      // $upload->exts = array('jpg', 'gif', 'png', 'jpeg','pdf');// 设置附件上传类型
-      // $upload->rootPath  =     './Application/Upload/prodatt/'; // 设置附件上传根目录
-      // $upload->savePath  =     ''; // 设置附件上传（子）目录
-      // $info = $upload->uploadOne($_FILES['url']);
-      //
-      // if(!$info){
-      //     $this->error($upload->getError());
-      // }else{
-      //     $modelProduct->product_logo = '/Application/Upload/product/'.$info['savepath'].$info['savename'];
-      // }
-      //
-      // $info = $upload->uploadOne($_FILES['product_pic']);
-      // if (!$info) {
-      //     $this->error($upload->getError());
-      // }else {
-      //     $modelProduct->product_pic = '/Application/Upload/product/'.$info['savepath'].$info['savename'];
-      // }
-      //
-      // $modelProduct->add();
+      $upload = new \Think\Upload();
+      $upload->maxSize = 3145728;
+      $upload->exts = array('jpg', 'gif', 'png', 'jpeg','pdf');// 设置附件上传类型
+      $upload->rootPath  =     './Application/Upload/prodatt/'; // 设置附件上传根目录
+      $upload->savePath  =     ''; // 设置附件上传（子）目录
+      $info = $upload->uploadOne($_FILES['url']);
+      if(!$info){
+          $this->error($upload->getError());
+      }else{
+         $modelProdatt->url = '/Application/Upload/prodatt/'.$info['savepath'].$info['savename'];
+      }
+      if ($modelProdatt->product_id != null) {
+          $modelProduct->add();
+      }
+      //$modelProduct->add();
     }
     $this->assign('product',$product);
     $this->display();
