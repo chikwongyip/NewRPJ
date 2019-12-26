@@ -63,9 +63,7 @@ class AttachmentController extends Controller {
         }else{
             echo "更新失败";
         }
-
         $this->display('Attachment_edit');
-        //$attachementItem->name = $_POST["name"];
       }
     }
 

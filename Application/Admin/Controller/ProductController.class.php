@@ -96,7 +96,6 @@ class ProductController extends Controller {
         $upload->exts = array('jpg', 'gif', 'png', 'jpeg','pdf');// 设置附件上传类型
         $upload->rootPath  =     './Application/Upload/product/'; // 设置附件上传根目录
         $upload->savePath  =     ''; // 设置附件上传（子）目录
-        // var_dump($_FILES['product_logo']['name']);exit;
         if ($_FILES['product_logo']['name'] != null) {
           $info = $upload->uploadOne($_FILES['product_logo']);
           if(!$info){

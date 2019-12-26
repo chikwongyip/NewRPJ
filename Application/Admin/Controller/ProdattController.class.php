@@ -7,7 +7,6 @@ class ProdattController extends Controller{
     $productAtt = $modelAtt
                 ->join('rpj_product ON rpj_product.product_id = rpj_prod_att.product_id')
                 ->select();
-    //var_dump($productAtt);
     $this->assign('productAtt',$productAtt);
     $this->display();
   }
@@ -44,7 +43,6 @@ class ProdattController extends Controller{
     $prodAtt = $model
                   ->join('rpj_product on rpj_product.product_id = rpj_prod_att.product_id')
                   ->find($att_id);
-    // var_dump($prodAtt);
     $this->assign('prodAtt',$prodAtt);
     $this->display();
   }
@@ -53,11 +51,9 @@ class ProdattController extends Controller{
     $model = M('Rpj_prod_att');
 
     if(IS_POST){
-      //$att_id = $_POST["att_id"];
       $model->find($_POST["att_id"]);
       if ($_POST["name"] != null) {
           $model->name = $_POST["name"];
-          //var_dump($model);
           $model->save();
           echo "更新成功";
       }else{
@@ -65,7 +61,6 @@ class ProdattController extends Controller{
       }
 
       $this->display('prodatt_edit');
-      //$attachementItem->name = $_POST["name"];
     }
   }
 
@@ -78,6 +73,4 @@ class ProdattController extends Controller{
     $this->assign('productAtt',$productAtt);
     $this->display('prodatt_list');
   }
-
-
 }

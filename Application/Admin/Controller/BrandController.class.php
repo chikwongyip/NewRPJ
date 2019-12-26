@@ -60,9 +60,7 @@ class BrandController extends Controller{
       if ($_POST["brand_id"] != null) {
           $model->brand_name = $_POST["brand_name"];
           $model->save();
-          //$this->success('修改成功','',1);
       }else{
-        //  $this->success('修改失败',1);
       }
 
        $this->display('brand_edit');
