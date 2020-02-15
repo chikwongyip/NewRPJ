@@ -1,0 +1,205 @@
+[ 2020-02-14T09:35:55+08:00 ] ::1 /NewRPJ/index.php/admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000957s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000294s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000450s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000879s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000916s ]
+
+[ 2020-02-14T09:35:56+08:00 ] ::1 /NewRPJ/index.php/Admin/Introduce/introduce.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.152685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.152742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000931s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000960s ]
+
+[ 2020-02-14T09:36:00+08:00 ] ::1 /NewRPJ/index.php/Admin/company/company_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0421s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0417s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009927s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2020-02-14T09:36:02+08:00 ] ::1 /NewRPJ/index.php/Admin/brand/brand_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0426s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0418s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [2] Use of undefined constant brand_id - assumed 'brand_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/rpj/NewRPJ/Application/Runtime/Cache/Admin/141d3e8e8840e90d168b4c918cada876.php 第 188 行.
+NOTIC: [2] Use of undefined constant brand_id - assumed 'brand_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/rpj/NewRPJ/Application/Runtime/Cache/Admin/141d3e8e8840e90d168b4c918cada876.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010463s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000617s ]
+
+[ 2020-02-14T09:36:04+08:00 ] ::1 /NewRPJ/index.php/Admin/appfield/appfield_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `rpj_appfield` [ RunTime:0.0429s ]
+SQL: SELECT * FROM `rpj_appfield`  [ RunTime:0.0422s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [2] Use of undefined constant app_id - assumed 'app_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/rpj/NewRPJ/Application/Runtime/Cache/Admin/9d3d0f15c83fdfc5ada3dd2f0d3ae056.php 第 188 行.
+NOTIC: [2] Use of undefined constant app_id - assumed 'app_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/rpj/NewRPJ/Application/Runtime/Cache/Admin/9d3d0f15c83fdfc5ada3dd2f0d3ae056.php 第 188 行.
+NOTIC: [2] Use of undefined constant app_id - assumed 'app_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/rpj/NewRPJ/Application/Runtime/Cache/Admin/9d3d0f15c83fdfc5ada3dd2f0d3ae056.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010332s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000619s ]
+
+[ 2020-02-14T09:36:05+08:00 ] ::1 /NewRPJ/index.php/Admin/product/product_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0425s ]
+SQL: SELECT * FROM `rpj_product` INNER JOIN rpj_brand ON rpj_product.brand_id = rpj_brand.brand_id   [ RunTime:0.0423s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [2] Use of undefined constant product_id - assumed 'product_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/rpj/NewRPJ/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010495s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000582s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000611s ]
+
+[ 2020-02-14T09:36:06+08:00 ] ::1 /NewRPJ/index.php/Admin/prodatt/prodatt_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+SQL: SHOW COLUMNS FROM `rpj_prod_att` [ RunTime:0.0428s ]
+SQL: SELECT * FROM `rpj_prod_att` INNER JOIN rpj_product ON rpj_product.product_id = rpj_prod_att.product_id   [ RunTime:0.0426s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+NOTIC: [2] Use of undefined constant att_id - assumed 'att_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/rpj/NewRPJ/Application/Runtime/Cache/Admin/395a2e82d826ceeef2eba5e36dd95355.php 第 190 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000610s ]
+
+[ 2020-02-14T09:36:07+08:00 ] ::1 /NewRPJ/index.php/Admin/news/news_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `rpj_news` [ RunTime:0.0432s ]
+SQL: SELECT * FROM `rpj_news`  [ RunTime:0.0424s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/rpj/NewRPJ/Application/Runtime/Cache/Admin/5dc7cb56e7e8cd7601e6f40f87c141e0.php 第 187 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009631s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000589s ]
+
+[ 2020-02-14T09:36:08+08:00 ] ::1 /NewRPJ/index.php/Admin/Attachment/attachment_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `rpj_attachment` [ RunTime:0.0435s ]
+SQL: SELECT * FROM `rpj_attachment`  [ RunTime:0.0430s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [2] Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/rpj/NewRPJ/Application/Runtime/Cache/Admin/cac97b875347bebeb1cdcddb020abc6e.php 第 188 行.
+NOTIC: [2] Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/rpj/NewRPJ/Application/Runtime/Cache/Admin/cac97b875347bebeb1cdcddb020abc6e.php 第 188 行.
+NOTIC: [2] Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/rpj/NewRPJ/Application/Runtime/Cache/Admin/cac97b875347bebeb1cdcddb020abc6e.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007272s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+
