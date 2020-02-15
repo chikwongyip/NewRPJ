@@ -1,8 +1,8 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-class IndexController extends Controller {
-    public function index(){
+class ContactController extends Controller {
+    public function contact(){
         $this->display();
     }
 }
