@@ -9,32 +9,32 @@
 	<!-- Place favicon.ico in the root directory -->
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <!--All Css Here-->
-    
+
 	<!-- Ionicons Font CSS-->
-    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="/NewRPJ/Public/style/authority/ionicons.min.css">
     <!-- Font Awesome CSS-->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="/NewRPJ/Public/style/authority/font-awesome.min.css">
 
 	<!-- Animate CSS-->
-	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/style/authority/animate.css">
 	<!-- Owl Carousel CSS-->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/style/authority/owl.carousel.min.css">
 	<!-- Nice Select CSS-->
-	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/style/authority/nice-select.css">
 	<!-- Slick CSS-->
-	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/style/authority/slick.css">
 	<!-- Meanmenu CSS-->
-	<link rel="stylesheet" href="css/meanmenu.min.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/style/authority/meanmenu.min.css">
 	<!-- Venobox CSS-->
-	<link rel="stylesheet" href="css/venobox.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/style/authority/venobox.css">
 	<!-- Bootstrap CSS-->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/style/authority/bootstrap.min.css">
 	<!-- Style CSS -->
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/style.css">
 	<!-- Responsive CSS -->
-	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/style/authority/responsive.css">
 	<!-- Modernizr Js -->
-	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	<script src="/NewRPJ/Public/scripts/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
 
@@ -177,7 +177,7 @@
 		                </div>
 		            </div>
 		            <div class="row">
-                        <div class="col-12"> 
+                        <div class="col-12">
                             <!--Mobile Menu Area Start-->
                             <div class="mobile-menu d-lg-none"></div>
                             <!--Mobile Menu Area End-->
@@ -330,7 +330,7 @@
                                   <ul class="cart-items">
                                       <li class="single-cart-item">
                                           <div class="cart-img">
-                                              <a href="cart.html"><img src="img/cart/cart1.jpg" alt=""></a>
+                                              <a href="cart.html"><img src="__Application__/Home/Common/img/cart/cart1.jpg" alt=""></a>
                                               <span class="cart-sticker">1x</span>
                                           </div>
                                           <div class="cart-content">
@@ -963,42 +963,42 @@
 
 
     <!--All Js Here-->
-    
+
 	<!--Jquery 1.12.4-->
-	<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<script src="/NewRPJ/Public/scripts/vendor/jquery-1.12.4.min.js"></script>
 	<!--Imagesloaded-->
-	<script src="js/imagesloaded.pkgd.min.js"></script> 
+	<script src="/NewRPJ/Public/scripts/imagesloaded.pkgd.min.js"></script>
 	<!--Isotope-->
-	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="/NewRPJ/Public/scripts/isotope.pkgd.min.js"></script>
 	<!--Waypoints-->
-	<script src="js/waypoints.min.js"></script>
+	<script src="/NewRPJ/Public/scripts/waypoints.min.js"></script>
 	<!--Counterup-->
-	<script src="js/jquery.counterup.min.js"></script>
+	<script src="/NewRPJ/Public/scripts/jquery.counterup.min.js"></script>
 	<!--Countdown-->
-	<script src="js/jquery.countdown.min.js"></script>
+	<script src="/NewRPJ/Public/scripts/jquery.countdown.min.js"></script>
 	<!--Carousel-->
-	<script src="js/owl.carousel.min.js"></script>
+	<script src="/NewRPJ/Public/scripts/owl.carousel.min.js"></script>
 	<!--Slick-->
-	<script src="js/slick.min.js"></script>
+	<script src="/NewRPJ/Public/scripts/slick.min.js"></script>
 	<!--Meanmenu-->
-	<script src="js/jquery.meanmenu.min.js"></script>
+	<script src="/NewRPJ/Public/scripts/jquery.meanmenu.min.js"></script>
 	<!--Instafeed-->
 	<!--<script src="js/instafeed.min.js"></script>-->
 	<!--Nice Select-->
-	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="/NewRPJ/Public/scripts/jquery.nice-select.min.js"></script>
 	<!--ScrollUp-->
-	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="/NewRPJ/Public/scripts/jquery.scrollUp.min.js"></script>
 	<!--Wow-->
-	<script src="js/wow.min.js"></script>
+	<script src="/NewRPJ/Public/scripts/wow.min.js"></script>
 	<!--Venobox-->
-	<script src="js/venobox.min.js"></script>
+	<script src="/NewRPJ/Public/scripts/venobox.min.js"></script>
 	<!--Popper-->
-	<script src="js/popper.min.js"></script>
+	<script src="/NewRPJ/Public/scripts/popper.min.js"></script>
 	<!--Bootstrap-->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="/NewRPJ/Public/scripts/bootstrap.min.js"></script>
 	<!--Plugins-->
-	<script src="js/plugins.js"></script>
+	<script src="/NewRPJ/Public/scripts/plugins.js"></script>
 	<!--Main Js-->
-	<script src="js/main.js"></script>
+	<script src="/NewRPJ/Public/scripts/main.js"></script>
 </body>
 </html>
