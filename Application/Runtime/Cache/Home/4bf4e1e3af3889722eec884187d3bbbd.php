@@ -11,30 +11,30 @@
     <!--All Css Here-->
 
 	<!-- Ionicons Font CSS-->
-    <link rel="stylesheet" href="/NewRPJ/Public/style/authority/ionicons.min.css">
+    <link rel="stylesheet" href="/chikwong/NewRPJ/Public/style/authority/ionicons.min.css">
     <!-- Font Awesome CSS-->
-    <link rel="stylesheet" href="/NewRPJ/Public/style/authority/font-awesome.min.css">
+    <link rel="stylesheet" href="/chikwong/NewRPJ/Public/style/authority/font-awesome.min.css">
 
 	<!-- Animate CSS-->
-	<link rel="stylesheet" href="/NewRPJ/Public/style/authority/animate.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/style/authority/animate.css">
 	<!-- Owl Carousel CSS-->
-	<link rel="stylesheet" href="/NewRPJ/Public/style/authority/owl.carousel.min.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/style/authority/owl.carousel.min.css">
 	<!-- Nice Select CSS-->
-	<link rel="stylesheet" href="/NewRPJ/Public/style/authority/nice-select.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/style/authority/nice-select.css">
 	<!-- Slick CSS-->
-	<link rel="stylesheet" href="/NewRPJ/Public/style/authority/slick.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/style/authority/slick.css">
 	<!-- Meanmenu CSS-->
-	<link rel="stylesheet" href="/NewRPJ/Public/style/authority/meanmenu.min.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/style/authority/meanmenu.min.css">
 	<!-- Venobox CSS-->
-	<link rel="stylesheet" href="/NewRPJ/Public/style/authority/venobox.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/style/authority/venobox.css">
 	<!-- Bootstrap CSS-->
-	<link rel="stylesheet" href="/NewRPJ/Public/style/authority/bootstrap.min.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/style/authority/bootstrap.min.css">
 	<!-- Style CSS -->
-	<link rel="stylesheet" href="/NewRPJ/Public/style.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/style.css">
 	<!-- Responsive CSS -->
-	<link rel="stylesheet" href="/NewRPJ/Public/style/authority/responsive.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/style/authority/responsive.css">
 	<!-- Modernizr Js -->
-	<script src="/NewRPJ/Public/scripts/vendor/modernizr-2.8.3.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
 
@@ -94,7 +94,7 @@
 		                    <!--Logo Start-->
 		                    <div class="logo">
 		                        <a href="index.html">
-		                            <img src="img/logo/logo1.jpg" alt="">
+		                            <img src="/chikwong/NewRPJ/Public/img/logo/logo1.jpg" alt="">
 		                        </a>
 		                    </div>
 		                    <!--Logo End-->
@@ -330,7 +330,7 @@
                                   <ul class="cart-items">
                                       <li class="single-cart-item">
                                           <div class="cart-img">
-                                              <a href="cart.html"><img src="__Application__/Home/Common/img/cart/cart1.jpg" alt=""></a>
+                                              <a href="cart.html"><img src="/chikwong/NewRPJ/Public/img/cart/cart1.jpg" alt=""></a>
                                               <span class="cart-sticker">1x</span>
                                           </div>
                                           <div class="cart-content">
@@ -345,7 +345,7 @@
                                       </li>
                                       <li class="single-cart-item">
                                           <div class="cart-img">
-                                              <a href="cart.html"><img src="img/cart/cart2.jpg" alt=""></a>
+                                              <a href="cart.html"><img src="/chikwong/NewRPJ/Public/img/cart/cart2.jpg" alt=""></a>
                                               <span class="cart-sticker">1x</span>
                                           </div>
                                           <div class="cart-content">
@@ -404,7 +404,7 @@
 		                <!--About Us Image Start-->
 		                <div class="about-us-img-wrapper mb-30">
 		                    <div class="about-us-image img-full">
-                                <a href="#"><img src="img/about/about2.jpg" alt=""></a>
+                                <a href="#"><img src="/chikwong/NewRPJ/Public/img/about/about2.jpg" alt=""></a>
                             </div>
 		                </div>
 		                <!--About Us Image End-->
@@ -440,7 +440,7 @@
 		                <!--Single Team Start-->
 		                <div class="single-team mb-30">
 		                    <div class="team-image img-full">
-		                        <a href="#"><img src="img/team/team1.jpg" alt=""></a>
+		                        <a href="#"><img src="/chikwong/NewRPJ/Public/img/team/team1.jpg" alt=""></a>
 		                    </div>
 		                    <div class="team-content">
 		                        <div class="team-hover-info">
@@ -460,7 +460,7 @@
 		                <!--Single Team Start-->
 		                <div class="single-team mb-30">
 		                    <div class="team-image img-full">
-		                        <a href="#"><img src="img/team/team2.jpg" alt=""></a>
+		                        <a href="#"><img src="/chikwong/NewRPJ/Public/img/team/team2.jpg" alt=""></a>
 		                    </div>
 		                    <div class="team-content">
 		                        <div class="team-hover-info">
@@ -480,7 +480,7 @@
 		                <!--Single Team Start-->
 		                <div class="single-team mb-30">
 		                    <div class="team-image img-full">
-		                        <a href="#"><img src="img/team/team3.jpg" alt=""></a>
+		                        <a href="#"><img src="/chikwong/NewRPJ/Public/img/team/team3.jpg" alt=""></a>
 		                    </div>
 		                    <div class="team-content">
 		                        <div class="team-hover-info">
@@ -512,7 +512,7 @@
                                     <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram.</p>
                                 </div>
                                 <div class="testimonial-author-2">
-                                    <img src="img/testimonial/testimonial1.png" alt="">
+                                    <img src="/chikwong/NewRPJ/Public/img/testimonial/testimonial1.png" alt="">
                                     <div class="author-title-2">
                                         <p class="author-name-2">orando BLoom</p>
                                         <p class="author-email-2">demo@hastech.company</p>
@@ -528,7 +528,7 @@
                                     <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram.</p>
                                 </div>
                                 <div class="testimonial-author-2">
-                                    <img src="img/testimonial/testimonial1.png" alt="">
+                                    <img src="/chikwong/NewRPJ/Public/img/testimonial/testimonial1.png" alt="">
                                     <div class="author-title-2">
                                         <p class="author-name-2">Md Shohel</p>
                                         <p class="author-email-2">demo@hastech.company</p>
@@ -544,7 +544,7 @@
                                     <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram.</p>
                                 </div>
                                 <div class="testimonial-author-2">
-                                    <img src="img/testimonial/testimonial1.png" alt="">
+                                    <img src="/chikwong/NewRPJ/Public/img/testimonial/testimonial1.png" alt="">
                                     <div class="author-title-2">
                                         <p class="author-name-2">orando BLoom</p>
                                         <p class="author-email-2">demo@hastech.company</p>
@@ -616,7 +616,7 @@
 		                        <!--Single Footer Wiedget Start-->
 		                        <div class="single-footer-wiedget mb-30">
 		                            <div class="footer-logo">
-		                                <a href="index.html"><img src="img/logo/logo1.jpg" alt=""></a>
+		                                <a href="index.html"><img src="/chikwong/NewRPJ/Public/img/logo/logo1.jpg" alt=""></a>
 		                            </div>
 		                            <div class="desc-footer">We are a team of designers and developers that create high quality Magento, Prestashop, Opencart.</div>
 		                            <div class="address-footer">
@@ -803,7 +803,7 @@
 		                    <div class="col-md-6">
                                 <!--Footer Payment Start-->
 		                        <div class="footer-payments-image text-center text-md-right">
-		                            <img src="img/payment/payment.png" alt="">
+		                            <img src="/chikwong/NewRPJ/Public/img/payment/payment.png" alt="">
 		                        </div>
 		                        <!--Footer Payment End-->
 		                    </div>
@@ -839,21 +839,21 @@
                         <div class="tab-pane fade" id="single-slide2" role="tabpanel" aria-labelledby="single-slide-tab-2">
                             <!--Single Product Image Start-->
                             <div class="single-product-img img-full">
-                              <img src="img/single-product/large/large2.jpg" alt="">
+                              <img src="/chikwong/NewRPJ/Public/img/single-product/large/large2.jpg" alt="">
                             </div>
                             <!--Single Product Image End-->
                         </div>
                         <div class="tab-pane fade" id="single-slide3" role="tabpanel" aria-labelledby="single-slide-tab-3">
                             <!--Single Product Image Start-->
                             <div class="single-product-img img-full">
-                              <img src="img/single-product/large/large3.jpg" alt="">
+                              <img src="/chikwong/NewRPJ/Public/img/single-product/large/large3.jpg" alt="">
                             </div>
                             <!--Single Product Image End-->
                         </div>
                         <div class="tab-pane fade" id="single-slide4" role="tabpanel" aria-labelledby="single-slide-tab-4">
                             <!--Single Product Image Start-->
                             <div class="single-product-img img-full">
-                              <img src="img/single-product/large/large4.jpg" alt="">
+                              <img src="/chikwong/NewRPJ/Public/img/single-product/large/large4.jpg" alt="">
                             </div>
                             <!--Single Product Image End-->
                         </div>
@@ -965,40 +965,40 @@
     <!--All Js Here-->
 
 	<!--Jquery 1.12.4-->
-	<script src="/NewRPJ/Public/scripts/vendor/jquery-1.12.4.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/vendor/jquery-1.12.4.min.js"></script>
 	<!--Imagesloaded-->
-	<script src="/NewRPJ/Public/scripts/imagesloaded.pkgd.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/imagesloaded.pkgd.min.js"></script>
 	<!--Isotope-->
-	<script src="/NewRPJ/Public/scripts/isotope.pkgd.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/isotope.pkgd.min.js"></script>
 	<!--Waypoints-->
-	<script src="/NewRPJ/Public/scripts/waypoints.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/waypoints.min.js"></script>
 	<!--Counterup-->
-	<script src="/NewRPJ/Public/scripts/jquery.counterup.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/jquery.counterup.min.js"></script>
 	<!--Countdown-->
-	<script src="/NewRPJ/Public/scripts/jquery.countdown.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/jquery.countdown.min.js"></script>
 	<!--Carousel-->
-	<script src="/NewRPJ/Public/scripts/owl.carousel.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/owl.carousel.min.js"></script>
 	<!--Slick-->
-	<script src="/NewRPJ/Public/scripts/slick.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/slick.min.js"></script>
 	<!--Meanmenu-->
-	<script src="/NewRPJ/Public/scripts/jquery.meanmenu.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/jquery.meanmenu.min.js"></script>
 	<!--Instafeed-->
 	<!--<script src="js/instafeed.min.js"></script>-->
 	<!--Nice Select-->
-	<script src="/NewRPJ/Public/scripts/jquery.nice-select.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/jquery.nice-select.min.js"></script>
 	<!--ScrollUp-->
-	<script src="/NewRPJ/Public/scripts/jquery.scrollUp.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/jquery.scrollUp.min.js"></script>
 	<!--Wow-->
-	<script src="/NewRPJ/Public/scripts/wow.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/wow.min.js"></script>
 	<!--Venobox-->
-	<script src="/NewRPJ/Public/scripts/venobox.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/venobox.min.js"></script>
 	<!--Popper-->
-	<script src="/NewRPJ/Public/scripts/popper.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/popper.min.js"></script>
 	<!--Bootstrap-->
-	<script src="/NewRPJ/Public/scripts/bootstrap.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/bootstrap.min.js"></script>
 	<!--Plugins-->
-	<script src="/NewRPJ/Public/scripts/plugins.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/plugins.js"></script>
 	<!--Main Js-->
-	<script src="/NewRPJ/Public/scripts/main.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/main.js"></script>
 </body>
 </html>
