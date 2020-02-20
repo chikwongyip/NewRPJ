@@ -8,7 +8,7 @@ Version: 1.0;
     CSS INDEX
     ================
 
-    
+
     1. Default CSS
         1.1 General
         1.2 Section title
@@ -49,7 +49,7 @@ Version: 1.0;
         22.1 Single Blog Page CSS
     23. Contact Page CSS
     24. 404 Page CSS
-        
+
 
 
 
@@ -95,10 +95,10 @@ input {
     outline: medium none;
     color: #333;
 }
-.uppercase { 
+.uppercase {
     text-transform: uppercase
 }
-.capitalize { 
+.capitalize {
     text-transform: capitalize
 }
 h1,
@@ -120,8 +120,8 @@ h2 a,
 h3 a,
 h4 a,
 h5 a,
-h6 a { 
-    color: inherit; 
+h6 a {
+    color: inherit;
 }
 h1 {
     font-size: 36px;
@@ -270,7 +270,7 @@ label {
 .btn-primary.focus,
 .btn-primary:focus{
     box-shadow: none;
-    
+
 }
 /*************************
        social-icon
@@ -577,7 +577,7 @@ textarea:focus {
 
 
 /***************************
-    Page section padding 
+    Page section padding
 ****************************/
 .ptb-0 { padding: 0 }
 .ptb-10 { padding: 10px 0 }
@@ -597,7 +597,7 @@ textarea:focus {
 .ptb-150 { padding: 150px 0 }
 
 /***************************
-    Page section margin 
+    Page section margin
 ****************************/
 .mtb-0 { margin: 0 }
 .mtb-10 { margin: 10px 0 }
@@ -617,7 +617,7 @@ textarea:focus {
 .mtb-140 { margin: 140px 0 }
 .mtb-150 { margin: 150px 0; }
  /*************************************
-    Background variation set 
+    Background variation set
  **************************************/
 /*colored background*/
  .white-bg { background: #fff !important; }
@@ -633,7 +633,7 @@ textarea:focus {
 
 /*Opacity background*/
  .bg-opacity-black-10:before, .bg-opacity-black-20:before, .bg-opacity-black-30:before, .bg-opacity-black-40:before, .bg-opacity-black-50:before, .bg-opacity-black-60:before, .bg-opacity-black-70:before, .bg-opacity-black-80:before, .bg-opacity-black-90:before,  .bg-opacity-white-10:before,  .bg-opacity-white-20:before,  .bg-opacity-white-30:before,  .bg-opacity-white-40:before,  .bg-opacity-white-50:before,  .bg-opacity-white-60:before,  .bg-opacity-white-70:before,  .bg-opacity-white-80:before,  .bg-opacity-white-90:before{
-    content: ""; height: 100%; left: 0; position: absolute; top: 0; width: 100%; z-index: -1; 
+    content: ""; height: 100%; left: 0; position: absolute; top: 0; width: 100%; z-index: -1;
  }
  .bg-opacity-black-10:before {  background: rgba(0, 0, 0, 0.1);}
  .bg-opacity-black-20:before {  background: rgba(0, 0, 0, 0.2);}
@@ -894,7 +894,7 @@ Common Style CSS
 }
 .main-menu > li:first-child > a{
     padding-left: 0;
-} 
+}
 .main-menu > li:last-child > a{
     padding-right: 0;
 }
@@ -985,7 +985,7 @@ Common Style CSS
 	float: right;
 	color: #444;
 	font-size: 14px;
-	background: url(img/icon/bg-callus.png) no-repeat 0 100%;
+	background: url(__PUBLIC__/img/icon/bg-callus.png) no-repeat 0 100%;
 	padding-left: 50px;
 	height: 43px;
 }
@@ -1318,7 +1318,7 @@ Common Style CSS
 }
 .category-heading > h2:after {
 	content: "";
-	background: url(img/icon/bg-vemenu.png) no-repeat 0 100%;
+	background: url(__PUBLIC__/img/icon/bg-vemenu.png) no-repeat 0 100%;
 	width: 16px;
 	height: 10px;
 	position: absolute;
@@ -1486,7 +1486,7 @@ li.right-menu .cat-mega-menu > li {
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     visibility: visible;
-} 
+}
 .header-top-search {
 	position: relative;
 }
@@ -1741,7 +1741,7 @@ li.right-menu .cat-mega-menu > li {
 }
 .header-bottom-area.header-style-2 .main-menu > li:last-child > a{
     padding-right: 0;
-} 
+}
 .header-bottom-area.header-style-2 .main-menu > li.active > a,
 .header-bottom-area.header-style-2 .main-menu > li > a:hover {
 	color: #3ea89f;
@@ -2327,7 +2327,7 @@ li.right-menu .cat-mega-menu > li {
     width: 32px;
 }
 .js-product-miniature:hover .actions {
-	
+
 }
 .product-action > ul > li{
     list-style: none;
@@ -2604,12 +2604,12 @@ li.right-menu .cat-mega-menu > li {
 .brand-active.home-2 .owl-nav > div:hover{
     border-color: #613f99;
     background-color: #613f99;
-    color: #fff; 
+    color: #fff;
 }
 .brand-active.home-3 .owl-nav > div:hover{
     border-color: #e40046;
     background-color: #e40046;
-    color: #fff; 
+    color: #fff;
 }
 .home-2-product.bestsellerSlide .owl-nav > div:hover,
 .home-2-product.bestsellerSlide-2 .owl-nav > div:hover,
@@ -2660,7 +2660,7 @@ li.right-menu .cat-mega-menu > li {
       font-size: 12px;
       margin-top: 12px;
       color: #333;
-      display: inline-block; 
+      display: inline-block;
 }
 /*product tab menu css*/
 .featured-and-new-product-tab-menu {
@@ -4260,7 +4260,7 @@ li.right-menu .cat-mega-menu > li {
     background: #f80e0e;
 }
 /*-------------------------
-     15. Wishlist Page CSS 
+     15. Wishlist Page CSS
 ---------------------------*/
 .table-content table {
 	background: #fff none repeat scroll 0 0;
@@ -4328,7 +4328,7 @@ li.right-menu .cat-mega-menu > li {
     color: #fff;
 }
 /*-------------------------
-     16. Cart Page CSS 
+     16. Cart Page CSS
 ---------------------------*/
 .picaboo-product-quantity input {
 	border: none;
@@ -4431,7 +4431,7 @@ li.right-menu .cat-mega-menu > li {
     border-color: #ff6a00;
 }
 /*-------------------------
-     17. Checkout Page CSS 
+     17. Checkout Page CSS
 ---------------------------*/
 .coupon-accordion h3 {
 	background-color: #f7f6f7;
@@ -4932,7 +4932,7 @@ thead {
 	color: #fff;
 }
 /*-------------------------
-     19. Login Page CSS 
+     19. Login Page CSS
 ---------------------------*/
 .login-form-container {
 	padding: 40px 60px;
@@ -4974,7 +4974,7 @@ thead {
 	text-transform: capitalize;
 }
 /*-------------------------
-     20. FAQ Page CSS 
+     20. FAQ Page CSS
 ---------------------------*/
 .faq-desc {
 	margin-bottom: 45px;
@@ -5023,7 +5023,7 @@ thead {
     color: #ff6a00!important;
 }
 /*-------------------------
-     21. About Page CSS 
+     21. About Page CSS
 ---------------------------*/
 .about-us-content h2 {
 	font-size: 36px;
@@ -5636,7 +5636,7 @@ h2.entry-title > a:hover {
 	color: #333;
 }
 /*-------------------------
-     23. Contact Page CSS 
+     23. Contact Page CSS
 ---------------------------*/
 .store-information {
 	color: #333;
@@ -5715,7 +5715,7 @@ h2.entry-title > a:hover {
     color: #ff1313;
 }
 /*-------------------------
-     24. 404 Page CSS 
+     24. 404 Page CSS
 ---------------------------*/
 .error-text > h1 {
 	font-size: 200px;
