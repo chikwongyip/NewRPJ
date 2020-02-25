@@ -11,28 +11,28 @@
     <!--All Css Here-->
 
 	<!-- Ionicons Font CSS-->
-    <link rel="stylesheet" href="/chikwong/NewRPJ/Public/style/authority/ionicons.min.css">
+    <link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/ionicons.min.css">
     <!-- Font Awesome CSS-->
-    <link rel="stylesheet" href="/chikwong/NewRPJ/Public/style/authority/font-awesome.min.css">
+    <link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/font-awesome.min.css">
 
 	<!-- Animate CSS-->
-	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/style/authority/animate.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/animate.css">
 	<!-- Owl Carousel CSS-->
-	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/style/authority/owl.carousel.min.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/owl.carousel.min.css">
 	<!-- Nice Select CSS-->
-	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/style/authority/nice-select.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/nice-select.css">
 	<!-- Slick CSS-->
-	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/style/authority/slick.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/slick.css">
 	<!-- Meanmenu CSS-->
-	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/style/authority/meanmenu.min.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/meanmenu.min.css">
 	<!-- Venobox CSS-->
-	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/style/authority/venobox.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/venobox.css">
 	<!-- Bootstrap CSS-->
-	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/style/authority/bootstrap.min.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/bootstrap.min.css">
 	<!-- Style CSS -->
 	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/style.css">
 	<!-- Responsive CSS -->
-	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/style/authority/responsive.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/responsive.css">
 	<!-- Modernizr Js -->
 	<script src="/chikwong/NewRPJ/Public/scripts/vendor/modernizr-2.8.3.min.js"></script>
 </head>
