@@ -985,7 +985,7 @@ Common Style CSS
 	float: right;
 	color: #444;
 	font-size: 14px;
-	background: url(__PUBLIC__/img/icon/bg-callus.png) no-repeat 0 100%;
+	background: url(/chikwong/NewRPJ/public/img/icon/bg-callus.png) no-repeat 0 100%;
 	padding-left: 50px;
 	height: 43px;
 }
@@ -1318,7 +1318,7 @@ Common Style CSS
 }
 .category-heading > h2:after {
 	content: "";
-	background: url(__PUBLIC__/img/icon/bg-vemenu.png) no-repeat 0 100%;
+	background: url(/chikwong/NewRPJ/public/img/icon/bg-vemenu.png) no-repeat 0 100%;
 	width: 16px;
 	height: 10px;
 	position: absolute;
@@ -1867,7 +1867,7 @@ li.right-menu .cat-mega-menu > li {
 	float: right;
 	color: #444;
 	font-size: 14px;
-	background: url(img/icon/bg-callus-red.png) no-repeat 0 100%;
+	background: url(/chikwong/NewRPJ/public/img/icon/bg-callus-red.png) no-repeat 0 100%;
 	padding-left: 50px;
 	height: 43px;
 	margin-top: 7px;
@@ -1925,7 +1925,7 @@ li.right-menu .cat-mega-menu > li {
             animation: 1200ms ease-in-out 0s normal none 1 running zoomIn;
 }
 .slider-area {
-	background-image: url(img/bg/bg-slide.jpg);
+	background-image: url(/chikwong/NewRPJ/public/img/bg/bg-slide.jpg);
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -5140,7 +5140,7 @@ thead {
 }
 .testimonial-content-2 > p:before {
 	content: "";
-	background: url(img/testimonial-icon.png) 0 no-repeat;
+	background: url(/chikwong/NewRPJ/public/img/testimonial-icon.png) 0 no-repeat;
 	width: 61px;
 	height: 53px;
 	position: absolute;
