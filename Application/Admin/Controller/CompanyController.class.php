@@ -8,6 +8,7 @@ class CompanyController extends Controller{
       $this->assign('company',$company);
       $this->display();
       if(IS_POST){
+
         if($_POST["name"] !=null){
           $model->name = $_POST['name'];
         }
@@ -28,17 +29,17 @@ class CompanyController extends Controller{
           $model->description= $_POST['description'];
         }
 
-        if($_FILES['logo'] !=null){
+        if($_FILES['picture'] !=null){
           $upload = new \Think\Upload();
           $upload->maxSize = 3145728;
           $upload->exts = array('jpg', 'gif', 'png', 'jpeg','pdf');// 设置附件上传类型
-          $upload->rootPath  =     './Upload/'; // 设置附件上传根目录
+          $upload->rootPath  =     './Public/Upload/'; // 设置附件上传根目录
           $upload->savePath  =     ''; // 设置附件上传（子）目录
-          $info = $upload->uploadOne($_FILES['logo']);
+          $info = $upload->uploadOne($_FILES['picture']);
           if(!$info){
               $this->error($upload->getError());
           }else{
-              $model->logo = '/Upload'.$info['savepath'].$info['savename'];
+              $model->logo = '/Upload/'.$info['savepath'].$info['savename'];
           }
         }
         $model->save();

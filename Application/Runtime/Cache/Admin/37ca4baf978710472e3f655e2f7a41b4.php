@@ -2,14 +2,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script type="text/javascript" src="/NewRPJ/Public/scripts/jquery/jquery-1.7.1.js"></script>
-<link href="/NewRPJ/Public/style/authority/basic_layout.css" rel="stylesheet" type="text/css">
-<link href="/NewRPJ/Public/style/authority/common_style.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="/NewRPJ/Public/scripts/authority/commonAll.js"></script>
-<script type="text/javascript" src="/NewRPJ/Public/scripts/fancybox/jquery.fancybox-1.3.4.js"></script>
-<script type="text/javascript" src="/NewRPJ/Public/scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-<link rel="stylesheet" type="text/css" href="/NewRPJ/Public/style/authority/jquery.fancybox-1.3.4.css" media="screen"></link>
-<script type="text/javascript" src="/NewRPJ/Public/scripts/artDialog/artDialog.js?skin=default"></script>
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/jquery/jquery-1.7.1.js"></script>
+<link href="/chikwong/NewRPJ/Public/style/authority/basic_layout.css" rel="stylesheet" type="text/css">
+<link href="/chikwong/NewRPJ/Public/style/authority/common_style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/authority/commonAll.js"></script>
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/fancybox/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="/chikwong/NewRPJ/Public/style/authority/jquery.fancybox-1.3.4.css" media="screen"></link>
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/artDialog/artDialog.js?skin=default"></script>
 <title>信息管理系统</title>
 <script type="text/javascript">
 	var addURL = "<?php echo U('admin/brand/brand_add');?>"
@@ -157,7 +157,7 @@
 </style>
 </head>
 <body>
-	<form id="submitForm" name="submitForm" action="<?php echo U('admin/company/company_edit');?>" method="post">
+	<form id="submitForm" name="submitForm" action="<?php echo U('admin/company/company_edit');?>" method="post" enctype="multipart/form-data">
 		<input type="hidden" name="id" value="" id="id"/>
 		<div id="container">
 			<div class="ui_content">
@@ -190,7 +190,7 @@
 						<tr>
 							<td class="ui_text_rt">公司Logo</td>
 							<td class="ui_text_lt">
-								<input type="file" name="logo" size="35" value="" />
+								<input type="file" name="picture" size="35" />
 							</td>
 						</tr>
 						<tr>
