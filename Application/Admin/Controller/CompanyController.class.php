@@ -4,15 +4,15 @@ use Think\Controller;
 class CompanyController extends Controller{
     public function company_edit(){
       $model = M('Rpj_company');
-      $company = $model->find(1);
+      $company = $model->where('id=1')->select();
       $this->assign('company',$company);
       $this->display();
-      if(IS_POST){
+      if (IS_POST) {
 
+        // var_dump($_FILES['picture']['name']);exit;
         if($_POST["name"] !=null){
           $model->name = $_POST['name'];
         }
-
         if($_POST["icp"] !=null){
           $model->icp = $_POST['icp'];
         }
@@ -29,7 +29,11 @@ class CompanyController extends Controller{
           $model->description= $_POST['description'];
         }
 
-        if($_FILES['picture'] !=null){
+        if($_POST["email"] !=null){
+          $model->email = $_POST['mail'];
+        }
+
+        if($_FILES['picture']['name'] !=null){
           $upload = new \Think\Upload();
           $upload->maxSize = 3145728;
           $upload->exts = array('jpg', 'gif', 'png', 'jpeg','pdf');// 设置附件上传类型
@@ -42,7 +46,29 @@ class CompanyController extends Controller{
               $model->logo = '/Upload/'.$info['savepath'].$info['savename'];
           }
         }
-        $model->save();
+
+        if($_FILES['background']['name'] !=null){
+          $upload = new \Think\Upload();
+          $upload->maxSize = 3145728;
+          $upload->exts = array('jpg', 'gif', 'png', 'jpeg','pdf');// 设置附件上传类型
+          $upload->rootPath  =     './Public/Upload/'; // 设置附件上传根目录
+          $upload->savePath  =     ''; // 设置附件上传（子）目录
+          $info = $upload->uploadOne($_FILES['background']);
+          if(!$info){
+              $this->error($upload->getError());
+          }else{
+              $model->background = '/Upload/'.$info['savepath'].$info['savename'];
+          }
+          $model->where('id=1')->save();
+          $company = $model->where('id=1')->select();
+          $this->assign('company',$company);
+          $this->display();
+        }
+      else {
+        $company = $model->where('id=1')->select();
+        $this->assign('company',$company);
+        $this->display();
       }
-    }
+
+  }
 }

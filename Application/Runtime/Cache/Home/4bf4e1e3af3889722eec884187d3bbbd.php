@@ -195,7 +195,7 @@
                             <!--Category Menu Start-->
 		                    <div class="category-menu category-menu-hidden">
                                 <div class="category-heading">
-                                    <h2 class="categories-toggle"><span>categories</span><i class="ion-ios-arrow-down"></i></h2>
+                                    <h2 class="categories-toggle"><span>产品类别</span><i class="ion-ios-arrow-down"></i></h2>
                                 </div>
                                 <div id="cate-toggle" class="category-menu-list">
                                     <ul>
@@ -286,7 +286,7 @@
                                     <form action="#">
                                         <div class="search-form-input">
                                             <select id="select" name="select" class="nice-select">
-                                                <option value="">All Categories</option>
+                                                <option value="">全部类别</option>
                                                 <option value="12">Uncategorized</option>
                                                 <option value="22">Electronics</option>
                                                 <option value="26">Accessories</option>
@@ -309,7 +309,7 @@
                                                 <option value="25">Rings</option>
                                                 <option value="38">Watches</option>
                                             </select>
-                                            <input type="text" placeholder="Search product...">
+                                            <input type="text" placeholder="搜索你需要得产....">
                                             <button class="top-search-btn" type="submit"><i class="ion-ios-search-strong"></i></button>
                                         </div>
                                     </form>
@@ -319,7 +319,7 @@
 		                </div>
 		                <div class="col-md-3 col-lg-3 order-lg-3 order-2">
 		                    <!--Mini Cart Start-->
-		                    <div class="mini-cart">
+		                    <!-- <div class="mini-cart">
 		                        <a href="#">
                                     <span class="cart-info">
 		                                <span class="cart-total">2</span>
@@ -327,7 +327,7 @@
 		                            </span>
 		                        </a>
 		                        <!--Cart Dropdown Start-->
-                                <div class="header-cart">
+                                <!-- <div class="header-cart">
                                   <ul class="cart-items">
                                       <li class="single-cart-item">
                                           <div class="cart-img">
@@ -369,9 +369,9 @@
                                   <div class="checkout">
                                       <a  href="checkout.html">checkout</a>
                                   </div>
-                                </div>
+                                </div> -->
 		                        <!--Cart Dropdown End-->
-		                    </div>
+		                    <!-- </div> -->
 		                    <!--Mini Cart End-->
 		                </div>
 		            </div>
@@ -386,10 +386,10 @@
 		        <div class="row">
 		            <div class="col-12">
 		                <div class="breadcrumb-content text-center">
-                            <h1 class="breadmome-name">About Us</h1>
+                            <h1 class="breadmome-name">关于瑞谱佳</h1>
 		                    <ul>
-		                        <li><a href="index.html">Home</a></li>
-		                        <li class="active">About Us</li>
+		                        <li><a href="index.html">主页</a></li>
+		                        <li class="active">关于瑞谱佳</li>
 		                    </ul>
 		                </div>
 		            </div>
@@ -413,11 +413,14 @@
 		            <div class="col-lg-6 col-12">
 		                <!--About Us Content Start-->
 		                <div class="about-us-content">
-		                    <h2>Our company</h2>
-		                    <p class="mb-20">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
-		                    <p class="mb-20">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo volup.</p>
+		                    <h2><?php echo ($company["name"]); ?></h2>
+		                    <p class="mb-20"><?php echo ($company["description"]); ?></p>
+												<p class="mb-20"><?php echo ($company["icp"]); ?></p>
+												<p class="mb-20"><?php echo ($company["tel"]); ?></p>
+												<p class="mb-20"><?php echo ($company["address"]); ?></p>
+		                    <!-- <p class="mb-20">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo volup.</p>
 		                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi ac mi malesuada vestibulum. Phasellus tempor nunc eleifend cursus molestie. Mauris lectus arcu, pellentesque at sodales sit amet, condimentum id nunc. Donec ornare mattis suscipit. Praesent fermentum accumsan vulputate.</p>
-		                    <a href="#" class="default-btn">read more</a>
+		                    <a href="#" class="default-btn">read more</a> -->
 		                </div>
 		                <!--About Us Content End-->
 		            </div>
