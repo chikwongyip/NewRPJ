@@ -2,11 +2,19 @@
 namespace Admin\Controller;
 use Think\Controller;
 class CompanyController extends Controller{
+
     public function company_edit(){
       $model = M('Rpj_company');
-      $company = $model->where('id=1')->select();
-      $this->assign('company',$company);
-      $this->display();
+      // $company = $model->where('id=1')->select();
+      // $this->assign('company',$company);
+      // $this->display();
+      if (!IS_POST) {
+        //var_dump($model);exit;
+        $company = $model->where('id=1')->select();
+        $this->assign('company',$company);
+        $this->display();
+      }
+
       if (IS_POST) {
 
         // var_dump($_FILES['picture']['name']);exit;
@@ -30,7 +38,7 @@ class CompanyController extends Controller{
         }
 
         if($_POST["email"] !=null){
-          $model->email = $_POST['mail'];
+          $model->email = $_POST['email'];
         }
 
         if($_FILES['picture']['name'] !=null){
@@ -59,16 +67,11 @@ class CompanyController extends Controller{
           }else{
               $model->background = '/Upload/'.$info['savepath'].$info['savename'];
           }
-          $model->where('id=1')->save();
-          $company = $model->where('id=1')->select();
-          $this->assign('company',$company);
-          $this->display();
         }
-      else {
+        $model->where('id=1')->save();
         $company = $model->where('id=1')->select();
         $this->assign('company',$company);
         $this->display();
-      }
-
+    }
   }
 }
