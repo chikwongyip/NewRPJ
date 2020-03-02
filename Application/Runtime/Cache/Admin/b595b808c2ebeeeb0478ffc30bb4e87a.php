@@ -204,6 +204,7 @@
 			var appfiledURL = "<?php echo U('Admin/appfield/appfield_list');?>"
 			var productURL = "<?php echo U('Admin/product/product_list');?>"
 			var prod_attURL = "<?php echo U('Admin/prodatt/prodatt_list');?>"
+			var prod_category = "<?php echo U('Admin/category/category_list');?>"
             data = [{"accessPath":"","checked":false,"delFlag":0,"parentID":1,"resourceCode":"","resourceDesc":"","resourceGrade":2,"resourceID":3,"resourceName":"基础数据","resourceOrder":0,"resourceType":""},
 
             {"accessPath":companyURL,"checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":7,"resourceName":"公司修改","resourceOrder":0,"resourceType":""},
@@ -212,7 +213,8 @@
 						{"accessPath":productURL,"checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":10,"resourceName":"产品管理","resourceOrder":0,"resourceType":""},
 						{"accessPath":prod_attURL,"checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":12,"resourceName":"产品附件管理","resourceOrder":0,"resourceType":""},
 						{"accessPath":newsURL,"checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":13,"resourceName":"新闻管理","resourceOrder":0,"resourceType":""},
-						{"accessPath":attachURL,"checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":14,"resourceName":"附件上传","resourceOrder":0,"resourceType":""}];
+						{"accessPath":attachURL,"checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":14,"resourceName":"附件上传","resourceOrder":0,"resourceType":""},
+						{"accessPath":prod_category,"checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":14,"resourceName":"产品类型管理","resourceOrder":0,"resourceType":""}];
             // 如果返回数据不为空，加载"业务模块"目录
             if(data != null){
                 // 将返回的数据赋给zTree

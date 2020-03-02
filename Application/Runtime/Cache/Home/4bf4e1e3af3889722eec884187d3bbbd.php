@@ -417,9 +417,10 @@
 		                <div class="about-us-content">
 		                    <h2><?php echo ($company["name"]); ?></h2>
 		                    <p class="mb-20"><?php echo ($company["description"]); ?></p>
+												<p class="mb-20">Tel:<?php echo ($company["tel"]); ?></p>
+												<p class="mb-20">address:<?php echo ($company["address"]); ?></p>
+												<p class="mb-20">email:<?php echo ($company["email"]); ?></p>
 												<p class="mb-20"><?php echo ($company["icp"]); ?></p>
-												<p class="mb-20"><?php echo ($company["tel"]); ?></p>
-												<p class="mb-20"><?php echo ($company["address"]); ?></p>
 		                    <!-- <p class="mb-20">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo volup.</p>
 		                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi ac mi malesuada vestibulum. Phasellus tempor nunc eleifend cursus molestie. Mauris lectus arcu, pellentesque at sodales sit amet, condimentum id nunc. Donec ornare mattis suscipit. Praesent fermentum accumsan vulputate.</p>
 		                    <a href="#" class="default-btn">read more</a> -->
