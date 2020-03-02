@@ -200,83 +200,30 @@
                                     <h2 class="categories-toggle"><span>产品类别</span><i class="ion-ios-arrow-down"></i></h2>
                                 </div>
                                 <div id="cate-toggle" class="category-menu-list">
-                                    <ul>
-                                        <li class="right-menu"><a href="shop.html">Electronic</a>
-                                            <ul class="cat-mega-menu">
-                                                <li class="right-menu cat-mega-title">
-                                                   <a href="shop.html">Television</a>
-                                                    <ul>
-                                                        <li><a href="shop.html">LCD TV</a></li>
-                                                        <li><a href="shop.html">LED TV</a></li>
-                                                        <li><a href="shop.html">Curved TV</a></li>
-                                                        <li><a href="shop.html">Plasma TV</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="right-menu cat-mega-title">
-                                                   <a href="shop.html">Refrigerator</a>
-                                                    <ul>
-                                                        <li><a href="shop.html">Brand1</a></li>
-                                                        <li><a href="shop.html">Brand2</a></li>
-                                                        <li><a href="shop.html">Brand3</a></li>
-                                                        <li><a href="shop.html">Brand4</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="right-menu cat-mega-title">
-                                                   <a href="shop.html">Air conditioners</a>
-                                                    <ul>
-                                                        <li><a href="shop.html">Brand2</a></li>
-                                                        <li><a href="shop.html">Brand4</a></li>
-                                                        <li><a href="shop.html">Brand6</a></li>
-                                                        <li><a href="shop.html">Brand3</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="right-menu cat-mega-title">
-                                                   <a href="shop.html">Fashion</a>
-                                                    <ul>
-                                                        <li><a href="shop.html">Brand1</a></li>
-                                                        <li><a href="shop.html">Brand2</a></li>
-                                                        <li><a href="shop.html">Brand3</a></li>
-                                                        <li><a href="shop.html">Brand4</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Fashion &amp; Beauty</a></li>
-                                        <li class="right-menu"><a href="shop.html">Camera &amp; Photo</a>
-                                            <!--Category Dropdown Menu Start-->
-                                            <ul class="cat-dropdown">
-                                                <li><a href="shop.html">Brand6</a></li>
-                                                <li><a href="shop.html">Brand2</a></li>
-                                                <li><a href="shop.html">Brand1</a></li>
-                                                <li><a href="shop.html">Brand7</a></li>
-                                            </ul>
-                                            <!--Category Dropdown Menu Start-->
-                                        </li>
-                                        <li class="right-menu"><a href="#">Smart Phone &amp; Tablet</a>
-                                            <!--Category Dropdown Menu Start-->
-                                            <ul class="cat-dropdown">
-                                                <li><a href="shop.html">Brand6</a></li>
-                                                <li><a href="shop.html">Brand2</a></li>
-                                                <li><a href="shop.html">Brand1</a></li>
-                                                <li><a href="shop.html">Brand7</a></li>
-                                            </ul>
-                                            <!--Category Dropdown Menu Start-->
-                                        </li>
-                                        <li><a href="shop.html">Sport &amp; Outdoor</a></li>
-                                        <li><a href="shop.html">Automotive &amp; Morocycle</a></li>
-                                        <li><a href="shop.html">Washing machine</a></li>
-                                        <li><a href="shop.html">Brand3</a></li>
-                                        <li><a href="shop.html">Brand2</a></li>
-                                        <li class="rx-child"><a href="shop.html">Sanyo</a></li>
-                                        <li class="rx-child"><a href="shop.html">Brand1</a></li>
-                                        <li class="rx-child"><a href="shop.html">Jewelry &amp; Watches</a></li>
-                                        <li class="rx-child"><a href="shop.html">Holiday Supplies &amp; Gifts</a></li>
-                                        <li class="rx-child"><a href="shop.html">Toys &amp; Hobbies</a></li>
-                                        <li class="rx-parent">
-                                            <a class="rx-default"><span class="cat-thumb  fa fa-plus"></span>More</a>
-                                            <a class="rx-show"><span class="cat-thumb  fa fa-minus"></span>Less</a>
-                                        </li>
-                                    </ul>
+																		<foreach name="category" item="list">
+	                                    <ul>
+	                                        <li class="right-menu"><a href="shop.html">{$list.category_name}</a>
+																						  <foreach name="brand" item="brand_list">
+																								<foreach name="brandname" item="name_list">
+																								<if condition="brand_list.brand_id eq name_list.brand_id">
+		                                            <ul class="cat-mega-menu">
+		                                                <li class="right-menu cat-mega-title">
+		                                                   <a href="shop.html">{$name_list.brand_name}</a>
+		                                                    <ul>
+		                                                        <li><a href="shop.html">LCD TV</a></li>
+		                                                        <li><a href="shop.html">LED TV</a></li>
+		                                                        <li><a href="shop.html">Curved TV</a></li>
+		                                                        <li><a href="shop.html">Plasma TV</a></li>
+		                                                    </ul>
+		                                                </li>
+		                                            </ul>
+																							</if>
+																							</foreach>
+																						  </foreach>
+
+	                                        </li>
+	                                    </ul>
+																		</foreach>
                                 </div>
                             </div>
                             <!--Category Menu End-->
@@ -289,27 +236,9 @@
                                         <div class="search-form-input">
                                             <select id="select" name="select" class="nice-select">
                                                 <option value="">全部类别</option>
-                                                <option value="12">Uncategorized</option>
-                                                <option value="22">Electronics</option>
-                                                <option value="26">Accessories</option>
-                                                <option value="27">Cap HDMI</option>
-                                                <option value="28">Headphone</option>
-                                                <option value="29">Keyboard</option>
-                                                <option value="23">Mouse</option>
-                                                <option value="30">Laptops & Tablets</option>
-                                                <option value="31">Laptop</option>
-                                                <option value="31">Macbook</option>
-                                                <option value="31">Smartphone</option>
-                                                <option value="31">Tablets</option>
-                                                <option value="32">Tvs & Audios</option>
-                                                <option value="33">Amply</option>
-                                                <option value="24">Smart TV</option>
-                                                <option value="34">Speaker</option>
-                                                <option value="35">TV</option>
-                                                <option value="36">Fashion & Jewelry</option>
-                                                <option value="37">Accessories</option>
-                                                <option value="25">Rings</option>
-                                                <option value="38">Watches</option>
+																								<foreach name="category" item="list">
+																										<option value="{$list.category_id}">{$list.category_name}</option>
+																								</foreach>
                                             </select>
                                             <input type="text" placeholder="搜索你需要得产....">
                                             <button class="top-search-btn" type="submit"><i class="ion-ios-search-strong"></i></button>
