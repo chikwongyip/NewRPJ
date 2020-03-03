@@ -95,7 +95,6 @@
 		                    <div class="logo">
 		                        <a href="index.html">
 															<img src="__PUBLIC__{$company.logo}" alt="">
-		                            <!-- <img src="__PUBLIC__/img/logo/logo1.jpg" alt=""> -->
 		                        </a>
 		                    </div>
 		                    <!--Logo End-->
@@ -200,12 +199,11 @@
                                     <h2 class="categories-toggle"><span>产品类别</span><i class="ion-ios-arrow-down"></i></h2>
                                 </div>
                                 <div id="cate-toggle" class="category-menu-list">
-																		<foreach name="category" item="list">
+																		<foreach name="category" item="cat_list">
 	                                    <ul>
-	                                        <li class="right-menu"><a href="shop.html">{$list.category_name}</a>
+	                                        <li class="right-menu"><a href="shop.html">{$cat_list.category_name}</a>
 																						  <foreach name="brand" item="brand_list">
-																								<foreach name="brandname" item="name_list">
-																								<if condition="brand_list.brand_id eq name_list.brand_id">
+																								<if condition="$cat_list['brand_id'] eq $brand_list['brand_id']">
 		                                            <ul class="cat-mega-menu">
 		                                                <li class="right-menu cat-mega-title">
 		                                                   <a href="shop.html">{$name_list.brand_name}</a>
@@ -218,7 +216,6 @@
 		                                                </li>
 		                                            </ul>
 																							</if>
-																							</foreach>
 																						  </foreach>
 
 	                                        </li>
