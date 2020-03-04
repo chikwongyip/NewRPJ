@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<?php if (!defined('THINK_PATH')) exit();?>﻿<!doctype html>
 <html class="no-js" lang="en">
 <head>
 	<meta charset="utf-8">
@@ -7,34 +7,34 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Place favicon.ico in the root directory -->
-	<link rel="shortcut icon" type="__PUBLIC__/image/x-icon" href="__PUBLIC__/img/favicon.ico">
+	<link rel="shortcut icon" type="/NewRPJ/Public/image/x-icon" href="/NewRPJ/Public/img/favicon.ico">
     <!--All Css Here-->
 
 	<!-- Ionicons Font CSS-->
-    <link rel="stylesheet" href="__PUBLIC__/css/ionicons.min.css">
+    <link rel="stylesheet" href="/NewRPJ/Public/css/ionicons.min.css">
     <!-- Font Awesome CSS-->
-    <link rel="stylesheet" href="__PUBLIC__/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/NewRPJ/Public/css/font-awesome.min.css">
 
 	<!-- Animate CSS-->
-	<link rel="stylesheet" href="__PUBLIC__/css/animate.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/css/animate.css">
 	<!-- Owl Carousel CSS-->
-	<link rel="stylesheet" href="__PUBLIC__/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/css/owl.carousel.min.css">
 	<!-- Nice Select CSS-->
-	<link rel="stylesheet" href="__PUBLIC__/css/nice-select.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/css/nice-select.css">
 	<!-- Slick CSS-->
-	<link rel="stylesheet" href="__PUBLIC__/css/slick.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/css/slick.css">
 	<!-- Meanmenu CSS-->
-	<link rel="stylesheet" href="__PUBLIC__/css/meanmenu.min.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/css/meanmenu.min.css">
 	<!-- Venobox CSS-->
-	<link rel="stylesheet" href="__PUBLIC__/css/venobox.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/css/venobox.css">
 	<!-- Bootstrap CSS-->
-	<link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/css/bootstrap.min.css">
 	<!-- Style CSS -->
-	<link rel="stylesheet" href="__PUBLIC__/style.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/style.css">
 	<!-- Responsive CSS -->
-	<link rel="stylesheet" href="__PUBLIC__/css/responsive.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/css/responsive.css">
 	<!-- Modernizr Js -->
-	<script src="__PUBLIC__/js/vendor/modernizr-2.8.3.min.js"></script>
+	<script src="/NewRPJ/Public/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
 
@@ -94,7 +94,7 @@
 		                    <!--Logo Start-->
 		                    <div class="logo">
 		                        <a href="index.html">
-		                            <img src="__PUBLIC__/img/logo/logo1.jpg" alt="">
+		                            <img src="/NewRPJ/Public/img/logo/logo1.jpg" alt="">
 		                        </a>
 		                    </div>
 		                    <!--Logo End-->
@@ -330,7 +330,7 @@
                                   <ul class="cart-items">
                                       <li class="single-cart-item">
                                           <div class="cart-img">
-                                              <a href="cart.html"><img src="__PUBLIC__/img/cart/cart1.jpg" alt=""></a>
+                                              <a href="cart.html"><img src="/NewRPJ/Public/img/cart/cart1.jpg" alt=""></a>
                                               <span class="cart-sticker">1x</span>
                                           </div>
                                           <div class="cart-content">
@@ -345,7 +345,7 @@
                                       </li>
                                       <li class="single-cart-item">
                                           <div class="cart-img">
-                                              <a href="cart.html"><img src="__PUBLIC__/img/cart/cart2.jpg" alt=""></a>
+                                              <a href="cart.html"><img src="/NewRPJ/Public/img/cart/cart2.jpg" alt=""></a>
                                               <span class="cart-sticker">1x</span>
                                           </div>
                                           <div class="cart-content">
@@ -549,8 +549,8 @@
                                                     <div class="single-product mb-30">
                                                         <div class="product-img">
                                                             <a href="single-product.html">
-                                                                <img class="first-img" src="__PUBLIC__/img/product/product6.jpg" alt="">
-                                                                <img class="hover-img" src="__PUBLIC__/img/product/product7.jpg" alt="">
+                                                                <img class="first-img" src="/NewRPJ/Public/img/product/product6.jpg" alt="">
+                                                                <img class="hover-img" src="/NewRPJ/Public/img/product/product7.jpg" alt="">
                                                             </a>
                                                             <span class="sticker">New</span>
                                                             <div class="product-action">
@@ -614,8 +614,8 @@
                                                     <div class="single-product mb-30">
                                                         <div class="product-img">
                                                             <a href="single-product.html">
-                                                                <img class="first-img" src="__PUBLIC__/img/product/product10.jpg" alt="">
-                                                                <img class="hover-img" src="__PUBLIC__/img/product/product11.jpg" alt="">
+                                                                <img class="first-img" src="/NewRPJ/Public/img/product/product10.jpg" alt="">
+                                                                <img class="hover-img" src="/NewRPJ/Public/img/product/product11.jpg" alt="">
                                                             </a>
                                                             <span class="sticker">New</span>
                                                             <div class="product-action">
@@ -648,8 +648,8 @@
                                                     <div class="single-product mb-30">
                                                         <div class="product-img">
                                                             <a href="single-product.html">
-                                                                <img class="first-img" src="__PUBLIC__/img/product/product19.jpg" alt="">
-                                                                <img class="hover-img" src="__PUBLIC__/img/product/product20.jpg" alt="">
+                                                                <img class="first-img" src="/NewRPJ/Public/img/product/product19.jpg" alt="">
+                                                                <img class="hover-img" src="/NewRPJ/Public/img/product/product20.jpg" alt="">
                                                             </a>
                                                             <span class="sticker">New</span>
                                                             <div class="product-action">
@@ -681,8 +681,8 @@
                                                     <div class="single-product mb-30">
                                                         <div class="product-img">
                                                             <a href="single-product.html">
-                                                                <img class="first-img" src="__PUBLIC__/img/product/product13.jpg" alt="">
-                                                                <img class="hover-img" src="__PUBLIC__/img/product/product14.jpg" alt="">
+                                                                <img class="first-img" src="/NewRPJ/Public/img/product/product13.jpg" alt="">
+                                                                <img class="hover-img" src="/NewRPJ/Public/img/product/product14.jpg" alt="">
                                                             </a>
                                                             <span class="sticker">New</span>
                                                             <div class="product-action">
@@ -714,8 +714,8 @@
                                                     <div class="single-product mb-30">
                                                         <div class="product-img">
                                                             <a href="single-product.html">
-                                                                <img class="first-img" src="__PUBLIC__/img/product/product11.jpg" alt="">
-                                                                <img class="hover-img" src="__PUBLIC__/img/product/product12.jpg" alt="">
+                                                                <img class="first-img" src="/NewRPJ/Public/img/product/product11.jpg" alt="">
+                                                                <img class="hover-img" src="/NewRPJ/Public/img/product/product12.jpg" alt="">
                                                             </a>
                                                             <span class="sticker">New</span>
                                                             <div class="product-action">
@@ -747,8 +747,8 @@
                                                     <div class="single-product mb-30">
                                                         <div class="product-img">
                                                             <a href="single-product.html">
-                                                                <img class="first-img" src="__PUBLIC__/img/product/product8.jpg" alt="">
-                                                                <img class="hover-img" src="__PUBLIC__/img/product/product1.jpg" alt="">
+                                                                <img class="first-img" src="/NewRPJ/Public/img/product/product8.jpg" alt="">
+                                                                <img class="hover-img" src="/NewRPJ/Public/img/product/product1.jpg" alt="">
                                                             </a>
                                                             <span class="sticker">New</span>
                                                             <div class="product-action">
@@ -780,8 +780,8 @@
                                                     <div class="single-product mb-30">
                                                         <div class="product-img">
                                                             <a href="single-product.html">
-                                                                <img class="first-img" src="__PUBLIC__/img/product/product1.jpg" alt="">
-                                                                <img class="hover-img" src="__PUBLIC__/img/product/product2.jpg" alt="">
+                                                                <img class="first-img" src="/NewRPJ/Public/img/product/product1.jpg" alt="">
+                                                                <img class="hover-img" src="/NewRPJ/Public/img/product/product2.jpg" alt="">
                                                             </a>
                                                             <span class="sticker">New</span>
                                                             <div class="product-action">
@@ -813,7 +813,7 @@
                                                     <div class="single-product mb-30">
                                                         <div class="product-img">
                                                             <a href="single-product.html">
-                                                                <img class="first-img" src="__PUBLIC__/img/product/product3.jpg" alt="">
+                                                                <img class="first-img" src="/NewRPJ/Public/img/product/product3.jpg" alt="">
                                                             </a>
                                                             <span class="sticker">New</span>
                                                             <div class="product-action">
@@ -845,8 +845,8 @@
                                                     <div class="single-product mb-30">
                                                         <div class="product-img">
                                                             <a href="single-product.html">
-                                                                <img class="first-img" src="__PUBLIC__/img/product/product17.jpg" alt="">
-                                                                <img class="hover-img" src="__PUBLIC__/img/product/product18.jpg" alt="">
+                                                                <img class="first-img" src="/NewRPJ/Public/img/product/product17.jpg" alt="">
+                                                                <img class="hover-img" src="/NewRPJ/Public/img/product/product18.jpg" alt="">
                                                             </a>
                                                             <span class="sticker">New</span>
                                                             <div class="product-action">
@@ -878,8 +878,8 @@
                                                     <div class="single-product mb-30">
                                                         <div class="product-img">
                                                             <a href="single-product.html">
-                                                                <img class="first-img" src="__PUBLIC__/img/product/product15.jpg" alt="">
-                                                                <img class="hover-img" src="__PUBLIC__/img/product/product16.jpg" alt="">
+                                                                <img class="first-img" src="/NewRPJ/Public/img/product/product15.jpg" alt="">
+                                                                <img class="hover-img" src="/NewRPJ/Public/img/product/product16.jpg" alt="">
                                                             </a>
                                                             <span class="sticker">New</span>
                                                             <div class="product-action">
@@ -911,8 +911,8 @@
                                                     <div class="single-product mb-30">
                                                         <div class="product-img">
                                                             <a href="single-product.html">
-                                                                <img class="first-img" src="__PUBLIC__/img/product/product4.jpg" alt="">
-                                                                <img class="hover-img" src="__PUBLIC__/img/product/product5.jpg" alt="">
+                                                                <img class="first-img" src="/NewRPJ/Public/img/product/product4.jpg" alt="">
+                                                                <img class="hover-img" src="/NewRPJ/Public/img/product/product5.jpg" alt="">
                                                             </a>
                                                             <span class="sticker">New</span>
                                                             <div class="product-action">
@@ -951,8 +951,8 @@
 		                                                <div class="single-product">
 		                                                    <div class="product-img">
 		                                                        <a href="single-product.html">
-                                                                    <img class="first-img" src="__PUBLIC__/img/product/product6.jpg" alt="">
-                                                                    <img class="hover-img" src="__PUBLIC__/img/product/product7.jpg" alt="">
+                                                                    <img class="first-img" src="/NewRPJ/Public/img/product/product6.jpg" alt="">
+                                                                    <img class="hover-img" src="/NewRPJ/Public/img/product/product7.jpg" alt="">
                                                                 </a>
                                                                 <span class="sticker">New</span>
 		                                                    </div>
@@ -993,7 +993,7 @@
 		                                                <div class="single-product">
 		                                                    <div class="product-img">
 		                                                        <a href="single-product.html">
-                                                                    <img class="first-img" src="__PUBLIC__/img/product/product6.jpg" alt="">
+                                                                    <img class="first-img" src="/NewRPJ/Public/img/product/product6.jpg" alt="">
                                                                 </a>
                                                                 <span class="sticker">New</span>
 		                                                    </div>
@@ -1034,8 +1034,8 @@
 		                                                <div class="single-product">
 		                                                    <div class="product-img">
 		                                                        <a href="single-product.html">
-                                                                    <img class="first-img" src="__PUBLIC__/img/product/product10.jpg" alt="">
-                                                                    <img class="hover-img" src="__PUBLIC__/img/product/product11.jpg" alt="">
+                                                                    <img class="first-img" src="/NewRPJ/Public/img/product/product10.jpg" alt="">
+                                                                    <img class="hover-img" src="/NewRPJ/Public/img/product/product11.jpg" alt="">
                                                                 </a>
                                                                 <span class="sticker">New</span>
 		                                                    </div>
@@ -1077,8 +1077,8 @@
 		                                                <div class="single-product">
 		                                                    <div class="product-img">
 		                                                        <a href="single-product.html">
-                                                                    <img class="first-img" src="__PUBLIC__/img/product/product19.jpg" alt="">
-                                                                    <img class="hover-img" src="__PUBLIC__/img/product/product20.jpg" alt="">
+                                                                    <img class="first-img" src="/NewRPJ/Public/img/product/product19.jpg" alt="">
+                                                                    <img class="hover-img" src="/NewRPJ/Public/img/product/product20.jpg" alt="">
                                                                 </a>
                                                                 <span class="sticker">New</span>
 		                                                    </div>
@@ -1119,8 +1119,8 @@
 		                                                <div class="single-product">
 		                                                    <div class="product-img">
 		                                                        <a href="single-product.html">
-                                                                    <img class="first-img" src="__PUBLIC__/img/product/product13.jpg" alt="">
-                                                                    <img class="hover-img" src="__PUBLIC__/img/product/product14.jpg" alt="">
+                                                                    <img class="first-img" src="/NewRPJ/Public/img/product/product13.jpg" alt="">
+                                                                    <img class="hover-img" src="/NewRPJ/Public/img/product/product14.jpg" alt="">
                                                                 </a>
                                                                 <span class="sticker">New</span>
 		                                                    </div>
@@ -1161,8 +1161,8 @@
 		                                                <div class="single-product">
 		                                                    <div class="product-img">
 		                                                        <a href="single-product.html">
-                                                                    <img class="first-img" src="__PUBLIC__/img/product/product11.jpg" alt="">
-                                                                    <img class="hover-img" src="__PUBLIC__/img/product/product12.jpg" alt="">
+                                                                    <img class="first-img" src="/NewRPJ/Public/img/product/product11.jpg" alt="">
+                                                                    <img class="hover-img" src="/NewRPJ/Public/img/product/product12.jpg" alt="">
                                                                 </a>
                                                                 <span class="sticker">New</span>
 		                                                    </div>
@@ -1203,8 +1203,8 @@
 		                                                <div class="single-product">
 		                                                    <div class="product-img">
 		                                                        <a href="single-product.html">
-                                                                    <img class="first-img" src="__PUBLIC__/img/product/product8.jpg" alt="">
-                                                                    <img class="hover-img" src="__PUBLIC__/img/product/product1.jpg" alt="">
+                                                                    <img class="first-img" src="/NewRPJ/Public/img/product/product8.jpg" alt="">
+                                                                    <img class="hover-img" src="/NewRPJ/Public/img/product/product1.jpg" alt="">
                                                                 </a>
                                                                 <span class="sticker">New</span>
 		                                                    </div>
@@ -1245,8 +1245,8 @@
 		                                                <div class="single-product">
 		                                                    <div class="product-img">
 		                                                        <a href="single-product.html">
-                                                                    <img class="first-img" src="__PUBLIC__/img/product/product1.jpg" alt="">
-                                                                    <img class="hover-img" src="__PUBLIC__/img/product/product2.jpg" alt="">
+                                                                    <img class="first-img" src="/NewRPJ/Public/img/product/product1.jpg" alt="">
+                                                                    <img class="hover-img" src="/NewRPJ/Public/img/product/product2.jpg" alt="">
                                                                 </a>
                                                                 <span class="sticker">New</span>
 		                                                    </div>
@@ -1287,7 +1287,7 @@
 		                                                <div class="single-product">
 		                                                    <div class="product-img">
 		                                                        <a href="single-product.html">
-                                                                    <img class="first-img" src="__PUBLIC__/img/product/product3.jpg" alt="">
+                                                                    <img class="first-img" src="/NewRPJ/Public/img/product/product3.jpg" alt="">
                                                                 </a>
                                                                 <span class="sticker">New</span>
 		                                                    </div>
@@ -1328,8 +1328,8 @@
 		                                                <div class="single-product">
 		                                                    <div class="product-img">
 		                                                        <a href="single-product.html">
-                                                                    <img class="first-img" src="__PUBLIC__/img/product/product17.jpg" alt="">
-                                                                    <img class="hover-img" src="__PUBLIC__/img/product/product18.jpg" alt="">
+                                                                    <img class="first-img" src="/NewRPJ/Public/img/product/product17.jpg" alt="">
+                                                                    <img class="hover-img" src="/NewRPJ/Public/img/product/product18.jpg" alt="">
                                                                 </a>
                                                                 <span class="sticker">New</span>
 		                                                    </div>
@@ -1370,8 +1370,8 @@
 		                                                <div class="single-product">
 		                                                    <div class="product-img">
 		                                                        <a href="single-product.html">
-                                                                    <img class="first-img" src="__PUBLIC__/img/product/product15.jpg" alt="">
-                                                                    <img class="hover-img" src="__PUBLIC__/img/product/product16.jpg" alt="">
+                                                                    <img class="first-img" src="/NewRPJ/Public/img/product/product15.jpg" alt="">
+                                                                    <img class="hover-img" src="/NewRPJ/Public/img/product/product16.jpg" alt="">
                                                                 </a>
                                                                 <span class="sticker">New</span>
 		                                                    </div>
@@ -1412,8 +1412,8 @@
 		                                                <div class="single-product">
 		                                                    <div class="product-img">
 		                                                        <a href="single-product.html">
-                                                                    <img class="first-img" src="__PUBLIC__/img/product/product4.jpg" alt="">
-                                                                    <img class="hover-img" src="__PUBLIC__/img/product/product5.jpg" alt="">
+                                                                    <img class="first-img" src="/NewRPJ/Public/img/product/product4.jpg" alt="">
+                                                                    <img class="hover-img" src="/NewRPJ/Public/img/product/product5.jpg" alt="">
                                                                 </a>
                                                                 <span class="sticker">New</span>
 		                                                    </div>
@@ -1531,7 +1531,7 @@
 		                        <!--Single Footer Wiedget Start-->
 		                        <div class="single-footer-wiedget mb-30">
 		                            <div class="footer-logo">
-		                                <a href="index.html"><img src="__PUBLIC__/img/logo/logo1.jpg" alt=""></a>
+		                                <a href="index.html"><img src="/NewRPJ/Public/img/logo/logo1.jpg" alt=""></a>
 		                            </div>
 		                            <div class="desc-footer">We are a team of designers and developers that create high quality Magento, Prestashop, Opencart.</div>
 		                            <div class="address-footer">
@@ -1718,7 +1718,7 @@
 		                    <div class="col-md-6">
                                 <!--Footer Payment Start-->
 		                        <div class="footer-payments-image text-center text-md-right">
-		                            <img src="__PUBLIC__/img/payment/payment.png" alt="">
+		                            <img src="/NewRPJ/Public/img/payment/payment.png" alt="">
 		                        </div>
 		                        <!--Footer Payment End-->
 		                    </div>
@@ -1747,28 +1747,28 @@
                         <div class="tab-pane fade show active" id="single-slide1" role="tabpanel" aria-labelledby="single-slide-tab-1">
                             <!--Single Product Image Start-->
                             <div class="single-product-img img-full">
-                              <img src="__PUBLIC__/img/single-product/large/large1.jpg" alt="">
+                              <img src="/NewRPJ/Public/img/single-product/large/large1.jpg" alt="">
                             </div>
                             <!--Single Product Image End-->
                         </div>
                         <div class="tab-pane fade" id="single-slide2" role="tabpanel" aria-labelledby="single-slide-tab-2">
                             <!--Single Product Image Start-->
                             <div class="single-product-img img-full">
-                              <img src="__PUBLIC__/img/single-product/large/large2.jpg" alt="">
+                              <img src="/NewRPJ/Public/img/single-product/large/large2.jpg" alt="">
                             </div>
                             <!--Single Product Image End-->
                         </div>
                         <div class="tab-pane fade" id="single-slide3" role="tabpanel" aria-labelledby="single-slide-tab-3">
                             <!--Single Product Image Start-->
                             <div class="single-product-img img-full">
-                              <img src="__PUBLIC__/img/single-product/large/large3.jpg" alt="">
+                              <img src="/NewRPJ/Public/img/single-product/large/large3.jpg" alt="">
                             </div>
                             <!--Single Product Image End-->
                         </div>
                         <div class="tab-pane fade" id="single-slide4" role="tabpanel" aria-labelledby="single-slide-tab-4">
                             <!--Single Product Image Start-->
                             <div class="single-product-img img-full">
-                              <img src="__PUBLIC__/img/single-product/large/large4.jpg" alt="">
+                              <img src="/NewRPJ/Public/img/single-product/large/large4.jpg" alt="">
                             </div>
                             <!--Single Product Image End-->
                         </div>
@@ -1880,40 +1880,40 @@
     <!--All Js Here-->
 
 	<!--Jquery 1.12.4-->
-	<script src="__PUBLIC__/js/vendor/jquery-1.12.4.min.js"></script>
+	<script src="/NewRPJ/Public/js/vendor/jquery-1.12.4.min.js"></script>
 	<!--Imagesloaded-->
-	<script src="__PUBLIC__/js/imagesloaded.pkgd.min.js"></script>
+	<script src="/NewRPJ/Public/js/imagesloaded.pkgd.min.js"></script>
 	<!--Isotope-->
-	<script src="__PUBLIC__/js/isotope.pkgd.min.js"></script>
+	<script src="/NewRPJ/Public/js/isotope.pkgd.min.js"></script>
 	<!--Waypoints-->
-	<script src="__PUBLIC__/js/waypoints.min.js"></script>
+	<script src="/NewRPJ/Public/js/waypoints.min.js"></script>
 	<!--Counterup-->
-	<script src="__PUBLIC__/js/jquery.counterup.min.js"></script>
+	<script src="/NewRPJ/Public/js/jquery.counterup.min.js"></script>
 	<!--Countdown-->
-	<script src="__PUBLIC__/js/jquery.countdown.min.js"></script>
+	<script src="/NewRPJ/Public/js/jquery.countdown.min.js"></script>
 	<!--Carousel-->
-	<script src="__PUBLIC__/js/owl.carousel.min.js"></script>
+	<script src="/NewRPJ/Public/js/owl.carousel.min.js"></script>
 	<!--Slick-->
-	<script src="__PUBLIC__/js/slick.min.js"></script>
+	<script src="/NewRPJ/Public/js/slick.min.js"></script>
 	<!--Meanmenu-->
-	<script src="__PUBLIC__/js/jquery.meanmenu.min.js"></script>
+	<script src="/NewRPJ/Public/js/jquery.meanmenu.min.js"></script>
 	<!--Instafeed-->
 	<!--<script src="js/instafeed.min.js"></script>-->
 	<!--Nice Select-->
-	<script src="__PUBLIC__/js/jquery.nice-select.min.js"></script>
+	<script src="/NewRPJ/Public/js/jquery.nice-select.min.js"></script>
 	<!--ScrollUp-->
-	<script src="__PUBLIC__/js/jquery.scrollUp.min.js"></script>
+	<script src="/NewRPJ/Public/js/jquery.scrollUp.min.js"></script>
 	<!--Wow-->
-	<script src="__PUBLIC__/js/wow.min.js"></script>
+	<script src="/NewRPJ/Public/js/wow.min.js"></script>
 	<!--Venobox-->
-	<script src="__PUBLIC__/js/venobox.min.js"></script>
+	<script src="/NewRPJ/Public/js/venobox.min.js"></script>
 	<!--Popper-->
-	<script src="__PUBLIC__/js/popper.min.js"></script>
+	<script src="/NewRPJ/Public/js/popper.min.js"></script>
 	<!--Bootstrap-->
-	<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+	<script src="/NewRPJ/Public/js/bootstrap.min.js"></script>
 	<!--Plugins-->
-	<script src="__PUBLIC__/js/plugins.js"></script>
+	<script src="/NewRPJ/Public/js/plugins.js"></script>
 	<!--Main Js-->
-	<script src="__PUBLIC__/js/main.js"></script>
+	<script src="/NewRPJ/Public/js/main.js"></script>
 </body>
 </html>

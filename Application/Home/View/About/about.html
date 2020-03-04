@@ -208,10 +208,14 @@
 		                                                <li class="right-menu cat-mega-title">
 		                                                   <a href="shop.html">{$brand_list.brand_name}</a>
 		                                                    <ul>
-		                                                        <li><a href="shop.html">LCD TV</a></li>
-		                                                        <li><a href="shop.html">LED TV</a></li>
+																													<foreach name="product" item="pro_list">
+																														<if condition="($pro_list['category_id']=$cat_list['category_id']) and ($pro_list['brand_id']=$brand_list['brand_id'])">
+		                                                        <li><a href="shop.html">{$pro_list.product_name}</a></li>
+		                                                        <!-- <li><a href="shop.html">LED TV</a></li>
 		                                                        <li><a href="shop.html">Curved TV</a></li>
-		                                                        <li><a href="shop.html">Plasma TV</a></li>
+		                                                        <li><a href="shop.html">Plasma TV</a></li> -->
+																													</if>
+																													</foreach>
 		                                                    </ul>
 		                                                </li>
 		                                            </ul>

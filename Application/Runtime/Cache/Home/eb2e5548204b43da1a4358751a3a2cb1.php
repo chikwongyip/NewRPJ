@@ -7,34 +7,34 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Place favicon.ico in the root directory -->
-	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	<link rel="shortcut icon" type="/NewRPJ/Public/image/x-icon" href="/NewRPJ/Public/img/favicon.ico">
     <!--All Css Here-->
-    
+
 	<!-- Ionicons Font CSS-->
-    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="/NewRPJ/Public/css/ionicons.min.css">
     <!-- Font Awesome CSS-->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="/NewRPJ/Public/css/font-awesome.min.css">
 
 	<!-- Animate CSS-->
-	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/css/animate.css">
 	<!-- Owl Carousel CSS-->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/css/owl.carousel.min.css">
 	<!-- Nice Select CSS-->
-	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/css/nice-select.css">
 	<!-- Slick CSS-->
-	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/css/slick.css">
 	<!-- Meanmenu CSS-->
-	<link rel="stylesheet" href="css/meanmenu.min.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/css/meanmenu.min.css">
 	<!-- Venobox CSS-->
-	<link rel="stylesheet" href="css/venobox.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/css/venobox.css">
 	<!-- Bootstrap CSS-->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/css/bootstrap.min.css">
 	<!-- Style CSS -->
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/style.css">
 	<!-- Responsive CSS -->
-	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/css/responsive.css">
 	<!-- Modernizr Js -->
-	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	<script src="/NewRPJ/Public/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
 
@@ -94,7 +94,7 @@
 		                    <!--Logo Start-->
 		                    <div class="logo">
 		                        <a href="index.html">
-		                            <img src="img/logo/logo1.jpg" alt="">
+		                            <img src="/NewRPJ/Public/img/logo/logo1.jpg" alt="">
 		                        </a>
 		                    </div>
 		                    <!--Logo End-->
@@ -177,7 +177,7 @@
 		                </div>
 		            </div>
 		            <div class="row">
-                        <div class="col-12"> 
+                        <div class="col-12">
                             <!--Mobile Menu Area Start-->
                             <div class="mobile-menu d-lg-none"></div>
                             <!--Mobile Menu Area End-->
@@ -330,7 +330,7 @@
                                   <ul class="cart-items">
                                       <li class="single-cart-item">
                                           <div class="cart-img">
-                                              <a href="cart.html"><img src="img/cart/cart1.jpg" alt=""></a>
+                                              <a href="cart.html"><img src="/NewRPJ/Public/img/cart/cart1.jpg" alt=""></a>
                                               <span class="cart-sticker">1x</span>
                                           </div>
                                           <div class="cart-content">
@@ -345,7 +345,7 @@
                                       </li>
                                       <li class="single-cart-item">
                                           <div class="cart-img">
-                                              <a href="cart.html"><img src="img/cart/cart2.jpg" alt=""></a>
+                                              <a href="cart.html"><img src="/NewRPJ/Public/img/cart/cart2.jpg" alt=""></a>
                                               <span class="cart-sticker">1x</span>
                                           </div>
                                           <div class="cart-content">
@@ -538,7 +538,7 @@
 		                        <!--Single Footer Wiedget Start-->
 		                        <div class="single-footer-wiedget mb-30">
 		                            <div class="footer-logo">
-		                                <a href="index.html"><img src="img/logo/logo1.jpg" alt=""></a>
+		                                <a href="index.html"><img src="/NewRPJ/Public/img/logo/logo1.jpg" alt=""></a>
 		                            </div>
 		                            <div class="desc-footer">We are a team of designers and developers that create high quality Magento, Prestashop, Opencart.</div>
 		                            <div class="address-footer">
@@ -725,7 +725,7 @@
 		                    <div class="col-md-6">
                                 <!--Footer Payment Start-->
 		                        <div class="footer-payments-image text-center text-md-right">
-		                            <img src="img/payment/payment.png" alt="">
+		                            <img src="/NewRPJ/Public/img/payment/payment.png" alt="">
 		                        </div>
 		                        <!--Footer Payment End-->
 		                    </div>
@@ -754,28 +754,28 @@
                         <div class="tab-pane fade show active" id="single-slide1" role="tabpanel" aria-labelledby="single-slide-tab-1">
                             <!--Single Product Image Start-->
                             <div class="single-product-img img-full">
-                              <img src="img/single-product/large/large1.jpg" alt="">
+                              <img src="/NewRPJ/Public/img/single-product/large/large1.jpg" alt="">
                             </div>
                             <!--Single Product Image End-->
                         </div>
                         <div class="tab-pane fade" id="single-slide2" role="tabpanel" aria-labelledby="single-slide-tab-2">
                             <!--Single Product Image Start-->
                             <div class="single-product-img img-full">
-                              <img src="img/single-product/large/large2.jpg" alt="">
+                              <img src="/NewRPJ/Public/img/single-product/large/large2.jpg" alt="">
                             </div>
                             <!--Single Product Image End-->
                         </div>
                         <div class="tab-pane fade" id="single-slide3" role="tabpanel" aria-labelledby="single-slide-tab-3">
                             <!--Single Product Image Start-->
                             <div class="single-product-img img-full">
-                              <img src="img/single-product/large/large3.jpg" alt="">
+                              <img src="/NewRPJ/Public/img/single-product/large/large3.jpg" alt="">
                             </div>
                             <!--Single Product Image End-->
                         </div>
                         <div class="tab-pane fade" id="single-slide4" role="tabpanel" aria-labelledby="single-slide-tab-4">
                             <!--Single Product Image Start-->
                             <div class="single-product-img img-full">
-                              <img src="img/single-product/large/large4.jpg" alt="">
+                              <img src="/NewRPJ/Public/img/single-product/large/large4.jpg" alt="">
                             </div>
                             <!--Single Product Image End-->
                         </div>
@@ -885,42 +885,42 @@
 
 
     <!--All Js Here-->
-    
+
 	<!--Jquery 1.12.4-->
-	<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<script src="/NewRPJ/Public/js/vendor/jquery-1.12.4.min.js"></script>
 	<!--Imagesloaded-->
-	<script src="js/imagesloaded.pkgd.min.js"></script> 
+	<script src="/NewRPJ/Public/js/imagesloaded.pkgd.min.js"></script>
 	<!--Isotope-->
-	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="/NewRPJ/Public/js/isotope.pkgd.min.js"></script>
 	<!--Waypoints-->
-	<script src="js/waypoints.min.js"></script>
+	<script src="/NewRPJ/Public/js/waypoints.min.js"></script>
 	<!--Counterup-->
-	<script src="js/jquery.counterup.min.js"></script>
+	<script src="/NewRPJ/Public/js/jquery.counterup.min.js"></script>
 	<!--Countdown-->
-	<script src="js/jquery.countdown.min.js"></script>
+	<script src="/NewRPJ/Public/js/jquery.countdown.min.js"></script>
 	<!--Carousel-->
-	<script src="js/owl.carousel.min.js"></script>
+	<script src="/NewRPJ/Public/js/owl.carousel.min.js"></script>
 	<!--Slick-->
-	<script src="js/slick.min.js"></script>
+	<script src="/NewRPJ/Public/js/slick.min.js"></script>
 	<!--Meanmenu-->
-	<script src="js/jquery.meanmenu.min.js"></script>
+	<script src="/NewRPJ/Public/js/jquery.meanmenu.min.js"></script>
 	<!--Instafeed-->
 	<!--<script src="js/instafeed.min.js"></script>-->
 	<!--Nice Select-->
-	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="/NewRPJ/Public/js/jquery.nice-select.min.js"></script>
 	<!--ScrollUp-->
-	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="/NewRPJ/Public/js/jquery.scrollUp.min.js"></script>
 	<!--Wow-->
-	<script src="js/wow.min.js"></script>
+	<script src="/NewRPJ/Public/js/wow.min.js"></script>
 	<!--Venobox-->
-	<script src="js/venobox.min.js"></script>
+	<script src="/NewRPJ/Public/js/venobox.min.js"></script>
 	<!--Popper-->
-	<script src="js/popper.min.js"></script>
+	<script src="/NewRPJ/Public/js/popper.min.js"></script>
 	<!--Bootstrap-->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="/NewRPJ/Public/js/bootstrap.min.js"></script>
 	<!--Plugins-->
-	<script src="js/plugins.js"></script>
+	<script src="/NewRPJ/Public/js/plugins.js"></script>
 	<!--Main Js-->
-	<script src="js/main.js"></script>
+	<script src="/NewRPJ/Public/js/main.js"></script>
 </body>
 </html>
