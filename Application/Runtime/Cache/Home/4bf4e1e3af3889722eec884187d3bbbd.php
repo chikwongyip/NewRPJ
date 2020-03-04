@@ -7,34 +7,34 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Place favicon.ico in the root directory -->
-	<link rel="shortcut icon" type="image/x-icon" href="/NewRPJ/Public/img/favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="/chikwong/NewRPJ/Public/img/favicon.ico">
     <!--All Css Here-->
 
 	<!-- Ionicons Font CSS-->
-    <link rel="stylesheet" href="/NewRPJ/Public/css/ionicons.min.css">
+    <link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/ionicons.min.css">
     <!-- Font Awesome CSS-->
-    <link rel="stylesheet" href="/NewRPJ/Public/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/font-awesome.min.css">
 
 	<!-- Animate CSS-->
-	<link rel="stylesheet" href="/NewRPJ/Public/css/animate.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/animate.css">
 	<!-- Owl Carousel CSS-->
-	<link rel="stylesheet" href="/NewRPJ/Public/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/owl.carousel.min.css">
 	<!-- Nice Select CSS-->
-	<link rel="stylesheet" href="/NewRPJ/Public/css/nice-select.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/nice-select.css">
 	<!-- Slick CSS-->
-	<link rel="stylesheet" href="/NewRPJ/Public/css/slick.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/slick.css">
 	<!-- Meanmenu CSS-->
-	<link rel="stylesheet" href="/NewRPJ/Public/css/meanmenu.min.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/meanmenu.min.css">
 	<!-- Venobox CSS-->
-	<link rel="stylesheet" href="/NewRPJ/Public/css/venobox.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/venobox.css">
 	<!-- Bootstrap CSS-->
-	<link rel="stylesheet" href="/NewRPJ/Public/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/bootstrap.min.css">
 	<!-- Style CSS -->
-	<link rel="stylesheet" href="/NewRPJ/Public/style.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/style.css">
 	<!-- Responsive CSS -->
-	<link rel="stylesheet" href="/NewRPJ/Public/css/responsive.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/responsive.css">
 	<!-- Modernizr Js -->
-	<script src="/NewRPJ/Public/scripts/vendor/modernizr-2.8.3.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
 
@@ -94,7 +94,7 @@
 		                    <!--Logo Start-->
 		                    <div class="logo">
 		                        <a href="index.html">
-															<img src="/NewRPJ/Public<?php echo ($company["logo"]); ?>" alt="">
+															<img src="/chikwong/NewRPJ/Public<?php echo ($company["logo"]); ?>" alt="">
 		                        </a>
 		                    </div>
 		                    <!--Logo End-->
@@ -201,9 +201,9 @@
                                 <div id="cate-toggle" class="category-menu-list">
 																		<?php if(is_array($category)): foreach($category as $key=>$cat_list): ?><ul>
 	                                        <li class="right-menu"><a href="shop.html"><?php echo ($cat_list["category_name"]); ?></a>
-																						  <?php if(is_array($brand)): foreach($brand as $key=>$brand_list): if($cat_list['brand_id'] == $brand_list['brand_id']): ?><ul class="cat-mega-menu">
+																						  <?php if(is_array($brand)): foreach($brand as $key=>$brand_list): if($cat_list['category_id'] == $brand_list['category_id']): ?><ul class="cat-mega-menu">
 		                                                <li class="right-menu cat-mega-title">
-		                                                   <a href="shop.html"><?php echo ($name_list["brand_name"]); ?></a>
+		                                                   <a href="shop.html"><?php echo ($brand_list["brand_name"]); ?></a>
 		                                                    <ul>
 		                                                        <li><a href="shop.html">LCD TV</a></li>
 		                                                        <li><a href="shop.html">LED TV</a></li>
@@ -251,7 +251,7 @@
                                   <ul class="cart-items">
                                       <li class="single-cart-item">
                                           <div class="cart-img">
-                                              <a href="cart.html"><img src="/NewRPJ/Public/img/cart/cart1.jpg" alt=""></a>
+                                              <a href="cart.html"><img src="/chikwong/NewRPJ/Public/img/cart/cart1.jpg" alt=""></a>
                                               <span class="cart-sticker">1x</span>
                                           </div>
                                           <div class="cart-content">
@@ -266,7 +266,7 @@
                                       </li>
                                       <li class="single-cart-item">
                                           <div class="cart-img">
-                                              <a href="cart.html"><img src="/NewRPJ/Public/img/cart/cart2.jpg" alt=""></a>
+                                              <a href="cart.html"><img src="/chikwong/NewRPJ/Public/img/cart/cart2.jpg" alt=""></a>
                                               <span class="cart-sticker">1x</span>
                                           </div>
                                           <div class="cart-content">
@@ -325,7 +325,7 @@
 		                <!--About Us Image Start-->
 		                <div class="about-us-img-wrapper mb-30">
 		                    <div class="about-us-image img-full">
-                                <a href="#"><img src="/NewRPJ/Public<?php echo ($company["background"]); ?>" alt=""></a>
+                                <a href="#"><img src="/chikwong/NewRPJ/Public<?php echo ($company["background"]); ?>" alt=""></a>
                             </div>
 		                </div>
 		                <!--About Us Image End-->
@@ -365,7 +365,7 @@
 		                <!--Single Team Start-->
 		                <!-- <div class="single-team mb-30">
 		                    <div class="team-image img-full">
-		                        <a href="#"><img src="/NewRPJ/Public/img/team/team1.jpg" alt=""></a>
+		                        <a href="#"><img src="/chikwong/NewRPJ/Public/img/team/team1.jpg" alt=""></a>
 		                    </div>
 		                    <div class="team-content">
 		                        <div class="team-hover-info">
@@ -385,7 +385,7 @@
 		                <!--Single Team Start-->
 		                <!-- <div class="single-team mb-30">
 		                    <div class="team-image img-full">
-		                        <a href="#"><img src="/NewRPJ/Public/img/team/team2.jpg" alt=""></a>
+		                        <a href="#"><img src="/chikwong/NewRPJ/Public/img/team/team2.jpg" alt=""></a>
 		                    </div>
 		                    <div class="team-content">
 		                        <div class="team-hover-info">
@@ -405,7 +405,7 @@
 		                <!--Single Team Start-->
 		                <!-- <div class="single-team mb-30">
 		                    <div class="team-image img-full">
-		                        <a href="#"><img src="/NewRPJ/Public/img/team/team3.jpg" alt=""></a>
+		                        <a href="#"><img src="/chikwong/NewRPJ/Public/img/team/team3.jpg" alt=""></a>
 		                    </div>
 		                    <div class="team-content">
 		                        <div class="team-hover-info">
@@ -437,7 +437,7 @@
                                     <p>如果你对产品</p>
                                 </div>
                                 <div class="testimonial-author-2">
-                                    <img src="/NewRPJ/Public/img/testimonial/testimonial1.png" alt="">
+                                    <img src="/chikwong/NewRPJ/Public/img/testimonial/testimonial1.png" alt="">
                                     <div class="author-title-2">
                                         <p class="author-name-2">orando BLoom</p>
                                         <p class="author-email-2">demo@hastech.company</p>
@@ -453,7 +453,7 @@
                                     <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram.</p>
                                 </div>
                                 <div class="testimonial-author-2">
-                                    <img src="/NewRPJ/Public/img/testimonial/testimonial1.png" alt="">
+                                    <img src="/chikwong/NewRPJ/Public/img/testimonial/testimonial1.png" alt="">
                                     <div class="author-title-2">
                                         <p class="author-name-2">Md Shohel</p>
                                         <p class="author-email-2">demo@hastech.company</p>
@@ -469,7 +469,7 @@
                                     <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram.</p>
                                 </div>
                                 <div class="testimonial-author-2">
-                                    <img src="/NewRPJ/Public/img/testimonial/testimonial1.png" alt="">
+                                    <img src="/chikwong/NewRPJ/Public/img/testimonial/testimonial1.png" alt="">
                                     <div class="author-title-2">
                                         <p class="author-name-2">orando BLoom</p>
                                         <p class="author-email-2">demo@hastech.company</p>
@@ -541,7 +541,7 @@
 		                        <!--Single Footer Wiedget Start-->
 		                        <div class="single-footer-wiedget mb-30">
 		                            <div class="footer-logo">
-		                                <a href="index.html"><img src="/NewRPJ/Public<?php echo ($company["logo"]); ?>" alt=""></a>
+		                                <a href="index.html"><img src="/chikwong/NewRPJ/Public<?php echo ($company["logo"]); ?>" alt=""></a>
 		                            </div>
 		                            <div class="desc-footer">广州瑞谱佳科技有限公司拥有稳妥，快捷，优质的售后服务，欢迎垂询！</div>
 		                            <div class="address-footer">
@@ -616,7 +616,7 @@
 		                    <div class="col-md-6">
                                 <!--Footer Payment Start-->
 		                        <div class="footer-payments-image text-center text-md-right">
-		                            <img src="/NewRPJ/Public/img/payment/payment.png" alt="">
+		                            <img src="/chikwong/NewRPJ/Public/img/payment/payment.png" alt="">
 		                        </div>
 		                        <!--Footer Payment End-->
 		                    </div>
@@ -645,28 +645,28 @@
                         <div class="tab-pane fade show active" id="single-slide1" role="tabpanel" aria-labelledby="single-slide-tab-1">
                             <!--Single Product Image Start-->
                             <div class="single-product-img img-full">
-                              <img src="/NewRPJ/Public/img/single-product/large/large1.jpg" alt="">
+                              <img src="/chikwong/NewRPJ/Public/img/single-product/large/large1.jpg" alt="">
                             </div>
                             <!--Single Product Image End-->
                         </div>
                         <div class="tab-pane fade" id="single-slide2" role="tabpanel" aria-labelledby="single-slide-tab-2">
                             <!--Single Product Image Start-->
                             <div class="single-product-img img-full">
-                              <img src="/NewRPJ/Public/img/single-product/large/large2.jpg" alt="">
+                              <img src="/chikwong/NewRPJ/Public/img/single-product/large/large2.jpg" alt="">
                             </div>
                             <!--Single Product Image End-->
                         </div>
                         <div class="tab-pane fade" id="single-slide3" role="tabpanel" aria-labelledby="single-slide-tab-3">
                             <!--Single Product Image Start-->
                             <div class="single-product-img img-full">
-                              <img src="/NewRPJ/Public/img/single-product/large/large3.jpg" alt="">
+                              <img src="/chikwong/NewRPJ/Public/img/single-product/large/large3.jpg" alt="">
                             </div>
                             <!--Single Product Image End-->
                         </div>
                         <div class="tab-pane fade" id="single-slide4" role="tabpanel" aria-labelledby="single-slide-tab-4">
                             <!--Single Product Image Start-->
                             <div class="single-product-img img-full">
-                              <img src="/NewRPJ/Public/img/single-product/large/large4.jpg" alt="">
+                              <img src="/chikwong/NewRPJ/Public/img/single-product/large/large4.jpg" alt="">
                             </div>
                             <!--Single Product Image End-->
                         </div>
@@ -676,16 +676,16 @@
                       <div class="single-product-menu">
                           <div class="nav single-slide-menu" role="tablist">
                               <div class="single-tab-menu img-full">
-                                  <a class="active" data-toggle="tab" id="single-slide-tab-1" href="#single-slide1"><img src="/NewRPJ/Public/img/single-product/small/small1.jpg" alt=""></a>
+                                  <a class="active" data-toggle="tab" id="single-slide-tab-1" href="#single-slide1"><img src="/chikwong/NewRPJ/Public/img/single-product/small/small1.jpg" alt=""></a>
                               </div>
                               <div class="single-tab-menu img-full">
-                                  <a data-toggle="tab" id="single-slide-tab-2" href="#single-slide2"><img src="/NewRPJ/Public/img/single-product/small/small2.jpg" alt=""></a>
+                                  <a data-toggle="tab" id="single-slide-tab-2" href="#single-slide2"><img src="/chikwong/NewRPJ/Public/img/single-product/small/small2.jpg" alt=""></a>
                               </div>
                               <div class="single-tab-menu img-full">
-                                  <a data-toggle="tab" id="single-slide-tab-3" href="#single-slide3"><img src="/NewRPJ/Public/img/single-product/small/small3.jpg" alt=""></a>
+                                  <a data-toggle="tab" id="single-slide-tab-3" href="#single-slide3"><img src="/chikwong/NewRPJ/Public/img/single-product/small/small3.jpg" alt=""></a>
                               </div>
                               <div class="single-tab-menu img-full">
-                                  <a data-toggle="tab" id="single-slide-tab-4" href="#single-slide4"><img src="/NewRPJ/Public/img/single-product/small/small4.jpg" alt=""></a>
+                                  <a data-toggle="tab" id="single-slide-tab-4" href="#single-slide4"><img src="/chikwong/NewRPJ/Public/img/single-product/small/small4.jpg" alt=""></a>
                               </div>
                           </div>
                       </div>
@@ -778,40 +778,40 @@
     <!--All Js Here-->
 
 	<!--Jquery 1.12.4-->
-	<script src="/NewRPJ/Public/scripts/vendor/jquery-1.12.4.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/vendor/jquery-1.12.4.min.js"></script>
 	<!--Imagesloaded-->
-	<script src="/NewRPJ/Public/scripts/imagesloaded.pkgd.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/imagesloaded.pkgd.min.js"></script>
 	<!--Isotope-->
-	<script src="/NewRPJ/Public/scripts/isotope.pkgd.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/isotope.pkgd.min.js"></script>
 	<!--Waypoints-->
-	<script src="/NewRPJ/Public/scripts/waypoints.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/waypoints.min.js"></script>
 	<!--Counterup-->
-	<script src="/NewRPJ/Public/scripts/jquery.counterup.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/jquery.counterup.min.js"></script>
 	<!--Countdown-->
-	<script src="/NewRPJ/Public/scripts/jquery.countdown.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/jquery.countdown.min.js"></script>
 	<!--Carousel-->
-	<script src="/NewRPJ/Public/scripts/owl.carousel.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/owl.carousel.min.js"></script>
 	<!--Slick-->
-	<script src="/NewRPJ/Public/scripts/slick.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/slick.min.js"></script>
 	<!--Meanmenu-->
-	<script src="/NewRPJ/Public/scripts/jquery.meanmenu.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/jquery.meanmenu.min.js"></script>
 	<!--Instafeed-->
 	<!--<script src="js/instafeed.min.js"></script>-->
 	<!--Nice Select-->
-	<script src="/NewRPJ/Public/scripts/jquery.nice-select.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/jquery.nice-select.min.js"></script>
 	<!--ScrollUp-->
-	<script src="/NewRPJ/Public/scripts/jquery.scrollUp.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/jquery.scrollUp.min.js"></script>
 	<!--Wow-->
-	<script src="/NewRPJ/Public/scripts/wow.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/wow.min.js"></script>
 	<!--Venobox-->
-	<script src="/NewRPJ/Public/scripts/venobox.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/venobox.min.js"></script>
 	<!--Popper-->
-	<script src="/NewRPJ/Public/scripts/popper.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/popper.min.js"></script>
 	<!--Bootstrap-->
-	<script src="/NewRPJ/Public/scripts/bootstrap.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/bootstrap.min.js"></script>
 	<!--Plugins-->
-	<script src="/NewRPJ/Public/scripts/plugins.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/plugins.js"></script>
 	<!--Main Js-->
-	<script src="/NewRPJ/Public/scripts/main.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/main.js"></script>
 </body>
 </html>

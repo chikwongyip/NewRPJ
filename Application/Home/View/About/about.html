@@ -203,10 +203,10 @@
 	                                    <ul>
 	                                        <li class="right-menu"><a href="shop.html">{$cat_list.category_name}</a>
 																						  <foreach name="brand" item="brand_list">
-																								<if condition="$cat_list['brand_id'] eq $brand_list['brand_id']">
+																								<if condition="$cat_list['category_id'] eq $brand_list['category_id']">
 		                                            <ul class="cat-mega-menu">
 		                                                <li class="right-menu cat-mega-title">
-		                                                   <a href="shop.html">{$name_list.brand_name}</a>
+		                                                   <a href="shop.html">{$brand_list.brand_name}</a>
 		                                                    <ul>
 		                                                        <li><a href="shop.html">LCD TV</a></li>
 		                                                        <li><a href="shop.html">LED TV</a></li>
