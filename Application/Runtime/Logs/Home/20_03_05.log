@@ -1,0 +1,360 @@
+[ 2020-03-05T10:59:24+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/about/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.027354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008535s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0533s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0527s ]
+SQL: select rpj_product.category_id,
+                                                rpj_procategory.category_name
+                                    from rpj_product
+                                    inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                    group by rpj_product.category_id [ RunTime:0.0526s ]
+SQL: select rpj_product.brand_id,
+                                        rpj_product.category_id,
+                                        rpj_brand.brand_name,
+                                        rpj_procategory.category_name
+                                    from rpj_product
+                                    inner join rpj_brand on rpj_product.brand_id = rpj_brand.brand_id
+                                    inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                    group by rpj_product.brand_id,rpj_product.category_id [ RunTime:0.0526s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0516s ]
+SQL: SELECT * FROM `rpj_product`  [ RunTime:0.0525s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.003578s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003645s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080486s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005946s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005989s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001090s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001269s ]
+
+[ 2020-03-05T10:59:37+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/about/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001983s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0527s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0528s ]
+SQL: select rpj_product.category_id,
+                                                rpj_procategory.category_name
+                                    from rpj_product
+                                    inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                    group by rpj_product.category_id [ RunTime:0.0522s ]
+SQL: select rpj_product.brand_id,
+                                        rpj_product.category_id,
+                                        rpj_brand.brand_name,
+                                        rpj_procategory.category_name
+                                    from rpj_product
+                                    inner join rpj_brand on rpj_product.brand_id = rpj_brand.brand_id
+                                    inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                    group by rpj_product.brand_id,rpj_product.category_id [ RunTime:0.0526s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0529s ]
+SQL: SELECT * FROM `rpj_product`  [ RunTime:0.0509s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016944s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016999s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000791s ]
+
+[ 2020-03-05T10:59:49+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000327s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000373s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002410s ]
+
+[ 2020-03-05T10:59:50+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/img/single-product/small/small1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+
+[ 2020-03-05T10:59:50+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/img/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+
+[ 2020-03-05T11:01:51+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000326s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000373s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001796s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001867s ]
+
+[ 2020-03-05T11:01:51+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/img/single-product/small/small1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+
+[ 2020-03-05T11:01:51+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/img/single-product/small/small1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+
+[ 2020-03-05T11:02:20+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000326s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000369s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017470s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017514s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001100s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001187s ]
+
+[ 2020-03-05T11:02:20+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/img/single-product/small/small1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+
+[ 2020-03-05T11:02:20+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/img/single-product/small/small1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+
+[ 2020-03-05T11:07:01+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000349s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000391s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016783s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016839s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000821s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000889s ]
+
+[ 2020-03-05T11:07:01+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/img/single-product/small/small1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+
+[ 2020-03-05T11:07:01+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/img/single-product/small/small1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+
+[ 2020-03-05T11:09:26+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000281s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000325s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016544s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016589s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000732s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000814s ]
+
+[ 2020-03-05T11:09:26+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/img/single-product/small/small1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+
+[ 2020-03-05T11:09:26+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/img/single-product/small/small1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+
+[ 2020-03-05T11:13:24+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/img/single-product/small/small1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+
+[ 2020-03-05T11:13:36+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/img/single-product/small/small1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+
+[ 2020-03-05T11:14:38+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/single-product.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+ERR: 非法操作:single-product
+
+[ 2020-03-05T11:44:11+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+ERR: 非法操作:cart
+
+[ 2020-03-05T14:42:43+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/about/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0548s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0542s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0538s ]
+SQL: select rpj_product.category_id,
+                                                rpj_procategory.category_name
+                                    from rpj_product
+                                    inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                    group by rpj_product.category_id [ RunTime:0.0540s ]
+SQL: select rpj_product.brand_id,
+                                        rpj_product.category_id,
+                                        rpj_brand.brand_name,
+                                        rpj_procategory.category_name
+                                    from rpj_product
+                                    inner join rpj_brand on rpj_product.brand_id = rpj_brand.brand_id
+                                    inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                    group by rpj_product.brand_id,rpj_product.category_id [ RunTime:0.0536s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0541s ]
+SQL: SELECT * FROM `rpj_product`  [ RunTime:0.0535s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0531s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016338s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000665s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000728s ]
+
+[ 2020-03-05T14:55:46+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000239s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+NOTIC: [8] Undefined variable: company D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 73 行.
+NOTIC: [8] Undefined variable: brands D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 95 行.
+NOTIC: [8] Undefined variable: company D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 110 行.
+NOTIC: [8] Undefined variable: category D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 135 行.
+NOTIC: [8] Undefined variable: category D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 159 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036396s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036441s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002046s ]
+
+[ 2020-03-05T14:55:46+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/img/single-product/small/small1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+
+[ 2020-03-05T14:55:46+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/img/single-product/small/small1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+
+[ 2020-03-05T14:59:04+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000268s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000309s ]
+NOTIC: [8] Undefined variable: company D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 73 行.
+NOTIC: [8] Undefined variable: brands D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 95 行.
+NOTIC: [8] Undefined variable: company D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 110 行.
+NOTIC: [8] Undefined variable: category D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 135 行.
+NOTIC: [8] Undefined variable: category D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 159 行.
+NOTIC: [8] Undefined variable: company D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 750 行.
+NOTIC: [8] Undefined variable: company D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 763 行.
+NOTIC: [8] Undefined variable: company D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 776 行.
+NOTIC: [8] Undefined variable: company D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 797 行.
+NOTIC: [8] Undefined variable: company D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 801 行.
+NOTIC: [8] Undefined variable: company D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 802 行.
+NOTIC: [8] Undefined variable: company D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 803 行.
+NOTIC: [8] Undefined variable: company D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 865 行.
+NOTIC: [8] Undefined variable: company D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 865 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021815s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021848s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001214s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001370s ]
+
