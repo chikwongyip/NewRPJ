@@ -100,14 +100,8 @@
 		                                        </ul>
 		                                    <!--Mega Menu End-->
 		                                </li>
-																		<li><a href="index.html">产品附件下载</a>
-																			 <!--Dropdown Menu Start-->
-
-
-
-																			 <!--Dropdown Menu End-->
-																	 </li>
-																	 <li><a href="about.html">关于我们</a></li>
+																		<li><a href="index.html">产品附件下载</a></li>
+																	  <li><a href="about.html">关于我们</a></li>
 		                            </ul>
 		                        </nav>
 		                    </div>
@@ -180,6 +174,7 @@
 		    </div>
 		    <!--Header Bottom Area End-->
 		</header>
+		<!-- copy -->
 		<!--Header Area End-->
 		<!--Breadcrumb Area Start-->
 		<div class="breadcrumb-area">
@@ -230,7 +225,7 @@
 		    </div>
 		</div>
 		<!--About Us Area End-->
-
+<!-- copy -->
 		<!--Feature Area Start-->
 		<div class="feature-area">
 		    <div class="container">

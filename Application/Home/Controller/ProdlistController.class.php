@@ -1,8 +1,8 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-class IndexController extends Controller {
-    public function index(){
+class ProdlistController extends Controller {
+    public function prodlist(){
       // model inizitial
           $model = M('Rpj_company');
           $modelProduct = M('Rpj_product');
