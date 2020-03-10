@@ -54,6 +54,8 @@ class ProductController extends Controller {
     }
 
     public function product_list(){
+      $productTest = getProductData();
+      var_dump($productTest);exit;
       $modelProduct = M('Rpj_product');
       $product = $modelProduct
                   ->join('rpj_brand ON rpj_product.brand_id = rpj_brand.brand_id')
@@ -118,5 +120,7 @@ class ProductController extends Controller {
       }
       $this->display('product_edit');
     }
+
+
 
 }

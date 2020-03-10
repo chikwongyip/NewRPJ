@@ -1,9 +1,12 @@
 <?php
 namespace Admin\Controller;
 use Think\Controller;
-class NewsController extends Controller {
-    public function news_add(){
-      if (IS_POST) {
+class NewsController extends Controller
+{
+    public function news_add()
+    {
+      if (IS_POST)
+      {
         $model = M('Rpj_news');
         $model->news_title = $_POST["news_title"];
         $model->news_content = $_POST["news_content"];
@@ -17,7 +20,8 @@ class NewsController extends Controller {
       $this->display();
     }
 
-    public function news_list(){
+    public function news_list()
+    {
       $model = M('Rpj_news');
       $news_list = $model->select();
 
@@ -25,7 +29,8 @@ class NewsController extends Controller {
       $this->display();
     }
 
-    public function news_edit($news_id){
+    public function news_edit($news_id)
+    {
       $model = M('Rpj_news');
       $news_list = $model->find($news_id);
 
@@ -33,7 +38,8 @@ class NewsController extends Controller {
       $this->display();
     }
 
-    public function news_submit(){
+    public function news_submit()
+    {
       if(IS_POST){
         $model = M('Rpj_news');
         $news_id = $_POST['news_id'];
@@ -42,9 +48,11 @@ class NewsController extends Controller {
         $model->news_title = $_POST['news_title'];
         $model->news_content = $_POST['news_content'];
         var_dump($_POST['is_hot']);
-        if ($_POST['is_hot'] == "X"){
+        if ($_POST['is_hot'] == "X")
+        {
           $model->is_hot = "checked";
-        }else {
+        }else
+        {
           $model->is_hot = 'null';
           $model->is_hotx = 'X';
         }
@@ -53,7 +61,8 @@ class NewsController extends Controller {
         $this->display('News_edit');
       }
     }
-    public function news_del($news_id){
+    public function news_del($news_id)
+    {
       $model = M('Rpj_news');
       $model->delete($news_id);
       $news_list = $model->select();

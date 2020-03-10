@@ -1,8 +1,10 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-class ProductController extends Controller {
-    public function product(){
+class ProductController extends Controller
+{
+    public function product()
+    {
       // model inizitial
           $model = M('Rpj_company');
           $modelProduct = M('Rpj_product');

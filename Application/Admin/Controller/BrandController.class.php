@@ -2,33 +2,37 @@
 namespace Admin\Controller;
 use Think\Controller;
 
-class BrandController extends Controller{
-
-  public function brand_add(){
+class BrandController extends Controller
+{
+  public function brand_add()
+  {
     $model = M('Rpj_brand');
-    if(IS_POST){
+    if(IS_POST)
+    {
         $upload = new \Think\Upload();
         $upload->maxSize = 3145728;
         $upload->exts = array('jpg', 'gif', 'png', 'jpeg','pdf');// 设置附件上传类型
         $upload->rootPath  =     './Upload/brand/'; // 设置附件上传根目录
         $upload->savePath  =     ''; // 设置附件上传（子）目录
         $info = $upload->uploadOne($_FILES['brand_image']);
-        if(!$info){
+        if(!$info)
+        {
             $this->error($upload->getError());
-        }else{
-
+        }else
+        {
             $model->brand_name  = $_POST["brand_name"];
             $model->brand_image = '/Upload/brand/'.$info['savepath'].$info['savename'];
             $model->add();
             $this->display();
         }
-    }else {
-
+    }else
+    {
         $this->display();
     }
   }
 
-  public function brand_edit($brand_id){
+  public function brand_edit($brand_id)
+  {
     $model = M('Rpj_brand');
     $item = $model->find($brand_id);
     $this->assign('item',$item);
@@ -36,14 +40,16 @@ class BrandController extends Controller{
 
   }
 
-  public function brand_list(){
+  public function brand_list()
+  {
     $model = M('Rpj_brand');
     $brand = $model->select();
     $this->assign('brand_list',$brand);
     $this->display();
   }
 
-  public function brand_del($brand_id){
+  public function brand_del($brand_id)
+  {
     $model = M('Rpj_brand');
     $model->delete($brand_id);
     $attachement = $model->select();
@@ -51,18 +57,18 @@ class BrandController extends Controller{
     $this->success('修改成功','',0);
   }
 
-  public function brand_submit(){
+  public function brand_submit()
+  {
     $model = M('Rpj_brand');
 
     if(IS_POST){
       $id = $_POST["brand_id"];
       $model->find($id);
-      if ($_POST["brand_id"] != null) {
+      if ($_POST["brand_id"] != null)
+      {
           $model->brand_name = $_POST["brand_name"];
           $model->save();
-      }else{
       }
-
        $this->display('brand_edit');
     }
   }

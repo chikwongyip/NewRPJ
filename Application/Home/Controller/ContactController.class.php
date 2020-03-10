@@ -1,8 +1,10 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-class ContactController extends Controller {
-    public function contact(){
+class ContactController extends Controller
+{
+    public function contact()
+    {
       // model inizitial
           $model = M('Rpj_company');
           $modelProduct = M('Rpj_product');

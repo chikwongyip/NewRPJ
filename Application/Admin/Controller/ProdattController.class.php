@@ -1,7 +1,8 @@
 <?php
 namespace Admin\Controller;
 use Think\Controller;
-class ProdattController extends Controller{
+class ProdattController extends Controller
+{
   public function prodatt_list(){
     $modelAtt = M('Rpj_prod_att');
     $productAtt = $modelAtt
@@ -11,11 +12,13 @@ class ProdattController extends Controller{
     $this->display();
   }
 
-  public function prodatt_add(){
+  public function prodatt_add()
+  {
     $modelProduct = M('Rpj_product');
     $product = $modelProduct->select();
     $modelProdatt = M('Rpj_prod_att');
-    if (IS_POST) {
+    if (IS_POST)
+    {
       //处理text
       $modelProdatt->product_id = $_POST["product_id"];
       $modelProdatt->name = $_POST["name"];
@@ -26,7 +29,8 @@ class ProdattController extends Controller{
       $upload->rootPath  =     './Upload/prodatt/'; // 设置附件上传根目录
       $upload->savePath  =     ''; // 设置附件上传（子）目录
       $info = $upload->uploadOne($_FILES['url']);
-      if(!$info){
+      if(!$info)
+      {
           $this->error($upload->getError());
       }else{
          $modelProdatt->url = '/Upload/prodatt/'.$info['savepath'].$info['savename'];
@@ -38,7 +42,8 @@ class ProdattController extends Controller{
     $this->display();
   }
 
-  public function prodatt_edit($att_id){
+  public function prodatt_edit($att_id)
+  {
     $model = M('Rpj_prod_att');
     $prodAtt = $model
                   ->join('rpj_product on rpj_product.product_id = rpj_prod_att.product_id')
@@ -47,16 +52,19 @@ class ProdattController extends Controller{
     $this->display();
   }
 
-  public function prodatt_submit(){
+  public function prodatt_submit()
+  {
     $model = M('Rpj_prod_att');
 
-    if(IS_POST){
+    if(IS_POST)
+    {
       $model->find($_POST["att_id"]);
       if ($_POST["name"] != null) {
           $model->name = $_POST["name"];
           $model->save();
           echo "更新成功";
-      }else{
+      }else
+      {
           echo "更新失败";
       }
 
@@ -64,7 +72,8 @@ class ProdattController extends Controller{
     }
   }
 
-  public function prodatt_del($att_id){
+  public function prodatt_del($att_id)
+  {
     $model = M('Rpj_prod_att');
     $model->delete($att_id);
     $productAtt = $model
