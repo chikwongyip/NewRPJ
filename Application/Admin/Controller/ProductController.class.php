@@ -38,14 +38,14 @@ class ProductController extends Controller {
         if(!$info){
             $this->error($upload->getError());
         }else{
-            $modelProduct->product_logo = '/Application/Upload/product/'.$info['savepath'].$info['savename'];
+            $modelProduct->product_logo = '/Upload/'.$info['savepath'].$info['savename'];
         }
 
         $info = $upload->uploadOne($_FILES['product_pic']);
         if (!$info) {
             $this->error($upload->getError());
         }else {
-            $modelProduct->product_pic = '/Application/Upload/product/'.$info['savepath'].$info['savename'];
+            $modelProduct->product_pic = '/Upload/'.$info['savepath'].$info['savename'];
         }
 
         $modelProduct->add();
