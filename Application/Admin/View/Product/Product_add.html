@@ -166,11 +166,12 @@
 						</td>
 				</tr>
 				<tr>
-						<td class="ui_text_lt">应用领域</td>
+						<td class="ui_text_lt">产品类别</td>
 						<td class="ui_text_lt">
-							<select name="app_name">
-								<foreach name="app" item="a">
-									<option name = "{$a.app_id}" value ="{$a.app_name}">{$a.app_name}</option>
+							<select name="cate_name">
+								<foreach name="category" item="a">
+
+									<option name = "{$a.category_id}" value ="{$a.category_name}">{$a.category_name}</option>
 								</foreach>
 							</select>
 						</td>

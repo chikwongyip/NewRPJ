@@ -137,7 +137,7 @@
 </head>
 <body>
 <form id="submitForm" name="submitForm" action="{:U('admin/product/product_submit')}" method="post" enctype="multipart/form-data">
-	<input type="hidden" name="product_id" value="{$product.product_id}" id="fyID"/>
+	<input type="hidden" name="product_id" value="{$product[0].product_id}" id="fyID"/>
 	<div id="container">
 		<div id="nav_links">
 			当前位置：基础数据&nbsp;>&nbsp;<span style="color: #1A5CC6;">附件编辑</span>
@@ -152,25 +152,25 @@
 				<tr>
 					<td class="ui_text_lt">产品名称</td>
 					<td class="ui_text_lt">
-						<input type="text" name="product_name" value="{$product.product_name}" class="ui_input_txt02"/>
+						<input type="text" name="product_name" value="{$product[0].product_name}" class="ui_input_txt02"/>
 					</td>
 				</tr>
 				<tr>
 					<td class="ui_text_lt">产品描述</td>
 					<td class="ui_text_lt">
-						<textarea rows="5" cols="50" name="product_desc" value=" ">{$product.product_desc}</textarea>
+						<textarea rows="5" cols="50" name="product_desc" value=" ">{$product[0].product_desc}</textarea>
 					</td>
 				</tr>
 				<tr>
 					<td class="ui_text_lt">产品规格</td>
 					<td class="ui_text_lt">
-						<textarea rows="5" cols="50" name="product_standard" value=" ">{$product.product_standard}</textarea>
+						<textarea rows="5" cols="50" name="product_standard" value=" ">{$product[0].product_standard}</textarea>
 					</td>
 				</tr>
 				<tr>
 					<td class="ui_text_lt">产品型号</td>
 					<td class="ui_text_lt">
-						 <input type="text" name="product_model" value="{$product.product_model}" class="ui_input_txt02"/>
+						 <input type="text" name="product_model" value="{$product[0].product_model}" class="ui_input_txt02"/>
 					</td>
 				</tr>
 				<tr>
@@ -188,7 +188,7 @@
 				<tr>
 					<td class="ui_text_lt">产品视频地址</td>
 					<td class="ui_text_lt">
-						<input type="text" name="product_video" value=" {$product.product_video}" class="ui_input_txt02"/>
+						<input type="text" name="product_video" value=" {$product[0].product_video}" class="ui_input_txt02"/>
 					</td>
 				</tr>
 				<tr>

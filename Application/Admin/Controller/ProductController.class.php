@@ -7,13 +7,14 @@ class ProductController extends Controller {
       $modelBrand = M('Rpj_brand');
       $brand = $modelBrand->select();
       $this->assign('brand',$brand);
-      $modelApp = M('Rpj_appfield');
-      $appField = $modelApp->select();
-      $this->assign('app',$appField);
+      $modelCategory = M('Rpj_procategory');
+      $category = $modelCategory->select();
+      $this->assign('category',$category);
 
       $modelProduct = M('Rpj_product');
       if (IS_POST) {
         //处理text
+
         $idMax = $modelProduct->max('product_id');
         $product_id = $idMax+1;
         $modelProduct->product_id = $product_id;
@@ -24,14 +25,14 @@ class ProductController extends Controller {
         $modelProduct->product_video = $_POST["product_video"];
         $brand_id = $modelBrand->where("brand_name='%s'",$_POST["brand_name"])->field('brand_id')->find();
         $modelProduct->brand_id = (int)$brand_id["brand_id"];
-        $app_id = $modelApp->where("app_name='%s'",$_POST["app_name"])->field('app_id')->find();
-        $modelProduct->app_id = (int)$app_id["app_id"];
+        $category_id = $modelCategory->where("category_name='%s'",$_POST["cate_name"])->field('category_id')->find();
+        $modelProduct->category_id = (int)$category_id["category_id"];
 
         //处理文件
         $upload = new \Think\Upload();
         $upload->maxSize = 3145728;
         $upload->exts = array('jpg', 'gif', 'png', 'jpeg','pdf');// 设置附件上传类型
-        $upload->rootPath  =     './Application/Upload/product/'; // 设置附件上传根目录
+        $upload->rootPath  =     './Public/Upload/'; // 设置附件上传根目录
         $upload->savePath  =     ''; // 设置附件上传（子）目录
         $info = $upload->uploadOne($_FILES['product_logo']);
 
@@ -54,12 +55,7 @@ class ProductController extends Controller {
     }
 
     public function product_list(){
-      $productTest = getProductData();
-      var_dump($productTest);exit;
-      $modelProduct = M('Rpj_product');
-      $product = $modelProduct
-                  ->join('rpj_brand ON rpj_product.brand_id = rpj_brand.brand_id')
-                  ->select();
+      $product = getProductData();
       $this->assign('product',$product);
       $this->display();
     }
@@ -75,10 +71,8 @@ class ProductController extends Controller {
     }
 
     public function product_edit($product_id){
-      $model = M('Rpj_product');
-      $product = $model
-                  ->join('rpj_brand ON rpj_product.brand_id = rpj_brand.brand_id')
-                  ->find($product_id);
+    
+      $product = getProductSingle($product_id);
 
       $this->assign('product',$product);
       $this->display();
@@ -96,14 +90,14 @@ class ProductController extends Controller {
         $upload = new \Think\Upload();
         $upload->maxSize = 3145728;
         $upload->exts = array('jpg', 'gif', 'png', 'jpeg','pdf');// 设置附件上传类型
-        $upload->rootPath  =     './Application/Upload/product/'; // 设置附件上传根目录
+        $upload->rootPath  =     './Public/Upload/'; // 设置附件上传根目录
         $upload->savePath  =     ''; // 设置附件上传（子）目录
         if ($_FILES['product_logo']['name'] != null) {
           $info = $upload->uploadOne($_FILES['product_logo']);
           if(!$info){
               $this->error($upload->getError());
           }else{
-              $model->product_logo = '/Application/Upload/product/'.$info['savepath'].$info['savename'];
+              $model->product_logo = '/Upload/'.$info['savepath'].$info['savename'];
           }
         }
 
@@ -112,7 +106,7 @@ class ProductController extends Controller {
           if(!$info){
               $this->error($upload->getError());
           }else{
-              $model->product_pic = '/Application/Upload/product/'.$info['savepath'].$info['savename'];
+              $model->product_pic = '/Upload/'.$info['savepath'].$info['savename'];
           }
         }
 
