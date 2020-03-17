@@ -49,3 +49,14 @@
                                 group by rpj_product.brand_id,rpj_product.category_id");
     return $brand;
   }
+
+  function getProductPic()
+  {
+    $modelProductPicture = new \Think\Model();
+    $productPicture = $modelProductPicture->query("select rpj_product_pic.pic_id,
+                                                          rpj_product_pic.product_id,
+                                                          rpj_product_pic.product_pic,
+                                                          rpj_product.product_name
+                                                  from rpj_product_pic
+                                                  inner join rpj_product on rpj_product_pic.product_id = rpj_product.product_id");
+  }

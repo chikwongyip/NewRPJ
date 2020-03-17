@@ -80,6 +80,7 @@ class ProductController extends Controller {
 
     public function product_submit(){
       $model = M('Rpj_product');
+      
       if (IS_POST) {
         $model->find($_POST['product_id']);
         $model->product_name = $_POST['product_name'];
