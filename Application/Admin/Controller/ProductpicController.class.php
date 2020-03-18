@@ -7,21 +7,24 @@ class ProductpicController extends Controller
     public function productpic_add()
     {
         $model = M('Rpj_product_pic');
+        $modelProduct = M('Rpj_product');
+        $product = $modelProduct->select();
+        $this->assign('product',$product);
         if(IS_POST)
         {
             $upload = new \Think\Upload();
             $upload->maxSize = 3145728;
             $upload->exts = array('jpg', 'gif', 'png', 'jpeg','pdf');// 设置附件上传类型
-            $upload->rootPath  =     './Application/Upload/attach/'; // 设置附件上传根目录
+            $upload->rootPath  =      './Public/Upload/'; // 设置附件上传根目录
             $upload->savePath  =     ''; // 设置附件上传（子）目录
-            $info = $upload->uploadOne($_FILES['url']);
+            $info = $upload->uploadOne($_FILES['product_pic']);
             if(!$info)
             {
                 $this->error($upload->getError());
             }else
             {
-                $model->name = $_POST["name"];
-                $model->url = '/Application/Upload/attach/'.$info['savepath'].$info['savename'];
+                $model->product_id = $_POST["product_id"];
+                $model->product_pic = '/Upload/'.$info['savepath'].$info['savename'];
                 $model->add();
                 $this->display();
             }
@@ -41,13 +44,13 @@ class ProductpicController extends Controller
 
     //删除附件
 
-    public function productpic_del($id)
+    public function productpic_del($pic_id)
     {
-      $model = M('Rpj_attachment');
-      $model->delete($id);
-      $attachement = $model->select();
-      $this->assign('attach',$attachement);
-      $this->display('Attachment_list');
+      $model = M('Rpj_product_pic');
+      $model->delete($pic_id);
+      $product_pic = getProductPic();
+      $this->assign('product_pic',$product_pic);
+      $this->display('Productpic_list');
     }
 
     public function Productpic_edit($id)

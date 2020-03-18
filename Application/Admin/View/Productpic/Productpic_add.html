@@ -152,15 +152,19 @@
 
 
 				<tr>
-					<td class="ui_text_rt">附件名称</td>
+					<td class="ui_text_rt">产品名称</td>
 					<td class="ui_text_lt">
-						<input type="text" name="name" value=" " class="ui_input_txt02"/>
+						<select name="product_id">
+							<foreach name="product" item="a">
+								<option name = "{$a.product_id}" value ="{$a.product_id}">{$a.product_name}</option>
+							</foreach>
+					    </select>
 					</td>
 				</tr>
 				<tr>
-					<td class="ui_text_rt">附件 </td>
+					<td class="ui_text_rt">产品图片</td>
 					<td class="ui_text_lt">
-						<input type="file" name="url" size="35" />
+						<input type="file" name="product_pic" size="35" />
 					</td>
 				</tr>
 
