@@ -59,4 +59,5 @@
                                                           rpj_product.product_name
                                                   from rpj_product_pic
                                                   inner join rpj_product on rpj_product_pic.product_id = rpj_product.product_id");
+    return $productPicture;
   }

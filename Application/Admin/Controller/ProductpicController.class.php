@@ -12,6 +12,7 @@ class ProductpicController extends Controller
         $this->assign('product',$product);
         if(IS_POST)
         {
+
             $upload = new \Think\Upload();
             $upload->maxSize = 3145728;
             $upload->exts = array('jpg', 'gif', 'png', 'jpeg','pdf');// 设置附件上传类型
@@ -63,7 +64,7 @@ class ProductpicController extends Controller
 
     public function productpic_submit()
     {
-      $model = M('Rpj_attachment');
+      $model = M('Rpj_product_pic');
 
       if(IS_POST)
       {

@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
 <title>信息管理系统</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<script type="text/javascript" src="__PUBLIC__/scripts/jquery/jquery-1.7.1.js"></script>
-<link href="__PUBLIC__/style/authority/basic_layout.css" rel="stylesheet" type="text/css">
-<link href="__PUBLIC__/style/authority/common_style.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="__PUBLIC__/scripts/authority/commonAll.js"></script>
-<script type="text/javascript" src="__PUBLIC__/scripts/jquery/jquery-1.4.4.min.js"></script>
-<script src="__PUBLIC__/scripts/My97DatePicker/WdatePicker.js" type="text/javascript" defer="defer"></script>
-<script type="text/javascript" src="__PUBLIC__/scripts/artDialog/artDialog.js?skin=default"></script>
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/jquery/jquery-1.7.1.js"></script>
+<link href="/chikwong/NewRPJ/Public/style/authority/basic_layout.css" rel="stylesheet" type="text/css">
+<link href="/chikwong/NewRPJ/Public/style/authority/common_style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/authority/commonAll.js"></script>
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/jquery/jquery-1.4.4.min.js"></script>
+<script src="/chikwong/NewRPJ/Public/scripts/My97DatePicker/WdatePicker.js" type="text/javascript" defer="defer"></script>
+<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/artDialog/artDialog.js?skin=default"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
 		/*
@@ -136,14 +136,14 @@
 </script>
 </head>
 <body>
-<form id="submitForm" name="submitForm" action="{:U('admin/productpic/productpic_add')}" method="post" enctype="multipart/form-data">
+<form id="submitForm" name="submitForm" action="<?php echo U('admin/productpic/productpic_add');?>" method="post" enctype="multipart/form-data">
 	<input type="hidden" name="fyID" value="14458625716623" id="fyID"/>
 	<div id="container">
 		<div id="nav_links">
 			当前位置：基础数据&nbsp;>&nbsp;<span style="color: #1A5CC6;">附件编辑</span>
 			<div id="page_close">
 				<a href="javascript:parent.$.fancybox.close();">
-					<img src="__PUBLIC__/images/common/page_close.png" width="20" height="20" style="vertical-align: text-top;"/>
+					<img src="/chikwong/NewRPJ/Public/images/common/page_close.png" width="20" height="20" style="vertical-align: text-top;"/>
 				</a>
 			</div>
 		</div>
@@ -155,9 +155,7 @@
 					<td class="ui_text_rt">产品名称</td>
 					<td class="ui_text_lt">
 						<select name="product_id">
-							<foreach name="product" item="a">
-								<option name = "{$a.product_id}" value ="{$a.product_id}">{$a.product_name}</option>
-							</foreach>
+							<?php if(is_array($product)): foreach($product as $key=>$a): ?><option name = "<?php echo ($a["product_id"]); ?>" value ="<?php echo ($a["product_id"]); ?>"><?php echo ($a["product_name"]); ?></option><?php endforeach; endif; ?>
 					    </select>
 					</td>
 				</tr>
