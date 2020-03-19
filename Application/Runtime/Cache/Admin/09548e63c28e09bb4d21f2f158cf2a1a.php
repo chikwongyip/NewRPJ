@@ -158,16 +158,16 @@
 				<tr>
 						<td class="ui_text_lt">选择品牌</td>
 						<td class="ui_text_lt">
-							<select name="brand_name">
-								<?php if(is_array($brand)): foreach($brand as $key=>$a): ?><option name = "<?php echo ($a["brand_id"]); ?>" value ="<?php echo ($a["brand_name"]); ?>"><?php echo ($a["brand_name"]); ?></option><?php endforeach; endif; ?>
+							<select name="brand_id">
+								<?php if(is_array($brand)): foreach($brand as $key=>$a): ?><option name = "<?php echo ($a["brand_id"]); ?>" value ="<?php echo ($a["brand_id"]); ?>"><?php echo ($a["brand_name"]); ?></option><?php endforeach; endif; ?>
 							</select>
 						</td>
 				</tr>
 				<tr>
 						<td class="ui_text_lt">产品类别</td>
 						<td class="ui_text_lt">
-							<select name="cate_name">
-								<?php if(is_array($category)): foreach($category as $key=>$a): ?><option name = "<?php echo ($a["category_id"]); ?>" value ="<?php echo ($a["category_name"]); ?>"><?php echo ($a["category_name"]); ?></option><?php endforeach; endif; ?>
+							<select name="cateroy_id">
+								<?php if(is_array($category)): foreach($category as $key=>$a): ?><option name = "<?php echo ($a["category_id"]); ?>" value ="<?php echo ($a["category_id"]); ?>"><?php echo ($a["category_name"]); ?></option><?php endforeach; endif; ?>
 							</select>
 						</td>
 				</tr>

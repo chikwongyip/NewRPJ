@@ -158,9 +158,9 @@
 				<tr>
 						<td class="ui_text_lt">选择品牌</td>
 						<td class="ui_text_lt">
-							<select name="brand_name">
+							<select name="brand_id">
 								<foreach name="brand" item="a">
-  								<option name = "{$a.brand_id}" value ="{$a.brand_name}">{$a.brand_name}</option>
+  								<option name = "{$a.brand_id}" value ="{$a.brand_id}">{$a.brand_name}</option>
 							  </foreach>
 							</select>
 						</td>
@@ -168,10 +168,10 @@
 				<tr>
 						<td class="ui_text_lt">产品类别</td>
 						<td class="ui_text_lt">
-							<select name="cate_name">
+							<select name="cateroy_id">
 								<foreach name="category" item="a">
 
-									<option name = "{$a.category_id}" value ="{$a.category_name}">{$a.category_name}</option>
+									<option name = "{$a.category_id}" value ="{$a.category_id}">{$a.category_name}</option>
 								</foreach>
 							</select>
 						</td>

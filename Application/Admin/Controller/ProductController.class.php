@@ -23,11 +23,8 @@ class ProductController extends Controller {
         $modelProduct->product_standard = $_POST["product_standard"];
         $modelProduct->product_model = $_POST["product_model"];
         $modelProduct->product_video = $_POST["product_video"];
-        $brand_id = $modelBrand->where("brand_name='%s'",$_POST["brand_name"])->field('brand_id')->find();
-        $modelProduct->brand_id = (int)$brand_id["brand_id"];
-        $category_id = $modelCategory->where("category_name='%s'",$_POST["cate_name"])->field('category_id')->find();
-        $modelProduct->category_id = (int)$category_id["category_id"];
-
+        $modelProduct->brand_id = $_POST["brand_id"];
+        $modelProduct->category_id = $_POST["category_id"];
         //处理文件
         $upload = new \Think\Upload();
         $upload->maxSize = 3145728;
@@ -50,6 +47,7 @@ class ProductController extends Controller {
         }
 
         $modelProduct->add();
+
       }
       $this->display();
     }
@@ -71,7 +69,7 @@ class ProductController extends Controller {
     }
 
     public function product_edit($product_id){
-    
+
       $product = getProductSingle($product_id);
 
       $this->assign('product',$product);
@@ -80,7 +78,7 @@ class ProductController extends Controller {
 
     public function product_submit(){
       $model = M('Rpj_product');
-      
+
       if (IS_POST) {
         $model->find($_POST['product_id']);
         $model->product_name = $_POST['product_name'];
