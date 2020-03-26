@@ -14,7 +14,8 @@ class ProductController extends Controller
           $modelProductPic = M('Rpj_product_pic');
       //  select data
           $company = $model->find(1);
-          $product = $modelProduct->find($product_id);
+          $product = getProductSingle($product_id);
+          // var_dump($product); exit;
           $product_pic = $modelProductPic->where("product_id = $product_id")->select();
           $brands  = $modelBrands->select();
       // assign data html

@@ -1,0 +1,443 @@
+[ 2020-03-26T16:19:42+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/about/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.074954s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010969s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0527s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0531s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0527s ]
+SQL: select rpj_product.category_id,
+                                            rpj_procategory.category_name
+                                from rpj_product
+                                inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                group by rpj_product.category_id [ RunTime:0.0525s ]
+SQL: select rpj_product.brand_id,
+                                    rpj_product.category_id,
+                                    rpj_brand.brand_name,
+                                    rpj_procategory.category_name
+                                from rpj_product
+                                inner join rpj_brand on rpj_product.brand_id = rpj_brand.brand_id
+                                inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                group by rpj_product.brand_id,rpj_product.category_id [ RunTime:0.0531s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0530s ]
+SQL: SELECT * FROM `rpj_product`  [ RunTime:0.0533s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0526s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002206s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072070s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011840s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011893s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011701s ]
+
+[ 2020-03-26T16:19:57+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+ERR: 参数错误或者未定义:product_id
+
+[ 2020-03-26T16:22:34+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/product?product_id%20=%201
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+ERR: 参数错误或者未定义:product_id
+
+[ 2020-03-26T16:24:32+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/product/product_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0552s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0547s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0541s ]
+SQL: select rpj_product.category_id,
+                                            rpj_procategory.category_name
+                                from rpj_product
+                                inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                group by rpj_product.category_id [ RunTime:0.0541s ]
+SQL: select rpj_product.brand_id,
+                                    rpj_product.category_id,
+                                    rpj_brand.brand_name,
+                                    rpj_procategory.category_name
+                                from rpj_product
+                                inner join rpj_brand on rpj_product.brand_id = rpj_brand.brand_id
+                                inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                group by rpj_product.brand_id,rpj_product.category_id [ RunTime:0.0546s ]
+SQL: SHOW COLUMNS FROM `rpj_product_pic` [ RunTime:0.0548s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0545s ]
+SQL: SELECT * FROM `rpj_product` WHERE `product_id` = 1 LIMIT 1   [ RunTime:0.0538s ]
+SQL: SELECT * FROM `rpj_product_pic` WHERE ( product_id = 1 )  [ RunTime:0.0544s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0543s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000277s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033908s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033998s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000904s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2020-03-26T16:40:15+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/product/product_id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0550s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0550s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0546s ]
+SQL: select rpj_product.category_id,
+                                            rpj_procategory.category_name
+                                from rpj_product
+                                inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                group by rpj_product.category_id [ RunTime:0.0550s ]
+SQL: select rpj_product.brand_id,
+                                    rpj_product.category_id,
+                                    rpj_brand.brand_name,
+                                    rpj_procategory.category_name
+                                from rpj_product
+                                inner join rpj_brand on rpj_product.brand_id = rpj_brand.brand_id
+                                inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                group by rpj_product.brand_id,rpj_product.category_id [ RunTime:0.0549s ]
+SQL: SHOW COLUMNS FROM `rpj_product_pic` [ RunTime:0.0545s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0551s ]
+SQL: SELECT * FROM `rpj_product` WHERE `product_id` = 2 LIMIT 1   [ RunTime:0.0549s ]
+SQL: SELECT * FROM `rpj_product_pic` WHERE ( product_id = 2 )  [ RunTime:0.0547s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0544s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000327s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000382s ]
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 97 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 97 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 97 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 97 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 97 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 97 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 97 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 97 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 97 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 97 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 97 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 97 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 97 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 97 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 97 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 97 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 97 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 97 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 97 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 97 行.
+NOTIC: [2] Illegal string offset 'category_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'product_name' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'category_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'product_name' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'category_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'product_name' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'category_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'product_name' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'category_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'product_name' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'category_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'product_name' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'category_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'product_name' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'category_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'product_name' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'category_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'product_name' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'category_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'product_name' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'category_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'product_name' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'category_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'product_name' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'category_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'product_name' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'category_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'product_name' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'category_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'product_name' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'category_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'product_name' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'category_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'product_name' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'category_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'product_name' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'category_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'product_name' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'category_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'brand_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+NOTIC: [2] Illegal string offset 'product_name' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049087s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000660s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2020-03-26T16:44:56+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/product/product_id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0545s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0541s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0538s ]
+SQL: select rpj_product.category_id,
+                                            rpj_procategory.category_name
+                                from rpj_product
+                                inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                group by rpj_product.category_id [ RunTime:0.0550s ]
+SQL: select rpj_product.brand_id,
+                                    rpj_product.category_id,
+                                    rpj_brand.brand_name,
+                                    rpj_procategory.category_name
+                                from rpj_product
+                                inner join rpj_brand on rpj_product.brand_id = rpj_brand.brand_id
+                                inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                group by rpj_product.brand_id,rpj_product.category_id [ RunTime:0.0545s ]
+SQL: SHOW COLUMNS FROM `rpj_product_pic` [ RunTime:0.0548s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0557s ]
+SQL: select * from rpj_product
+                                inner join rpj_procategory on
+                                  rpj_product.category_id = rpj_procategory.category_id
+                                inner join rpj_brand on
+                                  rpj_product.brand_id    = rpj_brand.brand_id
+                                where rpj_product.product_id = 2 [ RunTime:0.0554s ]
+SQL: SELECT * FROM `rpj_product_pic` WHERE ( product_id = 2 )  [ RunTime:0.0547s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0546s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000260s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000305s ]
+NOTIC: [8] Undefined index: brand_name D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 184 行.
+NOTIC: [8] Undefined index: product_name D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 187 行.
+NOTIC: [8] Undefined index: product_name D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 257 行.
+NOTIC: [8] Undefined index: product_desc D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 272 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032861s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032938s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000782s ]
+
+[ 2020-03-26T16:45:51+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/product/product_id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0546s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0546s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0547s ]
+SQL: select rpj_product.category_id,
+                                            rpj_procategory.category_name
+                                from rpj_product
+                                inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                group by rpj_product.category_id [ RunTime:0.0544s ]
+SQL: select rpj_product.brand_id,
+                                    rpj_product.category_id,
+                                    rpj_brand.brand_name,
+                                    rpj_procategory.category_name
+                                from rpj_product
+                                inner join rpj_brand on rpj_product.brand_id = rpj_brand.brand_id
+                                inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                group by rpj_product.brand_id,rpj_product.category_id [ RunTime:0.0545s ]
+SQL: SHOW COLUMNS FROM `rpj_product_pic` [ RunTime:0.0551s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0565s ]
+SQL: select * from rpj_product
+                                inner join rpj_procategory on
+                                  rpj_product.category_id = rpj_procategory.category_id
+                                inner join rpj_brand on
+                                  rpj_product.brand_id    = rpj_brand.brand_id
+                                where rpj_product.product_id = 2 [ RunTime:0.0541s ]
+
+[ 2020-03-26T16:46:58+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/product/product_id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0556s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0558s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0557s ]
+SQL: select rpj_product.category_id,
+                                            rpj_procategory.category_name
+                                from rpj_product
+                                inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                group by rpj_product.category_id [ RunTime:0.0553s ]
+SQL: select rpj_product.brand_id,
+                                    rpj_product.category_id,
+                                    rpj_brand.brand_name,
+                                    rpj_procategory.category_name
+                                from rpj_product
+                                inner join rpj_brand on rpj_product.brand_id = rpj_brand.brand_id
+                                inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                group by rpj_product.brand_id,rpj_product.category_id [ RunTime:0.0547s ]
+SQL: SHOW COLUMNS FROM `rpj_product_pic` [ RunTime:0.0537s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0558s ]
+SQL: select * from rpj_product
+                                inner join rpj_procategory on
+                                  rpj_product.category_id = rpj_procategory.category_id
+                                inner join rpj_brand on
+                                  rpj_product.brand_id    = rpj_brand.brand_id
+                                where rpj_product.product_id = 2 [ RunTime:0.0562s ]
+SQL: SELECT * FROM `rpj_product_pic` WHERE ( product_id = 2 )  [ RunTime:0.0548s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0545s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000313s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000364s ]
+NOTIC: [8] Undefined index: brand_name D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 184 行.
+NOTIC: [8] Undefined index: product_name D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 187 行.
+NOTIC: [8] Undefined index: product_name D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 257 行.
+NOTIC: [8] Undefined index: product_desc D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 272 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048352s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000707s ]
+
+[ 2020-03-26T16:49:52+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/product/product_id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0546s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0550s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0549s ]
+SQL: select rpj_product.category_id,
+                                            rpj_procategory.category_name
+                                from rpj_product
+                                inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                group by rpj_product.category_id [ RunTime:0.0543s ]
+SQL: select rpj_product.brand_id,
+                                    rpj_product.category_id,
+                                    rpj_brand.brand_name,
+                                    rpj_procategory.category_name
+                                from rpj_product
+                                inner join rpj_brand on rpj_product.brand_id = rpj_brand.brand_id
+                                inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                group by rpj_product.brand_id,rpj_product.category_id [ RunTime:0.0537s ]
+SQL: SHOW COLUMNS FROM `rpj_product_pic` [ RunTime:0.0549s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0542s ]
+SQL: select * from rpj_product
+                                inner join rpj_procategory on
+                                  rpj_product.category_id = rpj_procategory.category_id
+                                inner join rpj_brand on
+                                  rpj_product.brand_id    = rpj_brand.brand_id
+                                where rpj_product.product_id = 2 [ RunTime:0.0539s ]
+SQL: SELECT * FROM `rpj_product_pic` WHERE ( product_id = 2 )  [ RunTime:0.0533s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0533s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023746s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000809s ]
+
+[ 2020-03-26T16:51:35+08:00 ] ::1 /chikwong/NewRPJ/index.php/home/product/product/product_id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0550s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0538s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0547s ]
+SQL: select rpj_product.category_id,
+                                            rpj_procategory.category_name
+                                from rpj_product
+                                inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                group by rpj_product.category_id [ RunTime:0.0535s ]
+SQL: select rpj_product.brand_id,
+                                    rpj_product.category_id,
+                                    rpj_brand.brand_name,
+                                    rpj_procategory.category_name
+                                from rpj_product
+                                inner join rpj_brand on rpj_product.brand_id = rpj_brand.brand_id
+                                inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                group by rpj_product.brand_id,rpj_product.category_id [ RunTime:0.0541s ]
+SQL: SHOW COLUMNS FROM `rpj_product_pic` [ RunTime:0.0534s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0552s ]
+SQL: select * from rpj_product
+                                inner join rpj_procategory on
+                                  rpj_product.category_id = rpj_procategory.category_id
+                                inner join rpj_brand on
+                                  rpj_product.brand_id    = rpj_brand.brand_id
+                                where rpj_product.product_id = 2 [ RunTime:0.0550s ]
+SQL: SELECT * FROM `rpj_product_pic` WHERE ( product_id = 2 )  [ RunTime:0.0550s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0544s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000402s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000514s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031224s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000786s ]
+

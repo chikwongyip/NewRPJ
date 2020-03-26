@@ -181,10 +181,10 @@
 		        <div class="row">
 		            <div class="col-12">
 		                <div class="breadcrumb-content text-center">
-                            <h1 class="breadmome-name">Single Product</h1>
+                            <h1 class="breadmome-name"><?php echo ($product[0]["product_name"]); ?></h1>
 		                    <ul>
-		                        <li><a href="index.html">Home</a></li>
-		                        <li class="active">Single Product</li>
+		                        <li><a href="index.html"><?php echo ($product[0]["brand_name"]); ?></a></li>
+		                        <li class="active"><?php echo ($product[0]["category_name"]); ?></li>
 		                    </ul>
 		                </div>
 		            </div>
@@ -254,7 +254,7 @@
                     </div>
                     <div class="col-md-7">
                         <div class="single-product-content">
-                            <h1 class="single-product-name">Adams Men's Dunbar</h1>
+                            <h1 class="single-product-name"><?php echo ($product[0]["product_name"]); ?></h1>
                             <div class="single-product-reviews">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -262,16 +262,16 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                             </div>
-                            <div class="single-product-price">
+                            <!-- <div class="single-product-price">
                                 <div class="product-discount">
                                     <span class="price">$80.00</span>
                                     <span class="discount">-20%</span>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="product-info">
-                                <p>Regular fit, round neckline, short sleeves. Made of extra long staple pima cotton. </p>
+                                <p><?php echo ($product[0]["product_desc"]); ?> </p>
                             </div>
-                            <div class="single-product-action">
+                            <!-- <div class="single-product-action">
                                 <form action="#">
                                     <div class="product-variants">
                                         <div class="product-variants-item">
@@ -305,7 +305,7 @@
                                     </div>
                                 </form>
                                 <!--Single Product Share-->
-                                <div class="single-product-share mt-20">
+                                <!-- <div class="single-product-share mt-20">
                                     <ul>
                                        <li class="categories-title">Share :</li>
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -315,7 +315,7 @@
                                     </ul>
                                 </div>
                                 <!--Single Product Share-->
-                            </div>
+                            <!-- </div>  -->
                             <!--Block Reassurance-->
                             <div class="block-reassurance mt-30">
                                 <ul>
