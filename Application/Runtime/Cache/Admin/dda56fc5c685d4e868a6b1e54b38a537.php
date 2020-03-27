@@ -165,7 +165,12 @@
 						<input type="file" name="product_pic" size="35" />
 					</td>
 				</tr>
-
+				<tr>
+					<td class="ui_text_rt">是否显示第一张</td>
+					<td class="ui_text_lt">
+						<input type="checkbox" name="is_active"  />
+					</td>
+				</tr>
 				<tr>
 					<td>&nbsp;</td>
 					<td class="ui_text_lt">

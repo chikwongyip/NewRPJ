@@ -199,43 +199,28 @@
                     <div class="col-md-5">
                         <!--Tab Content Start-->
                         <div class="tab-content product-details-large" id="myTabContent-3">
-                          <div class="tab-pane fade show active" id="single-slide-one">
-                              <!--Single Product Image Start-->
-                              <div class="single-product-img img-full">
-                                <img src="/chikwong/NewRPJ/Public/img/single-product/large/large1.jpg" alt="">
-                                <a class="venobox" data-gall="gallery01" href="/chikwong/NewRPJ/Public/img/single-product/large/large1.jpg"><i class="fa fa-search-plus"></i></a>
-                              </div>
-                              <!--Single Product Image End-->
-                          </div>
-                          <div class="tab-pane fade" id="single-slide-two">
-                              <!--Single Product Image Start-->
-                              <div class="single-product-img img-full">
-                                <img src="/chikwong/NewRPJ/Public/img/single-product/large/large2.jpg" alt="">
-                                <a class="venobox" data-gall="gallery01" href="/chikwong/NewRPJ/Public/img/single-product/large/large2.jpg"><i class="fa fa-search-plus"></i></a>
-                              </div>
-                              <!--Single Product Image End-->
-                          </div>
-                          <div class="tab-pane fade" id="single-slide-three">
-                              <!--Single Product Image Start-->
-                              <div class="single-product-img img-full">
-                                <img src="/chikwong/NewRPJ/Public/img/single-product/large/large3.jpg" alt="">
-                                <a class="venobox" data-gall="gallery01" href="/chikwong/NewRPJ/Public/img/single-product/large/large3.jpg"><i class="fa fa-search-plus"></i></a>
-                              </div>
-                              <!--Single Product Image End-->
-                          </div>
-                          <div class="tab-pane fade" id="single-slide-four">
-                              <!--Single Product Image Start-->
-                              <div class="single-product-img img-full">
-                                <img src="/chikwong/NewRPJ/Public/img/single-product/large/large4.jpg" alt="">
-                                <a class="venobox" data-gall="gallery01" href="/chikwong/NewRPJ/Public/img/single-product/large/large4.jpg"><i class="fa fa-search-plus"></i></a>
-                              </div>
-                              <!--Single Product Image End-->
-                          </div>
+													<?php if(is_array($product_pic)): foreach($product_pic as $key=>$list): if($list["is_active"] == 'X'): ?><div class="tab-pane fade show active" id="single-slide-one">
+		                              <!--Single Product Image Start-->
+		                              <div class="single-product-img img-full">
+		                                <img src="/chikwong/NewRPJ/Public<?php echo ($list["product_pic"]); ?>" alt="">
+		                                <a class="venobox" data-gall="gallery01" href="/chikwong/NewRPJ/Public<?php echo ($list["product_pic"]); ?>"><i class="fa fa-search-plus"></i></a>
+		                              </div>
+		                              <!--Single Product Image End-->
+		                          </div>
+													 <?php else: ?>
+		                          <div class="tab-pane fade" id="<?php echo ($list["pic_id"]); ?>">
+		                              <!--Single Product Image Start-->
+		                              <div class="single-product-img img-full">
+		                                <img src="/chikwong/NewRPJ/Public<?php echo ($list["product_pic"]); ?>" alt="">
+		                                <a class="venobox" data-gall="gallery01" href="/chikwong/NewRPJ/Public<?php echo ($list["product_pic"]); ?>"><i class="fa fa-search-plus"></i></a>
+		                              </div>
+		                              <!--Single Product Image End-->
+		                          </div><?php endif; endforeach; endif; ?>
                         </div>
                         <!--Tab Content End-->
                         <!--Tab Menu Start-->
                         <div class="single-product-menu">
-                            <div class="nav single-slide-menu" role="tablist">
+                           <div class="nav single-slide-menu" role="tablist">
                                 <div class="single-tab-menu img-full">
                                     <a class="active" data-toggle="tab" href="#single-slide-one"><img src="/chikwong/NewRPJ/Public/img/single-product/small/small1.jpg" alt=""></a>
                                 </div>

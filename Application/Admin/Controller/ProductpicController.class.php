@@ -6,19 +6,21 @@ class ProductpicController extends Controller
 {
     public function productpic_add()
     {
+
         $model = M('Rpj_product_pic');
         $modelProduct = M('Rpj_product');
         $product = $modelProduct->select();
         $this->assign('product',$product);
         if(IS_POST)
         {
-
+            //需要制作缩略图
             $upload = new \Think\Upload();
             $upload->maxSize = 3145728;
             $upload->exts = array('jpg', 'gif', 'png', 'jpeg','pdf');// 设置附件上传类型
             $upload->rootPath  =      './Public/Upload/'; // 设置附件上传根目录
             $upload->savePath  =     ''; // 设置附件上传（子）目录
             $info = $upload->uploadOne($_FILES['product_pic']);
+            $image = new \Think\Image();
             if(!$info)
             {
                 $this->error($upload->getError());
@@ -26,6 +28,12 @@ class ProductpicController extends Controller
             {
                 $model->product_id = $_POST["product_id"];
                 $model->product_pic = '/Upload/'.$info['savepath'].$info['savename'];
+                if ($_POST["is_active"]!=null) {
+                  $model->is_active = 'X';
+                }
+                $image->open('./Public/Upload/'.$info['savePath'].$info['savename']);
+                $image->thumb(125,125)->save('./Public/Upload/thumb/'.$info['savename']);
+                $model->product_thumb = '/Upload/thumb/'.$info['savename'];
                 $model->add();
                 $this->display();
             }
