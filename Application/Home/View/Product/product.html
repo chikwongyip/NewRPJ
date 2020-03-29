@@ -245,18 +245,11 @@
 												<!-- 小图片 -->
                         <div class="single-product-menu">
                            <div class="nav single-slide-menu" role="tablist">
-                                <div class="single-tab-menu img-full">
-                                    <a class="active" data-toggle="tab" href="#single-slide-one"><img src="__PUBLIC__/img/single-product/small/small1.jpg" alt=""></a>
-                                </div>
-                                <div class="single-tab-menu img-full">
-                                    <a data-toggle="tab" href="#single-slide-two"><img src="__PUBLIC__/img/single-product/small/small2.jpg" alt=""></a>
-                                </div>
-                                <div class="single-tab-menu img-full">
-                                    <a data-toggle="tab" href="#single-slide-three"><img src="__PUBLIC__/img/single-product/small/small3.jpg" alt=""></a>
-                                </div>
-                                <div class="single-tab-menu img-full">
-                                    <a data-toggle="tab" href="#single-slide-four"><img src="__PUBLIC__/img/single-product/small/small4.jpg" alt=""></a>
-                                </div>
+														    <foreach name="product_pic" item="list">
+	                                <div class="single-tab-menu img-full">
+	                                    <a class="active" data-toggle="tab" href="#{$list.pic_id}"><img src="__PUBLIC__{$list.product_thumb}" alt=""></a>
+	                                </div>
+																</foreach>
                             </div>
                         </div>
                         <!--Tab Menu End-->
