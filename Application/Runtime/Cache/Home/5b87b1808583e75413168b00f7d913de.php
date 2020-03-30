@@ -296,13 +296,13 @@
                             <!--Block Reassurance-->
                             <div class="block-reassurance mt-30">
                                 <ul>
-                                    <li>
+																	 <?php if(is_array($product_att)): foreach($product_att as $key=>$att): ?><li>
                                         <div class="block-reassurance-item">
                                             <img src="/NewRPJ/Public/img/icon/single-icon1.png" alt="">
-                                            <span>Security policy (edit with Customer reassurance module)</span>
+                                            <span> <a href="/NewRPJ/Public/<?php echo ($att["url"]); ?>"> <?php echo ($att["name"]); ?></a> </span>
                                         </div>
-                                    </li>
-                                    <li>
+                                    </li><?php endforeach; endif; ?>
+                                    <!-- <li>
                                         <div class="block-reassurance-item">
                                             <img src="/NewRPJ/Public/img/icon/single-icon2.png" alt="">
                                             <span>Delivery policy (edit with Customer reassurance module)</span>
@@ -313,7 +313,7 @@
                                             <img src="/NewRPJ/Public/img/icon/single-icon3.png" alt="">
                                             <span>Security policy (edit with Customer reassurance module)</span>
                                         </div>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                             <!--Block Reassurance-->

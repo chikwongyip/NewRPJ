@@ -321,24 +321,14 @@
                             <!--Block Reassurance-->
                             <div class="block-reassurance mt-30">
                                 <ul>
+																	 <foreach name="product_att" item="att">
                                     <li>
                                         <div class="block-reassurance-item">
                                             <img src="__PUBLIC__/img/icon/single-icon1.png" alt="">
-                                            <span>Security policy (edit with Customer reassurance module)</span>
+                                            <span> <a href="__PUBLIC__/{$att.url}"> {$att.name}</a> </span>
                                         </div>
                                     </li>
-                                    <li>
-                                        <div class="block-reassurance-item">
-                                            <img src="__PUBLIC__/img/icon/single-icon2.png" alt="">
-                                            <span>Delivery policy (edit with Customer reassurance module)</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="block-reassurance-item">
-                                            <img src="__PUBLIC__/img/icon/single-icon3.png" alt="">
-                                            <span>Security policy (edit with Customer reassurance module)</span>
-                                        </div>
-                                    </li>
+																	</foreach>
                                 </ul>
                             </div>
                             <!--Block Reassurance-->
