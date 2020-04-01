@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>SCT-后台系统</title>
-<link href="/NewRPJ/Public/style/authority/basic_layout.css" rel="stylesheet" type="text/css">
-<link href="/NewRPJ/Public/style/authority/common_style.css" rel="stylesheet" type="text/css">
+<link href="/chikwong/NewRPJ/Public/style/authority/basic_layout.css" rel="stylesheet" type="text/css">
+<link href="/chikwong/NewRPJ/Public/style/authority/common_style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<div id="container">

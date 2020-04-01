@@ -1,4 +1,31 @@
 <?php
+  function getParamList()
+  {
+    $modelParam = new \Think\Model();
+    $param=$modelparam->query("select rpj_prod_param.param_id,
+                               rpj_prod_param.product_id,
+                               rpj_prod_param.param_name,
+                               rpj_prod_param.param_desc,
+                               rpj_product.product_name
+                               from rpj_prod_param
+                               inner join rpj_product on rpj_prod_param.product_id = rpj_product.product_id");
+    return $param;
+
+  }
+
+  function getParamListWithKey($param_id)
+  {
+    $modelParam = new \Think\Model();
+    $param=$modelparam->query("select rpj_prod_param.param_id,
+                               rpj_prod_param.product_id,
+                               rpj_prod_param.param_name,
+                               rpj_prod_param.param_desc,
+                               rpj_product.product_name
+                               from rpj_prod_param
+                               inner join rpj_product on rpj_prod_param.product_id = rpj_product.product_id
+                               where rpj_prod_param.param_id = $param_id");
+    return $param;
+  }
 // 获取产品数据
   function getProductData()
   {
