@@ -769,3 +769,21 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002443s ]
 INFO: [ app_end ] --END-- [ RunTime:0.002656s ]
 
+[ 2020-04-02T14:46:48+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/product/product/product_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+ERR: 非法操作:product
+
+[ 2020-04-02T14:47:33+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/product/product/product_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+ERR: 非法操作:product
+
