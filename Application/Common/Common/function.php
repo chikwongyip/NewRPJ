@@ -2,7 +2,7 @@
   function getParamList()
   {
     $modelParam = new \Think\Model();
-    $param=$modelparam->query("select rpj_prod_param.param_id,
+    $param=$modelParam->query("select rpj_prod_param.param_id,
                                rpj_prod_param.product_id,
                                rpj_prod_param.param_name,
                                rpj_prod_param.param_desc,
@@ -16,7 +16,7 @@
   function getParamListWithKey($param_id)
   {
     $modelParam = new \Think\Model();
-    $param=$modelparam->query("select rpj_prod_param.param_id,
+    $param=$modelParam->query("select rpj_prod_param.param_id,
                                rpj_prod_param.product_id,
                                rpj_prod_param.param_name,
                                rpj_prod_param.param_desc,

@@ -1,0 +1,771 @@
+[ 2020-04-02T12:17:51+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.026315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004178s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004249s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002361s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002420s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010556s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010611s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010957s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011045s ]
+
+[ 2020-04-02T12:17:51+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/Introduce/introduce.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000935s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001817s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010599s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010669s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000736s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2020-04-02T12:17:54+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/prodparam/prodparam_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+NOTIC: [8] Undefined variable: modelparam D:\xampp\htdocs\chikwong\NewRPJ\Application\Common\Common\function.php 第 5 行.
+
+[ 2020-04-02T12:18:47+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005732s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005773s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000671s ]
+
+[ 2020-04-02T12:18:48+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/Introduce/introduce.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005792s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000700s ]
+
+[ 2020-04-02T12:18:52+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/prodparam/prodparam_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: select rpj_prod_param.param_id,
+                               rpj_prod_param.product_id,
+                               rpj_prod_param.param_name,
+                               rpj_prod_param.param_desc,
+                               rpj_product.product_name
+                               from rpj_prod_param
+                               inner join rpj_product on rpj_prod_param.product_id = rpj_product.product_id [ RunTime:0.0531s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000344s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046533s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000885s ]
+
+[ 2020-04-02T12:19:00+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/prodparam/prodparam_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+SQL: SHOW COLUMNS FROM `rpj_prod_param` [ RunTime:0.0527s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0536s ]
+NOTIC: [8] Undefined variable: productMode D:\xampp\htdocs\chikwong\NewRPJ\Application\Admin\Controller\ProdparamController.class.php 第 10 行.
+
+[ 2020-04-02T12:19:34+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005234s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000590s ]
+
+[ 2020-04-02T12:19:34+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/Introduce/introduce.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005975s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006039s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000507s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000567s ]
+
+[ 2020-04-02T12:19:37+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/prodatt/prodatt_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `rpj_prod_att` [ RunTime:0.0531s ]
+SQL: SELECT * FROM `rpj_prod_att` INNER JOIN rpj_product ON rpj_product.product_id = rpj_prod_att.product_id   [ RunTime:0.0524s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Use of undefined constant att_id - assumed 'att_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\395a2e82d826ceeef2eba5e36dd95355.php 第 190 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035277s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035324s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000572s ]
+
+[ 2020-04-02T12:19:40+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/prodparam/prodparam_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+SQL: select rpj_prod_param.param_id,
+                               rpj_prod_param.product_id,
+                               rpj_prod_param.param_name,
+                               rpj_prod_param.param_desc,
+                               rpj_product.product_name
+                               from rpj_prod_param
+                               inner join rpj_product on rpj_prod_param.product_id = rpj_product.product_id [ RunTime:0.0507s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006617s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000384s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000418s ]
+
+[ 2020-04-02T12:21:04+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000853s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000748s ]
+
+[ 2020-04-02T12:21:04+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/Introduce/introduce.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006418s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000438s ]
+
+[ 2020-04-02T12:21:07+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/prodparam/prodparam_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: select rpj_prod_param.param_id,
+                               rpj_prod_param.product_id,
+                               rpj_prod_param.param_name,
+                               rpj_prod_param.param_desc,
+                               rpj_product.product_name
+                               from rpj_prod_param
+                               inner join rpj_product on rpj_prod_param.product_id = rpj_product.product_id [ RunTime:0.0540s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008051s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008137s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000711s ]
+
+[ 2020-04-02T12:21:08+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/prodparam/prodparam_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `rpj_prod_param` [ RunTime:0.0528s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0531s ]
+SQL: SELECT * FROM `rpj_product`  [ RunTime:0.0531s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019911s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000872s ]
+
+[ 2020-04-02T12:21:31+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/prodparam/prodparam_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `rpj_prod_param` [ RunTime:0.0529s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0523s ]
+SQL: SELECT * FROM `rpj_product`  [ RunTime:0.0517s ]
+SQL: INSERT INTO `rpj_prod_param` (`product_id`,`param_name`,`param_desc`) VALUES ('2',' SIZE','60*60') [ RunTime:0.0520s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018536s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000796s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000865s ]
+
+[ 2020-04-02T12:21:34+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/prodparam/prodparam_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+SQL: select rpj_prod_param.param_id,
+                               rpj_prod_param.product_id,
+                               rpj_prod_param.param_name,
+                               rpj_prod_param.param_desc,
+                               rpj_product.product_name
+                               from rpj_prod_param
+                               inner join rpj_product on rpj_prod_param.product_id = rpj_product.product_id [ RunTime:0.0523s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+NOTIC: [8] Use of undefined constant param_id - assumed 'param_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\067898c1a4754b608db16dc6df228c1c.php 第 190 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020610s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020728s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000838s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000926s ]
+
+[ 2020-04-02T12:21:40+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/prodparam/prodparam_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+SQL: SHOW COLUMNS FROM `rpj_prod_param` [ RunTime:0.0521s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0518s ]
+SQL: SELECT * FROM `rpj_product`  [ RunTime:0.0513s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008277s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000678s ]
+
+[ 2020-04-02T12:22:16+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/prodparam/prodparam_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `rpj_prod_param` [ RunTime:0.0518s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0518s ]
+SQL: SELECT * FROM `rpj_product`  [ RunTime:0.0512s ]
+SQL: INSERT INTO `rpj_prod_param` (`product_id`,`param_name`,`param_desc`) VALUES ('2',' 接口','USB*2,VGA*1，HDMI*1') [ RunTime:0.0511s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000448s ]
+
+[ 2020-04-02T12:22:18+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/prodparam/prodparam_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+SQL: SHOW COLUMNS FROM `rpj_prod_param` [ RunTime:0.0523s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0520s ]
+SQL: SELECT * FROM `rpj_product`  [ RunTime:0.0510s ]
+SQL: INSERT INTO `rpj_prod_param` (`product_id`,`param_name`,`param_desc`) VALUES ('2',' ',' ') [ RunTime:0.0518s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007651s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000455s ]
+
+[ 2020-04-02T12:22:18+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/prodparam/prodparam_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+SQL: select rpj_prod_param.param_id,
+                               rpj_prod_param.product_id,
+                               rpj_prod_param.param_name,
+                               rpj_prod_param.param_desc,
+                               rpj_product.product_name
+                               from rpj_prod_param
+                               inner join rpj_product on rpj_prod_param.product_id = rpj_product.product_id [ RunTime:0.0520s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Use of undefined constant param_id - assumed 'param_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\067898c1a4754b608db16dc6df228c1c.php 第 190 行.
+NOTIC: [8] Use of undefined constant param_id - assumed 'param_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\067898c1a4754b608db16dc6df228c1c.php 第 190 行.
+NOTIC: [8] Use of undefined constant param_id - assumed 'param_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\067898c1a4754b608db16dc6df228c1c.php 第 190 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006579s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006623s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000770s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000855s ]
+
+[ 2020-04-02T12:22:24+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/prodparam/prodparam_del.html?att_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+ERR: 参数错误或者未定义:param_id
+
+[ 2020-04-02T12:22:29+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/prodparam/prodparam_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+SQL: select rpj_prod_param.param_id,
+                               rpj_prod_param.product_id,
+                               rpj_prod_param.param_name,
+                               rpj_prod_param.param_desc,
+                               rpj_product.product_name
+                               from rpj_prod_param
+                               inner join rpj_product on rpj_prod_param.product_id = rpj_product.product_id [ RunTime:0.0519s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Use of undefined constant param_id - assumed 'param_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\067898c1a4754b608db16dc6df228c1c.php 第 190 行.
+NOTIC: [8] Use of undefined constant param_id - assumed 'param_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\067898c1a4754b608db16dc6df228c1c.php 第 190 行.
+NOTIC: [8] Use of undefined constant param_id - assumed 'param_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\067898c1a4754b608db16dc6df228c1c.php 第 190 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007287s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000618s ]
+
+[ 2020-04-02T12:25:35+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/prodparam/prodparam_del.html?att_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+ERR: 参数错误或者未定义:param_id
+
+[ 2020-04-02T12:26:19+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006245s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001671s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001704s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000755s ]
+
+[ 2020-04-02T12:26:19+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/Introduce/introduce.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007681s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000501s ]
+
+[ 2020-04-02T12:26:22+08:00 ] ::1 /chikwong/NewRPJ/index.php/Admin/prodparam/prodparam_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+SQL: select rpj_prod_param.param_id,
+                               rpj_prod_param.product_id,
+                               rpj_prod_param.param_name,
+                               rpj_prod_param.param_desc,
+                               rpj_product.product_name
+                               from rpj_prod_param
+                               inner join rpj_product on rpj_prod_param.product_id = rpj_product.product_id [ RunTime:0.0521s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Use of undefined constant param_id - assumed 'param_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\067898c1a4754b608db16dc6df228c1c.php 第 190 行.
+NOTIC: [8] Use of undefined constant param_id - assumed 'param_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\067898c1a4754b608db16dc6df228c1c.php 第 190 行.
+NOTIC: [8] Use of undefined constant param_id - assumed 'param_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\067898c1a4754b608db16dc6df228c1c.php 第 190 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015521s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015590s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000600s ]
+
+[ 2020-04-02T12:26:25+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/prodparam/prodparam_del.html?param_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `rpj_prod_param` [ RunTime:0.0522s ]
+SQL: DELETE FROM `rpj_prod_param` WHERE `param_id` = 3 [ RunTime:0.0515s ]
+SQL: select rpj_prod_param.param_id,
+                               rpj_prod_param.product_id,
+                               rpj_prod_param.param_name,
+                               rpj_prod_param.param_desc,
+                               rpj_product.product_name
+                               from rpj_prod_param
+                               inner join rpj_product on rpj_prod_param.product_id = rpj_product.product_id [ RunTime:0.0522s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Use of undefined constant param_id - assumed 'param_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\067898c1a4754b608db16dc6df228c1c.php 第 190 行.
+NOTIC: [8] Use of undefined constant param_id - assumed 'param_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\067898c1a4754b608db16dc6df228c1c.php 第 190 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006555s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006592s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000524s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000588s ]
+
+[ 2020-04-02T12:26:35+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/prodparam/prodparam_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `rpj_prod_param` [ RunTime:0.0527s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0522s ]
+SQL: SELECT * FROM `rpj_product`  [ RunTime:0.0517s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009558s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000691s ]
+
+[ 2020-04-02T12:27:17+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/prodparam/prodparam_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `rpj_prod_param` [ RunTime:0.0522s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0531s ]
+SQL: SELECT * FROM `rpj_product`  [ RunTime:0.0519s ]
+SQL: INSERT INTO `rpj_prod_param` (`product_id`,`param_name`,`param_desc`) VALUES ('2','配件',' N95 滤芯，85消毒液') [ RunTime:0.0520s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000644s ]
+
+[ 2020-04-02T12:27:19+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/prodparam/prodparam_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: select rpj_prod_param.param_id,
+                               rpj_prod_param.product_id,
+                               rpj_prod_param.param_name,
+                               rpj_prod_param.param_desc,
+                               rpj_product.product_name
+                               from rpj_prod_param
+                               inner join rpj_product on rpj_prod_param.product_id = rpj_product.product_id [ RunTime:0.0536s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] Use of undefined constant param_id - assumed 'param_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\067898c1a4754b608db16dc6df228c1c.php 第 190 行.
+NOTIC: [8] Use of undefined constant param_id - assumed 'param_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\067898c1a4754b608db16dc6df228c1c.php 第 190 行.
+NOTIC: [8] Use of undefined constant param_id - assumed 'param_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\067898c1a4754b608db16dc6df228c1c.php 第 190 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000821s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000919s ]
+
+[ 2020-04-02T12:28:18+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/prodparam/prodparam_edit/param_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+SQL: select rpj_prod_param.param_id,
+                               rpj_prod_param.product_id,
+                               rpj_prod_param.param_name,
+                               rpj_prod_param.param_desc,
+                               rpj_product.product_name
+                               from rpj_prod_param
+                               inner join rpj_product on rpj_prod_param.product_id = rpj_product.product_id
+                               where rpj_prod_param.param_id = 1 [ RunTime:0.0526s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000235s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000363s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018484s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000816s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000889s ]
+
+[ 2020-04-02T12:28:25+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/prodparam/prodparam_submit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `rpj_prod_param` [ RunTime:0.0525s ]
+SQL: UPDATE `rpj_prod_param` SET `param_name`=' SIZE2',`param_desc`='60*80' WHERE `param_id` = 1 [ RunTime:0.0529s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+NOTIC: [8] Undefined variable: param D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\15ef4eb908cfbc9a856ad5c8c1d76cc1.php 第 154 行.
+NOTIC: [8] Undefined variable: param D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\15ef4eb908cfbc9a856ad5c8c1d76cc1.php 第 155 行.
+NOTIC: [8] Undefined variable: param D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\15ef4eb908cfbc9a856ad5c8c1d76cc1.php 第 159 行.
+NOTIC: [8] Undefined variable: param D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\15ef4eb908cfbc9a856ad5c8c1d76cc1.php 第 165 行.
+NOTIC: [8] Undefined variable: param D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\15ef4eb908cfbc9a856ad5c8c1d76cc1.php 第 171 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008075s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000520s ]
+
+[ 2020-04-02T12:28:27+08:00 ] ::1 /chikwong/NewRPJ/index.php/admin/prodparam/prodparam_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+SQL: select rpj_prod_param.param_id,
+                               rpj_prod_param.product_id,
+                               rpj_prod_param.param_name,
+                               rpj_prod_param.param_desc,
+                               rpj_product.product_name
+                               from rpj_prod_param
+                               inner join rpj_product on rpj_prod_param.product_id = rpj_product.product_id [ RunTime:0.0538s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000243s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000386s ]
+NOTIC: [8] Use of undefined constant param_id - assumed 'param_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\067898c1a4754b608db16dc6df228c1c.php 第 190 行.
+NOTIC: [8] Use of undefined constant param_id - assumed 'param_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\067898c1a4754b608db16dc6df228c1c.php 第 190 行.
+NOTIC: [8] Use of undefined constant param_id - assumed 'param_id' D:\xampp\htdocs\chikwong\NewRPJ\Application\Runtime\Cache\Admin\067898c1a4754b608db16dc6df228c1c.php 第 190 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023900s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001011s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002656s ]
+

@@ -7,7 +7,7 @@ class ProdparamController extends Controller
   {
     $paramModel = M('Rpj_prod_param');
     $productModel = M('Rpj_product');
-    $product=$productMode->select();
+    $product=$productModel->select();
     if(IS_POST)
     {
       $product_id = $_POST["product_id"];

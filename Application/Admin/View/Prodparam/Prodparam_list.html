@@ -89,7 +89,7 @@
 		if(fyID == '') return;
 		if(confirm("您确定要删除吗？")){
 
-			var url = "{:U('admin/prodparam/prodparam_del')}?att_id="+fyID;
+			var url = "{:U('admin/prodparam/prodparam_del')}?param_id="+fyID;
 			//$("#submitForm").attr("action", delURL).submit();
 			//$("#submitForm").attr("action", "/xngzf/archives/delFangyuan.action?fyID=" + fyID).submit();
 			window.location.href=url;

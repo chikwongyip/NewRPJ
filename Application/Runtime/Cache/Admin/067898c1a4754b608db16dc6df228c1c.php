@@ -12,8 +12,8 @@
 <script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/artDialog/artDialog.js?skin=default"></script>
 <title>信息管理系统</title>
 <script type="text/javascript">
-	var addURL = "<?php echo U('admin/prodatt/prodatt_add');?>"
-	var listURL = "<?php echo U('admin/prodatt/prodatt_list');?>"
+	var addURL = "<?php echo U('admin/prodparam/prodparam_add');?>"
+	var listURL = "<?php echo U('admin/prodparam/prodparam_list');?>"
 	$(document).ready(function(){
 		/** 新增   **/
 
@@ -89,7 +89,7 @@
 		if(fyID == '') return;
 		if(confirm("您确定要删除吗？")){
 
-			var url = "<?php echo U('admin/prodatt/prodatt_del');?>?att_id="+fyID;
+			var url = "<?php echo U('admin/prodparam/prodparam_del');?>?param_id="+fyID;
 			//$("#submitForm").attr("action", delURL).submit();
 			//$("#submitForm").attr("action", "/xngzf/archives/delFangyuan.action?fyID=" + fyID).submit();
 			window.location.href=url;
@@ -177,18 +177,18 @@
 							<th width="30"><input type="checkbox" id="all" onclick="selectOrClearAllCheckbox(this);" />
 							</th>
 							<th>产品名称</th>
-							<th>产品附件名称</th>
-							<th>产品附件</th>
+							<th>产品参数名称</th>
+							<th>产品参数描述</th>
 							<th>操作</th>
 						</tr>
-						<?php if(is_array($productAtt)): foreach($productAtt as $key=>$a): ?><tr>
-								<td><input type="checkbox" name="ID" value="<?php echo ($a["att_id"]); ?>" class="acb" /></td>
-								<td><?php echo ($a["product_name"]); ?></td>
-								<td><?php echo ($a["name"]); ?></td>
-								<td><?php echo ($a["url"]); ?></td>
+						<?php if(is_array($paramList)): foreach($paramList as $key=>$list): ?><tr>
+								<td><input type="checkbox" name="ID" value="<?php echo ($list["param_id"]); ?>" class="acb" /></td>
+								<td><?php echo ($list["product_name"]); ?></td>
+								<td><?php echo ($list["param_name"]); ?></td>
+								<td><?php echo ($list["param_desc"]); ?></td>
 								<td>
-									<a href="<?php echo U('admin/prodatt/prodatt_edit',array('att_id'=>$a[att_id]));?>" class="edit">编辑</a>
-									<a href="javascript:del(<?php echo ($a["att_id"]); ?>);">删除</a>
+									<a href="<?php echo U('admin/prodparam/prodparam_edit',array('param_id'=>$list[param_id]));?>" class="edit">编辑</a>
+									<a href="javascript:del(<?php echo ($list["param_id"]); ?>);">删除</a>
 								</td>
 							</tr><?php endforeach; endif; ?>
 					</table>
