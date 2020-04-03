@@ -294,99 +294,94 @@
 		<!--Feature Area End-->
 		<!--Footer Area Start-->
 		<footer>
-		    <div class="footer-container">
-		        <!--Footer Top Area Start-->
-		        <div class="footer-top-area pt-50 pb-35">
-		            <div class="container">
-		                <div class="row">
-		                    <div class="col-lg-4 col-md-6 col-12">
-		                        <!--Single Footer Wiedget Start-->
-		                        <div class="single-footer-wiedget mb-30">
-		                            <div class="footer-logo">
-		                                <a href="index.html"><img src="__PUBLIC__{$company.logo}" alt=""></a>
-		                            </div>
-		                            <div class="desc-footer">广州瑞谱佳科技有限公司拥有稳妥，快捷，优质的售后服务，欢迎垂询！</div>
-		                            <div class="address-footer">
-		                               <p class="address"><span>{$company.address}</span></p>
-		                               <p class="phone"><span>{$company.tel}</span></p>
-		                               <p class="mail"><span>{$company.email}</span></p>
-		                            </div>
-		                        </div>
-		                        <!--Single Footer Wiedget End-->
-		                    </div>
-		                    <div class="col-lg-2 col-md-6 col-12">
-		                        <!--Single Footer Wiedget Start-->
-		                        <div class="single-footer-wiedget mb-30">
-		                            <div class="footer-title">
-		                                <h3>Products</h3>
-		                            </div>
-		                            <ul class="link-widget">
-		                                <li><a href="#">Prices drop</a></li>
-		                                <li><a href="#">New products</a></li>
-		                                <li><a href="#">Best sales</a></li>
-		                                <li><a href="#">Contact us</a></li>
-		                                <li><a href="#">Sitemap</a></li>
-		                                <li><a href="#">Login</a></li>
-		                            </ul>
-		                        </div>
-		                        <!--Single Footer Wiedget End-->
-		                    </div>
-		                    <div class="col-lg-2 col-md-6 col-12">
-		                        <!--Single Footer Wiedget Start-->
-		                        <div class="single-footer-wiedget mb-30">
-		                            <div class="footer-title">
-		                                <h3>Our company</h3>
-		                            </div>
-		                            <ul class="link-widget">
-		                                <li><a href="#">Delivery</a></li>
-		                                <li><a href="#">Legal Notice</a></li>
-		                                <li><a href="#">About us</a></li>
-		                                <li><a href="#">Secure payment</a></li>
-		                                <li><a href="#">Contact us</a></li>
-		                                <li><a href="#">Stores</a></li>
-		                            </ul>
-		                        </div>
-		                        <!--Single Footer Wiedget End-->
-		                    </div>
-		                    <div class="col-lg-4 col-md-6 col-12">
-		                        <!--Single Footer Wiedget Start-->
-		                        <div class="single-footer-wiedget mb-30">
-		                            <div class="footer-title">
-		                                <h3>Instagram</h3>
-		                                <a href="#">Follow our instagram</a>
-		                            </div>
-		                            <ul id="Instafeed"></ul>
-		                        </div>
-		                        <!--Single Footer Wiedget End-->
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		        <!--Footer Top Area End-->
+				<div class="footer-container">
+						<!--Footer Top Area Start-->
+						<div class="footer-top-area pt-50 pb-35">
+								<div class="container">
+										<div class="row">
+												<div class="col-lg-4 col-md-6 col-12">
+														<!--Single Footer Wiedget Start-->
+														<div class="single-footer-wiedget mb-30">
+																<div class="footer-logo">
+																		<a href="index.html"><img src="__PUBLIC__{$company.logo}" alt=""></a>
+																</div>
+																<div class="desc-footer">广州瑞谱佳科技有限公司拥有稳妥，快捷，优质的售后服务，欢迎垂询！</div>
+																<div class="address-footer">
+																	 <p class="address"><span>{$company.address}</span></p>
+																	 <p class="phone"><span>{$company.tel}</span></p>
+																	 <p class="mail"><span>{$company.email}</span></p>
+																</div>
+														</div>
+														<!--Single Footer Wiedget End-->
+												</div>
+												<div class="col-lg-2 col-md-6 col-12">
+														<!--Single Footer Wiedget Start-->
+														<div class="single-footer-wiedget mb-30">
+																<div class="footer-title">
+																		<h3>品牌列表</h3>
+																</div>
+																<ul class="link-widget">
+																		<foreach name="brands" item="a">
+																			<li><a href="#"></a>{$a.brand_name}</li>
+																	</foreach>
+																</ul>
+														</div>
+														<!--Single Footer Wiedget End-->
+												</div>
+												<div class="col-lg-2 col-md-6 col-12">
+														<!--Single Footer Wiedget Start-->
+														<div class="single-footer-wiedget mb-30">
+																<div class="footer-title">
+																		<h3>网站快速链接</h3>
+																</div>
+																<ul class="link-widget">
+																		<li><a href="#">主页</a></li>
+																		<li><a href="#">产品</a></li>
+																		<li><a href="#">关于我们</a></li>
+																		<li><a href="#">产品附件下载</a></li>
+																</ul>
+														</div>
+														<!--Single Footer Wiedget End-->
+												</div>
+												<!-- <div class="col-lg-4 col-md-6 col-12">
 
-		        <!--Footer Bottom Area Start-->
-		        <div class="footer-bottom-area">
-		            <div class="container">
-		                <div class="row">
-		                    <div class="col-md-6">
-                                <!--Footer Copyright Start-->
-		                        <div class="footer-copyright">
-		                            <p>Copyright &copy; <a href="www.bootstrapmb.com">{$company.name}.</a> {$company.icp}</p>
-		                        </div>
-		                        <!--Footer Copyright End-->
-		                    </div>
-		                    <div class="col-md-6">
-                                <!--Footer Payment Start-->
-		                        <div class="footer-payments-image text-center text-md-right">
-		                            <img src="__PUBLIC__/img/payment/payment.png" alt="">
-		                        </div>
-		                        <!--Footer Payment End-->
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		        <!--Footer Bottom Area End-->
-		    </div>
+														<div class="single-footer-wiedget mb-30">
+																<div class="footer-title">
+																		<h3>Instagram</h3>
+																		<a href="#">Follow our instagram</a>
+																</div>
+																<ul id="Instafeed"></ul>
+														</div>
+
+												</div> -->
+										</div>
+								</div>
+						</div>
+						<!--Footer Top Area End-->
+
+						<!--Footer Bottom Area Start-->
+						<div class="footer-bottom-area">
+								<div class="container">
+										<div class="row">
+												<div class="col-md-6">
+																<!--Footer Copyright Start-->
+														<div class="footer-copyright">
+																<p>Copyright &copy; <a href="www.bootstrapmb.com">{$company.name}.</a> {$company.icp}</p>
+														</div>
+														<!--Footer Copyright End-->
+												</div>
+												<div class="col-md-6">
+																<!--Footer Payment Start-->
+														<div class="footer-payments-image text-center text-md-right">
+																<img src="__PUBLIC__/img/payment/payment.png" alt="">
+														</div>
+														<!--Footer Payment End-->
+												</div>
+										</div>
+								</div>
+						</div>
+						<!--Footer Bottom Area End-->
+				</div>
 		</footer>
 		<!--Footer Area End-->
         <!-- Modal Area Strat -->

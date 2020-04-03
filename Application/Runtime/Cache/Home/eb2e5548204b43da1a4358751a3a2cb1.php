@@ -7,34 +7,34 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Place favicon.ico in the root directory -->
-	<link rel="shortcut icon" type="image/x-icon" href="/chikwong/NewRPJ/Public/img/favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="/NewRPJ/Public/img/favicon.ico">
     <!--All Css Here-->
 
 	<!-- Ionicons Font CSS-->
-    <link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/ionicons.min.css">
+    <link rel="stylesheet" href="/NewRPJ/Public/css/ionicons.min.css">
     <!-- Font Awesome CSS-->
-    <link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/NewRPJ/Public/css/font-awesome.min.css">
 
 	<!-- Animate CSS-->
-	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/animate.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/css/animate.css">
 	<!-- Owl Carousel CSS-->
-	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/css/owl.carousel.min.css">
 	<!-- Nice Select CSS-->
-	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/nice-select.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/css/nice-select.css">
 	<!-- Slick CSS-->
-	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/slick.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/css/slick.css">
 	<!-- Meanmenu CSS-->
-	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/meanmenu.min.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/css/meanmenu.min.css">
 	<!-- Venobox CSS-->
-	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/venobox.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/css/venobox.css">
 	<!-- Bootstrap CSS-->
-	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/css/bootstrap.min.css">
 	<!-- Style CSS -->
-	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/style.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/style.css">
 	<!-- Responsive CSS -->
-	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/responsive.css">
+	<link rel="stylesheet" href="/NewRPJ/Public/css/responsive.css">
 	<!-- Modernizr Js -->
-	<script src="/chikwong/NewRPJ/Public/scripts/vendor/modernizr-2.8.3.min.js"></script>
+	<script src="/NewRPJ/Public/scripts/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
 
@@ -70,7 +70,7 @@
 		                    <!--Logo Start-->
 		                    <div class="logo">
 		                        <a href="index.html">
-															<img src="/chikwong/NewRPJ/Public<?php echo ($company["logo"]); ?>" alt="">
+															<img src="/NewRPJ/Public<?php echo ($company["logo"]); ?>" alt="">
 		                        </a>
 		                    </div>
 		                    <!--Logo End-->
@@ -201,7 +201,7 @@
 		                <!--About Us Image Start-->
 		                <div class="about-us-img-wrapper mb-30">
 		                    <div class="about-us-image img-full">
-                                <a href="#"><img src="/chikwong/NewRPJ/Public<?php echo ($company["background"]); ?>" alt=""></a>
+                                <a href="#"><img src="/NewRPJ/Public<?php echo ($company["background"]); ?>" alt=""></a>
                             </div>
 		                </div>
 		                <!--About Us Image End-->
@@ -283,13 +283,13 @@
 		                        <!--Single Footer Wiedget Start-->
 		                        <div class="single-footer-wiedget mb-30">
 		                            <div class="footer-logo">
-		                                <a href="index.html"><img src="/chikwong/NewRPJ/Public<?php echo ($company["logo"]); ?>" alt=""></a>
+		                                <a href="index.html"><img src="/NewRPJ/Public/img/logo/logo1.jpg" alt=""></a>
 		                            </div>
-		                            <div class="desc-footer">广州瑞谱佳科技有限公司拥有稳妥，快捷，优质的售后服务，欢迎垂询！</div>
+		                            <div class="desc-footer">We are a team of designers and developers that create high quality Magento, Prestashop, Opencart.</div>
 		                            <div class="address-footer">
-		                               <p class="address"><span><?php echo ($company["address"]); ?></span></p>
-		                               <p class="phone"><span><?php echo ($company["tel"]); ?></span></p>
-		                               <p class="mail"><span><?php echo ($company["email"]); ?></span></p>
+		                               <p class="address"><span>The Barn, Ullenhall, Henley-in-Arden B578 5CC, England</span></p>
+		                               <p class="phone"><span>+123.456.789 - +123.456.678</span></p>
+		                               <p class="mail"><span>support@devitems.com</span></p>
 		                            </div>
 		                        </div>
 		                        <!--Single Footer Wiedget End-->
@@ -343,7 +343,119 @@
 		            </div>
 		        </div>
 		        <!--Footer Top Area End-->
-
+		        <!--Footer Middle Area Start-->
+		        <div class="footer-middle-area">
+		            <div class="container">
+                        <div class="newsletter-social-block-content">
+                            <div class="row">
+                                <div class="col-lg-7 col-md-12">
+                                    <!--Newsletter Area Start-->
+                                    <div class="newsletter-area">
+                                        <p>Sign up for newsletter</p>
+                                        <div class="newsletter-form">
+                                               <!-- Newsletter Form -->
+                                               <form action="http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="popup-subscribe-form validate" target="_blank" novalidate>
+                                                   <div id="mc_embed_signup_scroll">
+                                                      <div id="mc-form" class="mc-form subscribe-form" >
+                                                        <input id="mc-email" type="email" autocomplete="off" placeholder="Enter your email here" />
+                                                        <button id="mc-submit">Subscribe</button>
+                                                      </div>
+                                                   </div>
+                                               </form>
+                                        </div>
+                                    </div>
+                                    <!--Newsletter Area End-->
+                                </div>
+                                <div class="col-lg-5 col-md-12 text-center text-lg-right">
+                                    <div class="social-title">
+                                        <h2>Follow Us</h2>
+                                    </div>
+                                    <ul class="social-icon">
+                                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                                        <li><a href="#"><i class="ion-social-youtube"></i></a></li>
+                                        <li><a href="#"><i class="ion-social-googleplus-outline"></i></a></li>
+                                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-link pt-50 pb-30">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="footer-link-title">
+                                        <h2>Quick Links</h2>
+                                    </div>
+                                    <!--Single Tag Content Start-->
+                                    <div class="tag-content">
+                                        <h4>Electronics:</h4>
+                                        <ul class="tag-link">
+                                            <li><a href="#">Headsets</a></li>
+                                            <li><a href="#">Headphones</a></li>
+                                            <li><a href="#">Speakers</a></li>
+                                            <li><a href="#">Portronics Speakers </a></li>
+                                            <li><a href="#">Intex Speakers</a></li>
+                                            <li><a href="#">Xoofer speakers </a></li>
+                                            <li><a href="#">Smart Watch </a></li>
+                                            <li><a href="#">Mobile </a></li>
+                                            <li><a href="#">Digital Cameras </a></li>
+                                        </ul>
+                                    </div>
+                                    <!--Single Tag Content End-->
+                                    <!--Single Tag Content Start-->
+                                    <div class="tag-content">
+                                        <h4>Fashion:</h4>
+                                        <ul class="tag-link">
+                                            <li><a href="#">men's fashion</a></li>
+                                            <li><a href="#">women's fashion</a></li>
+                                            <li><a href="#">handbag</a></li>
+                                            <li><a href="#">watches</a></li>
+                                            <li><a href="#">clothing</a></li>
+                                            <li><a href="#">T-shit</a></li>
+                                            <li><a href="#">Sportwear</a></li>
+                                            <li><a href="#">lougewear</a></li>
+                                            <li><a href="#">Digital Cameras</a></li>
+                                        </ul>
+                                    </div>
+                                    <!--Single Tag Content End-->
+                                    <!--Single Tag Content Start-->
+                                    <div class="tag-content">
+                                        <h4>Cosmetic:</h4>
+                                        <ul class="tag-link">
+                                            <li><a href="#">Makeup</a></li>
+                                            <li><a href="#">Skin Care</a></li>
+                                            <li><a href="#">Speakers</a></li>
+                                            <li><a href="#">Hair Care </a></li>
+                                            <li><a href="#">Nails Art </a></li>
+                                            <li><a href="#">Lip Care</a></li>
+                                            <li><a href="#">Tools</a></li>
+                                            <li><a href="#">Blush </a></li>
+                                            <li><a href="#">Sprays</a></li>
+                                            <li><a href="#">Makeup Brushes</a></li>
+                                            <li><a href="#">Lipstick</a></li>
+                                            <li><a href="#">Lipcolor</a></li>
+                                        </ul>
+                                    </div>
+                                    <!--Single Tag Content End-->
+                                    <!--Single Tag Content Start-->
+                                    <div class="tag-content">
+                                        <h4>Furniturex:</h4>
+                                        <ul class="tag-link">
+                                            <li><a href="#">Living Room</a></li>
+                                            <li><a href="#">Dinning Room </a></li>
+                                            <li><a href="#">Mattress Protectors </a></li>
+                                            <li><a href="#">Accent Chairs </a></li>
+                                            <li><a href="#">Sofa Beds & Futons</a></li>
+                                            <li><a href="#">Cabinets & Etageres</a></li>
+                                        </ul>
+                                    </div>
+                                    <!--Single Tag Content End-->
+                                </div>
+                            </div>
+                        </div>
+		            </div>
+		        </div>
+		        <!--Footer Middle Area End-->
 		        <!--Footer Bottom Area Start-->
 		        <div class="footer-bottom-area">
 		            <div class="container">
@@ -351,14 +463,14 @@
 		                    <div class="col-md-6">
                                 <!--Footer Copyright Start-->
 		                        <div class="footer-copyright">
-		                            <p>Copyright &copy; <a href="www.bootstrapmb.com"><?php echo ($company["name"]); ?>.</a> <?php echo ($company["icp"]); ?></p>
+		                            <p>Copyright &copy; <a href="www.bootstrapmb.com">Picaboo.</a> All Rights Reserved</p>
 		                        </div>
 		                        <!--Footer Copyright End-->
 		                    </div>
 		                    <div class="col-md-6">
                                 <!--Footer Payment Start-->
 		                        <div class="footer-payments-image text-center text-md-right">
-		                            <img src="/chikwong/NewRPJ/Public/img/payment/payment.png" alt="">
+		                            <img src="/NewRPJ/Public/img/payment/payment.png" alt="">
 		                        </div>
 		                        <!--Footer Payment End-->
 		                    </div>
@@ -387,28 +499,28 @@
                         <div class="tab-pane fade show active" id="single-slide1" role="tabpanel" aria-labelledby="single-slide-tab-1">
                             <!--Single Product Image Start-->
                             <div class="single-product-img img-full">
-                              <img src="/chikwong/NewRPJ/Public/img/single-product/large/large1.jpg" alt="">
+                              <img src="/NewRPJ/Public/img/single-product/large/large1.jpg" alt="">
                             </div>
                             <!--Single Product Image End-->
                         </div>
                         <div class="tab-pane fade" id="single-slide2" role="tabpanel" aria-labelledby="single-slide-tab-2">
                             <!--Single Product Image Start-->
                             <div class="single-product-img img-full">
-                              <img src="/chikwong/NewRPJ/Public/img/single-product/large/large2.jpg" alt="">
+                              <img src="/NewRPJ/Public/img/single-product/large/large2.jpg" alt="">
                             </div>
                             <!--Single Product Image End-->
                         </div>
                         <div class="tab-pane fade" id="single-slide3" role="tabpanel" aria-labelledby="single-slide-tab-3">
                             <!--Single Product Image Start-->
                             <div class="single-product-img img-full">
-                              <img src="/chikwong/NewRPJ/Public/img/single-product/large/large3.jpg" alt="">
+                              <img src="/NewRPJ/Public/img/single-product/large/large3.jpg" alt="">
                             </div>
                             <!--Single Product Image End-->
                         </div>
                         <div class="tab-pane fade" id="single-slide4" role="tabpanel" aria-labelledby="single-slide-tab-4">
                             <!--Single Product Image Start-->
                             <div class="single-product-img img-full">
-                              <img src="/chikwong/NewRPJ/Public/img/single-product/large/large4.jpg" alt="">
+                              <img src="/NewRPJ/Public/img/single-product/large/large4.jpg" alt="">
                             </div>
                             <!--Single Product Image End-->
                         </div>
@@ -418,16 +530,16 @@
                       <div class="single-product-menu">
                           <div class="nav single-slide-menu" role="tablist">
                               <div class="single-tab-menu img-full">
-                                  <a class="active" data-toggle="tab" id="single-slide-tab-1" href="#single-slide1"><img src="/chikwong/NewRPJ/Public/img/single-product/small/small1.jpg" alt=""></a>
+                                  <a class="active" data-toggle="tab" id="single-slide-tab-1" href="#single-slide1"><img src="img/single-product/small/small1.jpg" alt=""></a>
                               </div>
                               <div class="single-tab-menu img-full">
-                                  <a data-toggle="tab" id="single-slide-tab-2" href="#single-slide2"><img src="/chikwong/NewRPJ/Public/img/single-product/small/small2.jpg" alt=""></a>
+                                  <a data-toggle="tab" id="single-slide-tab-2" href="#single-slide2"><img src="img/single-product/small/small2.jpg" alt=""></a>
                               </div>
                               <div class="single-tab-menu img-full">
-                                  <a data-toggle="tab" id="single-slide-tab-3" href="#single-slide3"><img src="/chikwong/NewRPJ/Public/img/single-product/small/small3.jpg" alt=""></a>
+                                  <a data-toggle="tab" id="single-slide-tab-3" href="#single-slide3"><img src="img/single-product/small/small3.jpg" alt=""></a>
                               </div>
                               <div class="single-tab-menu img-full">
-                                  <a data-toggle="tab" id="single-slide-tab-4" href="#single-slide4"><img src="/chikwong/NewRPJ/Public/img/single-product/small/small4.jpg" alt=""></a>
+                                  <a data-toggle="tab" id="single-slide-tab-4" href="#single-slide4"><img src="img/single-product/small/small4.jpg" alt=""></a>
                               </div>
                           </div>
                       </div>
@@ -520,40 +632,40 @@
     <!--All Js Here-->
 
 	<!--Jquery 1.12.4-->
-	<script src="/chikwong/NewRPJ/Public/scripts/vendor/jquery-1.12.4.min.js"></script>
+	<script src="/NewRPJ/Public/js/vendor/jquery-1.12.4.min.js"></script>
 	<!--Imagesloaded-->
-	<script src="/chikwong/NewRPJ/Public/scripts/imagesloaded.pkgd.min.js"></script>
+	<script src="/NewRPJ/Public/js/imagesloaded.pkgd.min.js"></script>
 	<!--Isotope-->
-	<script src="/chikwong/NewRPJ/Public/scripts/isotope.pkgd.min.js"></script>
+	<script src="/NewRPJ/Public/js/isotope.pkgd.min.js"></script>
 	<!--Waypoints-->
-	<script src="/chikwong/NewRPJ/Public/scripts/waypoints.min.js"></script>
+	<script src="/NewRPJ/Public/js/waypoints.min.js"></script>
 	<!--Counterup-->
-	<script src="/chikwong/NewRPJ/Public/scripts/jquery.counterup.min.js"></script>
+	<script src="/NewRPJ/Public/js/jquery.counterup.min.js"></script>
 	<!--Countdown-->
-	<script src="/chikwong/NewRPJ/Public/scripts/jquery.countdown.min.js"></script>
+	<script src="/NewRPJ/Public/js/jquery.countdown.min.js"></script>
 	<!--Carousel-->
-	<script src="/chikwong/NewRPJ/Public/scripts/owl.carousel.min.js"></script>
+	<script src="/NewRPJ/Public/js/owl.carousel.min.js"></script>
 	<!--Slick-->
-	<script src="/chikwong/NewRPJ/Public/scripts/slick.min.js"></script>
+	<script src="/NewRPJ/Public/js/slick.min.js"></script>
 	<!--Meanmenu-->
-	<script src="/chikwong/NewRPJ/Public/scripts/jquery.meanmenu.min.js"></script>
+	<script src="/NewRPJ/Public/js/jquery.meanmenu.min.js"></script>
 	<!--Instafeed-->
 	<!--<script src="js/instafeed.min.js"></script>-->
 	<!--Nice Select-->
-	<script src="/chikwong/NewRPJ/Public/scripts/jquery.nice-select.min.js"></script>
+	<script src="/NewRPJ/Public/js/jquery.nice-select.min.js"></script>
 	<!--ScrollUp-->
-	<script src="/chikwong/NewRPJ/Public/scripts/jquery.scrollUp.min.js"></script>
+	<script src="/NewRPJ/Public/js/jquery.scrollUp.min.js"></script>
 	<!--Wow-->
-	<script src="/chikwong/NewRPJ/Public/scripts/wow.min.js"></script>
+	<script src="/NewRPJ/Public/js/wow.min.js"></script>
 	<!--Venobox-->
-	<script src="/chikwong/NewRPJ/Public/scripts/venobox.min.js"></script>
+	<script src="/NewRPJ/Public/js/venobox.min.js"></script>
 	<!--Popper-->
-	<script src="/chikwong/NewRPJ/Public/scripts/popper.min.js"></script>
+	<script src="/NewRPJ/Public/js/popper.min.js"></script>
 	<!--Bootstrap-->
-	<script src="/chikwong/NewRPJ/Public/scripts/bootstrap.min.js"></script>
+	<script src="/NewRPJ/Public/js/bootstrap.min.js"></script>
 	<!--Plugins-->
-	<script src="/chikwong/NewRPJ/Public/scripts/plugins.js"></script>
+	<script src="/NewRPJ/Public/js/plugins.js"></script>
 	<!--Main Js-->
-	<script src="/chikwong/NewRPJ/Public/scripts/main.js"></script>
+	<script src="/NewRPJ/Public/js/main.js"></script>
 </body>
 </html>
