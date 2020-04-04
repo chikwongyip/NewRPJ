@@ -1,0 +1,64 @@
+[ 2020-04-04T16:22:44+08:00 ] ::1 /NewRPJ/index.php/admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000904s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010079s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000956s ]
+
+[ 2020-04-04T16:22:45+08:00 ] ::1 /NewRPJ/index.php/Admin/Introduce/introduce.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052957s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001275s ]
+
+[ 2020-04-04T16:22:53+08:00 ] ::1 /NewRPJ/index.php/Admin/brand/brand_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0442s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0433s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [2] Use of undefined constant brand_id - assumed 'brand_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/rpj/NewRPJ/Application/Runtime/Cache/Admin/141d3e8e8840e90d168b4c918cada876.php 第 188 行.
+NOTIC: [2] Use of undefined constant brand_id - assumed 'brand_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/rpj/NewRPJ/Application/Runtime/Cache/Admin/141d3e8e8840e90d168b4c918cada876.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010736s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000575s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000606s ]
+
