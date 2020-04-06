@@ -14,7 +14,6 @@ class ProductController extends Controller {
       $modelProduct = M('Rpj_product');
       if (IS_POST) {
         //处理text
-
         $idMax = $modelProduct->max('product_id');
         $product_id = $idMax+1;
         $modelProduct->product_id = $product_id;
@@ -25,6 +24,9 @@ class ProductController extends Controller {
         $modelProduct->product_video = $_POST["product_video"];
         $modelProduct->brand_id = $_POST["brand_id"];
         $modelProduct->category_id = $_POST["category_id"];
+        if ($_POST["top"][0]!=null) {
+          $modelProduct->top = 'X';
+        }
         //处理文件
         $upload = new \Think\Upload();
         $upload->maxSize = 3145728;

@@ -150,6 +150,15 @@
 		<div class="ui_content">
 			<table  cellspacing="0" cellpadding="0" width="100%" align="left" border="0">
 				<tr>
+					<td class="ui_text_lt">热销产品</td>
+					<td class="ui_text_lt">
+						<input type="checkbox" name="top" value="{$product[0].top}" class="ui_input_txt02"
+							<if condition="$product[0]['top'] eq 'X'">
+								checked
+							</if> />
+					</td>
+				</tr>
+				<tr>
 					<td class="ui_text_lt">产品名称</td>
 					<td class="ui_text_lt">
 						<input type="text" name="product_name" value="{$product[0].product_name}" class="ui_input_txt02"/>

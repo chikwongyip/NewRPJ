@@ -176,6 +176,7 @@
 						<tr>
 							<th width="30"><input type="checkbox" id="all" onclick="selectOrClearAllCheckbox(this);" />
 							</th>
+							<th>热销产品</th>
 							<th>产品名称</th>
 							<th>产品品牌</th>
 							<th>产品类别</th>
@@ -190,6 +191,12 @@
 						<foreach name="product" item="a">
 							<tr>
 								<td><input type="checkbox" name="ID" value="{$a.product_id}" class="acb" /></td>
+								<td>
+									<input type="checkbox"
+										<if condition="$a['top'] eq 'X'">
+											checked
+		                </if> />
+								</td>
 								<td>{$a.product_name}</td>
 								<td>{$a.brand_name}</td>
 								<td>{$a.category_name}</td>
