@@ -202,32 +202,24 @@
 		            <div class="col-md-8 col-lg-6">
 		                <div class="hero-slider owl-carousel">
                             <!--Single Slider Start-->
-                            <div class="single-slider" style="background-image: url(__PUBLIC__/img/slider/home1-slider-1.jpg)">
-                                <div class="hero-slider-content">
-                                    <h2 class="slow-animation1">pendant lights</h2>
-                                    <h2 class="slow-animation2">collection 2018</h2>
-                                    <h4>get up to</h4>
-                                    <h1>30% off</h1>
-                                    <div class="slider-btn mt-50">
-                                        <a href="#">Shop Now</a>
-                                    </div>
-                                </div>
-                            </div>
+														<foreach name="product" item="pro_list">
+															<if condition="$pro_list['top'] eq 'X'">
+		                            <div class="single-slider" style="background-image: url(__PUBLIC__{$pro_list.product_pic})">
+		                                <div class="hero-slider-content">
+		                                    <h2 class="slow-animation1">{$pro_list.product_name}</h2>
+		                                    <h2 class="slow-animation2">{$pro_list.brand_name}</h2>
+		                                    <h4>{$pro_list.product_desc}</h4>
+		                                    <h1>{$pro_list.product_model}</h1>
+		                                    <div class="slider-btn mt-50">
+		                                        <a href="{:U('home/product/product',array('product_id'=>$pro_list[product_id]))}">点击浏览</a>
+		                                    </div>
+		                                </div>
+		                            </div>
+														  </if>
+													  </foreach>
                             <!--Single Slider End-->
-                            <!--Single Slider Start-->
-                            <div class="single-slider" style="background-image: url(__PUBLIC__/img/slider/home1-slider-2.jpg)">
-                                <div class="hero-slider-content">
-                                    <h2 class="slow-animation1">Beat solo2</h2>
-                                    <h2 class="slow-animation2">wireless</h2>
-                                    <h4>get up to</h4>
-                                    <h1>60% off</h1>
-                                    <div class="slider-btn mt-50">
-                                        <a href="#">Shop Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--Single Slider End-->
-                        </div>
+
+                      </div>
 		            </div>
 		            <div class="col-md-4 col-lg-3">
 		                <!--Sidebar Product Categories Start-->

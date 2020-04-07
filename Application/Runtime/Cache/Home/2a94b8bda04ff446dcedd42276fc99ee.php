@@ -7,34 +7,34 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Place favicon.ico in the root directory -->
-	<link rel="shortcut icon" type="image/x-icon" href="/NewRPJ/Public/img/favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="/chikwong/NewRPJ/Public/img/favicon.ico">
     <!--All Css Here-->
 
 	<!-- Ionicons Font CSS-->
-    <link rel="stylesheet" href="/NewRPJ/Public/css/ionicons.min.css">
+    <link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/ionicons.min.css">
     <!-- Font Awesome CSS-->
-    <link rel="stylesheet" href="/NewRPJ/Public/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/font-awesome.min.css">
 
 	<!-- Animate CSS-->
-	<link rel="stylesheet" href="/NewRPJ/Public/css/animate.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/animate.css">
 	<!-- Owl Carousel CSS-->
-	<link rel="stylesheet" href="/NewRPJ/Public/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/owl.carousel.min.css">
 	<!-- Nice Select CSS-->
-	<link rel="stylesheet" href="/NewRPJ/Public/css/nice-select.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/nice-select.css">
 	<!-- Slick CSS-->
-	<link rel="stylesheet" href="/NewRPJ/Public/css/slick.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/slick.css">
 	<!-- Meanmenu CSS-->
-	<link rel="stylesheet" href="/NewRPJ/Public/css/meanmenu.min.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/meanmenu.min.css">
 	<!-- Venobox CSS-->
-	<link rel="stylesheet" href="/NewRPJ/Public/css/venobox.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/venobox.css">
 	<!-- Bootstrap CSS-->
-	<link rel="stylesheet" href="/NewRPJ/Public/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/bootstrap.min.css">
 	<!-- Style CSS -->
-	<link rel="stylesheet" href="/NewRPJ/Public/style.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/style.css">
 	<!-- Responsive CSS -->
-	<link rel="stylesheet" href="/NewRPJ/Public/css/responsive.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/responsive.css">
 	<!-- Modernizr Js -->
-	<script src="/NewRPJ/Public/scripts/vendor/modernizr-2.8.3.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
 
@@ -70,7 +70,7 @@
 		                    <!--Logo Start-->
 		                    <div class="logo">
 		                        <a href="index.html">
-															<img src="/NewRPJ/Public<?php echo ($company["logo"]); ?>" alt="">
+															<img src="/chikwong/NewRPJ/Public<?php echo ($company["logo"]); ?>" alt="">
 		                        </a>
 		                    </div>
 		                    <!--Logo End-->
@@ -183,32 +183,20 @@
 		            <div class="col-md-8 col-lg-6">
 		                <div class="hero-slider owl-carousel">
                             <!--Single Slider Start-->
-                            <div class="single-slider" style="background-image: url(/NewRPJ/Public/img/slider/home1-slider-1.jpg)">
-                                <div class="hero-slider-content">
-                                    <h2 class="slow-animation1">pendant lights</h2>
-                                    <h2 class="slow-animation2">collection 2018</h2>
-                                    <h4>get up to</h4>
-                                    <h1>30% off</h1>
-                                    <div class="slider-btn mt-50">
-                                        <a href="#">Shop Now</a>
-                                    </div>
-                                </div>
-                            </div>
+														<?php if(is_array($product)): foreach($product as $key=>$pro_list): if($pro_list['top'] == 'X'): ?><div class="single-slider" style="background-image: url(/chikwong/NewRPJ/Public<?php echo ($pro_list["product_pic"]); ?>)">
+		                                <div class="hero-slider-content">
+		                                    <h2 class="slow-animation1"><?php echo ($pro_list["product_name"]); ?></h2>
+		                                    <h2 class="slow-animation2"><?php echo ($pro_list["brand_name"]); ?></h2>
+		                                    <h4><?php echo ($pro_list["product_desc"]); ?></h4>
+		                                    <h1><?php echo ($pro_list["product_model"]); ?></h1>
+		                                    <div class="slider-btn mt-50">
+		                                        <a href="<?php echo U('home/product/product',array('product_id'=>$pro_list[product_id]));?>">点击浏览</a>
+		                                    </div>
+		                                </div>
+		                            </div><?php endif; endforeach; endif; ?>
                             <!--Single Slider End-->
-                            <!--Single Slider Start-->
-                            <div class="single-slider" style="background-image: url(/NewRPJ/Public/img/slider/home1-slider-2.jpg)">
-                                <div class="hero-slider-content">
-                                    <h2 class="slow-animation1">Beat solo2</h2>
-                                    <h2 class="slow-animation2">wireless</h2>
-                                    <h4>get up to</h4>
-                                    <h1>60% off</h1>
-                                    <div class="slider-btn mt-50">
-                                        <a href="#">Shop Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--Single Slider End-->
-                        </div>
+
+                      </div>
 		            </div>
 		            <div class="col-md-4 col-lg-3">
 		                <!--Sidebar Product Categories Start-->
@@ -229,7 +217,7 @@
 		                                    </div>
 		                                </div>
 		                                <div class="thumb-category">
-		                                    <a href="shop.html"><img src="/NewRPJ/Public/img/product-thumb/product-thumb1.jpg" alt=""></a>
+		                                    <a href="shop.html"><img src="/chikwong/NewRPJ/Public/img/product-thumb/product-thumb1.jpg" alt=""></a>
 		                                </div>
 		                            </div>
 		                            <!--Single List Categories End-->
@@ -244,7 +232,7 @@
 		                                    </div>
 		                                </div>
 		                                <div class="thumb-category">
-		                                    <a href="shop.html"><img src="/NewRPJ/Public/img/product-thumb/product-thumb2.jpg" alt=""></a>
+		                                    <a href="shop.html"><img src="/chikwong/NewRPJ/Public/img/product-thumb/product-thumb2.jpg" alt=""></a>
 		                                </div>
 		                            </div>
 		                            <!--Single List Categories End-->
@@ -259,7 +247,7 @@
 		                                    </div>
 		                                </div>
 		                                <div class="thumb-category">
-		                                    <a href="shop.html"><img src="/NewRPJ/Public/img/product-thumb/product-thumb3.jpg" alt=""></a>
+		                                    <a href="shop.html"><img src="/chikwong/NewRPJ/Public/img/product-thumb/product-thumb3.jpg" alt=""></a>
 		                                </div>
 		                            </div>
 		                            <!--Single List Categories End-->
@@ -276,7 +264,7 @@
 		                                    </div>
 		                                </div>
 		                                <div class="thumb-category">
-		                                    <a href="shop.html"><img src="/NewRPJ/Public/img/product-thumb/product-thumb4.jpg" alt=""></a>
+		                                    <a href="shop.html"><img src="/chikwong/NewRPJ/Public/img/product-thumb/product-thumb4.jpg" alt=""></a>
 		                                </div>
 		                            </div>
 		                            <!--Single List Categories End-->
@@ -291,7 +279,7 @@
 		                                    </div>
 		                                </div>
 		                                <div class="thumb-category">
-		                                    <a href="shop.html"><img src="/NewRPJ/Public/img/product-thumb/product-thumb5.jpg" alt=""></a>
+		                                    <a href="shop.html"><img src="/chikwong/NewRPJ/Public/img/product-thumb/product-thumb5.jpg" alt=""></a>
 		                                </div>
 		                            </div>
 		                            <!--Single List Categories End-->
@@ -346,7 +334,7 @@
                             <!--Product Banner Start-->
                             <div class="banner-block-content">
                                 <div class="banner-inner">
-                                    <a href="#"><img src="/NewRPJ/Public/img/banner/product-banner1.jpg" alt=""></a>
+                                    <a href="#"><img src="/chikwong/NewRPJ/Public/img/banner/product-banner1.jpg" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -359,8 +347,8 @@
                                     <div class="single-product">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img class="first-img" src="/NewRPJ/Public/img/product/product8.jpg" alt="">
-                                                <img class="hover-img" src="/NewRPJ/Public/img/product/product1.jpg" alt="">
+                                                <img class="first-img" src="/chikwong/NewRPJ/Public/img/product/product8.jpg" alt="">
+                                                <img class="hover-img" src="/chikwong/NewRPJ/Public/img/product/product1.jpg" alt="">
                                             </a>
                                             <span class="sticker">New</span>
                                             <div class="product-action">
@@ -392,8 +380,8 @@
                                     <div class="single-product">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img class="first-img" src="/NewRPJ/Public/img/product/product13.jpg" alt="">
-                                                <img class="hover-img" src="/NewRPJ/Public/img/product/product8.jpg" alt="">
+                                                <img class="first-img" src="/chikwong/NewRPJ/Public/img/product/product13.jpg" alt="">
+                                                <img class="hover-img" src="/chikwong/NewRPJ/Public/img/product/product8.jpg" alt="">
                                             </a>
                                             <span class="sticker">New</span>
                                             <div class="product-action">
@@ -425,8 +413,8 @@
                                     <div class="single-product">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img class="first-img" src="/NewRPJ/Public/img/product/product10.jpg" alt="">
-                                                <img class="hover-img" src="/NewRPJ/Public/img/product/product11.jpg" alt="">
+                                                <img class="first-img" src="/chikwong/NewRPJ/Public/img/product/product10.jpg" alt="">
+                                                <img class="hover-img" src="/chikwong/NewRPJ/Public/img/product/product11.jpg" alt="">
                                             </a>
                                             <span class="sticker">New</span>
                                             <div class="product-action">
@@ -459,8 +447,8 @@
                                     <div class="single-product">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img class="first-img" src="/NewRPJ/Public/img/product/product15.jpg" alt="">
-                                                <img class="hover-img" src="/NewRPJ/Public/img/product/product16.jpg" alt="">
+                                                <img class="first-img" src="/chikwong/NewRPJ/Public/img/product/product15.jpg" alt="">
+                                                <img class="hover-img" src="/chikwong/NewRPJ/Public/img/product/product16.jpg" alt="">
                                             </a>
                                             <span class="sticker">New</span>
                                             <div class="product-action">
@@ -492,8 +480,8 @@
                                     <div class="single-product">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img class="first-img" src="/NewRPJ/Public/img/product/product17.jpg" alt="">
-                                                <img class="hover-img" src="/NewRPJ/Public/img/product/product18.jpg" alt="">
+                                                <img class="first-img" src="/chikwong/NewRPJ/Public/img/product/product17.jpg" alt="">
+                                                <img class="hover-img" src="/chikwong/NewRPJ/Public/img/product/product18.jpg" alt="">
                                             </a>
                                             <span class="sticker">New</span>
                                             <div class="product-action">
@@ -525,7 +513,7 @@
                                     <div class="single-product">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img class="first-img" src="/NewRPJ/Public/img/product/product3.jpg" alt="">
+                                                <img class="first-img" src="/chikwong/NewRPJ/Public/img/product/product3.jpg" alt="">
                                             </a>
                                             <span class="sticker">New</span>
                                             <div class="product-action">
@@ -557,8 +545,8 @@
                                     <div class="single-product">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img class="first-img" src="/NewRPJ/Public/img/product/product13.jpg" alt="">
-                                                <img class="hover-img" src="/NewRPJ/Public/img/product/product14.jpg" alt="">
+                                                <img class="first-img" src="/chikwong/NewRPJ/Public/img/product/product13.jpg" alt="">
+                                                <img class="hover-img" src="/chikwong/NewRPJ/Public/img/product/product14.jpg" alt="">
                                             </a>
                                             <span class="sticker">New</span>
                                             <div class="product-action">
@@ -590,7 +578,7 @@
                                     <div class="single-product">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img class="first-img" src="/NewRPJ/Public/img/product/product6.jpg" alt="">
+                                                <img class="first-img" src="/chikwong/NewRPJ/Public/img/product/product6.jpg" alt="">
                                             </a>
                                             <span class="sticker">New</span>
                                             <div class="product-action">
@@ -634,42 +622,42 @@
 		                <div class="brand-active owl-carousel">
 		                    <!--Single Brand Start-->
 		                    <div class="single-brand">
-		                      <a href="#"><img src="/NewRPJ/Public/img/brand/brand1.jpg" alt=""></a>
+		                      <a href="#"><img src="/chikwong/NewRPJ/Public/img/brand/brand1.jpg" alt=""></a>
 		                    </div>
 		                    <!--Single Brand End-->
 		                    <!--Single Brand Start-->
 		                    <div class="single-brand">
-		                      <a href="#"><img src="/NewRPJ/Public/img/brand/brand2.jpg" alt=""></a>
+		                      <a href="#"><img src="/chikwong/NewRPJ/Public/img/brand/brand2.jpg" alt=""></a>
 		                    </div>
 		                    <!--Single Brand End-->
 		                    <!--Single Brand Start-->
 		                    <div class="single-brand">
-		                      <a href="#"><img src="/NewRPJ/Public/img/brand/brand3.jpg" alt=""></a>
+		                      <a href="#"><img src="/chikwong/NewRPJ/Public/img/brand/brand3.jpg" alt=""></a>
 		                    </div>
 		                    <!--Single Brand End-->
 		                    <!--Single Brand Start-->
 		                    <div class="single-brand">
-		                      <a href="#"><img src="/NewRPJ/Public/img/brand/brand4.jpg" alt=""></a>
+		                      <a href="#"><img src="/chikwong/NewRPJ/Public/img/brand/brand4.jpg" alt=""></a>
 		                    </div>
 		                    <!--Single Brand End-->
 		                    <!--Single Brand Start-->
 		                    <div class="single-brand">
-		                      <a href="#"><img src="/NewRPJ/Public/img/brand/brand5.jpg" alt=""></a>
+		                      <a href="#"><img src="/chikwong/NewRPJ/Public/img/brand/brand5.jpg" alt=""></a>
 		                    </div>
 		                    <!--Single Brand End-->
 		                    <!--Single Brand Start-->
 		                    <div class="single-brand">
-		                      <a href="#"><img src="/NewRPJ/Public/img/brand/brand2.jpg" alt=""></a>
+		                      <a href="#"><img src="/chikwong/NewRPJ/Public/img/brand/brand2.jpg" alt=""></a>
 		                    </div>
 		                    <!--Single Brand End-->
 		                    <!--Single Brand Start-->
 		                    <div class="single-brand">
-		                      <a href="#"><img src="/NewRPJ/Public/img/brand/brand1.jpg" alt=""></a>
+		                      <a href="#"><img src="/chikwong/NewRPJ/Public/img/brand/brand1.jpg" alt=""></a>
 		                    </div>
 		                    <!--Single Brand End-->
 		                    <!--Single Brand Start-->
 		                    <div class="single-brand">
-		                      <a href="#"><img src="/NewRPJ/Public/img/brand/brand4.jpg" alt=""></a>
+		                      <a href="#"><img src="/chikwong/NewRPJ/Public/img/brand/brand4.jpg" alt=""></a>
 		                    </div>
 		                    <!--Single Brand End-->
 		                </div>
@@ -738,7 +726,7 @@
 														<!--Single Footer Wiedget Start-->
 														<div class="single-footer-wiedget mb-30">
 																<div class="footer-logo">
-																		<a href="index.html"><img src="/NewRPJ/Public<?php echo ($company["logo"]); ?>" alt=""></a>
+																		<a href="index.html"><img src="/chikwong/NewRPJ/Public<?php echo ($company["logo"]); ?>" alt=""></a>
 																</div>
 																<div class="desc-footer">广州瑞谱佳科技有限公司拥有稳妥，快捷，优质的售后服务，欢迎垂询！</div>
 																<div class="address-footer">
@@ -806,7 +794,7 @@
 												<div class="col-md-6">
 																<!--Footer Payment Start-->
 														<div class="footer-payments-image text-center text-md-right">
-																<img src="/NewRPJ/Public/img/payment/payment.png" alt="">
+																<img src="/chikwong/NewRPJ/Public/img/payment/payment.png" alt="">
 														</div>
 														<!--Footer Payment End-->
 												</div>
@@ -835,28 +823,28 @@
 												<div class="tab-pane fade show active" id="single-slide1" role="tabpanel" aria-labelledby="single-slide-tab-1">
 														<!--Single Product Image Start-->
 														<div class="single-product-img img-full">
-															<img src="/NewRPJ/Public/img/single-product/large/large1.jpg" alt="">
+															<img src="/chikwong/NewRPJ/Public/img/single-product/large/large1.jpg" alt="">
 														</div>
 														<!--Single Product Image End-->
 												</div>
 												<div class="tab-pane fade" id="single-slide2" role="tabpanel" aria-labelledby="single-slide-tab-2">
 														<!--Single Product Image Start-->
 														<div class="single-product-img img-full">
-															<img src="/NewRPJ/Public/img/single-product/large/large2.jpg" alt="">
+															<img src="/chikwong/NewRPJ/Public/img/single-product/large/large2.jpg" alt="">
 														</div>
 														<!--Single Product Image End-->
 												</div>
 												<div class="tab-pane fade" id="single-slide3" role="tabpanel" aria-labelledby="single-slide-tab-3">
 														<!--Single Product Image Start-->
 														<div class="single-product-img img-full">
-															<img src="/NewRPJ/Public/img/single-product/large/large3.jpg" alt="">
+															<img src="/chikwong/NewRPJ/Public/img/single-product/large/large3.jpg" alt="">
 														</div>
 														<!--Single Product Image End-->
 												</div>
 												<div class="tab-pane fade" id="single-slide4" role="tabpanel" aria-labelledby="single-slide-tab-4">
 														<!--Single Product Image Start-->
 														<div class="single-product-img img-full">
-															<img src="/NewRPJ/Public/img/single-product/large/large4.jpg" alt="">
+															<img src="/chikwong/NewRPJ/Public/img/single-product/large/large4.jpg" alt="">
 														</div>
 														<!--Single Product Image End-->
 												</div>
@@ -866,16 +854,16 @@
 											<div class="single-product-menu">
 													<div class="nav single-slide-menu" role="tablist">
 															<div class="single-tab-menu img-full">
-																	<a class="active" data-toggle="tab" id="single-slide-tab-1" href="#single-slide1"><img src="/NewRPJ/Public/img/single-product/small/small1.jpg" alt=""></a>
+																	<a class="active" data-toggle="tab" id="single-slide-tab-1" href="#single-slide1"><img src="/chikwong/NewRPJ/Public/img/single-product/small/small1.jpg" alt=""></a>
 															</div>
 															<div class="single-tab-menu img-full">
-																	<a data-toggle="tab" id="single-slide-tab-2" href="#single-slide2"><img src="/NewRPJ/Public/img/single-product/small/small2.jpg" alt=""></a>
+																	<a data-toggle="tab" id="single-slide-tab-2" href="#single-slide2"><img src="/chikwong/NewRPJ/Public/img/single-product/small/small2.jpg" alt=""></a>
 															</div>
 															<div class="single-tab-menu img-full">
-																	<a data-toggle="tab" id="single-slide-tab-3" href="#single-slide3"><img src="/NewRPJ/Public/img/single-product/small/small3.jpg" alt=""></a>
+																	<a data-toggle="tab" id="single-slide-tab-3" href="#single-slide3"><img src="/chikwong/NewRPJ/Public/img/single-product/small/small3.jpg" alt=""></a>
 															</div>
 															<div class="single-tab-menu img-full">
-																	<a data-toggle="tab" id="single-slide-tab-4" href="#single-slide4"><img src="/NewRPJ/Public/img/single-product/small/small4.jpg" alt=""></a>
+																	<a data-toggle="tab" id="single-slide-tab-4" href="#single-slide4"><img src="/chikwong/NewRPJ/Public/img/single-product/small/small4.jpg" alt=""></a>
 															</div>
 													</div>
 											</div>
@@ -968,40 +956,40 @@
 		<!--All Js Here-->
 
 	<!--Jquery 1.12.4-->
-	<script src="/NewRPJ/Public/scripts/vendor/jquery-1.12.4.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/vendor/jquery-1.12.4.min.js"></script>
 	<!--Imagesloaded-->
-	<script src="/NewRPJ/Public/scripts/imagesloaded.pkgd.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/imagesloaded.pkgd.min.js"></script>
 	<!--Isotope-->
-	<script src="/NewRPJ/Public/scripts/isotope.pkgd.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/isotope.pkgd.min.js"></script>
 	<!--Waypoints-->
-	<script src="/NewRPJ/Public/scripts/waypoints.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/waypoints.min.js"></script>
 	<!--Counterup-->
-	<script src="/NewRPJ/Public/scripts/jquery.counterup.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/jquery.counterup.min.js"></script>
 	<!--Countdown-->
-	<script src="/NewRPJ/Public/scripts/jquery.countdown.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/jquery.countdown.min.js"></script>
 	<!--Carousel-->
-	<script src="/NewRPJ/Public/scripts/owl.carousel.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/owl.carousel.min.js"></script>
 	<!--Slick-->
-	<script src="/NewRPJ/Public/scripts/slick.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/slick.min.js"></script>
 	<!--Meanmenu-->
-	<script src="/NewRPJ/Public/scripts/jquery.meanmenu.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/jquery.meanmenu.min.js"></script>
 	<!--Instafeed-->
 	<!--<script src="js/instafeed.min.js"></script>-->
 	<!--Nice Select-->
-	<script src="/NewRPJ/Public/scripts/jquery.nice-select.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/jquery.nice-select.min.js"></script>
 	<!--ScrollUp-->
-	<script src="/NewRPJ/Public/scripts/jquery.scrollUp.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/jquery.scrollUp.min.js"></script>
 	<!--Wow-->
-	<script src="/NewRPJ/Public/scripts/wow.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/wow.min.js"></script>
 	<!--Venobox-->
-	<script src="/NewRPJ/Public/scripts/venobox.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/venobox.min.js"></script>
 	<!--Popper-->
-	<script src="/NewRPJ/Public/scripts/popper.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/popper.min.js"></script>
 	<!--Bootstrap-->
-	<script src="/NewRPJ/Public/scripts/bootstrap.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/bootstrap.min.js"></script>
 	<!--Plugins-->
-	<script src="/NewRPJ/Public/scripts/plugins.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/plugins.js"></script>
 	<!--Main Js-->
-	<script src="/NewRPJ/Public/scripts/main.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/main.js"></script>
 	</body>
 	</html>

@@ -14,6 +14,7 @@ class ProductController extends Controller {
       $modelProduct = M('Rpj_product');
       if (IS_POST) {
         //处理text
+
         $idMax = $modelProduct->max('product_id');
         $product_id = $idMax+1;
         $modelProduct->product_id = $product_id;
