@@ -8,13 +8,13 @@ class ProdlistController extends Controller
       // model inizitial
       // model inizitial
           $model = M('Rpj_company');
-          $modelProduct = M('Rpj_product');
+          //$modelProduct = M('Rpj_product');
           $modelBrands  = M('Rpj_brand');
           $category = getCategoryData();
           $brand = getBrandData();
       //  select data
           $company = $model->find(1);
-          $product = $modelProduct->select();
+          $product = getProductData();
           $brands  = $modelBrands->select();
       // assign data html
           $this->assign('company',$company);

@@ -38,6 +38,9 @@ class ProductpicController extends Controller
 
                 $image->thumb(125,125)->save('./Public/Upload/thumb/thumb_'.$info['savename']);
                 $model->product_thumb = '/Upload/thumb/thumb_'.$info['savename'];
+
+                $image->thumb(300,300)->save('./Public/Upload/thumb300/thumb300_'.$info['savename']);
+                $model->product_pic300 = '/Upload/thumb/thumb300_'.$info['savename'];
                 $model->add();
                 $this->display();
             }
