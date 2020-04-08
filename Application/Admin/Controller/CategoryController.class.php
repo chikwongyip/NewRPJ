@@ -15,8 +15,24 @@ class CategoryController extends Controller
   {
     $model = M('Rpj_procategory');
     if (IS_POST) {
-      $model->category_name = $_POST['category_name'];
-      $model->add();
+      $upload = new \Think\Upload();
+      $upload->maxSize = 3145728;
+      $upload->exts = array('jpg', 'gif', 'png', 'jpeg','pdf');// 设置附件上传类型
+      $upload->rootPath  =     './Public/Upload/'; // 设置附件上传根目录
+      $upload->savePath  =     ''; // 设置附件上传（子）目录
+      $info = $upload->uploadOne($_FILES['category_image']);
+      if(!$info)
+      {
+          $this->error($upload->getError());
+      }else
+      {
+        $model->category_image = '/Upload/'.$info['savepath'].$info['savename'];
+
+      }
+      if ($_POST['category_name'] !=null) {
+        $model->category_name = $_POST['category_name'];
+        $model->add();
+      }
     }
     $this->display();
   }
@@ -36,16 +52,22 @@ class CategoryController extends Controller
 
       $id = $_POST["category_id"];
       $model->find($id);
-
-      if ($_POST["category_name"] != null)
+      $model->category_name = $_POST["category_name"];
+      $upload = new \Think\Upload();
+      $upload->maxSize = 3145728;
+      $upload->exts = array('jpg', 'gif', 'png', 'jpeg','pdf');// 设置附件上传类型
+      $upload->rootPath  =     './Public/Upload/'; // 设置附件上传根目录
+      $upload->savePath  =     ''; // 设置附件上传（子）目录
+      $info = $upload->uploadOne($_FILES['category_image']);
+      if(!$info)
       {
-          $model->category_name = $_POST["category_name"];
-          $model->save();
-          echo "更新成功";
+          // $this->error($upload->getError());
       }else
       {
-          echo "更新失败";
+        $model->category_image = '/Upload/'.$info['savepath'].$info['savename'];
+
       }
+      $model->save();
       $this->display('category_edit');
     }
   }

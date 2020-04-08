@@ -178,6 +178,7 @@
 							</th>
 							<th>产品类型ID</th>
 							<th>产品类型名称</th>
+							<th>产品类型图片</th>
 							<th>操作</th>
 						</tr>
 						<foreach name="category" item="a">
@@ -185,6 +186,7 @@
 								<td><input type="checkbox" name="ID" value="{$a.category_id}" class="acb" /></td>
 								<td>{$a.category_id}</td>
 								<td>{$a.category_name}</td>
+								<td>{$a.category_image}</td>
 								<td>
 									<a href="{:U('admin/category/category_edit',array('category_id'=>$a[category_id]))}" class="edit">编辑</a>
 									<a href="javascript:del({$a.category_id});">删除</a>

@@ -178,12 +178,14 @@
 							</th>
 							<th>产品类型ID</th>
 							<th>产品类型名称</th>
+							<th>产品类型图片</th>
 							<th>操作</th>
 						</tr>
 						<?php if(is_array($category)): foreach($category as $key=>$a): ?><tr>
 								<td><input type="checkbox" name="ID" value="<?php echo ($a["category_id"]); ?>" class="acb" /></td>
 								<td><?php echo ($a["category_id"]); ?></td>
 								<td><?php echo ($a["category_name"]); ?></td>
+								<td><?php echo ($a["category_image"]); ?></td>
 								<td>
 									<a href="<?php echo U('admin/category/category_edit',array('category_id'=>$a[category_id]));?>" class="edit">编辑</a>
 									<a href="javascript:del(<?php echo ($a["category_id"]); ?>);">删除</a>

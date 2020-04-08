@@ -67,6 +67,22 @@ class BrandController extends Controller
       if ($_POST["brand_id"] != null)
       {
           $model->brand_name = $_POST["brand_name"];
+
+          $upload = new \Think\Upload();
+          $upload->maxSize = 3145728;
+          $upload->exts = array('jpg', 'gif', 'png', 'jpeg','pdf');// 设置附件上传类型
+          $upload->rootPath  =     './Public/Upload/'; // 设置附件上传根目录
+          $upload->savePath  =     ''; // 设置附件上传（子）目录
+          $info = $upload->uploadOne($_FILES['brand_image']);
+          if(!$info)
+          {
+              // $this->error($upload->getError());
+          }else
+          {
+
+              $model->brand_image = '/Upload/'.$info['savepath'].$info['savename'];
+
+          }
           $model->save();
       }
        $this->display('brand_edit');

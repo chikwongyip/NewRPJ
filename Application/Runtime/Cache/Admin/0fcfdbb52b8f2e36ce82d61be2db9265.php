@@ -161,6 +161,7 @@
 					<td class="ui_text_rt">品牌logo</td>
 					<td class="ui_text_lt">
 						<input type="file" name="brand_image" size="35" />
+						<label for="description">分辨率170*82</label>
 					</td>
 				</tr>
 

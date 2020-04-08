@@ -183,7 +183,7 @@
 						<?php if(is_array($brand_list)): foreach($brand_list as $key=>$list): ?><tr>
 								<td><input type="checkbox" name="brand_id" value="<?php echo ($list["brand_id"]); ?>" class="acb" /></td>
 								<td><?php echo ($list["brand_name"]); ?></td>
-								<td><img src="/chikwong/NewRPJ<?php echo ($list["brand_image"]); ?>" width="50" height="50"/></td>
+								<td><img src="/chikwong/NewRPJ/Public<?php echo ($list["brand_image"]); ?>" width="50" height="50"/></td>
 								<td>
 									<a href="<?php echo U('admin/brand/brand_edit',array('brand_id'=>$list[brand_id]));?>" class="edit">编辑</a>
 									<a href="javascript:del(<?php echo ($list["brand_id"]); ?>);">删除</a>
