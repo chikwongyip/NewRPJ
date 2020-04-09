@@ -7,34 +7,34 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Place favicon.ico in the root directory -->
-	<link rel="shortcut icon" type="image/x-icon" href="/NewRPJ/Public/img/favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="/chikwong/NewRPJ/Public/img/favicon.ico">
     <!--All Css Here-->
 
 	<!-- Ionicons Font CSS-->
-    <link rel="stylesheet" href="/NewRPJ/Public/css/ionicons.min.css">
+    <link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/ionicons.min.css">
     <!-- Font Awesome CSS-->
-    <link rel="stylesheet" href="/NewRPJ/Public/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/font-awesome.min.css">
 
 	<!-- Animate CSS-->
-	<link rel="stylesheet" href="/NewRPJ/Public/css/animate.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/animate.css">
 	<!-- Owl Carousel CSS-->
-	<link rel="stylesheet" href="/NewRPJ/Public/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/owl.carousel.min.css">
 	<!-- Nice Select CSS-->
-	<link rel="stylesheet" href="/NewRPJ/Public/css/nice-select.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/nice-select.css">
 	<!-- Slick CSS-->
-	<link rel="stylesheet" href="/NewRPJ/Public/css/slick.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/slick.css">
 	<!-- Meanmenu CSS-->
-	<link rel="stylesheet" href="/NewRPJ/Public/css/meanmenu.min.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/meanmenu.min.css">
 	<!-- Venobox CSS-->
-	<link rel="stylesheet" href="/NewRPJ/Public/css/venobox.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/venobox.css">
 	<!-- Bootstrap CSS-->
-	<link rel="stylesheet" href="/NewRPJ/Public/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/bootstrap.min.css">
 	<!-- Style CSS -->
-	<link rel="stylesheet" href="/NewRPJ/Public/style.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/style.css">
 	<!-- Responsive CSS -->
-	<link rel="stylesheet" href="/NewRPJ/Public/css/responsive.css">
+	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/responsive.css">
 	<!-- Modernizr Js -->
-	<script src="/NewRPJ/Public/scripts/vendor/modernizr-2.8.3.min.js"></script>
+	<script src="/chikwong/NewRPJ/Public/scripts/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
 
@@ -70,7 +70,7 @@
 		                    <!--Logo Start-->
 		                    <div class="logo">
 		                        <a href="index.html">
-															<img src="/NewRPJ/Public<?php echo ($company["logo"]); ?>" alt="">
+															<img src="/chikwong/NewRPJ/Public<?php echo ($company["logo"]); ?>" alt="">
 		                        </a>
 		                    </div>
 		                    <!--Logo End-->
@@ -261,27 +261,21 @@
 		                            <div id="grid" class="tab-pane fade show active">
 		                                <div class="product-grid-view">
 		                                    <div class="row">
-                                                <div class="col-lg-4 col-xl-4 col-md-4">
+																							<?php if(is_array($product)): foreach($product as $key=>$prod_list): ?><div class="col-lg-4 col-xl-4 col-md-4">
                                                     <!--Single Product Start-->
                                                     <div class="single-product mb-30">
                                                         <div class="product-img">
                                                             <a href="single-product.html">
-                                                                <img class="first-img" src="/NewRPJ/Public/img/product/product6.jpg" alt="">
-                                                                <img class="hover-img" src="/NewRPJ/Public/img/product/product7.jpg" alt="">
+                                                                <img class="first-img" src="/chikwong/NewRPJ/Public<?php echo ($prod_list["product_pic300"]); ?>" alt="">
+                                                                <!-- <img class="hover-img" src="/chikwong/NewRPJ/Public/img/product/product7.jpg" alt=""> -->
                                                             </a>
                                                             <span class="sticker">New</span>
-                                                            <div class="product-action">
-                                                                <ul>
-                                                                    <li><a href="cart.html"><i class="ion-bag"></i></a></li>
-                                                                    <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
-                                                                    <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
-                                                                </ul>
-                                                            </div>
+
                                                         </div>
                                                         <div class="product-content">
-                                                            <h4><a href="single-product.html">Adams Men's Dunbar</a></h4>
+                                                            <h4><a href="single-product.html"><?php echo ($prod_list["product_name"]); ?></a></h4>
                                                             <div class="product-price">
-                                                                <span class="price">$80.00</span>
+                                                                <span class="price"><?php echo ($prod_list["brand_name"]); ?></span>
                                                             </div>
                                                             <div class="product-reviews">
                                                                 <i class="ion-android-star"></i>
@@ -293,369 +287,7 @@
                                                         </div>
                                                     </div>
                                                     <!--Single Product End-->
-                                                </div>
-                                                <div class="col-lg-4 col-xl-4 col-md-4">
-                                                    <!--Single Product Start-->
-                                                    <div class="single-product mb-30">
-                                                        <div class="product-img">
-                                                            <a href="single-product.html">
-                                                                <img class="first-img" src="img/product/product6.jpg" alt="">
-                                                            </a>
-                                                            <span class="sticker">New</span>
-                                                            <div class="product-action">
-                                                                <ul>
-                                                                    <li><a href="cart.html"><i class="ion-bag"></i></a></li>
-                                                                    <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
-                                                                    <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-content">
-                                                            <h4><a href="single-product.html">Dwar Men's Casual Long</a></h4>
-                                                            <div class="product-price">
-                                                                <span class="price">$150.00</span>
-                                                            </div>
-                                                            <div class="product-reviews">
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--Single Product End-->
-                                                </div>
-                                                <div class="col-lg-4 col-xl-4 col-md-4">
-                                                    <!--Single Product Start-->
-                                                    <div class="single-product mb-30">
-                                                        <div class="product-img">
-                                                            <a href="single-product.html">
-                                                                <img class="first-img" src="/NewRPJ/Public/img/product/product10.jpg" alt="">
-                                                                <img class="hover-img" src="/NewRPJ/Public/img/product/product11.jpg" alt="">
-                                                            </a>
-                                                            <span class="sticker">New</span>
-                                                            <div class="product-action">
-                                                                <ul>
-                                                                    <li><a href="cart.html"><i class="ion-bag"></i></a></li>
-                                                                    <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
-                                                                    <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-content">
-                                                            <h4><a href="single-product.html">The North Face Men's</a></h4>
-                                                            <div class="product-price">
-                                                                <span class="regular-price">$60.00</span>
-                                                                <span class="price">$54.00</span>
-                                                            </div>
-                                                            <div class="product-reviews">
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--Single Product End-->
-                                                </div>
-                                                <div class="col-lg-4 col-xl-4 col-md-4">
-                                                    <!--Single Product Start-->
-                                                    <div class="single-product mb-30">
-                                                        <div class="product-img">
-                                                            <a href="single-product.html">
-                                                                <img class="first-img" src="/NewRPJ/Public/img/product/product19.jpg" alt="">
-                                                                <img class="hover-img" src="/NewRPJ/Public/img/product/product20.jpg" alt="">
-                                                            </a>
-                                                            <span class="sticker">New</span>
-                                                            <div class="product-action">
-                                                                <ul>
-                                                                    <li><a href="cart.html"><i class="ion-bag"></i></a></li>
-                                                                    <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
-                                                                    <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-content">
-                                                            <h4><a href="single-product.html">Chouyatou Men's Casual</a></h4>
-                                                            <div class="product-price">
-                                                                <span class="price">$20.00</span>
-                                                            </div>
-                                                            <div class="product-reviews">
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--Single Product End-->
-                                                </div>
-                                                <div class="col-lg-4 col-xl-4 col-md-4">
-                                                    <!--Single Product Start-->
-                                                    <div class="single-product mb-30">
-                                                        <div class="product-img">
-                                                            <a href="single-product.html">
-                                                                <img class="first-img" src="/NewRPJ/Public/img/product/product13.jpg" alt="">
-                                                                <img class="hover-img" src="/NewRPJ/Public/img/product/product14.jpg" alt="">
-                                                            </a>
-                                                            <span class="sticker">New</span>
-                                                            <div class="product-action">
-                                                                <ul>
-                                                                    <li><a href="cart.html"><i class="ion-bag"></i></a></li>
-                                                                    <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
-                                                                    <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-content">
-                                                            <h4><a href="single-product.html">Enriched Nail Polish</a></h4>
-                                                            <div class="product-price">
-                                                                <span class="price">$300.00</span>
-                                                            </div>
-                                                            <div class="product-reviews">
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--Single Product End-->
-                                                </div>
-                                                <div class="col-lg-4 col-xl-4 col-md-4">
-                                                    <!--Single Product Start-->
-                                                    <div class="single-product mb-30">
-                                                        <div class="product-img">
-                                                            <a href="single-product.html">
-                                                                <img class="first-img" src="/NewRPJ/Public/img/product/product11.jpg" alt="">
-                                                                <img class="hover-img" src="/NewRPJ/Public/img/product/product12.jpg" alt="">
-                                                            </a>
-                                                            <span class="sticker">New</span>
-                                                            <div class="product-action">
-                                                                <ul>
-                                                                    <li><a href="cart.html"><i class="ion-bag"></i></a></li>
-                                                                    <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
-                                                                    <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-content">
-                                                            <h4><a href="single-product.html">Columbia Men's Ascender</a></h4>
-                                                            <div class="product-price">
-                                                                <span class="price">$36.00</span>
-                                                            </div>
-                                                            <div class="product-reviews">
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--Single Product End-->
-                                                </div>
-                                                <div class="col-lg-4 col-xl-4 col-md-4">
-                                                    <!--Single Product Start-->
-                                                    <div class="single-product mb-30">
-                                                        <div class="product-img">
-                                                            <a href="single-product.html">
-                                                                <img class="first-img" src="/NewRPJ/Public/img/product/product8.jpg" alt="">
-                                                                <img class="hover-img" src="/NewRPJ/Public/img/product/product1.jpg" alt="">
-                                                            </a>
-                                                            <span class="sticker">New</span>
-                                                            <div class="product-action">
-                                                                <ul>
-                                                                    <li><a href="cart.html"><i class="ion-bag"></i></a></li>
-                                                                    <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
-                                                                    <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-content">
-                                                            <h4><a href="single-product.html">Versace Bright Crystal</a></h4>
-                                                            <div class="product-price">
-                                                                <span class="price">$260.00</span>
-                                                            </div>
-                                                            <div class="product-reviews">
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--Single Product End-->
-                                                </div>
-                                                <div class="col-lg-4 col-xl-4 col-md-4">
-                                                    <!--Single Product Start-->
-                                                    <div class="single-product mb-30">
-                                                        <div class="product-img">
-                                                            <a href="single-product.html">
-                                                                <img class="first-img" src="/NewRPJ/Public/img/product/product1.jpg" alt="">
-                                                                <img class="hover-img" src="/NewRPJ/Public/img/product/product2.jpg" alt="">
-                                                            </a>
-                                                            <span class="sticker">New</span>
-                                                            <div class="product-action">
-                                                                <ul>
-                                                                    <li><a href="cart.html"><i class="ion-bag"></i></a></li>
-                                                                    <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
-                                                                    <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-content">
-                                                            <h4><a href="single-product.html">Makeup Brushes Set</a></h4>
-                                                            <div class="product-price">
-                                                                <span class="price">$320.00</span>
-                                                            </div>
-                                                            <div class="product-reviews">
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--Single Product End-->
-                                                </div>
-                                                <div class="col-lg-4 col-xl-4 col-md-4">
-                                                    <!--Single Product Start-->
-                                                    <div class="single-product mb-30">
-                                                        <div class="product-img">
-                                                            <a href="single-product.html">
-                                                                <img class="first-img" src="/NewRPJ/Public/img/product/product3.jpg" alt="">
-                                                            </a>
-                                                            <span class="sticker">New</span>
-                                                            <div class="product-action">
-                                                                <ul>
-                                                                    <li><a href="cart.html"><i class="ion-bag"></i></a></li>
-                                                                    <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
-                                                                    <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-content">
-                                                            <h4><a href="single-product.html">Lipstick Ultra Violet</a></h4>
-                                                            <div class="product-price">
-                                                                <span class="price">$180.00</span>
-                                                            </div>
-                                                            <div class="product-reviews">
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--Single Product End-->
-                                                </div>
-                                                <div class="col-lg-4 col-xl-4 col-md-4">
-                                                    <!--Single Product Start-->
-                                                    <div class="single-product mb-30">
-                                                        <div class="product-img">
-                                                            <a href="single-product.html">
-                                                                <img class="first-img" src="/NewRPJ/Public/img/product/product17.jpg" alt="">
-                                                                <img class="hover-img" src="/NewRPJ/Public/img/product/product18.jpg" alt="">
-                                                            </a>
-                                                            <span class="sticker">New</span>
-                                                            <div class="product-action">
-                                                                <ul>
-                                                                    <li><a href="cart.html"><i class="ion-bag"></i></a></li>
-                                                                    <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
-                                                                    <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-content">
-                                                            <h4><a href="single-product.html">Comfy Bedding Extra</a></h4>
-                                                            <div class="product-price">
-                                                                <span class="price">$220.00</span>
-                                                            </div>
-                                                            <div class="product-reviews">
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--Single Product End-->
-                                                </div>
-                                                <div class="col-lg-4 col-xl-4 col-md-4">
-                                                    <!--Single Product Start-->
-                                                    <div class="single-product mb-30">
-                                                        <div class="product-img">
-                                                            <a href="single-product.html">
-                                                                <img class="first-img" src="/NewRPJ/Public/img/product/product15.jpg" alt="">
-                                                                <img class="hover-img" src="/NewRPJ/Public/img/product/product16.jpg" alt="">
-                                                            </a>
-                                                            <span class="sticker">New</span>
-                                                            <div class="product-action">
-                                                                <ul>
-                                                                    <li><a href="cart.html"><i class="ion-bag"></i></a></li>
-                                                                    <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
-                                                                    <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-content">
-                                                            <h4><a href="single-product.html">Merax Stylish Accent</a></h4>
-                                                            <div class="product-price">
-                                                                <span class="price">$90.00</span>
-                                                            </div>
-                                                            <div class="product-reviews">
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--Single Product End-->
-                                                </div>
-                                                <div class="col-lg-4 col-xl-4 col-md-4">
-                                                    <!--Single Product Start-->
-                                                    <div class="single-product mb-30">
-                                                        <div class="product-img">
-                                                            <a href="single-product.html">
-                                                                <img class="first-img" src="/NewRPJ/Public/img/product/product4.jpg" alt="">
-                                                                <img class="hover-img" src="/NewRPJ/Public/img/product/product5.jpg" alt="">
-                                                            </a>
-                                                            <span class="sticker">New</span>
-                                                            <div class="product-action">
-                                                                <ul>
-                                                                    <li><a href="cart.html"><i class="ion-bag"></i></a></li>
-                                                                    <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
-                                                                    <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-content">
-                                                            <h4><a href="single-product.html">Bedding Jigsaw Quilted</a></h4>
-                                                            <div class="product-price">
-                                                                <span class="price">$250.00</span>
-                                                            </div>
-                                                            <div class="product-reviews">
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--Single Product End-->
-                                                </div>
+                                              </div><?php endforeach; endif; ?>
 		                                    </div>
 		                                </div>
 		                            </div>
@@ -664,510 +296,50 @@
 		                                    <div class="product-list-item mb-40">
 		                                        <div class="row">
 		                                            <!--Single List Product Start-->
-		                                            <div class="col-md-4">
-		                                                <div class="single-product">
-		                                                    <div class="product-img">
-		                                                        <a href="single-product.html">
-                                                                    <img class="first-img" src="/NewRPJ/Public/img/product/product6.jpg" alt="">
-                                                                    <img class="hover-img" src="/NewRPJ/Public/img/product/product7.jpg" alt="">
-                                                                </a>
-                                                                <span class="sticker">New</span>
-		                                                    </div>
-		                                                </div>
-		                                            </div>
-		                                            <div class="col-md-8">
-		                                                <div class="product-content shop-list">
-		                                                    <h4><a href="single-product.html">Adams Men's Dunbar</a></h4>
-                                                            <div class="product-price">
-                                                                <span class="price">$80.00</span>
-                                                            </div>
-                                                            <div class="product-reviews">
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                            </div>
-                                                            <div class="product-description">
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere metus vitae arcu imperdiet, id aliquet ante scelerisque. Sed sit amet sem vitae urna fringilla tempus.</p>
-                                                            </div>
-                                                            <div class="product-list-action">
-                                                                <ul>
-                                                                    <li><a class="pro-add-btn" href="#"><i class="ion-bag"></i>Add to cart</a></li>
-                                                                    <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
-                                                                    <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
-                                                                </ul>
-                                                            </div>
-		                                                </div>
-		                                            </div>
+																								<?php if(is_array($product)): foreach($product as $key=>$prod_list): ?><div class="col-md-4">
+			                                                <div class="single-product">
+			                                                    <div class="product-img">
+			                                                        <a href="single-product.html">
+	                                                                    <img class="first-img" src="/chikwong/NewRPJ/Public<?php echo ($prod_list["product_pic300"]); ?>" alt="">
+	                                                                    <!-- <img class="hover-img" src="/chikwong/NewRPJ/Public/img/product/product7.jpg" alt=""> -->
+	                                                                </a>
+	                                                                <span class="sticker">New</span>
+			                                                    </div>
+			                                                </div>
+			                                            </div>
+			                                            <div class="col-md-8">
+			                                                <div class="product-content shop-list">
+			                                                    <h4><a href="single-product.html"><?php echo ($prod_list["product_name"]); ?></a></h4>
+	                                                            <div class="product-price">
+	                                                                <span class="price"><?php echo ($prod_list["brand_name"]); ?></span>
+	                                                            </div>
+	                                                            <div class="product-reviews">
+	                                                                <i class="ion-android-star"></i>
+	                                                                <i class="ion-android-star"></i>
+	                                                                <i class="ion-android-star"></i>
+	                                                                <i class="ion-android-star"></i>
+	                                                                <i class="ion-android-star"></i>
+	                                                            </div>
+	                                                            <div class="product-description">
+	                                                                <p><?php echo ($prod_list["product_desc"]); ?></p>
+	                                                            </div>
+	                                                             <!-- <div class="product-list-action">
+	                                                                <ul>
+	                                                                    <li><a class="pro-add-btn" href="#"><i class="ion-bag"></i>Add to cart</a></li>
+	                                                                    <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
+	                                                                    <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
+	                                                                </ul>
+	                                                            </div> -->
+			                                                </div>
+			                                            </div><?php endforeach; endif; ?>
 		                                            <!--Single List Product End-->
 		                                        </div>
 		                                    </div>
-		                                    <div class="product-list-item mb-40">
-		                                        <div class="row">
-		                                            <!--Single List Product Start-->
-		                                            <div class="col-md-4">
-		                                                <div class="single-product">
-		                                                    <div class="product-img">
-		                                                        <a href="single-product.html">
-                                                                    <img class="first-img" src="/NewRPJ/Public/img/product/product6.jpg" alt="">
-                                                                </a>
-                                                                <span class="sticker">New</span>
-		                                                    </div>
-		                                                </div>
-		                                            </div>
-		                                            <div class="col-md-8">
-		                                                <div class="product-content shop-list">
-		                                                    <h4><a href="single-product.html">Dwar Men's Casual Long</a></h4>
-                                                            <div class="product-price">
-                                                                <span class="price">$150.00</span>
-                                                            </div>
-                                                            <div class="product-reviews">
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                            </div>
-                                                            <div class="product-description">
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere metus vitae arcu imperdiet, id aliquet ante scelerisque. Sed sit amet sem vitae urna fringilla tempus.</p>
-                                                            </div>
-                                                            <div class="product-list-action">
-                                                                <ul>
-                                                                    <li><a class="pro-add-btn" href="#"><i class="ion-bag"></i>Add to cart</a></li>
-                                                                    <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
-                                                                    <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
-                                                                </ul>
-                                                            </div>
-		                                                </div>
-		                                            </div>
-		                                            <!--Single List Product End-->
-		                                        </div>
-		                                    </div>
-		                                    <div class="product-list-item mb-40">
-		                                        <div class="row">
-		                                            <!--Single List Product Start-->
-		                                            <div class="col-md-4">
-		                                                <div class="single-product">
-		                                                    <div class="product-img">
-		                                                        <a href="single-product.html">
-                                                                    <img class="first-img" src="/NewRPJ/Public/img/product/product10.jpg" alt="">
-                                                                    <img class="hover-img" src="/NewRPJ/Public/img/product/product11.jpg" alt="">
-                                                                </a>
-                                                                <span class="sticker">New</span>
-		                                                    </div>
-		                                                </div>
-		                                            </div>
-		                                            <div class="col-md-8">
-		                                                <div class="product-content shop-list">
-		                                                    <h4><a href="single-product.html">The North Face Men's</a></h4>
-                                                            <div class="product-price">
-                                                                <span class="price">$54.00</span>
-                                                                <span class="regular-price">$60.00</span>
-                                                            </div>
-                                                            <div class="product-reviews">
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                            </div>
-                                                            <div class="product-description">
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere metus vitae arcu imperdiet, id aliquet ante scelerisque. Sed sit amet sem vitae urna fringilla tempus.</p>
-                                                            </div>
-                                                            <div class="product-list-action">
-                                                                <ul>
-                                                                    <li><a class="pro-add-btn" href="#"><i class="ion-bag"></i>Add to cart</a></li>
-                                                                    <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
-                                                                    <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
-                                                                </ul>
-                                                            </div>
-		                                                </div>
-		                                            </div>
-		                                            <!--Single List Product End-->
-		                                        </div>
-		                                    </div>
-		                                    <div class="product-list-item mb-40">
-		                                        <div class="row">
-		                                            <!--Single List Product Start-->
-		                                            <div class="col-md-4">
-		                                                <div class="single-product">
-		                                                    <div class="product-img">
-		                                                        <a href="single-product.html">
-                                                                    <img class="first-img" src="/NewRPJ/Public/img/product/product19.jpg" alt="">
-                                                                    <img class="hover-img" src="/NewRPJ/Public/img/product/product20.jpg" alt="">
-                                                                </a>
-                                                                <span class="sticker">New</span>
-		                                                    </div>
-		                                                </div>
-		                                            </div>
-		                                            <div class="col-md-8">
-		                                                <div class="product-content shop-list">
-		                                                    <h4><a href="single-product.html">Chouyatou Men's Casual</a></h4>
-                                                            <div class="product-price">
-                                                                <span class="price">$20.00</span>
-                                                            </div>
-                                                            <div class="product-reviews">
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                            </div>
-                                                            <div class="product-description">
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere metus vitae arcu imperdiet, id aliquet ante scelerisque. Sed sit amet sem vitae urna fringilla tempus.</p>
-                                                            </div>
-                                                            <div class="product-list-action">
-                                                                <ul>
-                                                                    <li><a class="pro-add-btn" href="#"><i class="ion-bag"></i>Add to cart</a></li>
-                                                                    <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
-                                                                    <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
-                                                                </ul>
-                                                            </div>
-		                                                </div>
-		                                            </div>
-		                                            <!--Single List Product End-->
-		                                        </div>
-		                                    </div>
-		                                    <div class="product-list-item mb-40">
-		                                        <div class="row">
-		                                            <!--Single List Product Start-->
-		                                            <div class="col-md-4">
-		                                                <div class="single-product">
-		                                                    <div class="product-img">
-		                                                        <a href="single-product.html">
-                                                                    <img class="first-img" src="/NewRPJ/Public/img/product/product13.jpg" alt="">
-                                                                    <img class="hover-img" src="/NewRPJ/Public/img/product/product14.jpg" alt="">
-                                                                </a>
-                                                                <span class="sticker">New</span>
-		                                                    </div>
-		                                                </div>
-		                                            </div>
-		                                            <div class="col-md-8">
-		                                                <div class="product-content shop-list">
-		                                                    <h4><a href="single-product.html">Enriched Nail Polish</a></h4>
-                                                            <div class="product-price">
-                                                                <span class="price">$300.00</span>
-                                                            </div>
-                                                            <div class="product-reviews">
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                            </div>
-                                                            <div class="product-description">
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere metus vitae arcu imperdiet, id aliquet ante scelerisque. Sed sit amet sem vitae urna fringilla tempus.</p>
-                                                            </div>
-                                                            <div class="product-list-action">
-                                                                <ul>
-                                                                    <li><a class="pro-add-btn" href="#"><i class="ion-bag"></i>Add to cart</a></li>
-                                                                    <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
-                                                                    <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
-                                                                </ul>
-                                                            </div>
-		                                                </div>
-		                                            </div>
-		                                            <!--Single List Product End-->
-		                                        </div>
-		                                    </div>
-		                                    <div class="product-list-item mb-40">
-		                                        <div class="row">
-		                                            <!--Single List Product Start-->
-		                                            <div class="col-md-4">
-		                                                <div class="single-product">
-		                                                    <div class="product-img">
-		                                                        <a href="single-product.html">
-                                                                    <img class="first-img" src="/NewRPJ/Public/img/product/product11.jpg" alt="">
-                                                                    <img class="hover-img" src="/NewRPJ/Public/img/product/product12.jpg" alt="">
-                                                                </a>
-                                                                <span class="sticker">New</span>
-		                                                    </div>
-		                                                </div>
-		                                            </div>
-		                                            <div class="col-md-8">
-		                                                <div class="product-content shop-list">
-		                                                    <h4><a href="single-product.html">Columbia Men's Ascender</a></h4>
-                                                            <div class="product-price">
-                                                                <span class="price">$36.00</span>
-                                                            </div>
-                                                            <div class="product-reviews">
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                            </div>
-                                                            <div class="product-description">
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere metus vitae arcu imperdiet, id aliquet ante scelerisque. Sed sit amet sem vitae urna fringilla tempus.</p>
-                                                            </div>
-                                                            <div class="product-list-action">
-                                                                <ul>
-                                                                    <li><a class="pro-add-btn" href="#"><i class="ion-bag"></i>Add to cart</a></li>
-                                                                    <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
-                                                                    <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
-                                                                </ul>
-                                                            </div>
-		                                                </div>
-		                                            </div>
-		                                            <!--Single List Product End-->
-		                                        </div>
-		                                    </div>
-		                                    <div class="product-list-item mb-40">
-		                                        <div class="row">
-		                                            <!--Single List Product Start-->
-		                                            <div class="col-md-4">
-		                                                <div class="single-product">
-		                                                    <div class="product-img">
-		                                                        <a href="single-product.html">
-                                                                    <img class="first-img" src="/NewRPJ/Public/img/product/product8.jpg" alt="">
-                                                                    <img class="hover-img" src="/NewRPJ/Public/img/product/product1.jpg" alt="">
-                                                                </a>
-                                                                <span class="sticker">New</span>
-		                                                    </div>
-		                                                </div>
-		                                            </div>
-		                                            <div class="col-md-8">
-		                                                <div class="product-content shop-list">
-		                                                    <h4><a href="single-product.html">Versace Bright Crystal</a></h4>
-                                                            <div class="product-price">
-                                                                <span class="price">$260.00</span>
-                                                            </div>
-                                                            <div class="product-reviews">
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                            </div>
-                                                            <div class="product-description">
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere metus vitae arcu imperdiet, id aliquet ante scelerisque. Sed sit amet sem vitae urna fringilla tempus.</p>
-                                                            </div>
-                                                            <div class="product-list-action">
-                                                                <ul>
-                                                                    <li><a class="pro-add-btn" href="#"><i class="ion-bag"></i>Add to cart</a></li>
-                                                                    <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
-                                                                    <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
-                                                                </ul>
-                                                            </div>
-		                                                </div>
-		                                            </div>
-		                                            <!--Single List Product End-->
-		                                        </div>
-		                                    </div>
-		                                    <div class="product-list-item mb-40">
-		                                        <div class="row">
-		                                            <!--Single List Product Start-->
-		                                            <div class="col-md-4">
-		                                                <div class="single-product">
-		                                                    <div class="product-img">
-		                                                        <a href="single-product.html">
-                                                                    <img class="first-img" src="/NewRPJ/Public/img/product/product1.jpg" alt="">
-                                                                    <img class="hover-img" src="/NewRPJ/Public/img/product/product2.jpg" alt="">
-                                                                </a>
-                                                                <span class="sticker">New</span>
-		                                                    </div>
-		                                                </div>
-		                                            </div>
-		                                            <div class="col-md-8">
-		                                                <div class="product-content shop-list">
-		                                                    <h4><a href="single-product.html">Makeup Brushes Set</a></h4>
-                                                            <div class="product-price">
-                                                                <span class="price">$320.00</span>
-                                                            </div>
-                                                            <div class="product-reviews">
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                            </div>
-                                                            <div class="product-description">
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere metus vitae arcu imperdiet, id aliquet ante scelerisque. Sed sit amet sem vitae urna fringilla tempus.</p>
-                                                            </div>
-                                                            <div class="product-list-action">
-                                                                <ul>
-                                                                    <li><a class="pro-add-btn" href="#"><i class="ion-bag"></i>Add to cart</a></li>
-                                                                    <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
-                                                                    <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
-                                                                </ul>
-                                                            </div>
-		                                                </div>
-		                                            </div>
-		                                            <!--Single List Product End-->
-		                                        </div>
-		                                    </div>
-		                                    <div class="product-list-item mb-40">
-		                                        <div class="row">
-		                                            <!--Single List Product Start-->
-		                                            <div class="col-md-4">
-		                                                <div class="single-product">
-		                                                    <div class="product-img">
-		                                                        <a href="single-product.html">
-                                                                    <img class="first-img" src="/NewRPJ/Public/img/product/product3.jpg" alt="">
-                                                                </a>
-                                                                <span class="sticker">New</span>
-		                                                    </div>
-		                                                </div>
-		                                            </div>
-		                                            <div class="col-md-8">
-		                                                <div class="product-content shop-list">
-		                                                    <h4><a href="single-product.html">Lipstick Ultra Violet</a></h4>
-                                                            <div class="product-price">
-                                                                <span class="price">$180.00</span>
-                                                            </div>
-                                                            <div class="product-reviews">
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                            </div>
-                                                            <div class="product-description">
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere metus vitae arcu imperdiet, id aliquet ante scelerisque. Sed sit amet sem vitae urna fringilla tempus.</p>
-                                                            </div>
-                                                            <div class="product-list-action">
-                                                                <ul>
-                                                                    <li><a class="pro-add-btn" href="#"><i class="ion-bag"></i>Add to cart</a></li>
-                                                                    <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
-                                                                    <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
-                                                                </ul>
-                                                            </div>
-		                                                </div>
-		                                            </div>
-		                                            <!--Single List Product End-->
-		                                        </div>
-		                                    </div>
-		                                    <div class="product-list-item mb-40">
-		                                        <div class="row">
-		                                            <!--Single List Product Start-->
-		                                            <div class="col-md-4">
-		                                                <div class="single-product">
-		                                                    <div class="product-img">
-		                                                        <a href="single-product.html">
-                                                                    <img class="first-img" src="/NewRPJ/Public/img/product/product17.jpg" alt="">
-                                                                    <img class="hover-img" src="/NewRPJ/Public/img/product/product18.jpg" alt="">
-                                                                </a>
-                                                                <span class="sticker">New</span>
-		                                                    </div>
-		                                                </div>
-		                                            </div>
-		                                            <div class="col-md-8">
-		                                                <div class="product-content shop-list">
-		                                                    <h4><a href="single-product.html">Comfy Bedding Extra</a></h4>
-                                                            <div class="product-price">
-                                                                <span class="price">$220.00</span>
-                                                            </div>
-                                                            <div class="product-reviews">
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                            </div>
-                                                            <div class="product-description">
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere metus vitae arcu imperdiet, id aliquet ante scelerisque. Sed sit amet sem vitae urna fringilla tempus.</p>
-                                                            </div>
-                                                            <div class="product-list-action">
-                                                                <ul>
-                                                                    <li><a class="pro-add-btn" href="#"><i class="ion-bag"></i>Add to cart</a></li>
-                                                                    <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
-                                                                    <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
-                                                                </ul>
-                                                            </div>
-		                                                </div>
-		                                            </div>
-		                                            <!--Single List Product End-->
-		                                        </div>
-		                                    </div>
-		                                    <div class="product-list-item mb-40">
-		                                        <div class="row">
-		                                            <!--Single List Product Start-->
-		                                            <div class="col-md-4">
-		                                                <div class="single-product">
-		                                                    <div class="product-img">
-		                                                        <a href="single-product.html">
-                                                                    <img class="first-img" src="/NewRPJ/Public/img/product/product15.jpg" alt="">
-                                                                    <img class="hover-img" src="/NewRPJ/Public/img/product/product16.jpg" alt="">
-                                                                </a>
-                                                                <span class="sticker">New</span>
-		                                                    </div>
-		                                                </div>
-		                                            </div>
-		                                            <div class="col-md-8">
-		                                                <div class="product-content shop-list">
-		                                                    <h4><a href="single-product.html">Merax Stylish Accent</a></h4>
-                                                            <div class="product-price">
-                                                                <span class="price">$90.00</span>
-                                                            </div>
-                                                            <div class="product-reviews">
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                            </div>
-                                                            <div class="product-description">
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere metus vitae arcu imperdiet, id aliquet ante scelerisque. Sed sit amet sem vitae urna fringilla tempus.</p>
-                                                            </div>
-                                                            <div class="product-list-action">
-                                                                <ul>
-                                                                    <li><a class="pro-add-btn" href="#"><i class="ion-bag"></i>Add to cart</a></li>
-                                                                    <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
-                                                                    <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
-                                                                </ul>
-                                                            </div>
-		                                                </div>
-		                                            </div>
-		                                            <!--Single List Product End-->
-		                                        </div>
-		                                    </div>
-		                                    <div class="product-list-item mb-40">
-		                                        <div class="row">
-		                                            <!--Single List Product Start-->
-		                                            <div class="col-md-4">
-		                                                <div class="single-product">
-		                                                    <div class="product-img">
-		                                                        <a href="single-product.html">
-                                                                    <img class="first-img" src="/NewRPJ/Public/img/product/product4.jpg" alt="">
-                                                                    <img class="hover-img" src="/NewRPJ/Public/img/product/product5.jpg" alt="">
-                                                                </a>
-                                                                <span class="sticker">New</span>
-		                                                    </div>
-		                                                </div>
-		                                            </div>
-		                                            <div class="col-md-8">
-		                                                <div class="product-content shop-list">
-		                                                    <h4><a href="single-product.html">Bedding Jigsaw Quilted</a></h4>
-                                                            <div class="product-price">
-                                                                <span class="price">$250.00</span>
-                                                            </div>
-                                                            <div class="product-reviews">
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                            </div>
-                                                            <div class="product-description">
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere metus vitae arcu imperdiet, id aliquet ante scelerisque. Sed sit amet sem vitae urna fringilla tempus.</p>
-                                                            </div>
-                                                            <div class="product-list-action">
-                                                                <ul>
-                                                                    <li><a class="pro-add-btn" href="#"><i class="ion-bag"></i>Add to cart</a></li>
-                                                                    <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
-                                                                    <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
-                                                                </ul>
-                                                            </div>
-		                                                </div>
-		                                            </div>
-		                                            <!--Single List Product End-->
-		                                        </div>
-		                                    </div>
+
 		                                </div>
 		                            </div>
 		                            <!--Pagination Start-->
-                                    <div class="pagination-product d-md-flex justify-content-md-between align-items-center">
+                                    <!-- <div class="pagination-product d-md-flex justify-content-md-between align-items-center">
                                       <div class="showing-product">
                                           <p> Showing 1-12 of 13 item(s) </p>
                                       </div>
@@ -1179,7 +351,7 @@
                                               <li class="next"><a href="#">Next<i class="ion-ios-arrow-right"></i></a></li>
                                           </ul>
                                       </div>
-                                    </div>
+                                    </div> -->
 		                            <!--Pagination End-->
 		                        </div>
 		                    </div>
@@ -1250,7 +422,7 @@
 				                        <!--Single Footer Wiedget Start-->
 				                        <div class="single-footer-wiedget mb-30">
 				                            <div class="footer-logo">
-				                                <a href="index.html"><img src="/NewRPJ/Public<?php echo ($company["logo"]); ?>" alt=""></a>
+				                                <a href="index.html"><img src="/chikwong/NewRPJ/Public<?php echo ($company["logo"]); ?>" alt=""></a>
 				                            </div>
 				                            <div class="desc-footer">广州瑞谱佳科技有限公司拥有稳妥，快捷，优质的售后服务，欢迎垂询！</div>
 				                            <div class="address-footer">
@@ -1261,51 +433,33 @@
 				                        </div>
 				                        <!--Single Footer Wiedget End-->
 				                    </div>
-				                    <div class="col-lg-2 col-md-6 col-12">
-				                        <!--Single Footer Wiedget Start-->
-				                        <div class="single-footer-wiedget mb-30">
-				                            <div class="footer-title">
-				                                <h3>Products</h3>
-				                            </div>
-				                            <ul class="link-widget">
-				                                <li><a href="#">Prices drop</a></li>
-				                                <li><a href="#">New products</a></li>
-				                                <li><a href="#">Best sales</a></li>
-				                                <li><a href="#">Contact us</a></li>
-				                                <li><a href="#">Sitemap</a></li>
-				                                <li><a href="#">Login</a></li>
-				                            </ul>
-				                        </div>
-				                        <!--Single Footer Wiedget End-->
-				                    </div>
-				                    <div class="col-lg-2 col-md-6 col-12">
-				                        <!--Single Footer Wiedget Start-->
-				                        <div class="single-footer-wiedget mb-30">
-				                            <div class="footer-title">
-				                                <h3>Our company</h3>
-				                            </div>
-				                            <ul class="link-widget">
-				                                <li><a href="#">Delivery</a></li>
-				                                <li><a href="#">Legal Notice</a></li>
-				                                <li><a href="#">About us</a></li>
-				                                <li><a href="#">Secure payment</a></li>
-				                                <li><a href="#">Contact us</a></li>
-				                                <li><a href="#">Stores</a></li>
-				                            </ul>
-				                        </div>
-				                        <!--Single Footer Wiedget End-->
-				                    </div>
-				                    <div class="col-lg-4 col-md-6 col-12">
-				                        <!--Single Footer Wiedget Start-->
-				                        <div class="single-footer-wiedget mb-30">
-				                            <div class="footer-title">
-				                                <h3>Instagram</h3>
-				                                <a href="#">Follow our instagram</a>
-				                            </div>
-				                            <ul id="Instafeed"></ul>
-				                        </div>
-				                        <!--Single Footer Wiedget End-->
-				                    </div>
+														<div class="col-lg-2 col-md-6 col-12">
+																<!--Single Footer Wiedget Start-->
+																<div class="single-footer-wiedget mb-30">
+																		<div class="footer-title">
+																				<h3>品牌列表</h3>
+																		</div>
+																		<ul class="link-widget">
+																				<?php if(is_array($brands)): foreach($brands as $key=>$a): ?><li><a href="#"></a><?php echo ($a["brand_name"]); ?></li><?php endforeach; endif; ?>
+																		</ul>
+																</div>
+																<!--Single Footer Wiedget End-->
+														</div>
+														<div class="col-lg-2 col-md-6 col-12">
+																<!--Single Footer Wiedget Start-->
+																<div class="single-footer-wiedget mb-30">
+																		<div class="footer-title">
+																				<h3>网站快速链接</h3>
+																		</div>
+																		<ul class="link-widget">
+																			<li><a href="<?php echo U('home/index/index');?>">主页</a></li>
+																			<li><a href="<?php echo U('home/prodlist/prodlist');?>">产品</a></li>
+																			<li><a href="<?php echo U('home/about/about');?>">关于我们</a></li>
+																			<li><a href="#">产品附件下载</a></li>
+																		</ul>
+																</div>
+																<!--Single Footer Wiedget End-->
+														</div>
 				                </div>
 				            </div>
 				        </div>
@@ -1318,14 +472,14 @@
 				                    <div class="col-md-6">
 		                                <!--Footer Copyright Start-->
 				                        <div class="footer-copyright">
-				                            <p>Copyright &copy; <a href="www.bootstrapmb.com"><?php echo ($company["name"]); ?>.</a> <?php echo ($company["icp"]); ?></p>
+				                            <p>Copyright &copy; <a href="<?php echo U('home/index/index');?>"><?php echo ($company["name"]); ?>.</a> <?php echo ($company["icp"]); ?></p>
 				                        </div>
 				                        <!--Footer Copyright End-->
 				                    </div>
 				                    <div class="col-md-6">
 		                                <!--Footer Payment Start-->
 				                        <div class="footer-payments-image text-center text-md-right">
-				                            <img src="/NewRPJ/Public/img/payment/payment.png" alt="">
+				                            <img src="/chikwong/NewRPJ/Public/img/payment/payment.png" alt="">
 				                        </div>
 				                        <!--Footer Payment End-->
 				                    </div>
@@ -1354,28 +508,28 @@
 		                        <div class="tab-pane fade show active" id="single-slide1" role="tabpanel" aria-labelledby="single-slide-tab-1">
 		                            <!--Single Product Image Start-->
 		                            <div class="single-product-img img-full">
-		                              <img src="/NewRPJ/Public/img/single-product/large/large1.jpg" alt="">
+		                              <img src="/chikwong/NewRPJ/Public/img/single-product/large/large1.jpg" alt="">
 		                            </div>
 		                            <!--Single Product Image End-->
 		                        </div>
 		                        <div class="tab-pane fade" id="single-slide2" role="tabpanel" aria-labelledby="single-slide-tab-2">
 		                            <!--Single Product Image Start-->
 		                            <div class="single-product-img img-full">
-		                              <img src="/NewRPJ/Public/img/single-product/large/large2.jpg" alt="">
+		                              <img src="/chikwong/NewRPJ/Public/img/single-product/large/large2.jpg" alt="">
 		                            </div>
 		                            <!--Single Product Image End-->
 		                        </div>
 		                        <div class="tab-pane fade" id="single-slide3" role="tabpanel" aria-labelledby="single-slide-tab-3">
 		                            <!--Single Product Image Start-->
 		                            <div class="single-product-img img-full">
-		                              <img src="/NewRPJ/Public/img/single-product/large/large3.jpg" alt="">
+		                              <img src="/chikwong/NewRPJ/Public/img/single-product/large/large3.jpg" alt="">
 		                            </div>
 		                            <!--Single Product Image End-->
 		                        </div>
 		                        <div class="tab-pane fade" id="single-slide4" role="tabpanel" aria-labelledby="single-slide-tab-4">
 		                            <!--Single Product Image Start-->
 		                            <div class="single-product-img img-full">
-		                              <img src="/NewRPJ/Public/img/single-product/large/large4.jpg" alt="">
+		                              <img src="/chikwong/NewRPJ/Public/img/single-product/large/large4.jpg" alt="">
 		                            </div>
 		                            <!--Single Product Image End-->
 		                        </div>
@@ -1385,16 +539,16 @@
 		                      <div class="single-product-menu">
 		                          <div class="nav single-slide-menu" role="tablist">
 		                              <div class="single-tab-menu img-full">
-		                                  <a class="active" data-toggle="tab" id="single-slide-tab-1" href="#single-slide1"><img src="/NewRPJ/Public/img/single-product/small/small1.jpg" alt=""></a>
+		                                  <a class="active" data-toggle="tab" id="single-slide-tab-1" href="#single-slide1"><img src="/chikwong/NewRPJ/Public/img/single-product/small/small1.jpg" alt=""></a>
 		                              </div>
 		                              <div class="single-tab-menu img-full">
-		                                  <a data-toggle="tab" id="single-slide-tab-2" href="#single-slide2"><img src="/NewRPJ/Public/img/single-product/small/small2.jpg" alt=""></a>
+		                                  <a data-toggle="tab" id="single-slide-tab-2" href="#single-slide2"><img src="/chikwong/NewRPJ/Public/img/single-product/small/small2.jpg" alt=""></a>
 		                              </div>
 		                              <div class="single-tab-menu img-full">
-		                                  <a data-toggle="tab" id="single-slide-tab-3" href="#single-slide3"><img src="/NewRPJ/Public/img/single-product/small/small3.jpg" alt=""></a>
+		                                  <a data-toggle="tab" id="single-slide-tab-3" href="#single-slide3"><img src="/chikwong/NewRPJ/Public/img/single-product/small/small3.jpg" alt=""></a>
 		                              </div>
 		                              <div class="single-tab-menu img-full">
-		                                  <a data-toggle="tab" id="single-slide-tab-4" href="#single-slide4"><img src="/NewRPJ/Public/img/single-product/small/small4.jpg" alt=""></a>
+		                                  <a data-toggle="tab" id="single-slide-tab-4" href="#single-slide4"><img src="/chikwong/NewRPJ/Public/img/single-product/small/small4.jpg" alt=""></a>
 		                              </div>
 		                          </div>
 		                      </div>
@@ -1487,40 +641,40 @@
 		    <!--All Js Here-->
 
 			<!--Jquery 1.12.4-->
-			<script src="/NewRPJ/Public/scripts/vendor/jquery-1.12.4.min.js"></script>
+			<script src="/chikwong/NewRPJ/Public/scripts/vendor/jquery-1.12.4.min.js"></script>
 			<!--Imagesloaded-->
-			<script src="/NewRPJ/Public/scripts/imagesloaded.pkgd.min.js"></script>
+			<script src="/chikwong/NewRPJ/Public/scripts/imagesloaded.pkgd.min.js"></script>
 			<!--Isotope-->
-			<script src="/NewRPJ/Public/scripts/isotope.pkgd.min.js"></script>
+			<script src="/chikwong/NewRPJ/Public/scripts/isotope.pkgd.min.js"></script>
 			<!--Waypoints-->
-			<script src="/NewRPJ/Public/scripts/waypoints.min.js"></script>
+			<script src="/chikwong/NewRPJ/Public/scripts/waypoints.min.js"></script>
 			<!--Counterup-->
-			<script src="/NewRPJ/Public/scripts/jquery.counterup.min.js"></script>
+			<script src="/chikwong/NewRPJ/Public/scripts/jquery.counterup.min.js"></script>
 			<!--Countdown-->
-			<script src="/NewRPJ/Public/scripts/jquery.countdown.min.js"></script>
+			<script src="/chikwong/NewRPJ/Public/scripts/jquery.countdown.min.js"></script>
 			<!--Carousel-->
-			<script src="/NewRPJ/Public/scripts/owl.carousel.min.js"></script>
+			<script src="/chikwong/NewRPJ/Public/scripts/owl.carousel.min.js"></script>
 			<!--Slick-->
-			<script src="/NewRPJ/Public/scripts/slick.min.js"></script>
+			<script src="/chikwong/NewRPJ/Public/scripts/slick.min.js"></script>
 			<!--Meanmenu-->
-			<script src="/NewRPJ/Public/scripts/jquery.meanmenu.min.js"></script>
+			<script src="/chikwong/NewRPJ/Public/scripts/jquery.meanmenu.min.js"></script>
 			<!--Instafeed-->
 			<!--<script src="js/instafeed.min.js"></script>-->
 			<!--Nice Select-->
-			<script src="/NewRPJ/Public/scripts/jquery.nice-select.min.js"></script>
+			<script src="/chikwong/NewRPJ/Public/scripts/jquery.nice-select.min.js"></script>
 			<!--ScrollUp-->
-			<script src="/NewRPJ/Public/scripts/jquery.scrollUp.min.js"></script>
+			<script src="/chikwong/NewRPJ/Public/scripts/jquery.scrollUp.min.js"></script>
 			<!--Wow-->
-			<script src="/NewRPJ/Public/scripts/wow.min.js"></script>
+			<script src="/chikwong/NewRPJ/Public/scripts/wow.min.js"></script>
 			<!--Venobox-->
-			<script src="/NewRPJ/Public/scripts/venobox.min.js"></script>
+			<script src="/chikwong/NewRPJ/Public/scripts/venobox.min.js"></script>
 			<!--Popper-->
-			<script src="/NewRPJ/Public/scripts/popper.min.js"></script>
+			<script src="/chikwong/NewRPJ/Public/scripts/popper.min.js"></script>
 			<!--Bootstrap-->
-			<script src="/NewRPJ/Public/scripts/bootstrap.min.js"></script>
+			<script src="/chikwong/NewRPJ/Public/scripts/bootstrap.min.js"></script>
 			<!--Plugins-->
-			<script src="/NewRPJ/Public/scripts/plugins.js"></script>
+			<script src="/chikwong/NewRPJ/Public/scripts/plugins.js"></script>
 			<!--Main Js-->
-			<script src="/NewRPJ/Public/scripts/main.js"></script>
+			<script src="/chikwong/NewRPJ/Public/scripts/main.js"></script>
 		</body>
 		</html>

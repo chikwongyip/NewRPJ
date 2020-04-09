@@ -335,9 +335,9 @@
 																		<h3>网站快速链接</h3>
 																</div>
 																<ul class="link-widget">
-																		<li><a href="#">主页</a></li>
-																		<li><a href="#">产品</a></li>
-																		<li><a href="#">关于我们</a></li>
+																		<li><a href="{:U('home/index/index')}">主页</a></li>
+																		<li><a href="{:U('home/prodlist/prodlist')}">产品</a></li>
+																		<li><a href="{:U('home/about/about')}">关于我们</a></li>
 																		<li><a href="#">产品附件下载</a></li>
 																</ul>
 														</div>
@@ -366,7 +366,7 @@
 												<div class="col-md-6">
 																<!--Footer Copyright Start-->
 														<div class="footer-copyright">
-																<p>Copyright &copy; <a href="www.bootstrapmb.com">{$company.name}.</a> {$company.icp}</p>
+																<p>Copyright &copy; <a href="{:U('home/index/index')}">{$company.name}.</a> {$company.icp}</p>
 														</div>
 														<!--Footer Copyright End-->
 												</div>

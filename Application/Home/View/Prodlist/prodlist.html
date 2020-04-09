@@ -314,9 +314,9 @@
                                                             </div>
                                                         </div>
                                                     </div>
-																									</foreach>
                                                     <!--Single Product End-->
-                                                </div>
+                                              </div>
+																							</foreach>
 		                                    </div>
 		                                </div>
 		                            </div>
@@ -325,42 +325,44 @@
 		                                    <div class="product-list-item mb-40">
 		                                        <div class="row">
 		                                            <!--Single List Product Start-->
-		                                            <div class="col-md-4">
-		                                                <div class="single-product">
-		                                                    <div class="product-img">
-		                                                        <a href="single-product.html">
-                                                                    <img class="first-img" src="__PUBLIC__/img/product/product6.jpg" alt="">
-                                                                    <img class="hover-img" src="__PUBLIC__/img/product/product7.jpg" alt="">
-                                                                </a>
-                                                                <span class="sticker">New</span>
-		                                                    </div>
-		                                                </div>
-		                                            </div>
-		                                            <div class="col-md-8">
-		                                                <div class="product-content shop-list">
-		                                                    <h4><a href="single-product.html">Adams Men's Dunbar</a></h4>
-                                                            <div class="product-price">
-                                                                <span class="price">$80.00</span>
-                                                            </div>
-                                                            <div class="product-reviews">
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                            </div>
-                                                            <div class="product-description">
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere metus vitae arcu imperdiet, id aliquet ante scelerisque. Sed sit amet sem vitae urna fringilla tempus.</p>
-                                                            </div>
-                                                            <div class="product-list-action">
-                                                                <ul>
-                                                                    <li><a class="pro-add-btn" href="#"><i class="ion-bag"></i>Add to cart</a></li>
-                                                                    <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
-                                                                    <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
-                                                                </ul>
-                                                            </div>
-		                                                </div>
-		                                            </div>
+																								<foreach name="product" item="prod_list">
+			                                            <div class="col-md-4">
+			                                                <div class="single-product">
+			                                                    <div class="product-img">
+			                                                        <a href="single-product.html">
+	                                                                    <img class="first-img" src="__PUBLIC__{$prod_list.product_pic300}" alt="">
+	                                                                    <!-- <img class="hover-img" src="__PUBLIC__/img/product/product7.jpg" alt=""> -->
+	                                                                </a>
+	                                                                <span class="sticker">New</span>
+			                                                    </div>
+			                                                </div>
+			                                            </div>
+			                                            <div class="col-md-8">
+			                                                <div class="product-content shop-list">
+			                                                    <h4><a href="single-product.html">{$prod_list.product_name}</a></h4>
+	                                                            <div class="product-price">
+	                                                                <span class="price">{$prod_list.brand_name}</span>
+	                                                            </div>
+	                                                            <div class="product-reviews">
+	                                                                <i class="ion-android-star"></i>
+	                                                                <i class="ion-android-star"></i>
+	                                                                <i class="ion-android-star"></i>
+	                                                                <i class="ion-android-star"></i>
+	                                                                <i class="ion-android-star"></i>
+	                                                            </div>
+	                                                            <div class="product-description">
+	                                                                <p>{$prod_list.product_desc}</p>
+	                                                            </div>
+	                                                             <!-- <div class="product-list-action">
+	                                                                <ul>
+	                                                                    <li><a class="pro-add-btn" href="#"><i class="ion-bag"></i>Add to cart</a></li>
+	                                                                    <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
+	                                                                    <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
+	                                                                </ul>
+	                                                            </div> -->
+			                                                </div>
+			                                            </div>
+																							  </foreach>
 		                                            <!--Single List Product End-->
 		                                        </div>
 		                                    </div>
@@ -368,7 +370,7 @@
 		                                </div>
 		                            </div>
 		                            <!--Pagination Start-->
-                                    <div class="pagination-product d-md-flex justify-content-md-between align-items-center">
+                                    <!-- <div class="pagination-product d-md-flex justify-content-md-between align-items-center">
                                       <div class="showing-product">
                                           <p> Showing 1-12 of 13 item(s) </p>
                                       </div>
@@ -380,7 +382,7 @@
                                               <li class="next"><a href="#">Next<i class="ion-ios-arrow-right"></i></a></li>
                                           </ul>
                                       </div>
-                                    </div>
+                                    </div> -->
 		                            <!--Pagination End-->
 		                        </div>
 		                    </div>
@@ -462,51 +464,35 @@
 				                        </div>
 				                        <!--Single Footer Wiedget End-->
 				                    </div>
-				                    <div class="col-lg-2 col-md-6 col-12">
-				                        <!--Single Footer Wiedget Start-->
-				                        <div class="single-footer-wiedget mb-30">
-				                            <div class="footer-title">
-				                                <h3>Products</h3>
-				                            </div>
-				                            <ul class="link-widget">
-				                                <li><a href="#">Prices drop</a></li>
-				                                <li><a href="#">New products</a></li>
-				                                <li><a href="#">Best sales</a></li>
-				                                <li><a href="#">Contact us</a></li>
-				                                <li><a href="#">Sitemap</a></li>
-				                                <li><a href="#">Login</a></li>
-				                            </ul>
-				                        </div>
-				                        <!--Single Footer Wiedget End-->
-				                    </div>
-				                    <div class="col-lg-2 col-md-6 col-12">
-				                        <!--Single Footer Wiedget Start-->
-				                        <div class="single-footer-wiedget mb-30">
-				                            <div class="footer-title">
-				                                <h3>Our company</h3>
-				                            </div>
-				                            <ul class="link-widget">
-				                                <li><a href="#">Delivery</a></li>
-				                                <li><a href="#">Legal Notice</a></li>
-				                                <li><a href="#">About us</a></li>
-				                                <li><a href="#">Secure payment</a></li>
-				                                <li><a href="#">Contact us</a></li>
-				                                <li><a href="#">Stores</a></li>
-				                            </ul>
-				                        </div>
-				                        <!--Single Footer Wiedget End-->
-				                    </div>
-				                    <div class="col-lg-4 col-md-6 col-12">
-				                        <!--Single Footer Wiedget Start-->
-				                        <div class="single-footer-wiedget mb-30">
-				                            <div class="footer-title">
-				                                <h3>Instagram</h3>
-				                                <a href="#">Follow our instagram</a>
-				                            </div>
-				                            <ul id="Instafeed"></ul>
-				                        </div>
-				                        <!--Single Footer Wiedget End-->
-				                    </div>
+														<div class="col-lg-2 col-md-6 col-12">
+																<!--Single Footer Wiedget Start-->
+																<div class="single-footer-wiedget mb-30">
+																		<div class="footer-title">
+																				<h3>品牌列表</h3>
+																		</div>
+																		<ul class="link-widget">
+																				<foreach name="brands" item="a">
+																					<li><a href="#"></a>{$a.brand_name}</li>
+																			</foreach>
+																		</ul>
+																</div>
+																<!--Single Footer Wiedget End-->
+														</div>
+														<div class="col-lg-2 col-md-6 col-12">
+																<!--Single Footer Wiedget Start-->
+																<div class="single-footer-wiedget mb-30">
+																		<div class="footer-title">
+																				<h3>网站快速链接</h3>
+																		</div>
+																		<ul class="link-widget">
+																			<li><a href="{:U('home/index/index')}">主页</a></li>
+																			<li><a href="{:U('home/prodlist/prodlist')}">产品</a></li>
+																			<li><a href="{:U('home/about/about')}">关于我们</a></li>
+																			<li><a href="#">产品附件下载</a></li>
+																		</ul>
+																</div>
+																<!--Single Footer Wiedget End-->
+														</div>
 				                </div>
 				            </div>
 				        </div>
@@ -519,7 +505,7 @@
 				                    <div class="col-md-6">
 		                                <!--Footer Copyright Start-->
 				                        <div class="footer-copyright">
-				                            <p>Copyright &copy; <a href="www.bootstrapmb.com">{$company.name}.</a> {$company.icp}</p>
+				                            <p>Copyright &copy; <a href="{:U('home/index/index')}">{$company.name}.</a> {$company.icp}</p>
 				                        </div>
 				                        <!--Footer Copyright End-->
 				                    </div>

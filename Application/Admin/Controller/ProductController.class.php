@@ -47,6 +47,12 @@ class ProductController extends Controller {
             $this->error($upload->getError());
         }else {
             $modelProduct->product_pic = '/Upload/'.$info['savepath'].$info['savename'];
+            $img_path = './Public/Upload/'.$info['savepath'].$info['savename'];
+            $image = new \Think\Image();
+            $image->open($img_path);
+            $image->thumb(300,300)->save('./Public/Upload/thumb300/thumb300_'.$info['savename']);
+            $model->product_pic300 = '/Upload/thumb/thumb300_'.$info['savename'];
+
         }
 
         $modelProduct->add();

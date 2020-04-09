@@ -37,7 +37,30 @@
                                   rpj_product.brand_id    = rpj_brand.brand_id");
     return $product;
   }
-
+//根据品牌查询产品
+  function getProductDataWithBrand($brand_id)
+  {
+    $modelProduct = new \Think\Model();
+    $product=$modelProduct->query("select * from rpj_product
+                                inner join rpj_procategory on
+                                  rpj_product.category_id = rpj_procategory.category_id
+                                inner join rpj_brand on
+                                  rpj_product.brand_id    = rpj_brand.brand_id
+                                  where rpj_product.brand_id = $brand_id");
+    return $product;
+  }
+// 根据产品类型查询产品
+  function getProductDataWithCategory($category_id)
+  {
+    $modelProduct = new \Think\Model();
+    $product=$modelProduct->query("select * from rpj_product
+                                inner join rpj_procategory on
+                                  rpj_product.category_id = rpj_procategory.category_id
+                                inner join rpj_brand on
+                                  rpj_product.brand_id    = rpj_brand.brand_id
+                                  where rpj_product.category_id = $category_id");
+    return $product;
+  }
   // 根据product ID 获取 产品 单个
   function getProductSingle($id)
   {
