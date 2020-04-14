@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>关于我们 || 广州瑞谱佳科技有限公司</title>
+	<title>主页 || 广州瑞谱佳科技有限公司</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Place favicon.ico in the root directory -->
@@ -53,7 +53,7 @@
 		                <div class="col-md-6">
 		                    <!--Header Top Left Start-->
 		                    <div class="header-top-left">
-		                        <a href="#">广州瑞谱佳，欢迎您！</a>
+		                        <a href="{:U('home/index/index')}">广州瑞谱佳，欢迎您！</a>
 		                    </div>
 		                    <!--Header Top Left End-->
 		                </div>
@@ -80,7 +80,7 @@
 		                    <div class="header-menu-area">
 		                        <nav>
 		                            <ul class="main-menu">
-		                                <li class="active"><a href="index.html">主页</a>
+		                                <li class="active"><a href="{:U('home/index/index')}">主页</a>
 		                                    <!--Dropdown Menu Start-->
 
 		                                    <!--Dropdown Menu End-->
@@ -89,15 +89,15 @@
 		                                <!-- <li><a href="shop.html">产品</a></li> -->
 
 		                                <!-- <li><a href="blog.html">Blog</a></li> -->
-		                                <li><a href="#">产品</a>
+		                                <li><a href="{:U('home/prodlist/prodlist')}">产品</a>
 		                                    <!--Mega Menu Start-->
 		                                    <ul class="mega-menu">
 																							<foreach name="brands" item="brd_list">
-		                                            <li><a href="#" class="item-link">{$brd_list.brand_name}</a>
+		                                            <li><a href="{:U('home/prodlist/listwithbrand',array('brand_id'=>$brd_list[brand_id]))}" class="item-link">{$brd_list.brand_name}</a>
 		                                                <ul>
 																											<foreach name="product" item="pro_list">
 																													<if condition="$brd_list['brand_id'] eq $pro_list['brand_id']">
-                                                            <li><a href="my-account.html">{$pro_list.product_name}</a></li>
+                                                            <li><a href="{:U('home/product/product',array('product_id'=>$pro_list[product_id]))}">{$pro_list.product_name}</a></li>
 																												  </if>
 																											 </foreach>
                                                     </ul>
@@ -107,7 +107,7 @@
 		                                    <!--Mega Menu End-->
 		                                </li>
 																		<li><a href="index.html">产品附件下载</a></li>
-																	  <li><a href="about.html">关于我们</a></li>
+																	  <li><a href="{:U('home/about/about')}">关于我们</a></li>
 		                            </ul>
 		                        </nav>
 		                    </div>
@@ -140,17 +140,16 @@
                                 <div id="cate-toggle" class="category-menu-list">
 																		<foreach name="category" item="cat_list">
 	                                    <ul>
-	                                        <li class="right-menu"><a href="shop.html">{$cat_list.category_name}</a>
+	                                        <li class="right-menu"><a href="{:U('home/prodlist/listwithcategory',array('category_id'=>$cat_list[category_id]))}">{$cat_list.category_name}</a>
 																						  <foreach name="brand" item="brand_list">
 																								<if condition="$cat_list['category_id'] eq $brand_list['category_id']">
 		                                            <ul class="cat-mega-menu">
 		                                                <li class="right-menu cat-mega-title">
-		                                                   <a href="shop.html">{$brand_list.brand_name}</a>
+		                                                   <a href="{:U('home/prodlist/listwithboth',array('brand_id'=>$brand_list[brand_id],'category_id'=>$cat_list['category_id']))}">{$brand_list.brand_name}</a>
 		                                                    <ul>
 																													<foreach name="product" item="pro_list">
 																														<if condition="($pro_list['category_id']=$cat_list['category_id']) and ($pro_list['brand_id']=$brand_list['brand_id'])">
-		                                                        <li><a href="shop.html">{$pro_list.product_name}</a></li>
-
+		                                                        <li><a href="{:U('home/product/product',array('product_id'=>$pro_list[product_id]))}">{$pro_list.product_name}</a></li>
 																													</if>
 																													</foreach>
 		                                                    </ul>

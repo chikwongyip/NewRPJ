@@ -61,6 +61,20 @@
                                   where rpj_product.category_id = $category_id");
     return $product;
   }
+// 根据品牌ID + 类型id 进行查询
+  function getProductDataWithBoth($brand_id,$category_id)
+  {
+    $modelProduct = new \Think\Model();
+    $product=$modelProduct->query("select * from rpj_product
+                                inner join rpj_procategory on
+                                  rpj_product.category_id = rpj_procategory.category_id
+                                inner join rpj_brand on
+                                  rpj_product.brand_id    = rpj_brand.brand_id
+                                  where rpj_product.category_id = $category_id
+                                    and rpj_product.brand_id = $brand_id");
+    return $product;
+   }
+
   // 根据product ID 获取 产品 单个
   function getProductSingle($id)
   {

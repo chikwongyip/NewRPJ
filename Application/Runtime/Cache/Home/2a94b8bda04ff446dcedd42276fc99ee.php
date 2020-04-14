@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>关于我们 || 广州瑞谱佳科技有限公司</title>
+	<title>主页 || 广州瑞谱佳科技有限公司</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Place favicon.ico in the root directory -->
@@ -53,7 +53,7 @@
 		                <div class="col-md-6">
 		                    <!--Header Top Left Start-->
 		                    <div class="header-top-left">
-		                        <a href="#">广州瑞谱佳，欢迎您！</a>
+		                        <a href="<?php echo U('home/index/index');?>">广州瑞谱佳，欢迎您！</a>
 		                    </div>
 		                    <!--Header Top Left End-->
 		                </div>
@@ -80,7 +80,7 @@
 		                    <div class="header-menu-area">
 		                        <nav>
 		                            <ul class="main-menu">
-		                                <li class="active"><a href="index.html">主页</a>
+		                                <li class="active"><a href="<?php echo U('home/index/index');?>">主页</a>
 		                                    <!--Dropdown Menu Start-->
 
 		                                    <!--Dropdown Menu End-->
