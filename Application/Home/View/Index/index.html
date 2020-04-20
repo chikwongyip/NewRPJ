@@ -168,12 +168,12 @@
 		                    <!--Header Top Search Start-->
 		                    <div class="header-top-search">
                                 <div class="search-categories">
-                                    <form action="#">
+                                    <form action="{:U('home/index/index')}" method="post">
                                         <div class="search-form-input">
-                                            <select id="select" name="select" class="nice-select">
+                                            <select id="select" name="category_id" class="nice-select">
                                                 <option value="">全部类别</option>
 																								<foreach name="category" item="list">
-																										<option value="{$list.category_id}">{$list.category_name}</option>
+																										<option value="{$list.category_id}" >{$list.category_name}</option>
 																								</foreach>
                                             </select>
                                             <input type="text" placeholder="搜索你需要得产....">
