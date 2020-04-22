@@ -24,9 +24,20 @@ class IndexController extends Controller
           $this->assign('brands',$brands);
           if (IS_POST) {
 
-            if (!is_null($_POST["category_id"])) {
+            if (!is_null($_POST["category_id"]) and is_null($_POST["product_name"]))
+            {
               $this->success('正在为你查询.....',U('home/prodlist/listwithcategory',array('category_id'=>$_POST["category_id"])));
-            }else {
+            }
+            elseif(is_null($_POST["category_id"]) and !is_null($_POST["product_name"]))  
+            {
+              // code...
+            }
+            elseif(is_null($_POST["category_id"]) and !is_null($_POST["product_name"]))
+            {
+
+            }
+            else
+            {
               $this->success('正在为你查询.....',U('home/prodlist/prodlist'));
             }
           }else {
