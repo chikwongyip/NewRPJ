@@ -28,7 +28,7 @@ class IndexController extends Controller
             {
               $this->success('正在为你查询.....',U('home/prodlist/listwithcategory',array('category_id'=>$_POST["category_id"])));
             }
-            elseif(is_null($_POST["category_id"]) and !is_null($_POST["product_name"]))  
+            elseif(is_null($_POST["category_id"]) and !is_null($_POST["product_name"]))
             {
               // code...
             }
