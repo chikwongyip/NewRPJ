@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<!doctype html>
 <html class="no-js" lang="en">
 <head>
 	<meta charset="utf-8">
@@ -7,34 +7,34 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Place favicon.ico in the root directory -->
-	<link rel="shortcut icon" type="image/x-icon" href="/chikwong/NewRPJ/Public/img/favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="__PUBLIC__/img/favicon.ico">
     <!--All Css Here-->
 
 	<!-- Ionicons Font CSS-->
-    <link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/ionicons.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/ionicons.min.css">
     <!-- Font Awesome CSS-->
-    <link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/font-awesome.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/font-awesome.min.css">
 
 	<!-- Animate CSS-->
-	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/animate.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/animate.css">
 	<!-- Owl Carousel CSS-->
-	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/owl.carousel.min.css">
 	<!-- Nice Select CSS-->
-	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/nice-select.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/nice-select.css">
 	<!-- Slick CSS-->
-	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/slick.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/slick.css">
 	<!-- Meanmenu CSS-->
-	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/meanmenu.min.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/meanmenu.min.css">
 	<!-- Venobox CSS-->
-	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/venobox.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/venobox.css">
 	<!-- Bootstrap CSS-->
-	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/bootstrap.min.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css">
 	<!-- Style CSS -->
-	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/style.css">
+	<link rel="stylesheet" href="__PUBLIC__/style.css">
 	<!-- Responsive CSS -->
-	<link rel="stylesheet" href="/chikwong/NewRPJ/Public/css/responsive.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/responsive.css">
 	<!-- Modernizr Js -->
-	<script src="/chikwong/NewRPJ/Public/scripts/vendor/modernizr-2.8.3.min.js"></script>
+	<script src="__PUBLIC__/scripts/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
 
@@ -70,7 +70,7 @@
 		                    <!--Logo Start-->
 		                    <div class="logo">
 		                        <a href="index.html">
-															<img src="/chikwong/NewRPJ/Public<?php echo ($company["logo"]); ?>" alt="">
+															<img src="__PUBLIC__{$company.logo}" alt="">
 		                        </a>
 		                    </div>
 		                    <!--Logo End-->
@@ -92,11 +92,17 @@
 		                                <li><a href="#">产品</a>
 		                                    <!--Mega Menu Start-->
 		                                    <ul class="mega-menu">
-																							<?php if(is_array($brands)): foreach($brands as $key=>$brd_list): ?><li><a href="#" class="item-link"><?php echo ($brd_list["brand_name"]); ?></a>
+																							<foreach name="brands" item="brd_list">
+		                                            <li><a href="#" class="item-link">{$brd_list.brand_name}</a>
 		                                                <ul>
-																											<?php if(is_array($product)): foreach($product as $key=>$pro_list): if($brd_list['brand_id'] == $pro_list['brand_id']): ?><li><a href="my-account.html"><?php echo ($pro_list["product_name"]); ?></a></li><?php endif; endforeach; endif; ?>
+																											<foreach name="product" item="pro_list">
+																													<if condition="$brd_list['brand_id'] eq $pro_list['brand_id']">
+                                                            <li><a href="my-account.html">{$pro_list.product_name}</a></li>
+																												  </if>
+																											 </foreach>
                                                     </ul>
-		                                            </li><?php endforeach; endif; ?>
+		                                            </li>
+																							</foreach>
 		                                        </ul>
 		                                    <!--Mega Menu End-->
 		                                </li>
@@ -107,7 +113,7 @@
 		                    </div>
 		                    <!--Header Menu End-->
 		                    <div class="header-phone">
-		                        <p>联系我们: <br><span><?php echo ($company["tel"]); ?></span></p>
+		                        <p>联系我们: <br><span>{$company.tel}</span></p>
 		                    </div>
 		                </div>
 		            </div>
@@ -132,18 +138,29 @@
                                     <h2 class="categories-toggle"><span>产品类别</span><i class="ion-ios-arrow-down"></i></h2>
                                 </div>
                                 <div id="cate-toggle" class="category-menu-list">
-																		<?php if(is_array($category)): foreach($category as $key=>$cat_list): ?><ul>
-	                                        <li class="right-menu"><a href="shop.html"><?php echo ($cat_list["category_name"]); ?></a>
-																						  <?php if(is_array($brand)): foreach($brand as $key=>$brand_list): if($cat_list['category_id'] == $brand_list['category_id']): ?><ul class="cat-mega-menu">
+																		<foreach name="category" item="cat_list">
+	                                    <ul>
+	                                        <li class="right-menu"><a href="shop.html">{$cat_list.category_name}</a>
+																						  <foreach name="brand" item="brand_list">
+																								<if condition="$cat_list['category_id'] eq $brand_list['category_id']">
+		                                            <ul class="cat-mega-menu">
 		                                                <li class="right-menu cat-mega-title">
-		                                                   <a href="shop.html"><?php echo ($brand_list["brand_name"]); ?></a>
+		                                                   <a href="shop.html">{$brand_list.brand_name}</a>
 		                                                    <ul>
-																													<?php if(is_array($product)): foreach($product as $key=>$pro_list): if(($pro_list['category_id']=$cat_list['category_id']) and ($pro_list['brand_id']=$brand_list['brand_id'])): ?><li><a href="shop.html"><?php echo ($pro_list["product_name"]); ?></a></li><?php endif; endforeach; endif; ?>
+																													<foreach name="product" item="pro_list">
+																														<if condition="($pro_list['category_id']=$cat_list['category_id']) and ($pro_list['brand_id']=$brand_list['brand_id'])">
+		                                                        <li><a href="shop.html">{$pro_list.product_name}</a></li>
+
+																													</if>
+																													</foreach>
 		                                                    </ul>
 		                                                </li>
-		                                            </ul><?php endif; endforeach; endif; ?>
+		                                            </ul>
+																							</if>
+																						  </foreach>
 	                                        </li>
-	                                    </ul><?php endforeach; endif; ?>
+	                                    </ul>
+																		</foreach>
                                 </div>
                             </div>
                             <!--Category Menu End-->
@@ -156,7 +173,9 @@
                                         <div class="search-form-input">
                                             <select id="select" name="select" class="nice-select">
                                                 <option value="">全部类别</option>
-																								<?php if(is_array($category)): foreach($category as $key=>$list): ?><option value="<?php echo ($list["category_id"]); ?>"><?php echo ($list["category_name"]); ?></option><?php endforeach; endif; ?>
+																								<foreach name="category" item="list">
+																										<option value="{$list.category_id}">{$list.category_name}</option>
+																								</foreach>
                                             </select>
                                             <input type="text" placeholder="搜索你需要得产....">
                                             <button class="top-search-btn" type="submit"><i class="ion-ios-search-strong"></i></button>
@@ -203,11 +222,17 @@
 		                    <h3>产品分类</h3>
 		                    <div id="shop-cate-toggle" class="category-menu sidebar-menu sidbar-style">
 		                        <ul class="category-sub-menu">
-														 <?php if(is_array($category)): foreach($category as $key=>$cate_list): ?><li class="has-sub"><a href="#"><?php echo ($cate_list["category_name"]); ?></a>
+														 <foreach name="category" item="cate_list">
+			                         <li class="has-sub"><a href="#">{$cate_list.category_name}</a>
 		                             <ul class="category-sub">
-																	 <?php if(is_array($brand)): foreach($brand as $key=>$brand_list): if($brand_list['category_id']=$cate_list['category_id']): ?><li><a href="shop.html"><?php echo ($brand_list["brand_name"]); ?></a></li><?php endif; endforeach; endif; ?>
+																	 <foreach name="brand" item="brand_list">
+																		 <if condition="$brand_list['category_id']=$cate_list['category_id']">
+	                                        <li><a href="shop.html">{$brand_list.brand_name}</a></li>
+																			</if>
+																	 </foreach>
                                   </ul>
-			                         </li><?php endforeach; endif; ?>
+			                         </li>
+													 	 </foreach>
 		                     </ul>
 		                   </div>
 		                </div>
@@ -217,7 +242,9 @@
 		                    <h3>品牌</h3>
 		                    <div class="shop-checkbox">
 		                        <ul>
-																<?php if(is_array($brands)): foreach($brands as $key=>$brand_list): ?><li><input name="product-categori" type="checkbox"><a href="#"><?php echo ($brand_list["brand_name"]); ?></a></li><?php endforeach; endif; ?>
+																<foreach name="brands" item="brand_list">
+		                            <li><input name="product-categori" type="checkbox"><a href="#">{$brand_list.brand_name}</a></li>
+															  </foreach>
 		                        </ul>
 		                    </div>
 		                </div>
@@ -261,21 +288,22 @@
 		                            <div id="grid" class="tab-pane fade show active">
 		                                <div class="product-grid-view">
 		                                    <div class="row">
-																							<?php if(is_array($product)): foreach($product as $key=>$prod_list): ?><div class="col-lg-4 col-xl-4 col-md-4">
+																							<foreach name="product" item="prod_list">
+                                                <div class="col-lg-4 col-xl-4 col-md-4">
                                                     <!--Single Product Start-->
                                                     <div class="single-product mb-30">
                                                         <div class="product-img">
                                                             <a href="single-product.html">
-                                                                <img class="first-img" src="/chikwong/NewRPJ/Public<?php echo ($prod_list["product_pic300"]); ?>" alt="">
-                                                                <!-- <img class="hover-img" src="/chikwong/NewRPJ/Public/img/product/product7.jpg" alt=""> -->
+                                                                <img class="first-img" src="__PUBLIC__{$prod_list.product_pic300}" alt="">
+                                                                <!-- <img class="hover-img" src="__PUBLIC__/img/product/product7.jpg" alt=""> -->
                                                             </a>
                                                             <span class="sticker">New</span>
 
                                                         </div>
                                                         <div class="product-content">
-                                                            <h4><a href="single-product.html"><?php echo ($prod_list["product_name"]); ?></a></h4>
+                                                            <h4><a href="single-product.html">{$prod_list.product_name}</a></h4>
                                                             <div class="product-price">
-                                                                <span class="price"><?php echo ($prod_list["brand_name"]); ?></span>
+                                                                <span class="price">{$prod_list.brand_name}</span>
                                                             </div>
                                                             <div class="product-reviews">
                                                                 <i class="ion-android-star"></i>
@@ -287,7 +315,8 @@
                                                         </div>
                                                     </div>
                                                     <!--Single Product End-->
-                                              </div><?php endforeach; endif; ?>
+                                              </div>
+																							</foreach>
 		                                    </div>
 		                                </div>
 		                            </div>
@@ -296,12 +325,13 @@
 		                                    <div class="product-list-item mb-40">
 		                                        <div class="row">
 		                                            <!--Single List Product Start-->
-																								<?php if(is_array($product)): foreach($product as $key=>$prod_list): ?><div class="col-md-4">
+																								<foreach name="product" item="prod_list">
+			                                            <div class="col-md-4">
 			                                                <div class="single-product">
 			                                                    <div class="product-img">
 			                                                        <a href="single-product.html">
-	                                                                    <img class="first-img" src="/chikwong/NewRPJ/Public<?php echo ($prod_list["product_pic300"]); ?>" alt="">
-	                                                                    <!-- <img class="hover-img" src="/chikwong/NewRPJ/Public/img/product/product7.jpg" alt=""> -->
+	                                                                    <img class="first-img" src="__PUBLIC__{$prod_list.product_pic300}" alt="">
+	                                                                    <!-- <img class="hover-img" src="__PUBLIC__/img/product/product7.jpg" alt=""> -->
 	                                                                </a>
 	                                                                <span class="sticker">New</span>
 			                                                    </div>
@@ -309,9 +339,9 @@
 			                                            </div>
 			                                            <div class="col-md-8">
 			                                                <div class="product-content shop-list">
-			                                                    <h4><a href="single-product.html"><?php echo ($prod_list["product_name"]); ?></a></h4>
+			                                                    <h4><a href="single-product.html">{$prod_list.product_name}</a></h4>
 	                                                            <div class="product-price">
-	                                                                <span class="price"><?php echo ($prod_list["brand_name"]); ?></span>
+	                                                                <span class="price">{$prod_list.brand_name}</span>
 	                                                            </div>
 	                                                            <div class="product-reviews">
 	                                                                <i class="ion-android-star"></i>
@@ -321,7 +351,7 @@
 	                                                                <i class="ion-android-star"></i>
 	                                                            </div>
 	                                                            <div class="product-description">
-	                                                                <p><?php echo ($prod_list["product_desc"]); ?></p>
+	                                                                <p>{$prod_list.product_desc}</p>
 	                                                            </div>
 	                                                             <!-- <div class="product-list-action">
 	                                                                <ul>
@@ -331,7 +361,8 @@
 	                                                                </ul>
 	                                                            </div> -->
 			                                                </div>
-			                                            </div><?php endforeach; endif; ?>
+			                                            </div>
+																							  </foreach>
 		                                            <!--Single List Product End-->
 		                                        </div>
 		                                    </div>
@@ -375,7 +406,7 @@
 				                        <i class="icon ion-ios-telephone"></i>
 				                    </div>
 				                    <div class="feature-content">
-				                        <h3><?php echo ($company["tel"]); ?></h3>
+				                        <h3>{$company.tel}</h3>
 				                        <p>24小时在线支持！</p>
 				                    </div>
 				                </div>
@@ -388,7 +419,7 @@
 				                        <i class="icon ion-email"></i>
 				                    </div>
 				                    <div class="feature-content">
-				                        <h3><?php echo ($company["email"]); ?></h3>
+				                        <h3>{$company.email}</h3>
 				                        <p>欢迎使用邮件进行报价！</p>
 				                    </div>
 				                </div>
@@ -401,7 +432,7 @@
 				                        <i class="icon ion-ios-timer-outline"></i>
 				                    </div>
 				                    <div class="feature-content">
-				                        <h3><?php echo ($company["address"]); ?></h3>
+				                        <h3>{$company.address}</h3>
 				                        <p>期待你的来临指导！</p>
 				                    </div>
 				                </div>
@@ -422,13 +453,13 @@
 				                        <!--Single Footer Wiedget Start-->
 				                        <div class="single-footer-wiedget mb-30">
 				                            <div class="footer-logo">
-				                                <a href="index.html"><img src="/chikwong/NewRPJ/Public<?php echo ($company["logo"]); ?>" alt=""></a>
+				                                <a href="index.html"><img src="__PUBLIC__{$company.logo}" alt=""></a>
 				                            </div>
 				                            <div class="desc-footer">广州瑞谱佳科技有限公司拥有稳妥，快捷，优质的售后服务，欢迎垂询！</div>
 				                            <div class="address-footer">
-				                               <p class="address"><span><?php echo ($company["address"]); ?></span></p>
-				                               <p class="phone"><span><?php echo ($company["tel"]); ?></span></p>
-				                               <p class="mail"><span><?php echo ($company["email"]); ?></span></p>
+				                               <p class="address"><span>{$company.address}</span></p>
+				                               <p class="phone"><span>{$company.tel}</span></p>
+				                               <p class="mail"><span>{$company.email}</span></p>
 				                            </div>
 				                        </div>
 				                        <!--Single Footer Wiedget End-->
@@ -440,7 +471,9 @@
 																				<h3>品牌列表</h3>
 																		</div>
 																		<ul class="link-widget">
-																				<?php if(is_array($brands)): foreach($brands as $key=>$a): ?><li><a href="#"></a><?php echo ($a["brand_name"]); ?></li><?php endforeach; endif; ?>
+																				<foreach name="brands" item="a">
+																					<li><a href="#"></a>{$a.brand_name}</li>
+																			</foreach>
 																		</ul>
 																</div>
 																<!--Single Footer Wiedget End-->
@@ -452,9 +485,9 @@
 																				<h3>网站快速链接</h3>
 																		</div>
 																		<ul class="link-widget">
-																			<li><a href="<?php echo U('home/index/index');?>">主页</a></li>
-																			<li><a href="<?php echo U('home/prodlist/prodlist');?>">产品</a></li>
-																			<li><a href="<?php echo U('home/about/about');?>">关于我们</a></li>
+																			<li><a href="{:U('home/index/index')}">主页</a></li>
+																			<li><a href="{:U('home/prodlist/prodlist')}">产品</a></li>
+																			<li><a href="{:U('home/about/about')}">关于我们</a></li>
 																			<li><a href="#">产品附件下载</a></li>
 																		</ul>
 																</div>
@@ -472,14 +505,14 @@
 				                    <div class="col-md-6">
 		                                <!--Footer Copyright Start-->
 				                        <div class="footer-copyright">
-				                            <p>Copyright &copy; <a href="<?php echo U('home/index/index');?>"><?php echo ($company["name"]); ?>.</a> <?php echo ($company["icp"]); ?></p>
+				                            <p>Copyright &copy; <a href="{:U('home/index/index')}">{$company.name}.</a> {$company.icp}</p>
 				                        </div>
 				                        <!--Footer Copyright End-->
 				                    </div>
 				                    <div class="col-md-6">
 		                                <!--Footer Payment Start-->
 				                        <div class="footer-payments-image text-center text-md-right">
-				                            <img src="/chikwong/NewRPJ/Public/img/payment/payment.png" alt="">
+				                            <img src="__PUBLIC__/img/payment/payment.png" alt="">
 				                        </div>
 				                        <!--Footer Payment End-->
 				                    </div>
@@ -508,28 +541,28 @@
 		                        <div class="tab-pane fade show active" id="single-slide1" role="tabpanel" aria-labelledby="single-slide-tab-1">
 		                            <!--Single Product Image Start-->
 		                            <div class="single-product-img img-full">
-		                              <img src="/chikwong/NewRPJ/Public/img/single-product/large/large1.jpg" alt="">
+		                              <img src="__PUBLIC__/img/single-product/large/large1.jpg" alt="">
 		                            </div>
 		                            <!--Single Product Image End-->
 		                        </div>
 		                        <div class="tab-pane fade" id="single-slide2" role="tabpanel" aria-labelledby="single-slide-tab-2">
 		                            <!--Single Product Image Start-->
 		                            <div class="single-product-img img-full">
-		                              <img src="/chikwong/NewRPJ/Public/img/single-product/large/large2.jpg" alt="">
+		                              <img src="__PUBLIC__/img/single-product/large/large2.jpg" alt="">
 		                            </div>
 		                            <!--Single Product Image End-->
 		                        </div>
 		                        <div class="tab-pane fade" id="single-slide3" role="tabpanel" aria-labelledby="single-slide-tab-3">
 		                            <!--Single Product Image Start-->
 		                            <div class="single-product-img img-full">
-		                              <img src="/chikwong/NewRPJ/Public/img/single-product/large/large3.jpg" alt="">
+		                              <img src="__PUBLIC__/img/single-product/large/large3.jpg" alt="">
 		                            </div>
 		                            <!--Single Product Image End-->
 		                        </div>
 		                        <div class="tab-pane fade" id="single-slide4" role="tabpanel" aria-labelledby="single-slide-tab-4">
 		                            <!--Single Product Image Start-->
 		                            <div class="single-product-img img-full">
-		                              <img src="/chikwong/NewRPJ/Public/img/single-product/large/large4.jpg" alt="">
+		                              <img src="__PUBLIC__/img/single-product/large/large4.jpg" alt="">
 		                            </div>
 		                            <!--Single Product Image End-->
 		                        </div>
@@ -539,16 +572,16 @@
 		                      <div class="single-product-menu">
 		                          <div class="nav single-slide-menu" role="tablist">
 		                              <div class="single-tab-menu img-full">
-		                                  <a class="active" data-toggle="tab" id="single-slide-tab-1" href="#single-slide1"><img src="/chikwong/NewRPJ/Public/img/single-product/small/small1.jpg" alt=""></a>
+		                                  <a class="active" data-toggle="tab" id="single-slide-tab-1" href="#single-slide1"><img src="__PUBLIC__/img/single-product/small/small1.jpg" alt=""></a>
 		                              </div>
 		                              <div class="single-tab-menu img-full">
-		                                  <a data-toggle="tab" id="single-slide-tab-2" href="#single-slide2"><img src="/chikwong/NewRPJ/Public/img/single-product/small/small2.jpg" alt=""></a>
+		                                  <a data-toggle="tab" id="single-slide-tab-2" href="#single-slide2"><img src="__PUBLIC__/img/single-product/small/small2.jpg" alt=""></a>
 		                              </div>
 		                              <div class="single-tab-menu img-full">
-		                                  <a data-toggle="tab" id="single-slide-tab-3" href="#single-slide3"><img src="/chikwong/NewRPJ/Public/img/single-product/small/small3.jpg" alt=""></a>
+		                                  <a data-toggle="tab" id="single-slide-tab-3" href="#single-slide3"><img src="__PUBLIC__/img/single-product/small/small3.jpg" alt=""></a>
 		                              </div>
 		                              <div class="single-tab-menu img-full">
-		                                  <a data-toggle="tab" id="single-slide-tab-4" href="#single-slide4"><img src="/chikwong/NewRPJ/Public/img/single-product/small/small4.jpg" alt=""></a>
+		                                  <a data-toggle="tab" id="single-slide-tab-4" href="#single-slide4"><img src="__PUBLIC__/img/single-product/small/small4.jpg" alt=""></a>
 		                              </div>
 		                          </div>
 		                      </div>
@@ -641,40 +674,40 @@
 		    <!--All Js Here-->
 
 			<!--Jquery 1.12.4-->
-			<script src="/chikwong/NewRPJ/Public/scripts/vendor/jquery-1.12.4.min.js"></script>
+			<script src="__PUBLIC__/scripts/vendor/jquery-1.12.4.min.js"></script>
 			<!--Imagesloaded-->
-			<script src="/chikwong/NewRPJ/Public/scripts/imagesloaded.pkgd.min.js"></script>
+			<script src="__PUBLIC__/scripts/imagesloaded.pkgd.min.js"></script>
 			<!--Isotope-->
-			<script src="/chikwong/NewRPJ/Public/scripts/isotope.pkgd.min.js"></script>
+			<script src="__PUBLIC__/scripts/isotope.pkgd.min.js"></script>
 			<!--Waypoints-->
-			<script src="/chikwong/NewRPJ/Public/scripts/waypoints.min.js"></script>
+			<script src="__PUBLIC__/scripts/waypoints.min.js"></script>
 			<!--Counterup-->
-			<script src="/chikwong/NewRPJ/Public/scripts/jquery.counterup.min.js"></script>
+			<script src="__PUBLIC__/scripts/jquery.counterup.min.js"></script>
 			<!--Countdown-->
-			<script src="/chikwong/NewRPJ/Public/scripts/jquery.countdown.min.js"></script>
+			<script src="__PUBLIC__/scripts/jquery.countdown.min.js"></script>
 			<!--Carousel-->
-			<script src="/chikwong/NewRPJ/Public/scripts/owl.carousel.min.js"></script>
+			<script src="__PUBLIC__/scripts/owl.carousel.min.js"></script>
 			<!--Slick-->
-			<script src="/chikwong/NewRPJ/Public/scripts/slick.min.js"></script>
+			<script src="__PUBLIC__/scripts/slick.min.js"></script>
 			<!--Meanmenu-->
-			<script src="/chikwong/NewRPJ/Public/scripts/jquery.meanmenu.min.js"></script>
+			<script src="__PUBLIC__/scripts/jquery.meanmenu.min.js"></script>
 			<!--Instafeed-->
 			<!--<script src="js/instafeed.min.js"></script>-->
 			<!--Nice Select-->
-			<script src="/chikwong/NewRPJ/Public/scripts/jquery.nice-select.min.js"></script>
+			<script src="__PUBLIC__/scripts/jquery.nice-select.min.js"></script>
 			<!--ScrollUp-->
-			<script src="/chikwong/NewRPJ/Public/scripts/jquery.scrollUp.min.js"></script>
+			<script src="__PUBLIC__/scripts/jquery.scrollUp.min.js"></script>
 			<!--Wow-->
-			<script src="/chikwong/NewRPJ/Public/scripts/wow.min.js"></script>
+			<script src="__PUBLIC__/scripts/wow.min.js"></script>
 			<!--Venobox-->
-			<script src="/chikwong/NewRPJ/Public/scripts/venobox.min.js"></script>
+			<script src="__PUBLIC__/scripts/venobox.min.js"></script>
 			<!--Popper-->
-			<script src="/chikwong/NewRPJ/Public/scripts/popper.min.js"></script>
+			<script src="__PUBLIC__/scripts/popper.min.js"></script>
 			<!--Bootstrap-->
-			<script src="/chikwong/NewRPJ/Public/scripts/bootstrap.min.js"></script>
+			<script src="__PUBLIC__/scripts/bootstrap.min.js"></script>
 			<!--Plugins-->
-			<script src="/chikwong/NewRPJ/Public/scripts/plugins.js"></script>
+			<script src="__PUBLIC__/scripts/plugins.js"></script>
 			<!--Main Js-->
-			<script src="/chikwong/NewRPJ/Public/scripts/main.js"></script>
+			<script src="__PUBLIC__/scripts/main.js"></script>
 		</body>
 		</html>

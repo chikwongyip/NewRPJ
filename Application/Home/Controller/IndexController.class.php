@@ -22,25 +22,34 @@ class IndexController extends Controller
           $this->assign('brand',$brand);
           $this->assign('product',$product);
           $this->assign('brands',$brands);
-          if (IS_POST) {
-
-            if (!is_null($_POST["category_id"]) and is_null($_POST["product_name"]))
+          if (IS_POST)
+          {
+            
+            if ($_POST["category_id"] != "" and is_null($_POST["product_name"]))
             {
+
               $this->success('正在为你查询.....',U('home/prodlist/listwithcategory',array('category_id'=>$_POST["category_id"])));
             }
-            elseif(is_null($_POST["category_id"]) and !is_null($_POST["product_name"]))
-            {
-              // code...
-            }
-            elseif(is_null($_POST["category_id"]) and !is_null($_POST["product_name"]))
+
+            if($_POST["category_id"] != "" and !is_null($_POST["product_name"]))
             {
 
+              $this->success('正在为你查询.....',U('home/prodlist/listlikeproduct',array('category_id'=>$_POST["category_id"],'product_name'=>$_POST["product_name"])));
             }
-            else
+
+            if($_POST["category_id"] == "" and !is_null($_POST["product_name"]))
+            {
+
+                $this->success('正在为你查询.....',U('home/prodlist/listlikeproductsingle',array('product_name'=>$_POST["product_name"])));
+            }
+
+            if($_POST["category_id"] == "" and is_null($_POST["product_name"]))
             {
               $this->success('正在为你查询.....',U('home/prodlist/prodlist'));
             }
-          }else {
+          }
+          else
+          {
             $this->display();
           }
 

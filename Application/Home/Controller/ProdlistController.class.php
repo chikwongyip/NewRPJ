@@ -92,4 +92,46 @@ class ProdlistController extends Controller
         $this->assign('brands',$brands);
         $this->display();
     }
+
+    public function listlikeproduct($category_id,$product_name)
+    {
+        $model = M('Rpj_company');
+        //$modelProduct = M('Rpj_product');
+        $modelBrands  = M('Rpj_brand');
+        $category = getCategoryData();
+        $brand = getBrandData();
+    //  select data
+        $company = $model->find(1);
+        $product = getProductDataWithCateName($category_id,$product_name);
+        $brands  = $modelBrands->select();
+
+    // assign data html
+        $this->assign('company',$company);
+        $this->assign('category',$category);
+        $this->assign('brand',$brand);
+        $this->assign('product',$product);
+        $this->assign('brands',$brands);
+        $this->display();
+    }
+
+    public function listlikeproductsingle($product_name)
+    {
+        $model = M('Rpj_company');
+        //$modelProduct = M('Rpj_product');
+        $modelBrands  = M('Rpj_brand');
+        $category = getCategoryData();
+        $brand = getBrandData();
+    //  select data
+        $company = $model->find(1);
+        $product = getProductDataWithName($product_name);
+        $brands  = $modelBrands->select();
+
+    // assign data html
+        $this->assign('company',$company);
+        $this->assign('category',$category);
+        $this->assign('brand',$brand);
+        $this->assign('product',$product);
+        $this->assign('brands',$brands);
+        $this->display();
+    }
 }
