@@ -7,15 +7,15 @@ class IndexController extends Controller
     {
       // model inizitial
       // model inizitial
-          $model = M('Rpj_company');
-          // $modelProduct = M('Rpj_product');
+          $model        = M('Rpj_company');
+      // $modelProduct = M('Rpj_product');
           $modelBrands  = M('Rpj_brand');
-          $category = getCategoryData();
-          $brand = getBrandData();
+          $category     = getCategoryData();
+          $brand        = getBrandData();
       //  select data
-          $company = $model->find(1);
-          $product  = getProductData();
-          $brands  = $modelBrands->select();
+          $company      = $model->find(1);
+          $product      = getProductData();
+          $brands       = $modelBrands->select();
       // assign data html
           $this->assign('company',$company);
           $this->assign('category',$category);
@@ -24,7 +24,7 @@ class IndexController extends Controller
           $this->assign('brands',$brands);
           if (IS_POST)
           {
-            
+
             if ($_POST["category_id"] != "" and is_null($_POST["product_name"]))
             {
 
