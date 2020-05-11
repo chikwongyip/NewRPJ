@@ -11,11 +11,13 @@ class IndexController extends Controller
       // $modelProduct = M('Rpj_product');
           $modelBrands  = M('Rpj_brand');
           $category     = getCategoryData();
-          $brand        = getBrandData();
+          $brand        = getBrandCollection();
+
       //  select data
           $company      = $model->find(1);
           $product      = getProductData();
           $brands       = $modelBrands->select();
+          //var_dump($product);exit;
       // assign data html
           $this->assign('company',$company);
           $this->assign('category',$category);

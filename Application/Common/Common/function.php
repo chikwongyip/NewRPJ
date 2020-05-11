@@ -107,8 +107,8 @@
   function getCategoryData()
   {
     $modelCategory = new \Think\Model();
-    $category=$modelCategory->query("select rpj_product.category_id,
-                                            rpj_procategory.category_name
+    $category=$modelCategory->query("select distinct rpj_product.category_id,
+                                                     rpj_procategory.category_name
                                      from rpj_product
                                      inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
                                      group by rpj_product.category_id");
@@ -139,4 +139,16 @@
                                                    from rpj_product_pic
                                                    inner join rpj_product on rpj_product_pic.product_id = rpj_product.product_id");
     return $productPicture;
+  }
+
+  function getBrandCollection()
+  {
+    $model = new \Think\Model();
+    $brands = $model->query("select distinct rpj_product.brand_id,
+                                             rpj_product.category_id,
+                                             brand_name
+                            from rpj_product
+                            inner join rpj_brand
+                            on rpj_brand.brand_id = rpj_product.brand_id");
+    return brands;
   }

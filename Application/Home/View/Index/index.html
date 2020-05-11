@@ -148,9 +148,9 @@
 		                                                   <a href="{:U('home/prodlist/listwithboth',array('brand_id'=>$brand_list[brand_id],'category_id'=>$cat_list['category_id']))}">{$brand_list.brand_name}</a>
 		                                                    <ul>
 																													<foreach name="product" item="pro_list">
-																														<if condition="($pro_list['category_id']=$cat_list['category_id']) and ($pro_list['brand_id']=$brand_list['brand_id'])">
-		                                                        <li><a href="{:U('home/product/product',array('product_id'=>$pro_list[product_id]))}">{$pro_list.product_name}</a></li>
-																													</if>
+																														<if condition="($pro_list['category_id']=$brand_list['category_id']) and ($pro_list['brand_id']=$brand_list['brand_id'])">
+		                                                        	<li><a href="{:U('home/product/product',array('product_id'=>$pro_list[product_id]))}">{$pro_list.product_name}</a></li>
+																													  </if>
 																													</foreach>
 		                                                    </ul>
 		                                                </li>
