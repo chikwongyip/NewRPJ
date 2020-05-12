@@ -134,34 +134,35 @@
 		                <div class="col-md-12 col-lg-3 order-lg-1 order-3">
                             <!--Category Menu Start-->
 		                    <div class="category-menu category-menu-hidden">
-                                <div class="category-heading">
-                                    <h2 class="categories-toggle"><span>产品类别</span><i class="ion-ios-arrow-down"></i></h2>
-                                </div>
-                                <div id="cate-toggle" class="category-menu-list">
-																		<foreach name="category" item="cat_list">
-	                                    <ul>
-	                                        <li class="right-menu"><a href="{:U('home/prodlist/listwithcategory',array('category_id'=>$cat_list[category_id]))}">{$cat_list.category_name}</a>
-																						  <foreach name="brand" item="brand_list">
-																								<if condition="$cat_list['category_id'] eq $brand_list['category_id']">
-		                                            <ul class="cat-mega-menu">
-		                                                <li class="right-menu cat-mega-title">
-		                                                   <a href="{:U('home/prodlist/listwithboth',array('brand_id'=>$brand_list[brand_id],'category_id'=>$cat_list['category_id']))}">{$brand_list.brand_name}</a>
-		                                                    <ul>
-																													<foreach name="product" item="pro_list">
-																														<if condition="($pro_list['category_id']=$brand_list['category_id']) and ($pro_list['brand_id']=$brand_list['brand_id'])">
-		                                                        	<li><a href="{:U('home/product/product',array('product_id'=>$pro_list[product_id]))}">{$pro_list.product_name}</a></li>
-																													  </if>
-																													</foreach>
-		                                                    </ul>
-		                                                </li>
+                          <div class="category-heading">
+                              <h2 class="categories-toggle"><span>产品类别</span><i class="ion-ios-arrow-down"></i></h2>
+                          </div>
+
+                          <div id="cate-toggle" class="category-menu-list">
+                              <ul>
+															  <foreach name="category" item="cat_list">
+                                  <li class="right-menu"><a href="{:U('home/prodlist/listwithcategory',array('category_id'=>$cat_list[category_id]))}">{$cat_list.category_name}</a>
+																		  <ul class="cat-mega-menu">
+                                        <li class="right-menu cat-mega-title">
+																					<foreach name="brand" item="brand_list">
+																						<if condition="$cat_list['category_id'] eq $brand_list['category_id']">
+		                                           <a href="{:U('home/prodlist/listwithboth',array('brand_id'=>$brand_list[brand_id],'category_id'=>$cat_list['category_id']))}">{$brand_list.brand_name}</a>
+		                                            <ul>
+																									<foreach name="product" item="pro_list">
+																										<if condition="($pro_list['category_id'] eq $brand_list['category_id']) and ($pro_list['brand_id'] eq $brand_list['brand_id'])">
+		                                                	<li><a href="{:U('home/product/product',array('product_id'=>$pro_list[product_id]))}">{$pro_list.product_name}</a></li>
+																									  </if>
+																									</foreach>
 		                                            </ul>
-																							</if>
-																						  </foreach>
-	                                        </li>
-	                                    </ul>
-																		</foreach>
-                                </div>
-                            </div>
+																						</if>
+																					</foreach>
+                                        </li>
+																			</ul>
+                                  </li>
+																</foreach>
+                              </ul>
+                          </div>
+                        </div>
                             <!--Category Menu End-->
 		                </div>
 		                <div class="col-md-9 col-lg-6 order-lg-2 order-1">

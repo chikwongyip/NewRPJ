@@ -12,7 +12,7 @@ class IndexController extends Controller
           $modelBrands  = M('Rpj_brand');
           $category     = getCategoryData();
           $brand        = getBrandCollection();
-
+      
       //  select data
           $company      = $model->find(1);
           $product      = getProductData();
