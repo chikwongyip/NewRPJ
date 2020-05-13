@@ -153,6 +153,27 @@
 
 				<input type="hidden" name="id" value="{$item.id}" id="id"/>
 				<tr>
+						<td class="ui_text_lt">选择品牌</td>
+						<td class="ui_text_lt">
+							<select name="brand_id">
+								<foreach name="brand" item="a">
+									<option name = "{$a.brand_id}" value ="{$a.brand_id}">{$a.brand_name}</option>
+								</foreach>
+							</select>
+						</td>
+				</tr>
+				<tr>
+						<td class="ui_text_lt">产品类别</td>
+						<td class="ui_text_lt">
+							<select name="category_id">
+								<foreach name="category" item="a">
+
+									<option name = "{$a.category_id}" value ="{$a.category_id}">{$a.category_name}</option>
+								</foreach>
+							</select>
+						</td>
+				</tr>
+				<tr>
 					<td class="ui_text_rt">附件名称</td>
 					<td class="ui_text_lt">
 						<input type="text" name="name" value="{$item.name}" class="ui_input_txt02"/>

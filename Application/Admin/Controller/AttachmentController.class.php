@@ -7,6 +7,12 @@ class AttachmentController extends Controller
     public function attachment_add()
     {
         $model = M('Rpj_attachment');
+        $brandModel = M('Rpj_brand');
+        $categoryModel = M('rpj_procategory');
+        $brand = $brandModel->select();
+        $category=$categoryModel->select();
+        $this->assign('brand',$brand);
+        $this->assign('category',$category);
         if(IS_POST)
         {
             $upload = new \Think\Upload();
@@ -21,6 +27,8 @@ class AttachmentController extends Controller
             }else
             {
                 $model->name = $_POST["name"];
+                $model->brand_id=$_POST["brand_id"];
+                $model->category_id=$_POST["category_id"];
                 $model->url = '/Upload/'.$info['savepath'].$info['savename'];
                 $model->add();
                 $this->display();
@@ -35,8 +43,14 @@ class AttachmentController extends Controller
     public function attachment_list()
     {
       $model = M('Rpj_attachment');
-      $attachement = $model->select();
+
+      $attachement = $model
+                      ->join('rpj_procategory on rpj_procategory.category_id = rpj_attachment.category_id')
+                      ->join('rpj_brand on rpj_brand.brand_id = rpj_attachment.brand_id')
+                      ->select();
+
       $this->assign('attach',$attachement);
+
       $this->display();
     }
 
@@ -46,7 +60,10 @@ class AttachmentController extends Controller
     {
       $model = M('Rpj_attachment');
       $model->delete($id);
-      $attachement = $model->select();
+      $attachement = $model
+                      ->join('rpj_procategory on rpj_procategory.category_id = rpj_attachment.category_id')
+                      ->join('rpj_brand on rpj_brand.brand_id = rpj_attachment.brand_id')
+                      ->select();
       $this->assign('attach',$attachement);
       $this->display('Attachment_list');
     }
@@ -54,6 +71,12 @@ class AttachmentController extends Controller
     public function attachment_edit($id)
     {
       $model = M('Rpj_attachment');
+      $brandModel = M('Rpj_brand');
+      $categoryModel = M('rpj_procategory');
+      $brand = $brandModel->select();
+      $category=$categoryModel->select();
+      $this->assign('brand',$brand);
+      $this->assign('category',$category);
       $item = $model->find($id);
       $this->assign('item',$item);
       $this->display();
