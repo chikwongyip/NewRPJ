@@ -136,12 +136,12 @@
                               <ul>
 															  <?php if(is_array($category)): foreach($category as $key=>$cat_list): ?><li class="right-menu"><a href="<?php echo U('home/prodlist/listwithcategory',array('category_id'=>$cat_list[category_id]));?>"><?php echo ($cat_list["category_name"]); ?></a>
 																		  <ul class="cat-mega-menu">
-                                        <li class="right-menu cat-mega-title">
-																					<?php if(is_array($brand)): foreach($brand as $key=>$brand_list): if($cat_list['category_id'] == $brand_list['category_id']): ?><a href="<?php echo U('home/prodlist/listwithboth',array('brand_id'=>$brand_list[brand_id],'category_id'=>$cat_list['category_id']));?>"><?php echo ($brand_list["brand_name"]); ?></a>
+																				<?php if(is_array($brand)): foreach($brand as $key=>$brand_list): if($cat_list['category_id'] == $brand_list['category_id']): ?><li class="right-menu cat-mega-title">
+		                                           <a href="<?php echo U('home/prodlist/listwithboth',array('brand_id'=>$brand_list[brand_id],'category_id'=>$cat_list['category_id']));?>"><?php echo ($brand_list["brand_name"]); ?></a>
 		                                            <ul>
 																									<?php if(is_array($product)): foreach($product as $key=>$pro_list): if(($pro_list['category_id'] == $brand_list['category_id']) and ($pro_list['brand_id'] == $brand_list['brand_id'])): ?><li><a href="<?php echo U('home/product/product',array('product_id'=>$pro_list[product_id]));?>"><?php echo ($pro_list["product_name"]); ?></a></li><?php endif; endforeach; endif; ?>
-		                                            </ul><?php endif; endforeach; endif; ?>
-                                        </li>
+		                                            </ul>
+	                                        	</li><?php endif; endforeach; endif; ?>
 																			</ul>
                                   </li><?php endforeach; endif; ?>
                               </ul>
@@ -153,10 +153,10 @@
 		                    <!--Header Top Search Start-->
 		                    <div class="header-top-search">
                                 <div class="search-categories">
-                                    <form action="<?php echo U('home/index/index');?>" method="post">
+                                    <form action="<?php echo U('home/prodlist/prodlist');?>" method="post">
                                         <div class="search-form-input">
                                             <select id="select" name="category_id" class="nice-select">
-                                                <option value="">全部类别</option>
+                                                <option value="0">全部类别</option>
 																								<?php if(is_array($category)): foreach($category as $key=>$list): ?><option value="<?php echo ($list["category_id"]); ?>" ><?php echo ($list["category_name"]); ?></option><?php endforeach; endif; ?>
                                             </select>
                                             <input type="text" name="product_name" placeholder="搜索你需要得产....">

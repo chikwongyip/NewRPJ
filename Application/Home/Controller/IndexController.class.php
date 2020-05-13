@@ -12,7 +12,7 @@ class IndexController extends Controller
           $modelBrands  = M('Rpj_brand');
           $category     = getCategoryData();
           $brand        = getBrandCollection();
-      
+
       //  select data
           $company      = $model->find(1);
           $product      = getProductData();
@@ -27,25 +27,12 @@ class IndexController extends Controller
           if (IS_POST)
           {
 
-            if ($_POST["category_id"] != "" and is_null($_POST["product_name"]))
-            {
-
-              $this->success('正在为你查询.....',U('home/prodlist/listwithcategory',array('category_id'=>$_POST["category_id"])));
-            }
-
-            if($_POST["category_id"] != "" and !is_null($_POST["product_name"]))
+            if($_POST["category_id"] != "0" or !is_null($_POST["product_name"]))
             {
 
               $this->success('正在为你查询.....',U('home/prodlist/listlikeproduct',array('category_id'=>$_POST["category_id"],'product_name'=>$_POST["product_name"])));
             }
-
-            if($_POST["category_id"] == "" and !is_null($_POST["product_name"]))
-            {
-
-                $this->success('正在为你查询.....',U('home/prodlist/listlikeproductsingle',array('product_name'=>$_POST["product_name"])));
-            }
-
-            if($_POST["category_id"] == "" and is_null($_POST["product_name"]))
+            else
             {
               $this->success('正在为你查询.....',U('home/prodlist/prodlist'));
             }

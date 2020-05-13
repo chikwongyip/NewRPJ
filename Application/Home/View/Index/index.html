@@ -143,9 +143,9 @@
 															  <foreach name="category" item="cat_list">
                                   <li class="right-menu"><a href="{:U('home/prodlist/listwithcategory',array('category_id'=>$cat_list[category_id]))}">{$cat_list.category_name}</a>
 																		  <ul class="cat-mega-menu">
-                                        <li class="right-menu cat-mega-title">
-																					<foreach name="brand" item="brand_list">
-																						<if condition="$cat_list['category_id'] eq $brand_list['category_id']">
+																				<foreach name="brand" item="brand_list">
+																					<if condition="$cat_list['category_id'] eq $brand_list['category_id']">
+	                                        	<li class="right-menu cat-mega-title">
 		                                           <a href="{:U('home/prodlist/listwithboth',array('brand_id'=>$brand_list[brand_id],'category_id'=>$cat_list['category_id']))}">{$brand_list.brand_name}</a>
 		                                            <ul>
 																									<foreach name="product" item="pro_list">
@@ -154,9 +154,9 @@
 																									  </if>
 																									</foreach>
 		                                            </ul>
-																						</if>
-																					</foreach>
-                                        </li>
+	                                        	</li>
+																					</if>
+																				</foreach>
 																			</ul>
                                   </li>
 																</foreach>
@@ -169,10 +169,10 @@
 		                    <!--Header Top Search Start-->
 		                    <div class="header-top-search">
                                 <div class="search-categories">
-                                    <form action="{:U('home/index/index')}" method="post">
+                                    <form action="{:U('home/prodlist/prodlist')}" method="post">
                                         <div class="search-form-input">
                                             <select id="select" name="category_id" class="nice-select">
-                                                <option value="">全部类别</option>
+                                                <option value="0">全部类别</option>
 																								<foreach name="category" item="list">
 																										<option value="{$list.category_id}" >{$list.category_name}</option>
 																								</foreach>
