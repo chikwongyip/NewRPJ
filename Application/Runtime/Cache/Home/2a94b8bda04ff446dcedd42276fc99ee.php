@@ -100,7 +100,7 @@
 		                                        </ul>
 		                                    <!--Mega Menu End-->
 		                                </li>
-																		<li><a href="index.html">产品附件下载</a></li>
+																		<li><a href="<?php echo U('home/attach/attach');?>">产品附件下载</a></li>
 																	  <li><a href="<?php echo U('home/about/about');?>">关于我们</a></li>
 		                            </ul>
 		                        </nav>
