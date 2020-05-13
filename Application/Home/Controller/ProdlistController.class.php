@@ -5,8 +5,6 @@ class ProdlistController extends Controller
 {
     public function prodlist()
     {
-      // model inizitial
-      // model inizitial
           $model = M('Rpj_company');
           $modelBrands  = M('Rpj_brand');
           $modelProduct = M('Rpj_product');
@@ -40,16 +38,12 @@ class ProdlistController extends Controller
                 ->join('rpj_brand on rpj_brand.brand_id = rpj_product.brand_id')
                 ->where($map)
                 ->select();
-              //var_dump($product);exit;
             }
           }
           else
           {
             $product = getProductData();
           }
-      //  select data
-
-
 
       // assign data html
           $this->assign('company',$company);
