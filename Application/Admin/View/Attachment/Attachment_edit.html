@@ -157,7 +157,7 @@
 						<td class="ui_text_lt">
 							<select name="brand_id">
 								<foreach name="brand" item="a">
-									<option name = "{$a.brand_id}" value ="{$a.brand_id}">{$a.brand_name}</option>
+									<option name = "{$a.brand_id}" value ="{$a.brand_id}"  <if condition="$a['brand_id'] eq $item['brand_id']"> selected = "selected" </if>>{$a.brand_name}</option>
 								</foreach>
 							</select>
 						</td>
@@ -167,8 +167,7 @@
 						<td class="ui_text_lt">
 							<select name="category_id">
 								<foreach name="category" item="a">
-
-									<option name = "{$a.category_id}" value ="{$a.category_id}">{$a.category_name}</option>
+									<option name = "{$a.category_id}" value ="{$a.category_id}" <if condition="$a['category_id'] eq $item['category_id']"> selected = "selected" </if> >{$a.category_name}</option>
 								</foreach>
 							</select>
 						</td>

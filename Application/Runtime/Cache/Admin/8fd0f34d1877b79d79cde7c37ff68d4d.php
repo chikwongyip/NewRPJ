@@ -153,6 +153,22 @@
 
 				<input type="hidden" name="id" value="<?php echo ($item["id"]); ?>" id="id"/>
 				<tr>
+						<td class="ui_text_lt">选择品牌</td>
+						<td class="ui_text_lt">
+							<select name="brand_id">
+								<?php if(is_array($brand)): foreach($brand as $key=>$a): ?><option name = "<?php echo ($a["brand_id"]); ?>" value ="<?php echo ($a["brand_id"]); ?>"  <?php if($a['brand_id'] == $item['brand_id']): ?>selected = "selected"<?php endif; ?>><?php echo ($a["brand_name"]); ?></option><?php endforeach; endif; ?>
+							</select>
+						</td>
+				</tr>
+				<tr>
+						<td class="ui_text_lt">产品类别</td>
+						<td class="ui_text_lt">
+							<select name="category_id">
+								<?php if(is_array($category)): foreach($category as $key=>$a): ?><option name = "<?php echo ($a["category_id"]); ?>" value ="<?php echo ($a["category_id"]); ?>" <?php if($a['category_id'] == $item['category_id']): ?>selected = "selected"<?php endif; ?> ><?php echo ($a["category_name"]); ?></option><?php endforeach; endif; ?>
+							</select>
+						</td>
+				</tr>
+				<tr>
 					<td class="ui_text_rt">附件名称</td>
 					<td class="ui_text_lt">
 						<input type="text" name="name" value="<?php echo ($item["name"]); ?>" class="ui_input_txt02"/>

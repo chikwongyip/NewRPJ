@@ -3,11 +3,11 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>广州瑞谱佳科技有限有限公司-后台系统</title>
-	<link href="/NewRPJ/Public/style/authority/main_css.css" rel="stylesheet" type="text/css" />
-	<link href="/NewRPJ/Public/style/authority/zTreeStyle.css" rel="stylesheet" type="text/css">
-	<script type="text/javascript" src="/NewRPJ/Public/scripts/jquery/jquery-1.7.1.js"></script>
-	<script type="text/javascript" src="/NewRPJ/Public/scripts/zTree/jquery.ztree.core-3.2.js"></script>
-	<script type="text/javascript" src="/NewRPJ/Public/scripts/authority/commonAll.js"></script>
+	<link href="/chikwong/NewRPJ/Public/style/authority/main_css.css" rel="stylesheet" type="text/css" />
+	<link href="/chikwong/NewRPJ/Public/style/authority/zTreeStyle.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/jquery/jquery-1.7.1.js"></script>
+	<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/zTree/jquery.ztree.core-3.2.js"></script>
+	<script type="text/javascript" src="/chikwong/NewRPJ/Public/scripts/authority/commonAll.js"></script>
 	<script type="text/javascript">
 		/**退出系统**/
 		function logout(){
@@ -246,28 +246,28 @@
 <body onload="getDate01()">
     <div id="top">
 		<div id="top_logo">
-			<img alt="logo" src="/NewRPJ/Public/images/common/logo.jpg" width="274" height="49" style="vertical-align:middle;">
+			<img alt="logo" src="/chikwong/NewRPJ/Public/images/common/logo.jpg" width="274" height="49" style="vertical-align:middle;">
 		</div>
 		<div id="top_links">
 			<div id="top_op">
 				<ul>
 					<li>
-						<img alt="当前用户" src="/NewRPJ/Public/images/common/user.jpg">：
+						<img alt="当前用户" src="/chikwong/NewRPJ/Public/images/common/user.jpg">：
 						<span>admin</span>
 					</li>
 					<li>
-						<img alt="事务月份" src="/NewRPJ/Public/images/common/month.jpg">：
+						<img alt="事务月份" src="/chikwong/NewRPJ/Public/images/common/month.jpg">：
 						<span id="yue_fen"></span>
 					</li>
 					<li>
-						<img alt="今天是" src="/NewRPJ/Public/images/common/date.jpg">：
+						<img alt="今天是" src="/chikwong/NewRPJ/Public/images/common/date.jpg">：
 						<span id="day_day"></span>
 					</li>
 				</ul>
 			</div>
 			<div id="top_close">
 				<a href="javascript:void(0);" onclick="logout();" target="_parent">
-					<img alt="退出系统" title="退出系统" src="/NewRPJ/Public/images/common/close.jpg" style="position: relative; top: 10px; left: 25px;">
+					<img alt="退出系统" title="退出系统" src="/chikwong/NewRPJ/Public/images/common/close.jpg" style="position: relative; top: 10px; left: 25px;">
 				</a>
 			</div>
 		</div>
@@ -277,26 +277,26 @@
 		<div id="left_menu">
 		 	<ul id="TabPage2" style="height:200px; margin-top:50px;">
 				<!-- <li id="left_tab1" class="selected" onClick="javascript:switchTab('TabPage2','left_tab1');" title="业务模块">
-					<img alt="业务模块" title="业务模块" src="/NewRPJ/Public/images/common/1_hover.jpg" width="33" height="31">
+					<img alt="业务模块" title="业务模块" src="/chikwong/NewRPJ/Public/images/common/1_hover.jpg" width="33" height="31">
 				</li> -->
 				<li id="left_tab2" onClick="javascript:switchTab('TabPage2','left_tab2');" title="系统管理">
-					<img alt="系统管理" title="系统管理" src="/NewRPJ/Public/images/common/2.jpg" width="33" height="31">
+					<img alt="系统管理" title="系统管理" src="/chikwong/NewRPJ/Public/images/common/2.jpg" width="33" height="31">
 				</li>
 				<!-- <li id="left_tab3" onClick="javascript:switchTab('TabPage2','left_tab3');" title="其他">
-					<img alt="其他" title="其他" src="/NewRPJ/Public/images/common/3.jpg" width="33" height="31">
+					<img alt="其他" title="其他" src="/chikwong/NewRPJ/Public/images/common/3.jpg" width="33" height="31">
 				</li> -->
 			</ul>
 
 
 			<div id="nav_show" style="position:absolute; bottom:0px; padding:10px;">
 				<a href="javascript:;" id="show_hide_btn">
-					<img alt="显示/隐藏" title="显示/隐藏" src="/NewRPJ/Public/images/common/nav_hide.png" width="35" height="35">
+					<img alt="显示/隐藏" title="显示/隐藏" src="/chikwong/NewRPJ/Public/images/common/nav_hide.png" width="35" height="35">
 				</a>
 			</div>
 		 </div>
 		 <div id="left_menu_cnt">
 		 	<div id="nav_module">
-		 		<img src="/NewRPJ/Public/images/common/module_1.png" width="210" height="58"/>
+		 		<img src="/chikwong/NewRPJ/Public/images/common/module_1.png" width="210" height="58"/>
 		 	</div>
 		 	<div id="nav_resource">
 		 		<ul id="dleft_tab1" class="ztree"></ul>
@@ -307,12 +307,12 @@
 		$(function(){
 			$('#TabPage2 li').click(function(){
 				var index = $(this).index();
-				$(this).find('img').attr('src', '/NewRPJ/Public/images/common/'+ (index+1) +'_hover.jpg');
+				$(this).find('img').attr('src', '/chikwong/NewRPJ/Public/images/common/'+ (index+1) +'_hover.jpg');
 				$(this).css({background:'#fff'});
-				$('#nav_module').find('img').attr('src', '/NewRPJ/Public/images/common/module_'+ (index+1) +'.png');
+				$('#nav_module').find('img').attr('src', '/chikwong/NewRPJ/Public/images/common/module_'+ (index+1) +'.png');
 				$('#TabPage2 li').each(function(i, ele){
 					if( i!=index ){
-						$(ele).find('img').attr('src', '/NewRPJ/Public/images/common/'+ (i+1) +'.jpg');
+						$(ele).find('img').attr('src', '/chikwong/NewRPJ/Public/images/common/'+ (i+1) +'.jpg');
 						$(ele).css({background:'#044599'});
 					}
 				});
@@ -341,13 +341,13 @@
 					side.css({width:'60px'});
 		        	$('#top_nav').css({width:'100%', left:'60px', 'padding-left':'28px'});
 		        	$('#main').css({left:'60px'});
-		        	$("#show_hide_btn").find('img').attr('src', '/NewRPJ/Public/images/common/nav_show.png');
+		        	$("#show_hide_btn").find('img').attr('src', '/chikwong/NewRPJ/Public/images/common/nav_show.png');
 		        } else {
 					left_menu_cnt.show(500, 'linear');
 					side.css({width:'280px'});
 					$('#top_nav').css({width:'77%', left:'304px', 'padding-left':'0px'});
 		        	$('#main').css({left:'280px'});
-		        	$("#show_hide_btn").find('img').attr('src', '/NewRPJ/Public/images/common/nav_hide.png');
+		        	$("#show_hide_btn").find('img').attr('src', '/chikwong/NewRPJ/Public/images/common/nav_hide.png');
 		        }
 			}
 		}

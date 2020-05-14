@@ -93,6 +93,8 @@ class AttachmentController extends Controller
         if ($_POST["name"] != null)
         {
             $model->name = $_POST["name"];
+            $model->brand_id = $_POST["brand_id"];
+            $model->category_id=$_POST["category_id"];
             $model->save();
             echo "更新成功";
         }else
