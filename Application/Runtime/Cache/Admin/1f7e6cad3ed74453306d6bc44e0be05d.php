@@ -158,12 +158,13 @@
 						<input type="text" name="name" value="<?php echo ($prodAtt["name"]); ?>" class="ui_input_txt02"/>
 					</td>
 				</tr>
-				<!-- <tr>
-					<td class="ui_text_rt">附件</td>
+				<tr>
+					<td class="ui_text_rt">附件描述</td>
 					<td class="ui_text_lt">
-						<input type="file" name="url" size="35" value="<?php echo ($a["url"]); ?>" />
+						<textarea rows="5" cols="50" name="att_desc" value=""> <?php echo ($prodAtt["att_desc"]); ?> </textarea>
 					</td>
-				</tr> -->
+				</tr>
+
 				<tr>
 					<td>&nbsp;</td>
 					<td class="ui_text_lt">

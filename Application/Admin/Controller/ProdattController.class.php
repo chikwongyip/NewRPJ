@@ -22,6 +22,7 @@ class ProdattController extends Controller
       //处理text
       $modelProdatt->product_id = $_POST["product_id"];
       $modelProdatt->name = $_POST["name"];
+      $modelProduct->att_desc = $_POST["att_desc"];
       //处理文件
       $upload = new \Think\Upload();
       $upload->maxSize = 3145728;

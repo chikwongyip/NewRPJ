@@ -178,6 +178,7 @@
 							</th>
 							<th>产品名称</th>
 							<th>产品附件名称</th>
+							<th>产品附件描述</th>
 							<th>产品附件</th>
 							<th>操作</th>
 						</tr>
@@ -185,6 +186,7 @@
 								<td><input type="checkbox" name="ID" value="<?php echo ($a["att_id"]); ?>" class="acb" /></td>
 								<td><?php echo ($a["product_name"]); ?></td>
 								<td><?php echo ($a["name"]); ?></td>
+								<td><?php echo ($a["att_desc"]); ?></td>
 								<td><?php echo ($a["url"]); ?></td>
 								<td>
 									<a href="<?php echo U('admin/prodatt/prodatt_edit',array('att_id'=>$a[att_id]));?>" class="edit">编辑</a>

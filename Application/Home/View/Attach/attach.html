@@ -215,39 +215,49 @@
 		<div class="blog-area mt-80">
 		    <div class="container">
 		        <div class="row">
-                    <!--Blog Post Start-->
-		            <div class="col-lg-9">
-		                <div class="blog_area">
-                            <article class="blog_single">
-                                <header class="entry-header">
-                                    <span class="post-category">
-                                        <a href="#"> Fashion</a>,<a href="#">WordPress</a>
-                                    </span>
-                                    <h2 class="entry-title">
-                                        <a href="single-blog.html">Blog image post</a>
-                                    </h2>
-                                    <span class="post-author">
-                                    <span class="post-by"> Posts by : </span> admin </span>
-                                    <span class="post-separator">|</span>
-                                    <span class="blog-post-date"><i class="fas fa-calendar-alt"></i>On March 10, 2018 </span>
-                                </header>
-                                <div class="post-thumbnail img-full">
-                                    <a href="single-blog.html">
-                                        <img src="img/blog/blog1.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="postinfo-wrapper">
-                                    <div class="post-info">
-                                        <div class="entry-summary">
-                                            <p>Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue
-                                                condimentum rhoncus. Praesent ornare tortor</p>
-                                            <a href="single-blog.html" class="default-btn">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-		            </div>
+					<!--Blog Post Start-->
+					<foreach name="attch" item="attch_list">
+						<div class="col-lg-9">
+							<div class="blog_area">
+								<article class="blog_single">
+									<header class="entry-header">
+										<!-- <span class="post-category">
+											<a href="#"> Fashion</a>,<a href="#">WordPress</a>
+										</span> -->
+										<h2 class="entry-title">
+											<a href="__PUBLIC__{$attch_list.url}"> {$attch_list.name}</a>
+										</h2>
+										<foreach name="product" item="pro_list">
+											<if condition="$attch_list['product_id'] eq $pro_list['product_id']">
+												<span class="post-author">
+												<span class="post-by"> 对应产品：
+												<span class="post-separator">|</span>
+												<span class="blog-post-date"><i class="fas fa-calendar-alt"></i>{$pro_list.product_name} </span>
+											</if>
+										</foreach>
+									</header>
+									<div class="post-thumbnail img-full">
+										<a href="single-blog.html">
+											<img src="img/blog/blog1.jpg" alt="">
+										</a>
+									</div>
+									<div class="postinfo-wrapper">
+										<div class="post-info">
+											<div class="entry-summary">
+												<p>{$attch_list.att_desc}</p>
+												<foreach name="product" item="pro_list">
+													<if condition="$attch_list['product_id'] eq $pro_list['product_id']">
+														<a href="{:U('home/product/product',array('product_id'=>$pro_list[product_id]))}" class="default-btn">Read More</a>
+													</if>
+												</foreach>
+												
+											</div>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+				    </foreach>
 		            <!--Blog Post End-->
 		            <!--Blog Sidebar Start-->
 		            <div class="col-lg-3">
@@ -255,7 +265,7 @@
                             <div class="row_products_side">
                                 <div class="product_left_sidbar">
                                     <div class="product-filter  mb-30">
-                                      <h5>Search </h5>
+                                      <h5>查找附件名称 </h5>
                                       <div class="search__sidbar">
                                          <div class="input_form">
                                             <input id="search_input" name="s" placeholder="Search..." class="input_text" type="text">
@@ -267,7 +277,7 @@
                                     </div>
   																	<!--brands  -->
                                     <div class="product-filter  mb-30">
-                                        <h5>Recent Posts</h5>
+                                        <h5>对应产品的附件</h5>
                                         <div class="blog_Archives__sidbar">
                                             <ul>
                                                 <li> <a href="#">Blog image post</a>&nbsp;(1)</li>

@@ -178,6 +178,7 @@
 							</th>
 							<th>产品名称</th>
 							<th>产品附件名称</th>
+							<th>产品附件描述</th>
 							<th>产品附件</th>
 							<th>操作</th>
 						</tr>
@@ -186,6 +187,7 @@
 								<td><input type="checkbox" name="ID" value="{$a.att_id}" class="acb" /></td>
 								<td>{$a.product_name}</td>
 								<td>{$a.name}</td>
+								<td>{$a.att_desc}</td>
 								<td>{$a.url}</td>
 								<td>
 									<a href="{:U('admin/prodatt/prodatt_edit',array('att_id'=>$a[att_id]))}" class="edit">编辑</a>

@@ -346,19 +346,19 @@
 
 		<!-- Brand Area Start -->
 		<div class="brand-area mt-80">
-		    <div class="container">
-                <div class="brand-block-content">
-                    <div class="row">
-		            <div class="col-12">
-		                <div class="brand-active owl-carousel">
-		                    <?php if(is_array($brand)): foreach($brand as $key=>$brand_list): ?><div class="single-brand">
-			                      <a href="#"><img src="/chikwong/NewRPJ/Public<?php echo ($brand_list["brand_image"]); ?>" alt=""></a>
-			                    </div><?php endforeach; endif; ?>
-		                </div>
-		            </div>
-		        </div>
-                </div>
-		    </div>
+	    <div class="container">
+        <div class="brand-block-content">
+          <div class="row">
+            <div class="col-12">
+              <div class="brand-active owl-carousel">
+                  <?php if(is_array($brand)): foreach($brand as $key=>$brand_list): ?><div class="single-brand">
+                      <a href="#"><img src="/chikwong/NewRPJ/Public<?php echo ($brand_list["brand_image"]); ?>" alt=""></a>
+                    </div><?php endforeach; endif; ?>
+              </div>
+            </div>
+      		</div>
+        </div>
+	    </div>
 		</div>
 		<!-- Brand Area End -->
 
