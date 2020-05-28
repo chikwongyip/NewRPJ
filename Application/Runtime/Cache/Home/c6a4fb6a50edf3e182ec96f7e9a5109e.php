@@ -222,7 +222,7 @@
 										<div class="post-info">
 											<div class="entry-summary">
 												<p><?php echo ($attch_list["att_desc"]); ?></p>
-												<?php if(is_array($product)): foreach($product as $key=>$pro_list): if($attch_list['product_id'] == $pro_list['product_id']): ?><a href="<?php echo U('home/product/product',array('product_id'=>$pro_list[product_id]));?>" class="default-btn">Read More</a><?php endif; endforeach; endif; ?>
+												<?php if(is_array($product)): foreach($product as $key=>$pro_list): if($attch_list['product_id'] == $pro_list['product_id']): ?><a href="<?php echo U('home/product/product',array('product_id'=>$pro_list[product_id]));?>" class="default-btn">了解该产品</a><?php endif; endforeach; endif; ?>
 												
 											</div>
 										</div>
@@ -236,6 +236,7 @@
 		                <div class="blog_sidebar">
                             <div class="row_products_side">
                                 <div class="product_left_sidbar">
+									<form action="<?php echo U('home/attach/attachlike');?>" method="post">
                                     <div class="product-filter  mb-30">
                                       <h5>查找附件名称 </h5>
                                       <div class="search__sidbar">
@@ -246,18 +247,18 @@
                                             </button>
                                          </div>
                                       </div>
-                                    </div>
+									</div>
+									</form>
   																	<!--brands  -->
                                     <div class="product-filter  mb-30">
-                                        <h5>对应产品的附件</h5>
+                                        <h5>附件分类</h5>
                                         <div class="blog_Archives__sidbar">
                                             <ul>
-                                                <li> <a href="#">Blog image post</a>&nbsp;(1)</li>
-                                                <li> <a href="#">Post with Gallery</a>&nbsp;(3)</li>
-                                                <li><a href="#">Post with Audio</a>&nbsp;(4)</li>
-                                                <li><a href="#">Post with Video</a>&nbsp;(1)</li>
-                                                <li><a href="#">Post with Text</a>&nbsp;(1)</li>
-
+												<?php if(is_array($product)): foreach($product as $key=>$pro_list): ?><li> 
+														<a href="<?php echo U('home/attach/attachWithID',array('product_id'=>$pro_list[product_id]));?>"><?php echo ($pro_list["product_name"]); ?></a>
+														<?php if(is_array($attch_q)): foreach($attch_q as $key=>$list_q): if($pro_list['product_id'] == $list_q['product_id']): ?>&nbsp;(<?php echo ($list_q["count"]); ?>)<?php endif; endforeach; endif; ?>
+														
+													</li><?php endforeach; endif; ?>
                                             </ul>
                                       </div>
                                     </div>
@@ -271,19 +272,12 @@
                                     </div> -->
 																		<!-- categories -->
                                     <div class="product-filter mb-35">
-                                        <h5>tags</h5>
+                                        <h5>附件标签</h5>
                                        <div class="product-tag-block-content blog-tag">
                                             <ul>
-                                                <li><a href="#">brand</a></li>
-                                                <li><a href="#">black</a></li>
-                                                <li><a href="#">white</a></li>
-                                                <li><a href="#">chire</a></li>
-                                                <li><a href="#">table</a></li>
-                                                <li><a href="#">Lorem</a></li>
-                                                <li><a href="#">ipsum</a></li>
-                                                <li><a href="#">dolor</a></li>
-                                                <li><a href="#">sit</a></li>
-                                                <li><a href="#">amet</a></li>
+												<?php if(is_array($product)): foreach($product as $key=>$pro_list): ?><li>
+														<a href="<?php echo U('home/attach/attachWithID',array('product_id'=>$pro_list[product_id]));?>"><?php echo ($pro_list["product_name"]); ?></a>
+													</li><?php endforeach; endif; ?>
                                             </ul>
                                         </div>
                                     </div>
