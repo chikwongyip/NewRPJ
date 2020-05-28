@@ -237,7 +237,7 @@
                             <div class="row_products_side">
                                 <div class="product_left_sidbar">
                                     <div class="product-filter  mb-30">
-                                      <h5>Search </h5>
+                                      <h5>查找附件名称 </h5>
                                       <div class="search__sidbar">
                                          <div class="input_form">
                                             <input id="search_input" name="s" placeholder="Search..." class="input_text" type="text">
@@ -249,7 +249,7 @@
                                     </div>
   																	<!--brands  -->
                                     <div class="product-filter  mb-30">
-                                        <h5>Recent Posts</h5>
+                                        <h5>对应产品的附件</h5>
                                         <div class="blog_Archives__sidbar">
                                             <ul>
                                                 <li> <a href="#">Blog image post</a>&nbsp;(1)</li>
