@@ -9,6 +9,7 @@ class AboutController extends Controller
         $model = M('Rpj_company');
         $modelProduct = M('Rpj_product');
         $modelBrands  = M('Rpj_brand');
+        $modelCategory = M('Rpj_category');
         $category = getCategoryData();
         $brand = getBrandData();
     //  select data
