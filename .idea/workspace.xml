@@ -2,14 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13f02ca5-72ea-4eda-9ef7-6f6a0dbca702" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/20_12_29.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/a8855b9a2a22ba9c44e4b4ad9b405baa.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Admin/21_01_05.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/21_01_05.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/093eed4d150c196ce0f73d38937648b2.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/093eed4d150c196ce0f73d38937648b2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/37ca4baf978710472e3f655e2f7a41b4.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/37ca4baf978710472e3f655e2f7a41b4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/4bf0851301a9f27963ecf0ca89bd7403.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/4bf0851301a9f27963ecf0ca89bd7403.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/ee003ac5a02d3cd1eaf30a5d0f4ce7ce.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/ee003ac5a02d3cd1eaf30a5d0f4ce7ce.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/0fcfdbb52b8f2e36ce82d61be2db9265.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/0fcfdbb52b8f2e36ce82d61be2db9265.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/141d3e8e8840e90d168b4c918cada876.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/141d3e8e8840e90d168b4c918cada876.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/395a2e82d826ceeef2eba5e36dd95355.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/395a2e82d826ceeef2eba5e36dd95355.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/46fc65ba2b7dc6249bfde48ce8661431.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/46fc65ba2b7dc6249bfde48ce8661431.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/5dc7cb56e7e8cd7601e6f40f87c141e0.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/5dc7cb56e7e8cd7601e6f40f87c141e0.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/7e135057d9f144408a73777188c9b84b.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/7e135057d9f144408a73777188c9b84b.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/858f2075dc052eac97913eec10bb4c8b.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/858f2075dc052eac97913eec10bb4c8b.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/97d2956f5b216792290daa5b7c88cd22.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/97d2956f5b216792290daa5b7c88cd22.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/9d3d0f15c83fdfc5ada3dd2f0d3ae056.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/9d3d0f15c83fdfc5ada3dd2f0d3ae056.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/cac97b875347bebeb1cdcddb020abc6e.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/cac97b875347bebeb1cdcddb020abc6e.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +70,8 @@
       <workItem from="1608217701438" duration="11000" />
       <workItem from="1608298432283" duration="2164000" />
       <workItem from="1608642808060" duration="610000" />
-      <workItem from="1609247025162" duration="1325000" />
+      <workItem from="1609247025162" duration="1403000" />
+      <workItem from="1609854397774" duration="1091000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1607852140506</created>
@@ -80,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607852160173</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="prepare for rpj new project">
+      <created>1609251808674</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609251808674</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,6 +103,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="prepare for rpj new project" />
+    <option name="LAST_COMMIT_MESSAGE" value="prepare for rpj new project" />
   </component>
 </project>
