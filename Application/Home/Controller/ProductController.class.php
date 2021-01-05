@@ -6,6 +6,7 @@ class ProductController extends Controller
     public function product($product_id)
     {
       // model inizitial
+      
           $model = M('Rpj_company');
           $modelProduct = M('Rpj_product');
           $modelBrands  = M('Rpj_brand');
