@@ -1,0 +1,97 @@
+[ 2021-01-07T20:58:59+08:00 ] ::1 /NewRPJ/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0461s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0460s ]
+SQL: select distinct rpj_product.category_id,
+                                                     rpj_procategory.category_name
+                                     from rpj_product
+                                     inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                     group by rpj_product.category_id [ RunTime:0.0462s ]
+SQL: select distinct rpj_product.brand_id,
+                                             rpj_product.category_id,
+                                             brand_name
+                            from rpj_product
+                            inner join rpj_brand
+                            on rpj_brand.brand_id = rpj_product.brand_id [ RunTime:0.0457s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0459s ]
+SQL: select * from rpj_product
+                                  inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                  inner join rpj_brand       on rpj_product.brand_id    = rpj_brand.brand_id [ RunTime:0.0461s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0455s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+NOTIC: [2] Use of undefined constant category_id - assumed 'category_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 137 行.
+NOTIC: [2] Use of undefined constant category_id - assumed 'category_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 137 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031187s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031212s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000629s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000641s ]
+
+[ 2021-01-07T20:59:13+08:00 ] ::1 /NewRPJ/index.php/home/about/about.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000277s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0463s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0464s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0460s ]
+SQL: select distinct rpj_product.category_id,
+                                                     rpj_procategory.category_name
+                                     from rpj_product
+                                     inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                     group by rpj_product.category_id [ RunTime:0.0459s ]
+SQL: select rpj_product.brand_id,
+                                      rpj_product.category_id,
+                                      rpj_brand.brand_name,
+                                      rpj_procategory.category_name
+                                from rpj_product
+                                inner join rpj_brand on rpj_product.brand_id = rpj_brand.brand_id
+                                inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                group by rpj_product.brand_id,rpj_product.category_id [ RunTime:0.0486s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0460s ]
+SQL: SELECT * FROM `rpj_product`  [ RunTime:0.0464s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0458s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021631s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021655s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000362s ]
+
+[ 2021-01-07T20:59:31+08:00 ] ::1 /NewRPJ/index.php/home/about/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000269s ]
+ERR: 非法操作:shop
+
+[ 2021-01-07T20:59:49+08:00 ] ::1 /NewRPJ/index.php/home/about/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+ERR: 非法操作:shop
+
