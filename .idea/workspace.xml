@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13f02ca5-72ea-4eda-9ef7-6f6a0dbca702" name="Default Changelist" comment="" />
+    <list default="true" id="13f02ca5-72ea-4eda-9ef7-6f6a0dbca702" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/21_03_31.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Home/View/Index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/View/Index/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,6 +63,9 @@
       <workItem from="1609854397774" duration="1191000" />
       <workItem from="1611151637082" duration="1399000" />
       <workItem from="1614174961767" duration="97000" />
+      <workItem from="1614778500208" duration="93000" />
+      <workItem from="1614778630637" duration="1811000" />
+      <workItem from="1617194364720" duration="1097000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1607852140506</created>
