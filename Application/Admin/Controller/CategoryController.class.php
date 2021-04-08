@@ -26,6 +26,11 @@ class CategoryController extends Controller
           $this->error($upload->getError());
       }else
       {
+//        $model->category_image = '/Upload/'.$info['savepath'].$info['savename'];
+        $imagePath = './Public/Upload/'.$info['savepath'].$info['savename'];
+        $image = new \Think\Image();
+        $image->open($imagePath);
+        $image->thumb(882,280)->save('./Public/Upload/'.$info['savepath'].$info['savename']);
         $model->category_image = '/Upload/'.$info['savepath'].$info['savename'];
 
       }
@@ -64,6 +69,11 @@ class CategoryController extends Controller
           // $this->error($upload->getError());
       }else
       {
+//        $model->category_image = '/Upload/'.$info['savepath'].$info['savename'];
+        $imagePath = './Public/Upload/'.$info['savepath'].$info['savename'];
+        $image = new \Think\Image();
+        $image->open($imagePath);
+        $image->thumb(882,280)->save('./Public/Upload/'.$info['savepath'].$info['savename']);
         $model->category_image = '/Upload/'.$info['savepath'].$info['savename'];
 
       }

@@ -14,7 +14,7 @@ class ProductController extends Controller {
       $modelProduct = M('Rpj_product');
       if (IS_POST) {
         //处理text
-
+        $image = new \Think\Image();
         $idMax = $modelProduct->max('product_id');
         $product_id = $idMax+1;
         $modelProduct->product_id = $product_id;
@@ -39,6 +39,10 @@ class ProductController extends Controller {
         if(!$info){
             $this->error($upload->getError());
         }else{
+//            $modelProduct->product_logo = '/Upload/'.$info['savepath'].$info['savename'];
+            $imagePath = './Public/Upload/'.$info['savepath'].$info['savename'];
+            $image->open($imagePath);
+            $image->thumb(125,125)->save('./Public/Upload/'.$info['savepath'].$info['savename']);
             $modelProduct->product_logo = '/Upload/'.$info['savepath'].$info['savename'];
         }
 
@@ -48,7 +52,7 @@ class ProductController extends Controller {
         }else {
             $modelProduct->product_pic = '/Upload/'.$info['savepath'].$info['savename'];
             $img_path = './Public/Upload/'.$info['savepath'].$info['savename'];
-            $image = new \Think\Image();
+//            $image = new \Think\Image();
             $image->open($img_path);
             $image->thumb(300,300)->save('./Public/Upload/thumb300/thumb300_'.$info['savename']);
             $model->product_pic300 = '/Upload/thumb/thumb300_'.$info['savename'];

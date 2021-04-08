@@ -152,3 +152,6 @@
                             on rpj_brand.brand_id = rpj_product.brand_id");
     return $brands;
   }
+
+
+

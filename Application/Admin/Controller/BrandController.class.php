@@ -21,6 +21,11 @@ class BrandController extends Controller
         }else
         {
             $model->brand_name  = $_POST["brand_name"];
+//            $model->brand_image = '/Upload/'.$info['savepath'].$info['savename'];
+            $imagePath = './Public/Upload/'.$info['savepath'].$info['savename'];
+            $image = new \Think\Image();
+            $image->open($imagePath);
+            $image->thumb(170,82)->save('./Public/Upload/'.$info['savepath'].$info['savename']);
             $model->brand_image = '/Upload/'.$info['savepath'].$info['savename'];
             $model->add();
             $this->display();
@@ -52,7 +57,7 @@ class BrandController extends Controller
   {
     $model = M('Rpj_brand');
     $model->delete($brand_id);
-    $attachement = $model->select();
+    $brand = $model->select();
     $this->assign('brand_list',$brand);
     $this->success('修改成功','',0);
   }
@@ -80,6 +85,11 @@ class BrandController extends Controller
           }else
           {
 
+//              $model->brand_image = '/Upload/'.$info['savepath'].$info['savename'];
+              $imagePath = './Public/Upload/'.$info['savepath'].$info['savename'];
+              $image = new \Think\Image();
+              $image->open($imagePath);
+              $image->thumb(170,82)->save('./Public/Upload/'.$info['savepath'].$info['savename']);
               $model->brand_image = '/Upload/'.$info['savepath'].$info['savename'];
 
           }

@@ -208,14 +208,14 @@
 		                        <div class="item-listcategories">
 		                            <!--Single List Categories Start-->
 																<?php if(is_array($brands)): foreach($brands as $key=>$list): ?><div class="list-categories">
-			                                <div class="desc-listcategoreis">
-			                                    <div class="name-categoreis">
-			                                       <a href="shop.html"><?php echo ($list["brand_name"]); ?></a>
-			                                    </div>
-			                                    <div class="view-more">
-			                                        <a href="#">点击浏览</a>
-			                                    </div>
-			                                </div>
+<!--			                                <div class="desc-listcategoreis">-->
+<!--			                                    <div class="name-categoreis">-->
+<!--			                                       <a href="shop.html"><?php echo ($list["brand_name"]); ?></a>-->
+<!--			                                    </div>-->
+<!--			                                    <div class="view-more">-->
+<!--			                                        <a href="#">点击浏览</a>-->
+<!--			                                    </div>-->
+<!--			                                </div>-->
 			                                <div class="thumb-category">
 			                                    <a href="shop.html"><img src="/NewRPJ/Public<?php echo ($list["brand_image"]); ?>" alt=""></a>
 			                                </div>

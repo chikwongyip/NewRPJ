@@ -57,7 +57,13 @@ class CompanyController extends Controller{
               $this->error($upload->getError());
           }else
           {
+              //$model->logo = '/Upload/'.$info['savepath'].$info['savename'];
+              $imagePath = './Public/Upload/'.$info['savepath'].$info['savename'];
+              $image = new \Think\Image();
+              $image->open($imagePath);
+              $image->thumb(213,33)->save('./Public/Upload/'.$info['savepath'].$info['savename']);
               $model->logo = '/Upload/'.$info['savepath'].$info['savename'];
+
           }
         }
 
