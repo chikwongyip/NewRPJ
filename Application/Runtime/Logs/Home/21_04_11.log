@@ -1,0 +1,1197 @@
+[ 2021-04-11T21:02:51+08:00 ] ::1 /NewRPJ/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0439s ]
+SQL: select distinct rpj_product.category_id,
+                                                     rpj_procategory.category_name
+                                     from rpj_product
+                                     inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                     group by rpj_product.category_id [ RunTime:0.0430s ]
+SQL: select distinct rpj_product.brand_id,
+                                             rpj_product.category_id,
+                                             brand_name
+                            from rpj_product
+                            inner join rpj_brand
+                            on rpj_brand.brand_id = rpj_product.brand_id [ RunTime:0.0432s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0431s ]
+SQL: select * from rpj_product
+                                  inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                  inner join rpj_brand       on rpj_product.brand_id    = rpj_brand.brand_id [ RunTime:0.0438s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0426s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+NOTIC: [2] Use of undefined constant brand_id - assumed 'brand_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 95 行.
+NOTIC: [2] Use of undefined constant product_id - assumed 'product_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 97 行.
+NOTIC: [2] Use of undefined constant brand_id - assumed 'brand_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 95 行.
+NOTIC: [2] Use of undefined constant brand_id - assumed 'brand_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 95 行.
+NOTIC: [2] Use of undefined constant category_id - assumed 'category_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 137 行.
+NOTIC: [2] Use of undefined constant brand_id - assumed 'brand_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [2] Use of undefined constant product_id - assumed 'product_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 142 行.
+NOTIC: [2] Use of undefined constant product_id - assumed 'product_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 194 行.
+NOTIC: [8] Undefined index: brand_image /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 355 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027894s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000639s ]
+
+[ 2021-04-11T21:03:08+08:00 ] ::1 /NewRPJ/index.php/home/prodlist/prodlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0448s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0426s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0427s ]
+SQL: select distinct rpj_product.category_id,
+                                                     rpj_procategory.category_name
+                                     from rpj_product
+                                     inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                     group by rpj_product.category_id [ RunTime:0.0424s ]
+SQL: select rpj_product.brand_id,
+                                      rpj_product.category_id,
+                                      rpj_brand.brand_name,
+                                      rpj_procategory.category_name
+                                from rpj_product
+                                inner join rpj_brand on rpj_product.brand_id = rpj_brand.brand_id
+                                inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                group by rpj_product.brand_id,rpj_product.category_id [ RunTime:0.0424s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0424s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0423s ]
+SQL: select * from rpj_product
+                                  inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                  inner join rpj_brand       on rpj_product.brand_id    = rpj_brand.brand_id [ RunTime:0.0427s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027115s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027135s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000404s ]
+
+[ 2021-04-11T21:03:22+08:00 ] ::1 /NewRPJ/index.php/home/prodlist/about.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002768s ]
+ERR: 非法操作:about
+
+[ 2021-04-11T21:05:17+08:00 ] ::1 /NewRPJ/index.php/home/about/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0418s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0413s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0412s ]
+SQL: select distinct rpj_product.category_id,
+                                                     rpj_procategory.category_name
+                                     from rpj_product
+                                     inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                     group by rpj_product.category_id [ RunTime:0.0407s ]
+SQL: select rpj_product.brand_id,
+                                      rpj_product.category_id,
+                                      rpj_brand.brand_name,
+                                      rpj_procategory.category_name
+                                from rpj_product
+                                inner join rpj_brand on rpj_product.brand_id = rpj_brand.brand_id
+                                inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                group by rpj_product.brand_id,rpj_product.category_id [ RunTime:0.0412s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0415s ]
+SQL: SELECT * FROM `rpj_product`  [ RunTime:0.0414s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0417s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022930s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000694s ]
+
+[ 2021-04-11T21:33:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/newslist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+ERR: 非法操作:newslist
+
+[ 2021-04-11T21:33:18+08:00 ] ::1 /NewRPJ/index.php/home/newslist/newslist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000260s ]
+ERR: 模板不存在:./Application/Home/View/Newslist/newslist.html
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/newslist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022191s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/css/ionicons.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000239s ]
+ERR: 非法操作:css
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/css/font-awesome.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000246s ]
+ERR: 非法操作:css
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/css/animate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000245s ]
+ERR: 非法操作:css
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/css/slick.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+ERR: 非法操作:css
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/css/nice-select.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+ERR: 非法操作:css
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/css/owl.carousel.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+ERR: 非法操作:css
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/css/meanmenu.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000237s ]
+ERR: 非法操作:css
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000245s ]
+ERR: 非法操作:css
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/css/venobox.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+ERR: 非法操作:css
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000239s ]
+ERR: 非法操作:style.css
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/css/responsive.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000253s ]
+ERR: 非法操作:css
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/vendor/modernizr-2.8.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000248s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/imagesloaded.pkgd.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000257s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/jquery.countdown.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/jquery.counterup.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/waypoints.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/vendor/jquery-1.12.4.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000247s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/isotope.pkgd.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000255s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/jquery.meanmenu.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/slick.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000234s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/owl.carousel.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000244s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/jquery.nice-select.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000241s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/jquery.scrollUp.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000253s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/logo/logo1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/wow.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000252s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/popper.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/imagesloaded.pkgd.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/venobox.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/main.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/plugins.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002451s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/cart/cart1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/cart/cart2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/isotope.pkgd.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000243s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/blog/blog3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/blog/blog1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/blog/blog2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/blog/blog4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/blog/blog5.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/banner/shop-sidebar.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/payment/payment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/single-product/large/large2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/single-product/large/large1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/waypoints.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000244s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/single-product/large/large3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/single-product/large/large4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/single-product/small/small1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/single-product/small/small3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/single-product/small/small2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/jquery.counterup.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000244s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/single-product/small/small4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/jquery.countdown.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000234s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/owl.carousel.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000233s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/slick.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000226s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/jquery.meanmenu.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000228s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/jquery.nice-select.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000232s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/jquery.scrollUp.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000228s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/wow.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000233s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/venobox.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000232s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/popper.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000234s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000230s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/plugins.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000233s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:34:00+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/main.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000232s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:15+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/newslist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+NOTIC: [8] Undefined variable: company /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/622c4aa6c937b63bd0b69829a00b084d.php 第 73 行.
+NOTIC: [8] Undefined variable: brands /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/622c4aa6c937b63bd0b69829a00b084d.php 第 95 行.
+NOTIC: [8] Undefined variable: company /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/622c4aa6c937b63bd0b69829a00b084d.php 第 110 行.
+NOTIC: [8] Undefined variable: category /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/622c4aa6c937b63bd0b69829a00b084d.php 第 135 行.
+NOTIC: [8] Undefined variable: category /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/622c4aa6c937b63bd0b69829a00b084d.php 第 159 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000373s ]
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/vendor/jquery-1.12.4.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000241s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/imagesloaded.pkgd.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000241s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/isotope.pkgd.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000247s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/waypoints.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/jquery.countdown.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000253s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/owl.carousel.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000241s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/slick.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/jquery.counterup.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/jquery.meanmenu.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000239s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/jquery.nice-select.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/jquery.scrollUp.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/wow.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000244s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/venobox.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/blog/blog1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/vendor/jquery-1.12.4.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/popper.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/plugins.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000242s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003716s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/blog/blog2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/blog/blog3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/main.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/imagesloaded.pkgd.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000248s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/blog/blog4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/logo/logo1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000160s ]
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/blog/blog5.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/banner/shop-sidebar.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000159s ]
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/payment/payment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/single-product/large/large1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/isotope.pkgd.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000240s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/single-product/large/large2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/single-product/large/large4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/single-product/large/large3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000163s ]
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/single-product/small/small1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/single-product/small/small2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/single-product/small/small3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/waypoints.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/single-product/small/small4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/jquery.counterup.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000231s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/jquery.countdown.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000241s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:34+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/owl.carousel.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000228s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:35+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/slick.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000241s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:35+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/jquery.meanmenu.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000228s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:35+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/jquery.nice-select.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000241s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:35+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/jquery.scrollUp.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000225s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:35+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/wow.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:35+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/venobox.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:35+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/popper.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000229s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:35+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000229s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:35+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/plugins.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000226s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:35:35+08:00 ] ::1 /NewRPJ/index.php/home/newslist/js/main.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+ERR: 非法操作:js
+
+[ 2021-04-11T21:41:10+08:00 ] ::1 /NewRPJ/index.php/home/newslist/newslist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+NOTIC: [8] Undefined variable: company /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/622c4aa6c937b63bd0b69829a00b084d.php 第 73 行.
+NOTIC: [8] Undefined variable: brands /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/622c4aa6c937b63bd0b69829a00b084d.php 第 95 行.
+NOTIC: [8] Undefined variable: company /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/622c4aa6c937b63bd0b69829a00b084d.php 第 110 行.
+NOTIC: [8] Undefined variable: category /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/622c4aa6c937b63bd0b69829a00b084d.php 第 135 行.
+NOTIC: [8] Undefined variable: category /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/622c4aa6c937b63bd0b69829a00b084d.php 第 159 行.
+NOTIC: [8] Undefined variable: company /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/622c4aa6c937b63bd0b69829a00b084d.php 第 619 行.
+NOTIC: [8] Undefined variable: company /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/622c4aa6c937b63bd0b69829a00b084d.php 第 632 行.
+NOTIC: [8] Undefined variable: company /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/622c4aa6c937b63bd0b69829a00b084d.php 第 645 行.
+NOTIC: [8] Undefined variable: company /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/622c4aa6c937b63bd0b69829a00b084d.php 第 666 行.
+NOTIC: [8] Undefined variable: company /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/622c4aa6c937b63bd0b69829a00b084d.php 第 670 行.
+NOTIC: [8] Undefined variable: company /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/622c4aa6c937b63bd0b69829a00b084d.php 第 671 行.
+NOTIC: [8] Undefined variable: company /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/622c4aa6c937b63bd0b69829a00b084d.php 第 672 行.
+NOTIC: [8] Undefined variable: brands /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/622c4aa6c937b63bd0b69829a00b084d.php 第 684 行.
+NOTIC: [8] Undefined variable: company /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/622c4aa6c937b63bd0b69829a00b084d.php 第 727 行.
+NOTIC: [8] Undefined variable: company /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/622c4aa6c937b63bd0b69829a00b084d.php 第 727 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000316s ]
+
+[ 2021-04-11T21:41:10+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/blog/blog1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+
+[ 2021-04-11T21:41:10+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/blog/blog3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+
+[ 2021-04-11T21:41:10+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/blog/blog2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+
+[ 2021-04-11T21:41:10+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/blog/blog5.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+
+[ 2021-04-11T21:41:10+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/blog/blog4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+
+[ 2021-04-11T21:41:10+08:00 ] ::1 /NewRPJ/index.php/home/newslist/img/banner/shop-sidebar.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+
+[ 2021-04-11T22:01:22+08:00 ] ::1 /NewRPJ/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0426s ]
+SQL: select distinct rpj_product.category_id,
+                                                     rpj_procategory.category_name
+                                     from rpj_product
+                                     inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                     group by rpj_product.category_id [ RunTime:0.0428s ]
+SQL: select distinct rpj_product.brand_id,
+                                             rpj_product.category_id,
+                                             brand_name
+                            from rpj_product
+                            inner join rpj_brand
+                            on rpj_brand.brand_id = rpj_product.brand_id [ RunTime:0.0424s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0425s ]
+SQL: select * from rpj_product
+                                  inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                  inner join rpj_brand       on rpj_product.brand_id    = rpj_brand.brand_id [ RunTime:0.0428s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0424s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+NOTIC: [2] Use of undefined constant brand_id - assumed 'brand_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 95 行.
+NOTIC: [2] Use of undefined constant product_id - assumed 'product_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 97 行.
+NOTIC: [2] Use of undefined constant brand_id - assumed 'brand_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 95 行.
+NOTIC: [2] Use of undefined constant brand_id - assumed 'brand_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 95 行.
+NOTIC: [2] Use of undefined constant category_id - assumed 'category_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 137 行.
+NOTIC: [2] Use of undefined constant brand_id - assumed 'brand_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [2] Use of undefined constant product_id - assumed 'product_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 142 行.
+NOTIC: [2] Use of undefined constant product_id - assumed 'product_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 194 行.
+NOTIC: [8] Undefined index: brand_image /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 355 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000762s ]
+
