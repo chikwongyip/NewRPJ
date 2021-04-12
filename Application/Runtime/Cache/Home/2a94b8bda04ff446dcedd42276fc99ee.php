@@ -69,7 +69,7 @@
 		                <div class="col-md-3">
 		                    <!--Logo Start-->
 		                    <div class="logo">
-		                        <a href="index.html">
+		                        <a href="<?php echo U('home/index/index');?>">
 															<img src="/NewRPJ/Public<?php echo ($company["logo"]); ?>" alt="">
 		                        </a>
 		                    </div>
@@ -217,7 +217,7 @@
 <!--			                                    </div>-->
 <!--			                                </div>-->
 			                                <div class="thumb-category">
-			                                    <a href="shop.html"><img src="/NewRPJ/Public<?php echo ($list["brand_image"]); ?>" alt=""></a>
+			                                    <a href="<?php echo U('home/prodlist/listwithbrand',array('brand_id'=>$list[brand_id]));?>"><img src="/NewRPJ/Public<?php echo ($list["brand_image"]); ?>" alt=""></a>
 			                                </div>
 			                            </div><?php endforeach; endif; ?>
 		                            <!--Single List Categories End-->
@@ -286,7 +286,7 @@
 	                                <button class="product-tab-filter-toggle">categories: <span>all</span><i class="ion-chevron-down"></i></button>
 	                                <!--Categorie Filter Toggle-->
 	                                <ul class="cate-filter">
-																			<?php if(is_array($brand)): foreach($brand as $key=>$brand_list): if($cate_list['category_id'] == $brand_list['category_id']): ?><li><a href="shop.html"><?php echo ($brand_list["brand_name"]); ?></a></li><?php endif; endforeach; endif; ?>
+																			<?php if(is_array($brand)): foreach($brand as $key=>$brand_list): if($cate_list['category_id'] == $brand_list['category_id']): ?><li><a href="<?php echo U('home/prodlist/listwithbrand',array('brand_id'=>$list[brand_id]));?>"><?php echo ($brand_list["brand_name"]); ?></a></li><?php endif; endforeach; endif; ?>
 	                                </ul>
 	                            </div>
 	                            <!--Product Categorie Start-->
@@ -295,7 +295,7 @@
 	                            <!--Product Banner Start-->
 	                            <div class="banner-block-content">
 	                                <div class="banner-inner">
-	                                    <a href="#"><img src="/NewRPJ/Public/img/banner/product-banner1.jpg" alt=""></a>
+	                                    <a href="<?php echo U('home/prodlist/listwithcategory',array('category_id'=>$cate_list[category_id]));?>"><img src="/NewRPJ/Public<?php echo ($cate_list["category_image"]); ?>" alt=""></a>
 	                                </div>
 	                            </div>
 	                        </div>
@@ -307,7 +307,7 @@
 						                                    <!--Single Product Start-->
 						                                    <div class="single-product">
 						                                        <div class="product-img">
-						                                            <a href="single-product.html">
+						                                            <a href="<?php echo U('home/product/product',array('product_id'=>$product_list[product_id]));?>">
 						                                                <img class="first-img" src="/NewRPJ/Public<?php echo ($product_list["product_pic"]); ?>" alt="">
 						                                                <img class="hover-img" src="/NewRPJ/Public<?php echo ($product_list["product_pic"]); ?>" alt="">
 						                                            </a>
@@ -321,7 +321,7 @@
 						                                            </div> -->
 						                                        </div>
 						                                        <div class="product-content">
-						                                            <h4><a href="single-product.html"><?php echo ($product_list["product_name"]); ?></a></h4>
+						                                            <h4><a href="<?php echo U('home/product/product',array('product_id'=>$product_list[product_id]));?>"><?php echo ($product_list["product_name"]); ?></a></h4>
 						                                            <div class="product-price">
 						                                                <span class="price"><?php echo ($product_list["product_model"]); ?></span>
 						                                            </div>
@@ -352,7 +352,7 @@
             <div class="col-12">
               <div class="brand-active owl-carousel">
                   <?php if(is_array($brand)): foreach($brand as $key=>$brand_list): ?><div class="single-brand">
-                      <a href="#"><img src="/NewRPJ/Public<?php echo ($brand_list["brand_image"]); ?>" alt=""></a>
+                      <a href="<?php echo U('home/prodlist/listwithbrand',array('brand_id'=>$brand_list[brand_id]));?>"><img src="/NewRPJ/Public<?php echo ($brand_list["brand_image"]); ?>" alt=""></a>
                     </div><?php endforeach; endif; ?>
               </div>
             </div>
@@ -420,7 +420,7 @@
 														<!--Single Footer Wiedget Start-->
 														<div class="single-footer-wiedget mb-30">
 																<div class="footer-logo">
-																		<a href="index.html"><img src="/NewRPJ/Public<?php echo ($company["logo"]); ?>" alt=""></a>
+																		<a href="<?php echo U('home/index/index');?>"><img src="/NewRPJ/Public<?php echo ($company["logo"]); ?>" alt=""></a>
 																</div>
 																<div class="desc-footer">广州瑞谱佳科技有限公司拥有稳妥，快捷，优质的售后服务，欢迎垂询！</div>
 																<div class="address-footer">
@@ -438,7 +438,7 @@
 																		<h3>品牌列表</h3>
 																</div>
 																<ul class="link-widget">
-																		<?php if(is_array($brands)): foreach($brands as $key=>$a): ?><li><a href="#"></a><?php echo ($a["brand_name"]); ?></li><?php endforeach; endif; ?>
+																		<?php if(is_array($brands)): foreach($brands as $key=>$a): ?><li><a href="<?php echo U('home/prodlist/listwithbrand',array('brand_id'=>$a[brand_id]));?>"></a><?php echo ($a["brand_name"]); ?></li><?php endforeach; endif; ?>
 																</ul>
 														</div>
 														<!--Single Footer Wiedget End-->
@@ -453,7 +453,8 @@
 																	<li><a href="<?php echo U('home/index/index');?>">主页</a></li>
 																	<li><a href="<?php echo U('home/prodlist/prodlist');?>">产品</a></li>
 																	<li><a href="<?php echo U('home/about/about');?>">关于我们</a></li>
-																	<li><a href="#">产品附件下载</a></li>
+																	<li><a href="<?php echo U('home/prodatt/prodatt_list');?>">产品附件下载</a></li>
+																	<li><a href="<?php echo U('admin/login/login');?>">后台入口</a></li>
 																</ul>
 														</div>
 														<!--Single Footer Wiedget End-->
@@ -624,19 +625,19 @@
 									<!--Modal Content-->
 							</div>
 						</div>
-						<div class="modal-footer">
-							<!--Single Product Share-->
-							<div class="single-product-share">
-									<ul>
-										 <li class="categories-title">Share :</li>
-											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-											<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-											<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-									</ul>
-							</div>
-							<!--Single Product Share-->
-						</div>
+<!--						<div class="modal-footer">-->
+<!--							&lt;!&ndash;Single Product Share&ndash;&gt;-->
+<!--							<div class="single-product-share">-->
+<!--									<ul>-->
+<!--										 <li class="categories-title">Share :</li>-->
+<!--											<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+<!--											<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+<!--											<li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
+<!--											<li><a href="#"><i class="fa fa-pinterest"></i></a></li>-->
+<!--									</ul>-->
+<!--							</div>-->
+<!--							&lt;!&ndash;Single Product Share&ndash;&gt;-->
+<!--						</div>-->
 					</div>
 				</div>
 				</div>

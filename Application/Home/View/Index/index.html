@@ -69,7 +69,7 @@
 		                <div class="col-md-3">
 		                    <!--Logo Start-->
 		                    <div class="logo">
-		                        <a href="index.html">
+		                        <a href="{:U('home/index/index')}">
 															<img src="__PUBLIC__{$company.logo}" alt="">
 		                        </a>
 		                    </div>
@@ -240,7 +240,7 @@
 <!--			                                    </div>-->
 <!--			                                </div>-->
 			                                <div class="thumb-category">
-			                                    <a href="shop.html"><img src="__PUBLIC__{$list.brand_image}" alt=""></a>
+			                                    <a href="{:U('home/prodlist/listwithbrand',array('brand_id'=>$list[brand_id]))}"><img src="__PUBLIC__{$list.brand_image}" alt=""></a>
 			                                </div>
 			                            </div>
 															  </foreach>
@@ -313,7 +313,7 @@
 	                                <ul class="cate-filter">
 																			<foreach name="brand" item="brand_list">
 																				<if condition="$cate_list['category_id'] eq $brand_list['category_id']" >
-	                                    		<li><a href="shop.html">{$brand_list.brand_name}</a></li>
+	                                    		<li><a href="{:U('home/prodlist/listwithbrand',array('brand_id'=>$list[brand_id]))}">{$brand_list.brand_name}</a></li>
 																				</if>
 																		  </foreach>
 	                                </ul>
@@ -324,7 +324,7 @@
 	                            <!--Product Banner Start-->
 	                            <div class="banner-block-content">
 	                                <div class="banner-inner">
-	                                    <a href="#"><img src="__PUBLIC__/img/banner/product-banner1.jpg" alt=""></a>
+	                                    <a href="{:U('home/prodlist/listwithcategory',array('category_id'=>$cate_list[category_id]))}"><img src="__PUBLIC__{$cate_list.category_image}" alt=""></a>
 	                                </div>
 	                            </div>
 	                        </div>
@@ -340,7 +340,7 @@
 						                                    <!--Single Product Start-->
 						                                    <div class="single-product">
 						                                        <div class="product-img">
-						                                            <a href="single-product.html">
+						                                            <a href="{:U('home/product/product',array('product_id'=>$product_list[product_id]))}">
 						                                                <img class="first-img" src="__PUBLIC__{$product_list.product_pic}" alt="">
 						                                                <img class="hover-img" src="__PUBLIC__{$product_list.product_pic}" alt="">
 						                                            </a>
@@ -354,7 +354,7 @@
 						                                            </div> -->
 						                                        </div>
 						                                        <div class="product-content">
-						                                            <h4><a href="single-product.html">{$product_list.product_name}</a></h4>
+						                                            <h4><a href="{:U('home/product/product',array('product_id'=>$product_list[product_id]))}">{$product_list.product_name}</a></h4>
 						                                            <div class="product-price">
 						                                                <span class="price">{$product_list.product_model}</span>
 						                                            </div>
@@ -391,7 +391,7 @@
               <div class="brand-active owl-carousel">
                   <foreach name="brand" item="brand_list">
                     <div class="single-brand">
-                      <a href="#"><img src="__PUBLIC__{$brand_list.brand_image}" alt=""></a>
+                      <a href="{:U('home/prodlist/listwithbrand',array('brand_id'=>$brand_list[brand_id]))}"><img src="__PUBLIC__{$brand_list.brand_image}" alt=""></a>
                     </div>
 								</foreach>
               </div>
@@ -460,7 +460,7 @@
 														<!--Single Footer Wiedget Start-->
 														<div class="single-footer-wiedget mb-30">
 																<div class="footer-logo">
-																		<a href="index.html"><img src="__PUBLIC__{$company.logo}" alt=""></a>
+																		<a href="{:U('home/index/index')}"><img src="__PUBLIC__{$company.logo}" alt=""></a>
 																</div>
 																<div class="desc-footer">广州瑞谱佳科技有限公司拥有稳妥，快捷，优质的售后服务，欢迎垂询！</div>
 																<div class="address-footer">
@@ -479,7 +479,7 @@
 																</div>
 																<ul class="link-widget">
 																		<foreach name="brands" item="a">
-																			<li><a href="#"></a>{$a.brand_name}</li>
+																			<li><a href="{:U('home/prodlist/listwithbrand',array('brand_id'=>$a[brand_id]))}"></a>{$a.brand_name}</li>
 																	</foreach>
 																</ul>
 														</div>
@@ -495,7 +495,8 @@
 																	<li><a href="{:U('home/index/index')}">主页</a></li>
 																	<li><a href="{:U('home/prodlist/prodlist')}">产品</a></li>
 																	<li><a href="{:U('home/about/about')}">关于我们</a></li>
-																	<li><a href="#">产品附件下载</a></li>
+																	<li><a href="{:U('home/prodatt/prodatt_list')}">产品附件下载</a></li>
+																	<li><a href="{:U('admin/login/login')}">后台入口</a></li>
 																</ul>
 														</div>
 														<!--Single Footer Wiedget End-->
@@ -666,19 +667,19 @@
 									<!--Modal Content-->
 							</div>
 						</div>
-						<div class="modal-footer">
-							<!--Single Product Share-->
-							<div class="single-product-share">
-									<ul>
-										 <li class="categories-title">Share :</li>
-											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-											<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-											<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-									</ul>
-							</div>
-							<!--Single Product Share-->
-						</div>
+<!--						<div class="modal-footer">-->
+<!--							&lt;!&ndash;Single Product Share&ndash;&gt;-->
+<!--							<div class="single-product-share">-->
+<!--									<ul>-->
+<!--										 <li class="categories-title">Share :</li>-->
+<!--											<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+<!--											<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+<!--											<li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
+<!--											<li><a href="#"><i class="fa fa-pinterest"></i></a></li>-->
+<!--									</ul>-->
+<!--							</div>-->
+<!--							&lt;!&ndash;Single Product Share&ndash;&gt;-->
+<!--						</div>-->
 					</div>
 				</div>
 				</div>
