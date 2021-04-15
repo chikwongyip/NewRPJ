@@ -1,0 +1,644 @@
+[ 2021-04-14T21:26:23+08:00 ] ::1 /NewRPJ/index.php/admin/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000254s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000049s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004643s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2021-04-14T21:26:29+08:00 ] ::1 /NewRPJ/index.php/admin/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `rpj_user` [ RunTime:0.0462s ]
+SQL: SELECT * FROM `rpj_user` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0452s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007084s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.001613s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001660s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000259s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000006s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001822s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/chikwongyip/Code/php/NewRPJ/ThinkPHP/Library/Think/View.class.php:95) /Users/chikwongyip/Code/php/NewRPJ/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/chikwongyip/Code/php/NewRPJ/ThinkPHP/Library/Think/View.class.php:95) /Users/chikwongyip/Code/php/NewRPJ/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/chikwongyip/Code/php/NewRPJ/ThinkPHP/Library/Think/View.class.php:95) /Users/chikwongyip/Code/php/NewRPJ/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000696s ]
+
+[ 2021-04-14T21:26:30+08:00 ] ::1 /NewRPJ/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009486s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2021-04-14T21:26:30+08:00 ] ::1 /NewRPJ/index.php/Admin/Introduce/introduce.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000268s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000044s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003534s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000304s ]
+
+[ 2021-04-14T21:26:37+08:00 ] ::1 /NewRPJ/index.php/Admin/category/category_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000255s ]
+SQL: SHOW COLUMNS FROM `rpj_procategory` [ RunTime:0.0441s ]
+SQL: SELECT * FROM `rpj_procategory`  [ RunTime:0.0437s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+NOTIC: [2] Use of undefined constant category_id - assumed 'category_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Admin/46fc65ba2b7dc6249bfde48ce8661431.php 第 190 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000527s ]
+
+[ 2021-04-14T21:26:49+08:00 ] ::1 /NewRPJ/index.php/Admin/product/product_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000271s ]
+SQL: select * from rpj_product
+                                  inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                  inner join rpj_brand       on rpj_product.brand_id    = rpj_brand.brand_id [ RunTime:0.0428s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009290s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009315s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000494s ]
+
+[ 2021-04-14T21:27:27+08:00 ] ::1 /NewRPJ/index.php/Admin/category/category_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `rpj_procategory` [ RunTime:0.0407s ]
+SQL: SELECT * FROM `rpj_procategory`  [ RunTime:0.0404s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+NOTIC: [2] Use of undefined constant category_id - assumed 'category_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Admin/46fc65ba2b7dc6249bfde48ce8661431.php 第 190 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009760s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000586s ]
+
+[ 2021-04-14T21:27:29+08:00 ] ::1 /NewRPJ/index.php/admin/category/category_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000274s ]
+SQL: SHOW COLUMNS FROM `rpj_procategory` [ RunTime:0.0415s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009303s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000514s ]
+
+[ 2021-04-14T21:27:40+08:00 ] ::1 /NewRPJ/index.php/admin/category/category_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000245s ]
+SQL: SHOW COLUMNS FROM `rpj_procategory` [ RunTime:0.0428s ]
+SQL: SELECT * FROM `rpj_procategory`  [ RunTime:0.0424s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+NOTIC: [2] Use of undefined constant category_id - assumed 'category_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Admin/46fc65ba2b7dc6249bfde48ce8661431.php 第 190 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008452s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000567s ]
+
+[ 2021-04-14T21:29:38+08:00 ] ::1 /NewRPJ/index.php/admin/category/category_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `rpj_procategory` [ RunTime:0.0426s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006288s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006306s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000487s ]
+
+[ 2021-04-14T21:29:46+08:00 ] ::1 /NewRPJ/index.php/admin/category/category_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000253s ]
+SQL: SHOW COLUMNS FROM `rpj_procategory` [ RunTime:0.0428s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Users/chikwongyip/Code/php/NewRPJ/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: INSERT INTO `rpj_procategory` (`category_image`,`category_name`) VALUES ('/Upload/2021-04-14/6076ee4a6ed80.png',' nexgen-PTS') [ RunTime:0.0417s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008759s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2021-04-14T21:29:50+08:00 ] ::1 /NewRPJ/index.php/admin/category/category_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `rpj_procategory` [ RunTime:0.0435s ]
+SQL: SELECT * FROM `rpj_procategory`  [ RunTime:0.0420s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [2] Use of undefined constant category_id - assumed 'category_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Admin/46fc65ba2b7dc6249bfde48ce8661431.php 第 190 行.
+NOTIC: [2] Use of undefined constant category_id - assumed 'category_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Admin/46fc65ba2b7dc6249bfde48ce8661431.php 第 190 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006143s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006159s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2021-04-14T21:29:54+08:00 ] ::1 /NewRPJ/index.php/Admin/product/product_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000248s ]
+SQL: select * from rpj_product
+                                  inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                  inner join rpj_brand       on rpj_product.brand_id    = rpj_brand.brand_id [ RunTime:0.0436s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011911s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011925s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000315s ]
+
+[ 2021-04-14T21:29:56+08:00 ] ::1 /NewRPJ/index.php/admin/product/product_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000243s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0410s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `rpj_procategory` [ RunTime:0.0409s ]
+SQL: SELECT * FROM `rpj_procategory`  [ RunTime:0.0403s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0417s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007399s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2021-04-14T21:52:09+08:00 ] ::1 /NewRPJ/index.php/admin/product/product_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0393s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0385s ]
+SQL: SHOW COLUMNS FROM `rpj_procategory` [ RunTime:0.0394s ]
+SQL: SELECT * FROM `rpj_procategory`  [ RunTime:0.0385s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0389s ]
+SQL: SELECT MAX(product_id) AS tp_max FROM `rpj_product` LIMIT 1   [ RunTime:0.0387s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Users/chikwongyip/Code/php/NewRPJ/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Users/chikwongyip/Code/php/NewRPJ/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [2] imagepng(./Public/Upload/thumb300/thumb300_6076f389c9af5.png): failed to open stream: No such file or directory /Users/chikwongyip/Code/php/NewRPJ/ThinkPHP/Library/Think/Image/Driver/Gd.class.php 第 99 行.
+NOTIC: [2] Creating default object from empty value /Users/chikwongyip/Code/php/NewRPJ/Application/Admin/Controller/ProductController.class.php 第 58 行.
+SQL: INSERT INTO `rpj_product` (`product_id`,`product_name`,`product_desc`,`product_standard`,`product_model`,`product_video`,`brand_id`,`category_id`,`top`,`product_logo`,`product_pic`) VALUES ('6','Endosafe®',' Endosafe ® nexgen-PTSTM是一种快捷、方便的手持式分光光度计，它利 用一次性卡片进行准确、便捷、实时的内毒素检测。与第一代 Endosafe ® -PTSTM的相同之处在于使用符合美国药典细菌内毒素检查法要 求的检测方法，我们为其赋予了当今技术的先进特性，以满足您对减少样品 准备时间、简化数据输入、减少差异性与增强管理控制的需求。 nexgen-PTSTM灵活轻便，与上一代产品一样可用于常规质量控制实验室以 及样品采集现场。该系统的便携性及出其快速的结果获取能力加强了检测规 划并加快药物开发进程。
+ 1. 8GB的内存与可扩展的外部USB存储
+ 2. 1D / 2D条形码扫描器(选购)可避免手动输入样品信息，从而加快实验操作速度
+ 3. nexgen-PTSTM采用预校准一次性Endosafe®-PTSTM卡片进行动态显色试验，测定与样品内毒素浓度直接相关的颜色强 度。
+超大彩色液晶触摸屏延续了您熟悉的实验室电子设备一贯的直观风格，发光 屏幕和易于识别的菜单图标使您能够连贯导览整个系统，便于您快速、便捷 地完成各检测步骤。',' 1.8GB的内存与可扩展的外部USB存储',' nexgen-PTS',' ','17','9','X','/Upload/2021-04-14/6076f389c7c88.png','/Upload/2021-04-14/6076f389c9af5.png') [ RunTime:0.0387s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008388s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000956s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2021-04-14T21:52:12+08:00 ] ::1 /NewRPJ/index.php/admin/product/product_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+SQL: select * from rpj_product
+                                  inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                  inner join rpj_brand       on rpj_product.brand_id    = rpj_brand.brand_id [ RunTime:0.0393s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [2] Use of undefined constant product_id - assumed 'product_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 207 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006470s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006485s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000317s ]
+
+[ 2021-04-14T21:53:14+08:00 ] ::1 /NewRPJ/index.php/admin/product/product_edit/product_id/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000260s ]
+SQL: select * from rpj_product
+                                                 inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                                 inner join rpj_brand on       rpj_product.brand_id    = rpj_brand.brand_id
+                                                 where rpj_product.product_id = 6 [ RunTime:0.0443s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006650s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2021-04-14T21:53:20+08:00 ] ::1 /NewRPJ/index.php/admin/product/product_submit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0444s ]
+SQL: SELECT * FROM `rpj_product` WHERE `product_id` = 6 LIMIT 1   [ RunTime:0.0441s ]
+SQL: UPDATE `rpj_product` SET `brand_id`='17',`category_id`='9',`product_name`='Endosafe',`product_desc`=' Endosafe ? nexgen-PTSTM是一种快捷、方便的手持式分光光度计，它利 用一次性卡片进行准确、便捷、实时的内毒素检测。与第一代 Endosafe ? -PTSTM的相同之处在于使用符合美国药典细菌内毒素检查法要 求的检测方法，我们为其赋予了当今技术的先进特性，以满足您对减少样品 准备时间、简化数据输入、减少差异性与增强管理控制的需求。 nexgen-PTSTM灵活轻便，与上一代产品一样可用于常规质量控制实验室以 及样品采集现场。该系统的便携性及出其快速的结果获取能力加强了检测规 划并加快药物开发进程。
+ 1. 8GB的内存与可扩展的外部USB存储
+ 2. 1D / 2D条形码扫描器(选购)可避免手动输入样品信息，从而加快实验操作速度
+ 3. nexgen-PTSTM采用预校准一次性Endosafe?-PTSTM卡片进行动态显色试验，测定与样品内毒素浓度直接相关的颜色强 度。
+超大彩色液晶触摸屏延续了您熟悉的实验室电子设备一贯的直观风格，发光 屏幕和易于识别的菜单图标使您能够连贯导览整个系统，便于您快速、便捷 地完成各检测步骤。',`product_pic`='/Upload/2021-04-14/6076f389c9af5.png',`product_standard`=' 1.8GB的内存与可扩展的外部USB存储',`product_model`=' nexgen-PTS',`product_video`='  ',`product_logo`='/Upload/2021-04-14/6076f389c7c88.png',`top`='X',`product_pic300`=NULL WHERE `product_id` = 6 [ RunTime:0.0439s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+NOTIC: [8] Undefined variable: product /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Admin/aea838662f09cb93b114cf1490ba6adc.php 第 140 行.
+NOTIC: [8] Undefined variable: product /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Admin/aea838662f09cb93b114cf1490ba6adc.php 第 155 行.
+NOTIC: [8] Undefined variable: product /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Admin/aea838662f09cb93b114cf1490ba6adc.php 第 156 行.
+NOTIC: [8] Undefined variable: product /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Admin/aea838662f09cb93b114cf1490ba6adc.php 第 162 行.
+NOTIC: [8] Undefined variable: product /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Admin/aea838662f09cb93b114cf1490ba6adc.php 第 168 行.
+NOTIC: [8] Undefined variable: product /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Admin/aea838662f09cb93b114cf1490ba6adc.php 第 174 行.
+NOTIC: [8] Undefined variable: product /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Admin/aea838662f09cb93b114cf1490ba6adc.php 第 180 行.
+NOTIC: [8] Undefined variable: product /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Admin/aea838662f09cb93b114cf1490ba6adc.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004776s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000575s ]
+
+[ 2021-04-14T21:53:22+08:00 ] ::1 /NewRPJ/index.php/admin/product/product_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: select * from rpj_product
+                                  inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                  inner join rpj_brand       on rpj_product.brand_id    = rpj_brand.brand_id [ RunTime:0.0406s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+NOTIC: [2] Use of undefined constant product_id - assumed 'product_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 207 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006140s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006158s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000727s ]
+
+[ 2021-04-14T21:57:47+08:00 ] ::1 /NewRPJ/index.php/Admin/productpic/productpic_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+SQL: select rpj_product_pic.pic_id,
+                                                          rpj_product_pic.product_id,
+                                                          rpj_product_pic.product_pic,
+                                                          rpj_product.product_name
+                                                   from rpj_product_pic
+                                                   inner join rpj_product on rpj_product_pic.product_id = rpj_product.product_id [ RunTime:0.0452s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011036s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000850s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000912s ]
+
+[ 2021-04-14T21:57:49+08:00 ] ::1 /NewRPJ/index.php/admin/productpic/productpic_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000252s ]
+SQL: SHOW COLUMNS FROM `rpj_product_pic` [ RunTime:0.0393s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0391s ]
+SQL: SELECT * FROM `rpj_product`  [ RunTime:0.0395s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010472s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010499s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000646s ]
+
+[ 2021-04-14T21:58:14+08:00 ] ::1 /NewRPJ/index.php/admin/productpic/productpic_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000277s ]
+SQL: SHOW COLUMNS FROM `rpj_product_pic` [ RunTime:0.0399s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0402s ]
+SQL: SELECT * FROM `rpj_product`  [ RunTime:0.0400s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Users/chikwongyip/Code/php/NewRPJ/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [2] imagejpeg(./Public/Upload/thumb300/thumb300_6076f4f600307.jpg): failed to open stream: No such file or directory /Users/chikwongyip/Code/php/NewRPJ/ThinkPHP/Library/Think/Image/Driver/Gd.class.php 第 94 行.
+SQL: INSERT INTO `rpj_product_pic` (`product_id`,`product_pic`,`is_active`,`product_thumb`,`product_pic300`) VALUES ('6','/Upload/2021-04-14/6076f4f600307.jpg','X','/Upload/thumb/thumb_6076f4f600307.jpg','/Upload/thumb/thumb300_6076f4f600307.jpg') [ RunTime:0.0401s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006770s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006793s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2021-04-14T21:58:18+08:00 ] ::1 /NewRPJ/index.php/admin/productpic/productpic_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+SQL: SHOW COLUMNS FROM `rpj_product_pic` [ RunTime:0.0414s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0415s ]
+SQL: SELECT * FROM `rpj_product`  [ RunTime:0.0410s ]
+NOTIC: [2] finfo_file(): Empty filename or path /Users/chikwongyip/Code/php/NewRPJ/ThinkPHP/Library/Think/Upload.class.php 第 152 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007683s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000233s ]
+
+[ 2021-04-14T21:58:30+08:00 ] ::1 /NewRPJ/index.php/admin/productpic/productpic_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+SQL: SHOW COLUMNS FROM `rpj_product_pic` [ RunTime:0.0446s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0443s ]
+SQL: SELECT * FROM `rpj_product`  [ RunTime:0.0445s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Users/chikwongyip/Code/php/NewRPJ/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: is_active /Users/chikwongyip/Code/php/NewRPJ/Application/Admin/Controller/ProductpicController.class.php 第 31 行.
+NOTIC: [2] imagejpeg(./Public/Upload/thumb300/thumb300_6076f5066e2fd.jpg): failed to open stream: No such file or directory /Users/chikwongyip/Code/php/NewRPJ/ThinkPHP/Library/Think/Image/Driver/Gd.class.php 第 94 行.
+SQL: INSERT INTO `rpj_product_pic` (`product_id`,`product_pic`,`product_thumb`,`product_pic300`) VALUES ('6','/Upload/2021-04-14/6076f5066e2fd.jpg','/Upload/thumb/thumb_6076f5066e2fd.jpg','/Upload/thumb/thumb300_6076f5066e2fd.jpg') [ RunTime:0.0443s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007266s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2021-04-14T21:59:04+08:00 ] ::1 /NewRPJ/index.php/admin/productpic/productpic_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `rpj_product_pic` [ RunTime:0.0438s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0435s ]
+SQL: SELECT * FROM `rpj_product`  [ RunTime:0.0435s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Users/chikwongyip/Code/php/NewRPJ/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: is_active /Users/chikwongyip/Code/php/NewRPJ/Application/Admin/Controller/ProductpicController.class.php 第 31 行.
+NOTIC: [2] imagepng(./Public/Upload/thumb300/thumb300_6076f528c3bf3.png): failed to open stream: No such file or directory /Users/chikwongyip/Code/php/NewRPJ/ThinkPHP/Library/Think/Image/Driver/Gd.class.php 第 99 行.
+SQL: INSERT INTO `rpj_product_pic` (`product_id`,`product_pic`,`product_thumb`,`product_pic300`) VALUES ('6','/Upload/2021-04-14/6076f528c3bf3.png','/Upload/thumb/thumb_6076f528c3bf3.png','/Upload/thumb/thumb300_6076f528c3bf3.png') [ RunTime:0.0436s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008256s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2021-04-14T21:59:08+08:00 ] ::1 /NewRPJ/index.php/admin/productpic/productpic_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+SQL: select rpj_product_pic.pic_id,
+                                                          rpj_product_pic.product_id,
+                                                          rpj_product_pic.product_pic,
+                                                          rpj_product.product_name
+                                                   from rpj_product_pic
+                                                   inner join rpj_product on rpj_product_pic.product_id = rpj_product.product_id [ RunTime:0.0414s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [2] Use of undefined constant pic_id - assumed 'pic_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Admin/159018613a3f0dacd2018373a8985092.php 第 188 行.
+NOTIC: [2] Use of undefined constant pic_id - assumed 'pic_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Admin/159018613a3f0dacd2018373a8985092.php 第 188 行.
+NOTIC: [2] Use of undefined constant pic_id - assumed 'pic_id' (this will throw an Error in a future version of PHP) /Users/chikwongyip/Code/php/NewRPJ/Application/Runtime/Cache/Admin/159018613a3f0dacd2018373a8985092.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008096s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008123s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000506s ]
+

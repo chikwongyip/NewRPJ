@@ -188,7 +188,7 @@
 		                                <div class="hero-slider-content">
 		                                    <h2 class="slow-animation1"><?php echo ($pro_list["product_name"]); ?></h2>
 		                                    <h2 class="slow-animation2"><?php echo ($pro_list["brand_name"]); ?></h2>
-		                                    <h4><?php echo ($pro_list["product_desc"]); ?></h4>
+<!--		                                    <h4><?php echo ($pro_list["product_desc"]); ?></h4>-->
 		                                    <h1><?php echo ($pro_list["product_model"]); ?></h1>
 		                                    <div class="slider-btn mt-50">
 		                                        <a href="<?php echo U('home/product/product',array('product_id'=>$pro_list[product_id]));?>">点击浏览</a>
@@ -486,13 +486,13 @@
 														</div>
 														<!--Footer Copyright End-->
 												</div>
-												<div class="col-md-6">
-																<!--Footer Payment Start-->
-														<div class="footer-payments-image text-center text-md-right">
-																<img src="/NewRPJ/Public/img/payment/payment.png" alt="">
-														</div>
-														<!--Footer Payment End-->
-												</div>
+<!--												<div class="col-md-6">-->
+<!--																&lt;!&ndash;Footer Payment Start&ndash;&gt;-->
+<!--														<div class="footer-payments-image text-center text-md-right">-->
+<!--																<img src="/NewRPJ/Public/img/payment/payment.png" alt="">-->
+<!--														</div>-->
+<!--														&lt;!&ndash;Footer Payment End&ndash;&gt;-->
+<!--												</div>-->
 										</div>
 								</div>
 						</div>
