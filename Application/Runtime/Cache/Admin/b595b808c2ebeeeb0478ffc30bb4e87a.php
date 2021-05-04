@@ -197,16 +197,16 @@
 		});
 
 		function loadMenu(resourceType, treeObj){
-			var attachURL = "<?php echo U('Admin/Attachment/attachment_list');?>"
-			var brandURL = "<?php echo U('Admin/brand/brand_list');?>"
-			var companyURL = "<?php echo U('Admin/company/company_edit');?>"
-			var newsURL = "<?php echo U('Admin/news/news_list');?>"
-			var appfiledURL = "<?php echo U('Admin/appfield/appfield_list');?>"
-			var productURL = "<?php echo U('Admin/product/product_list');?>"
-			var prod_attURL = "<?php echo U('Admin/prodatt/prodatt_list');?>"
-			var prod_category = "<?php echo U('Admin/category/category_list');?>"
-			var prod_picURL = "<?php echo U('Admin/productpic/productpic_list');?>"
-			var prodparam = "<?php echo U('Admin/prodparam/prodparam_list');?>"
+			var attachURL = "<?php echo U('Admin/Attachment/Attachment_list');?>"
+			var brandURL = "<?php echo U('Admin/Brand/Brand_list');?>"
+			var companyURL = "<?php echo U('Admin/Company/Company_edit');?>"
+			var newsURL = "<?php echo U('Admin/News/News_list');?>"
+			var appfiledURL = "<?php echo U('Admin/Appfield/Appfield_list');?>"
+			var productURL = "<?php echo U('Admin/Product/Product_list');?>"
+			var prod_attURL = "<?php echo U('Admin/Prodatt/Prodatt_list');?>"
+			var prod_category = "<?php echo U('Admin/Category/Category_list');?>"
+			var prod_picURL = "<?php echo U('Admin/Productpic/Productpic_list');?>"
+			var prodparam = "<?php echo U('Admin/Prodparam/Prodparam_list');?>"
             data = [{"accessPath":"","checked":false,"delFlag":0,"parentID":1,"resourceCode":"","resourceDesc":"","resourceGrade":2,"resourceID":3,"resourceName":"基础数据","resourceOrder":0,"resourceType":""},
             {"accessPath":companyURL,"checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":7,"resourceName":"公司修改","resourceOrder":0,"resourceType":""},
 						{"accessPath":brandURL,"checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":8,"resourceName":"品牌管理","resourceOrder":0,"resourceType":""},

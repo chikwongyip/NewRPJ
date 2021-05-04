@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+	Options +FollowSymlinks -Multiviews
+	RewriteEngine On
+
+	RewriteBase /
+	# thinkphp.abc.com 是 thinkphp项目 绑定的域名
+	RewriteCond %{HTTP_HOST} ^thinkphp.abc.com$ [NC]
+	# /thinkphp 是 thinkphp项目 对应的文件夹名称
+	RewriteCond %{REQUEST_URI} !^/thinkphp
+	# /thinkphp/ 是 thinkphp项目 对应的文件夹名称
+	RewriteRule ^(.*)$ /thinkphp/$1 [L]
+
+	# vue.abc.com 是 vue项目 绑定的域名
+	RewriteCond %{HTTP_HOST} ^vue.abc.com$ [NC]
+	# /vue 是 vue项目 对应的文件夹名称
+	RewriteCond %{REQUEST_URI} !^/vue
+	# /vue/ 是 vue项目 对应的文件夹名称
+	RewriteRule ^(.*)$ /vue/$1 [L]
+</IfModule>
