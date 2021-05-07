@@ -9,7 +9,7 @@ class AttachController extends Controller
         $model = M('Rpj_company');
         $modelProduct = M('Rpj_product');
         $modelBrands  = M('Rpj_brand');
-        $modelAttch = M('Rpj_prod_att');
+        $modelAttch = M('Rpj_attachment');
         $attchCount = $modelAttch->field('product_id,count(product_id) as count')->group('product_id')->select();
         //var_dump($attchCount);exit;
         $category = getCategoryData();
@@ -18,14 +18,14 @@ class AttachController extends Controller
         $company = $model->find(1);
         $product = $modelProduct->select();
         $brands  = $modelBrands->select();
-        $attch = $modelAttch->select();
+        $attach = $modelAttch->select();
     // assign data html
         $this->assign('company',$company);
         $this->assign('category',$category);
         $this->assign('brand',$brand);
         $this->assign('product',$product);
         $this->assign('brands',$brands);
-        $this->assign('attch',$attch);
+        $this->assign('attach',$attach);
         $this->assign('attch_q',$attchCount);
         $this->display();
     }
@@ -36,7 +36,7 @@ class AttachController extends Controller
            $model = M('Rpj_company');
            $modelProduct = M('Rpj_product');
            $modelBrands  = M('Rpj_brand');
-           $modelAttch = M('Rpj_prod_att');
+           $modelAttch = M('Rpj_attachment');
            $attchCount = $modelAttch->field('product_id,count(product_id) as count')->group('product_id')->select();
            $category = getCategoryData();
            $brand = getBrandData();

@@ -202,7 +202,7 @@
 		                <div class="breadcrumb-content text-center">
                             <h1 class="breadmome-name">产品附件下载</h1>
 		                    <ul>
-		                        <li><a href="index.html">主页</a></li>
+		                        <li><a href="{:U('home/index/index')}">主页</a></li>
 		                        <li class="active">产品附件下载</li>
 		                    </ul>
 		                </div>
@@ -216,7 +216,7 @@
 		    <div class="container">
 		        <div class="row">
 					<!--Blog Post Start-->
-					<foreach name="attch" item="attch_list">
+					<foreach name="attach" item="attach_list">
 						<div class="col-lg-9">
 							<div class="blog_area">
 								<article class="blog_single">
@@ -225,10 +225,10 @@
 											<a href="#"> Fashion</a>,<a href="#">WordPress</a>
 										</span> -->
 										<h2 class="entry-title">
-											<a href="__PUBLIC__{$attch_list.url}"> {$attch_list.name}</a>
+											<a href="__PUBLIC__{$attach_list.url}"> {$attach_list.name}</a>
 										</h2>
 										<foreach name="product" item="pro_list">
-											<if condition="$attch_list['product_id'] eq $pro_list['product_id']">
+											<if condition="$attach_list['product_id'] eq $pro_list['product_id']">
 												<span class="post-author">
 												<span class="post-by"> 对应产品：
 												<span class="post-separator">|</span>

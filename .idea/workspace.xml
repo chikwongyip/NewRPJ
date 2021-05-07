@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13f02ca5-72ea-4eda-9ef7-6f6a0dbca702" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Runtime/Data/_fields/bdm247650322_db.rpj_brand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Runtime/Data/_fields/bdm247650322_db.rpj_company.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Runtime/Data/_fields/bdm247650322_db.rpj_prod_att.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Runtime/Data/_fields/bdm247650322_db.rpj_product.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Runtime/common~runtime.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/2c7bec26dbaaa24f49918f2892f2ff82.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Admin/21_05_06.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/21_05_06.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/21_05_07.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/LoginController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Controller/LoginController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/View/Index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/View/Index/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/ee003ac5a02d3cd1eaf30a5d0f4ce7ce.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/ee003ac5a02d3cd1eaf30a5d0f4ce7ce.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/AttachmentController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Controller/AttachmentController.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/AttachController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/Controller/AttachController.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Home/View/Attach/attach.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/View/Attach/attach.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/common~runtime.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,6 +87,10 @@
       <workItem from="1619961546091" duration="1785000" />
       <workItem from="1619999758142" duration="597000" />
       <workItem from="1620096415542" duration="2719000" />
+      <workItem from="1620125922724" duration="256000" />
+      <workItem from="1620126191356" duration="1024000" />
+      <workItem from="1620308385898" duration="1755000" />
+      <workItem from="1620392326804" duration="604000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1607852140506</created>
@@ -167,7 +169,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619355228617</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="修正上传到阿里云之后产生的bug">
+      <created>1620125987876</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1620125987876</updated>
+    </task>
+    <task id="LOCAL-00013" summary="修正上传到阿里云之后产生的bug">
+      <created>1620126218658</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1620126218658</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +199,7 @@
     <MESSAGE value="新增新闻功能" />
     <MESSAGE value="修正主页连接" />
     <MESSAGE value="修正连接" />
-    <option name="LAST_COMMIT_MESSAGE" value="修正连接" />
+    <MESSAGE value="修正上传到阿里云之后产生的bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="修正上传到阿里云之后产生的bug" />
   </component>
 </project>

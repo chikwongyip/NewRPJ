@@ -48,7 +48,6 @@ class AttachmentController extends Controller
                       ->join('rpj_procategory on rpj_procategory.category_id = rpj_attachment.category_id')
                       ->join('rpj_brand on rpj_brand.brand_id = rpj_attachment.brand_id')
                       ->select();
-
       $this->assign('attach',$attachement);
 
       $this->display();
