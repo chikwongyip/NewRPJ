@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13f02ca5-72ea-4eda-9ef7-6f6a0dbca702" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/2c7bec26dbaaa24f49918f2892f2ff82.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Admin/21_05_06.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/21_05_06.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/21_05_07.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/AttachmentController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Controller/AttachmentController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/AttachController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/Controller/AttachController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/View/Attach/attach.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/View/Attach/attach.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/common~runtime.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-    </list>
+    <list default="true" id="13f02ca5-72ea-4eda-9ef7-6f6a0dbca702" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +79,7 @@
       <workItem from="1620125922724" duration="256000" />
       <workItem from="1620126191356" duration="1024000" />
       <workItem from="1620308385898" duration="1755000" />
-      <workItem from="1620392326804" duration="604000" />
+      <workItem from="1620392326804" duration="1128000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1607852140506</created>
@@ -183,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620126218658</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fixed upload attachement bug">
+      <created>1620392961954</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1620392961955</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +196,7 @@
     <MESSAGE value="修正主页连接" />
     <MESSAGE value="修正连接" />
     <MESSAGE value="修正上传到阿里云之后产生的bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="修正上传到阿里云之后产生的bug" />
+    <MESSAGE value="fixed upload attachement bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed upload attachement bug" />
   </component>
 </project>
