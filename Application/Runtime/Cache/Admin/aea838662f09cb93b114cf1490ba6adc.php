@@ -152,8 +152,9 @@
 				<tr>
 					<td class="ui_text_lt">热销产品</td>
 					<td class="ui_text_lt">
-						<input type="checkbox" name="top" value="<?php echo ($product[0]["top"]); ?>" class="ui_input_txt02"
-							<?php if($product[0]['top'] == 'X'): ?>checked<?php endif; ?> />
+						<input type="checkbox" name="top" value="1" class="ui_input_txt02"
+							<?php if($product[0]['top'] == 'X'): ?>checked<?php endif; ?>
+						/>
 					</td>
 				</tr>
 				<tr>

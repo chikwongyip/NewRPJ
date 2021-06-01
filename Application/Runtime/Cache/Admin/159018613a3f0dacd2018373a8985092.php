@@ -181,11 +181,14 @@
 							<th>操作</th>
 						</tr>
 						<?php if(is_array($product_pic)): foreach($product_pic as $key=>$a): ?><tr>
-								<td><input type="checkbox" name="ID" value="<?php echo ($a["pic_id"]); ?>" class="acb" /></td>
+								<td><input type="checkbox" name="is_active" value="1" 
+									<?php if($a['is_active'] == 'X'): ?>checked<?php endif; ?>
+									/>
+								</td>
 								<td><?php echo ($a["product_name"]); ?></td>
 								<td><?php echo ($a["product_pic"]); ?></td>
 								<td>
-									<a href="<?php echo U('admin/productpic/productpic_edit',array('pic_id'=>$a[pic_id]));?>" class="edit">编辑</a>
+									<a href="<?php echo U('admin/productpic/productpic_edit',array('id'=>$a[pic_id]));?>" class="edit">编辑</a>
 									<a href="javascript:del(<?php echo ($a["pic_id"]); ?>);">删除</a>
 								</td>
 							</tr><?php endforeach; endif; ?>

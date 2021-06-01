@@ -192,10 +192,11 @@
 							<tr>
 								<td><input type="checkbox" name="ID" value="{$a.product_id}" class="acb" /></td>
 								<td>
-									<input type="checkbox"
+									<input type="checkbox" name="top" value="1"
 										<if condition="$a['top'] eq 'X'">
 											checked
-		                </if> />
+		                				</if>
+									/>
 								</td>
 								<td>{$a.product_name}</td>
 								<td>{$a.brand_name}</td>

@@ -135,7 +135,8 @@
     $productPicture = $modelProductPicture->query("select rpj_product_pic.pic_id,
                                                           rpj_product_pic.product_id,
                                                           rpj_product_pic.product_pic,
-                                                          rpj_product.product_name
+                                                          rpj_product.product_name,
+                                                          rpj_product_pic.is_active
                                                    from rpj_product_pic
                                                    inner join rpj_product on rpj_product_pic.product_id = rpj_product.product_id");
     return $productPicture;

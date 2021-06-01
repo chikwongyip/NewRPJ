@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
 <title>信息管理系统</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<script type="text/javascript" src="__PUBLIC__/scripts/jquery/jquery-1.7.1.js"></script>
-<link href="__PUBLIC__/style/authority/basic_layout.css" rel="stylesheet" type="text/css">
-<link href="__PUBLIC__/style/authority/common_style.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="__PUBLIC__/scripts/authority/commonAll.js"></script>
-<script type="text/javascript" src="__PUBLIC__/scripts/jquery/jquery-1.4.4.min.js"></script>
-<script src="__PUBLIC__/scripts/My97DatePicker/WdatePicker.js" type="text/javascript" defer="defer"></script>
-<script type="text/javascript" src="__PUBLIC__/scripts/artDialog/artDialog.js?skin=default"></script>
+<script type="text/javascript" src="/NewRPJ/Public/scripts/jquery/jquery-1.7.1.js"></script>
+<link href="/NewRPJ/Public/style/authority/basic_layout.css" rel="stylesheet" type="text/css">
+<link href="/NewRPJ/Public/style/authority/common_style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/NewRPJ/Public/scripts/authority/commonAll.js"></script>
+<script type="text/javascript" src="/NewRPJ/Public/scripts/jquery/jquery-1.4.4.min.js"></script>
+<script src="/NewRPJ/Public/scripts/My97DatePicker/WdatePicker.js" type="text/javascript" defer="defer"></script>
+<script type="text/javascript" src="/NewRPJ/Public/scripts/artDialog/artDialog.js?skin=default"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
 		/*
@@ -136,73 +136,34 @@
 </script>
 </head>
 <body>
-<form id="submitForm" name="submitForm" action="{:U('admin/product/product_submit')}" method="post" enctype="multipart/form-data">
-	<input type="hidden" name="product_id" value="{$product[0].product_id}" id="fyID"/>
+<form id="submitForm" name="submitForm" action="<?php echo U('admin/produstpic/productpic_submit');?>" method="post" enctype="multipart/form-data">
+	<input type="hidden" name="fyID" value="14458625716623" id="fyID"/>
 	<div id="container">
 		<div id="nav_links">
 			当前位置：基础数据&nbsp;>&nbsp;<span style="color: #1A5CC6;">附件编辑</span>
 			<div id="page_close">
 				<a href="javascript:parent.$.fancybox.close();">
-					<img src="__PUBLIC__/images/common/page_close.png" width="20" height="20" style="vertical-align: text-top;"/>
+					<img src="/NewRPJ/Public/images/common/page_close.png" width="20" height="20" style="vertical-align: text-top;"/>
 				</a>
 			</div>
 		</div>
 		<div class="ui_content">
 			<table  cellspacing="0" cellpadding="0" width="100%" align="left" border="0">
+
+
+				<input type="hidden" name="id" value="<?php echo ($item["id"]); ?>" id="id"/>
 				<tr>
-					<td class="ui_text_lt">热销产品</td>
+					<td class="ui_text_rt">附件名称</td>
 					<td class="ui_text_lt">
-						<input type="checkbox" name="top" value="1" class="ui_input_txt02"
-							<if condition="$product[0]['top'] eq 'X'">
-								checked
-							</if>
-						/>
+						<input type="text" name="name" value="<?php echo ($item["name"]); ?>" class="ui_input_txt02"/>
 					</td>
 				</tr>
-				<tr>
-					<td class="ui_text_lt">产品名称</td>
+				<!-- <tr>
+					<td class="ui_text_rt">附件</td>
 					<td class="ui_text_lt">
-						<input type="text" name="product_name" value="{$product[0].product_name}" class="ui_input_txt02"/>
+						<input type="file" name="url" size="35" value="<?php echo ($a["url"]); ?>" />
 					</td>
-				</tr>
-				<tr>
-					<td class="ui_text_lt">产品描述</td>
-					<td class="ui_text_lt">
-						<textarea rows="5" cols="50" name="product_desc" value=" ">{$product[0].product_desc}</textarea>
-					</td>
-				</tr>
-				<tr>
-					<td class="ui_text_lt">产品规格</td>
-					<td class="ui_text_lt">
-						<textarea rows="5" cols="50" name="product_standard" value=" ">{$product[0].product_standard}</textarea>
-					</td>
-				</tr>
-				<tr>
-					<td class="ui_text_lt">产品型号</td>
-					<td class="ui_text_lt">
-						 <input type="text" name="product_model" value="{$product[0].product_model}" class="ui_input_txt02"/>
-					</td>
-				</tr>
-				<tr>
-					<td class="ui_text_lt">产品Logo</td>
-					<td class="ui_text_lt">
-						<input type="file" name="product_logo" size="35" value="" />
-						<label for="description">分辨率125*125</label>
-					</td>
-				</tr>
-				<tr>
-					<td class="ui_text_lt">产品图片</td>
-					<td class="ui_text_lt">
-						<input type="file" name="product_pic" size="35" value="" />
-						<label for="description">分辨率600*600</label>
-					</td>
-				</tr>
-				<tr>
-					<td class="ui_text_lt">产品视频地址</td>
-					<td class="ui_text_lt">
-						<input type="text" name="product_video" value=" {$product[0].product_video}" class="ui_input_txt02"/>
-					</td>
-				</tr>
+				</tr> -->
 				<tr>
 					<td>&nbsp;</td>
 					<td class="ui_text_lt">
@@ -210,9 +171,12 @@
 						&nbsp;<input id="cancelbutton" type="submit" value="取消" class="ui_input_btn01"/>
 					</td>
 				</tr>
+
 			</table>
+
 		</div>
 	</div>
 </form>
+
 </body>
 </html>

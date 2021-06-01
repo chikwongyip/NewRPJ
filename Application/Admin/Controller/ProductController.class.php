@@ -17,6 +17,9 @@ class ProductController extends Controller {
         $image = new \Think\Image();
         $idMax = $modelProduct->max('product_id');
         $product_id = $idMax+1;
+          if ($_POST['top']== 1){
+              $modelProduct->top = 'X';
+          }
         $modelProduct->product_id = $product_id;
         $modelProduct->product_name = $_POST["product_name"];
         $modelProduct->product_desc = $_POST["product_desc"];
@@ -25,9 +28,7 @@ class ProductController extends Controller {
         $modelProduct->product_video = $_POST["product_video"];
         $modelProduct->brand_id = $_POST["brand_id"];
         $modelProduct->category_id = $_POST["category_id"];
-        if ($_POST["top"][0]!=null) {
-          $modelProduct->top = 'X';
-        }
+
         //处理文件
         $upload = new \Think\Upload();
         $upload->maxSize = 3145728;
@@ -93,36 +94,41 @@ class ProductController extends Controller {
       $model = M('Rpj_product');
 
       if (IS_POST) {
-        $model->find($_POST['product_id']);
-        $model->product_name = $_POST['product_name'];
-        $model->product_desc = $_POST['product_desc'];
-        $model->product_standard = $_POST['product_standard'];
-        $model->product_model = $_POST['product_model'];
-        $model->product_video = $_POST['product_video'];
-        $upload = new \Think\Upload();
-        $upload->maxSize = 3145728;
-        $upload->exts = array('jpg', 'gif', 'png', 'jpeg','pdf');// 设置附件上传类型
-        $upload->rootPath  =     './Public/Upload/'; // 设置附件上传根目录
-        $upload->savePath  =     ''; // 设置附件上传（子）目录
-        if ($_FILES['product_logo']['name'] != null) {
-          $info = $upload->uploadOne($_FILES['product_logo']);
-          if(!$info){
-              $this->error($upload->getError());
-          }else{
-              $model->product_logo = '/Upload/'.$info['savepath'].$info['savename'];
-          }
-        }
 
-        if ($_FILES['product_pic']['name'] != null) {
-          $info = $upload->uploadOne($_FILES['product_pic']);
-          if(!$info){
-              $this->error($upload->getError());
-          }else{
-              $model->product_pic = '/Upload/'.$info['savepath'].$info['savename'];
-          }
-        }
+            $model->find($_POST['product_id']);
+            if ($_POST['top']== 1){
+                $model->top = 'X';
+            }
 
-        $model->save();
+            $model->product_name = $_POST['product_name'];
+            $model->product_desc = $_POST['product_desc'];
+            $model->product_standard = $_POST['product_standard'];
+            $model->product_model = $_POST['product_model'];
+            $model->product_video = $_POST['product_video'];
+            $upload = new \Think\Upload();
+            $upload->maxSize = 3145728;
+            $upload->exts = array('jpg', 'gif', 'png', 'jpeg','pdf');// 设置附件上传类型
+            $upload->rootPath  =     './Public/Upload/'; // 设置附件上传根目录
+            $upload->savePath  =     ''; // 设置附件上传（子）目录
+            if ($_FILES['product_logo']['name'] != null) {
+              $info = $upload->uploadOne($_FILES['product_logo']);
+              if(!$info){
+                  $this->error($upload->getError());
+              }else{
+                  $model->product_logo = '/Upload/'.$info['savepath'].$info['savename'];
+              }
+            }
+
+            if ($_FILES['product_pic']['name'] != null) {
+              $info = $upload->uploadOne($_FILES['product_pic']);
+              if(!$info){
+                  $this->error($upload->getError());
+              }else{
+                  $model->product_pic = '/Upload/'.$info['savepath'].$info['savename'];
+              }
+            }
+
+            $model->save();
       }
       $this->display('product_edit');
     }
