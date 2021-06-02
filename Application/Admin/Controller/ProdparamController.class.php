@@ -13,9 +13,26 @@ class ProdparamController extends Controller
       $product_id = $_POST["product_id"];
       if (!is_null($product_id))
       {
-        $paramModel->product_id = $_POST["product_id"];
-        $paramModel->param_name = $_POST["param_name"];
-        $paramModel->param_desc = $_POST["param_desc"];
+          $paramModel->product_id = $_POST["product_id"];
+          $paramModel->param_name = $_POST["param_name"];
+          $paramModel->param_desc = $_POST["param_desc"];
+          $image = new \Think\Image();
+          $upload = new \Think\Upload();
+          $upload->maxSize = 3145728;
+          $upload->exts = array('jpg', 'gif', 'png', 'jpeg','pdf');// 设置附件上传类型
+          $upload->rootPath  =     './Public/Upload/'; // 设置附件上传根目录
+          $upload->savePath  =     ''; // 设置附件上传（子）目录
+          $info = $upload->uploadOne($_FILES['param_pic']);
+
+          if(!$info){
+              $this->error($upload->getError());
+          }else{
+    //            $modelProduct->product_logo = '/Upload/'.$info['savepath'].$info['savename'];
+              $imagePath = './Public/Upload/'.$info['savepath'].$info['savename'];
+              $image->open($imagePath);
+              $image->thumb(125,125)->save('./Public/Upload/'.$info['savepath'].$info['savename']);
+              $paramModel->param_pic = '/Upload/'.$info['savepath'].$info['savename'];
+          }
         $paramModel->add();
       }
     }
@@ -34,10 +51,27 @@ class ProdparamController extends Controller
   {
     if (IS_POST)
     {
-      $paramModel = M('Rpj_prod_param');
-      $paramModel->param_id = $_POST['param_id'];
-      $paramModel->param_name = $_POST['param_name'];
-      $paramModel->param_desc = $_POST['param_desc'];
+        $paramModel = M('Rpj_prod_param');
+        $paramModel->param_id = $_POST['param_id'];
+        $paramModel->param_name = $_POST['param_name'];
+        $paramModel->param_desc = $_POST['param_desc'];
+        $image = new \Think\Image();
+        $upload = new \Think\Upload();
+        $upload->maxSize = 3145728;
+        $upload->exts = array('jpg', 'gif', 'png', 'jpeg','pdf');// 设置附件上传类型
+        $upload->rootPath  =     './Public/Upload/'; // 设置附件上传根目录
+        $upload->savePath  =     ''; // 设置附件上传（子）目录
+        $info = $upload->uploadOne($_FILES['param_pic']);
+
+        if(!$info){
+//            $this->error($upload->getError());
+        }else{
+            //            $modelProduct->product_logo = '/Upload/'.$info['savepath'].$info['savename'];
+            $imagePath = './Public/Upload/'.$info['savepath'].$info['savename'];
+            $image->open($imagePath);
+            $image->thumb(125,125)->save('./Public/Upload/'.$info['savepath'].$info['savename']);
+            $paramModel->param_pic = '/Upload/'.$info['savepath'].$info['savename'];
+        }
       $paramModel->save();
     }
     $this->display('prodparam_edit');

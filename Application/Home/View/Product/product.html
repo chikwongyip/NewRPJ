@@ -382,12 +382,15 @@
                                           <h3>参数列表</h3>
                                           <div class="table-responsive">
                                               <table class="table">
-																									<foreach name="parameter" item="param_list">
-                                                  <tr>
+												  <foreach name="parameter" item="param_list">
+                                                    <tr>
                                                       <td>{$param_list.param_name}</td>
                                                       <td>{$param_list.param_desc}</td>
-                                                  </tr>
-																								  </foreach>
+                                                    </tr>
+											 	  </foreach>
+												  <foreach name="parameter" item="param_list">
+													  <img src="__PUBLIC__{$param_list.param_pic}" alt="">
+												  </foreach>
                                               </table>
                                           </div>
                                       </div>

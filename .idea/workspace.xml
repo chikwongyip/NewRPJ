@@ -2,52 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13f02ca5-72ea-4eda-9ef7-6f6a0dbca702" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/801d32d783ba9713a496c3e1b30861b8.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/e51538d9b79bf4b5048fc957b95aa49c.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Admin/21_05_31.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Admin/21_06_01.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/21_06_01.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-05-12/609b316c37867.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-05-12/609b8151d44b2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-05-15/609f3a4eec86b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-05-15/609f3a4eedc79.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-05-27/60af482ba5527.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-05-27/60af482ba81ee.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-05-27/60af52376230d.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-05-27/60af5237651f9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-05-27/60af5f6ca18d0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-05-27/60af5f6ca4381.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-05-27/60af5fdb5e33c.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-05-27/60af5fdb61012.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-05-27/60af5ff9a545f.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-05-27/60af5ff9a58c1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-05-28/60b04fa2660d3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-05-28/60b05014aa972.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60b04fa2660d3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60b05014aa972.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/21_06_02.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/ProductController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Controller/ProductController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/View/Product/Product_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/View/Product/Product_add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/View/Product/Product_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/View/Product/Product_edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/View/Product/Product_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/View/Product/Product_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/View/Productpic/Productpic_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/View/Productpic/Productpic_add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/View/Productpic/Productpic_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/View/Productpic/Productpic_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Common/Common/function.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Common/Common/function.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/ProdparamController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Controller/ProdparamController.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/Home/View/Product/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/View/Product/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/159018613a3f0dacd2018373a8985092.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/159018613a3f0dacd2018373a8985092.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/78a8f5cfa25ba43c642e01270c65c362.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/78a8f5cfa25ba43c642e01270c65c362.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/aea838662f09cb93b114cf1490ba6adc.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/aea838662f09cb93b114cf1490ba6adc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/192f06c54eb7e04d833ece5c76a916bf.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/192f06c54eb7e04d833ece5c76a916bf.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/5b87b1808583e75413168b00f7d913de.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/5b87b1808583e75413168b00f7d913de.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/ee003ac5a02d3cd1eaf30a5d0f4ce7ce.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/ee003ac5a02d3cd1eaf30a5d0f4ce7ce.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" notifyAboutMissingVendor="false" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -134,7 +99,8 @@
       <workItem from="1621001786189" duration="130000" />
       <workItem from="1621344137426" duration="727000" />
       <workItem from="1622466439529" duration="4724000" />
-      <workItem from="1622552922037" duration="3265000" />
+      <workItem from="1622552922037" duration="3901000" />
+      <workItem from="1622640332680" duration="1680000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1607852140506</created>
@@ -241,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621001806955</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fixed all kinds of bug">
+      <created>1622556638061</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1622556638061</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,6 +232,7 @@
     <MESSAGE value="修正连接" />
     <MESSAGE value="修正上传到阿里云之后产生的bug" />
     <MESSAGE value="fixed upload attachement bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed upload attachement bug" />
+    <MESSAGE value="fixed all kinds of bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed all kinds of bug" />
   </component>
 </project>
