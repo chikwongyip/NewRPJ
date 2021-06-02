@@ -179,6 +179,7 @@
 							<th>产品名称</th>
 							<th>产品参数名称</th>
 							<th>产品参数描述</th>
+							<th>产品参数图片</th>
 							<th>操作</th>
 						</tr>
 						<foreach name="paramList" item="list">
@@ -187,6 +188,7 @@
 								<td>{$list.product_name}</td>
 								<td>{$list.param_name}</td>
 								<td>{$list.param_desc}</td>
+								<td>{$list.param_pic}</td>
 								<td>
 									<a href="{:U('admin/prodparam/prodparam_edit',array('param_id'=>$list[param_id]))}" class="edit">编辑</a>
 									<a href="javascript:del({$list.param_id});">删除</a>

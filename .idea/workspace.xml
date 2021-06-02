@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13f02ca5-72ea-4eda-9ef7-6f6a0dbca702" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/21_06_02.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/ProdparamController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Controller/ProdparamController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/View/Product/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/View/Product/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Admin/View/Prodparam/Prodparam_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/View/Prodparam/Prodparam_add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Admin/View/Prodparam/Prodparam_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/View/Prodparam/Prodparam_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Admin/View/Prodparam/Prodparam_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/View/Prodparam/Prodparam_list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +100,7 @@
       <workItem from="1621344137426" duration="727000" />
       <workItem from="1622466439529" duration="4724000" />
       <workItem from="1622552922037" duration="3901000" />
-      <workItem from="1622640332680" duration="1680000" />
+      <workItem from="1622640332680" duration="2847000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1607852140506</created>
@@ -214,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622556638061</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="product parameter add pictrue">
+      <created>1622642054066</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1622642054066</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +240,7 @@
     <MESSAGE value="修正上传到阿里云之后产生的bug" />
     <MESSAGE value="fixed upload attachement bug" />
     <MESSAGE value="fixed all kinds of bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed all kinds of bug" />
+    <MESSAGE value="product parameter add pictrue" />
+    <option name="LAST_COMMIT_MESSAGE" value="product parameter add pictrue" />
   </component>
 </project>
