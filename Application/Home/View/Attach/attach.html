@@ -237,14 +237,14 @@
 										</foreach>
 									</header>
 									<div class="post-thumbnail img-full">
-										<a href="single-blog.html">
+										<a href="{:U('home/product/product',array('product_id'=>$pro_list[product_id]))}">
 											<img src="img/blog/blog1.jpg" alt="">
 										</a>
 									</div>
 									<div class="postinfo-wrapper">
 										<div class="post-info">
 											<div class="entry-summary">
-												<p>{$attch_list.att_desc}</p>
+												<p>{$attach_list.att_desc}</p>
 												<foreach name="product" item="pro_list">
 													<if condition="$attch_list['product_id'] eq $pro_list['product_id']">
 														<a href="{:U('home/product/product',array('product_id'=>$pro_list[product_id]))}" class="default-btn">了解该产品</a>

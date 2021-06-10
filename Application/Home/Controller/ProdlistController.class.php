@@ -66,6 +66,7 @@ class ProdlistController extends Controller
     //  select data
         $company = $model->find(1);
         $product = getProductDataWithBrand($brand_id);
+//        var_dump($product);exit();
         $brands  = $modelBrands->select();
 
     // assign data html

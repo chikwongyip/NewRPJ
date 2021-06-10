@@ -184,7 +184,7 @@
 		                <div class="breadcrumb-content text-center">
                             <h1 class="breadmome-name">产品附件下载</h1>
 		                    <ul>
-		                        <li><a href="index.html">主页</a></li>
+		                        <li><a href="<?php echo U('home/index/index');?>">主页</a></li>
 		                        <li class="active">产品附件下载</li>
 		                    </ul>
 		                </div>
@@ -198,7 +198,7 @@
 		    <div class="container">
 		        <div class="row">
 					<!--Blog Post Start-->
-					<?php if(is_array($attch)): foreach($attch as $key=>$attch_list): ?><div class="col-lg-9">
+					<?php if(is_array($attach)): foreach($attach as $key=>$attach_list): ?><div class="col-lg-9">
 							<div class="blog_area">
 								<article class="blog_single">
 									<header class="entry-header">
@@ -206,22 +206,22 @@
 											<a href="#"> Fashion</a>,<a href="#">WordPress</a>
 										</span> -->
 										<h2 class="entry-title">
-											<a href="/NewRPJ/Public<?php echo ($attch_list["url"]); ?>"> <?php echo ($attch_list["name"]); ?></a>
+											<a href="/NewRPJ/Public<?php echo ($attach_list["url"]); ?>"> <?php echo ($attach_list["name"]); ?></a>
 										</h2>
-										<?php if(is_array($product)): foreach($product as $key=>$pro_list): if($attch_list['product_id'] == $pro_list['product_id']): ?><span class="post-author">
+										<?php if(is_array($product)): foreach($product as $key=>$pro_list): if($attach_list['product_id'] == $pro_list['product_id']): ?><span class="post-author">
 												<span class="post-by"> 对应产品：
 												<span class="post-separator">|</span>
 												<span class="blog-post-date"><i class="fas fa-calendar-alt"></i><?php echo ($pro_list["product_name"]); ?> </span><?php endif; endforeach; endif; ?>
 									</header>
 									<div class="post-thumbnail img-full">
-										<a href="single-blog.html">
+										<a href="<?php echo U('home/product/product',array('product_id'=>$pro_list[product_id]));?>">
 											<img src="img/blog/blog1.jpg" alt="">
 										</a>
 									</div>
 									<div class="postinfo-wrapper">
 										<div class="post-info">
 											<div class="entry-summary">
-												<p><?php echo ($attch_list["att_desc"]); ?></p>
+												<p><?php echo ($attach_list["att_desc"]); ?></p>
 												<?php if(is_array($product)): foreach($product as $key=>$pro_list): if($attch_list['product_id'] == $pro_list['product_id']): ?><a href="<?php echo U('home/product/product',array('product_id'=>$pro_list[product_id]));?>" class="default-btn">了解该产品</a><?php endif; endforeach; endif; ?>
 												
 											</div>

@@ -356,10 +356,11 @@
                                           <h3>参数列表</h3>
                                           <div class="table-responsive">
                                               <table class="table">
-																									<?php if(is_array($parameter)): foreach($parameter as $key=>$param_list): ?><tr>
+												  <?php if(is_array($parameter)): foreach($parameter as $key=>$param_list): ?><tr>
                                                       <td><?php echo ($param_list["param_name"]); ?></td>
                                                       <td><?php echo ($param_list["param_desc"]); ?></td>
-                                                  </tr><?php endforeach; endif; ?>
+                                                    </tr><?php endforeach; endif; ?>
+												  <?php if(is_array($parameter)): foreach($parameter as $key=>$param_list): ?><img src="/NewRPJ/Public<?php echo ($param_list["param_pic"]); ?>" alt=""><?php endforeach; endif; ?>
                                               </table>
                                           </div>
                                       </div>

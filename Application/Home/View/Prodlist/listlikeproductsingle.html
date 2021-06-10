@@ -193,209 +193,209 @@
 		</div>
 		<!--Header Bottom Area End-->
 	</header>
-		<!-- copy -->
-		<!--Header Area End-->
-		<!--Breadcrumb Area Start-->
-		<div class="breadcrumb-area">
-		    <div class="container">
-		        <div class="row">
-		            <div class="col-12">
-		                <div class="breadcrumb-content text-center">
-                            <h1 class="breadmome-name">Shop</h1>
-		                    <ul>
-		                        <li><a href="index.html">主页</a></li>
-		                        <li class="active">产品列表</li>
-		                    </ul>
-		                </div>
-		            </div>
-		        </div>
-		    </div>
+	<!-- copy -->
+	<!--Header Area End-->
+	<!--Breadcrumb Area Start-->
+	<div class="breadcrumb-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="breadcrumb-content text-center">
+						<h1 class="breadmome-name">产品</h1>
+						<ul>
+							<li><a href="{:U('home/index/index')}">主页</a></li>
+							<li class="active">产品列表</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
-		<!--Breadcrumb Area End-->
-		<!--Shop Area Start-->
-		<div class="shop-area mt-80">
-		    <div class="container">
-		        <div class="row">
-		            <div class="col-lg-3 order-2 order-lg-1">
-		                <!--Shop Product Categorie Start-->
-		                <div class="shop-product-cate mb-20">
-		                    <h3>产品分类</h3>
-		                    <div id="shop-cate-toggle" class="category-menu sidebar-menu sidbar-style">
-		                        <ul class="category-sub-menu">
-														 <foreach name="category" item="cate_list">
-			                         <li class="has-sub"><a href="#">{$cate_list.category_name}</a>
-		                             <ul class="category-sub">
-																	 <foreach name="brand" item="brand_list">
-																		 <if condition="$brand_list['category_id']=$cate_list['category_id']">
-	                                        <li><a href="shop.html">{$brand_list.brand_name}</a></li>
-																			</if>
-																	 </foreach>
-                                  </ul>
-			                         </li>
-													 	 </foreach>
-		                     </ul>
-		                   </div>
-		                </div>
-		                <!--Shop Product Categorie End-->
-		                <!--Brand Categorie Widget Start-->
-		                <div class="shop-sidebar mb-20">
-		                    <h3>品牌</h3>
-		                    <div class="shop-checkbox">
-		                        <ul>
-																<foreach name="brands" item="brand_list">
-		                            <li><input name="product-categori" type="checkbox"><a href="#">{$brand_list.brand_name}</a></li>
-															  </foreach>
-		                        </ul>
-		                    </div>
-		                </div>
-		                <!--Brand Categorie Widget End-->
-		            </div>
-		            <div class="col-lg-9 order-1 order-lg-2">
-		                <div class="shop-layout">
-		                    <!--Grid & List View Start-->
-		                    <div class="shop-topbar-wrapper mb-30 d-md-flex justify-content-md-between align-items-center">
-		                        <div class="grid-list-option">
-		                             <ul class="nav">
-                                      <li>
-                                        <a class="active" data-toggle="tab" href="#grid"><i class="ion-grid show_grid"></i></a>
-                                      </li>
-                                      <li>
-                                        <a data-toggle="tab" href="#list"><i class="ion-android-menu show_list"></i></a>
-                                      </li>
-                                    </ul>
-                                    <!-- <p class="show-product">Showing 1–9 of 42 results</p> -->
-		                         </div>
-		                         <!--Toolbar Short Area Start-->
-		                         <!-- <div class="toolbar-short-area d-md-flex align-items-center">
-                                     <div class="toolbar-shorter">
-                                        <label>Sort By:</label>
-                                         <select class="wide nice-select">
-                                             <option data-display="Select">Nothing</option>
-                                             <option value="Relevance">Relevance</option>
-                                             <option value="Name, A to Z">Name, A to Z</option>
-                                             <option value="Name, Z to A">Name, Z to A</option>
-                                             <option value="Price, low to high">Price, low to high</option>
-                                             <option value="Price, high to low">Price, high to low</option>
-                                         </select>
-                                     </div>
-                                 </div> -->
-		                         <!--Toolbar Short Area End-->
-		                    </div>
-		                    <!--Grid & List View End-->
-		                    <!--Shop Product Start-->
-		                    <div class="shop-product">
-		                        <div id="myTabContent-2" class="tab-content">
-		                            <div id="grid" class="tab-pane fade show active">
-		                                <div class="product-grid-view">
-		                                    <div class="row">
-																							<foreach name="product" item="prod_list">
-                                                <div class="col-lg-4 col-xl-4 col-md-4">
-                                                    <!--Single Product Start-->
-                                                    <div class="single-product mb-30">
-                                                        <div class="product-img">
-                                                            <a href="single-product.html">
-                                                                <img class="first-img" src="__PUBLIC__{$prod_list.product_pic300}" alt="">
-                                                                <!-- <img class="hover-img" src="__PUBLIC__/img/product/product7.jpg" alt=""> -->
-                                                            </a>
-                                                            <span class="sticker">New</span>
+	</div>
+	<!--Breadcrumb Area End-->
+	<!--Shop Area Start-->
+	<div class="shop-area mt-80">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 order-2 order-lg-1">
+					<!--Shop Product Categorie Start-->
+					<div class="shop-product-cate mb-20">
+						<h3>产品分类</h3>
+						<div id="shop-cate-toggle" class="category-menu sidebar-menu sidbar-style">
+							<ul class="category-sub-menu">
+								<foreach name="category" item="cate_list">
+									<li class="has-sub"><a href="{:U('home/prodlist/listwithcategory',array('category_id'=>$cat_list[category_id]))}">{$cate_list.category_name}</a>
+										<ul class="category-sub">
+											<foreach name="brand" item="brand_list">
+												<if condition="$brand_list['category_id']=$cate_list['category_id']">
+													<li><a href="{:U('home/prodlist/listwithbrand',array('brand_id'=>$brd_list[brand_id]))}">{$brand_list.brand_name}</a></li>
+												</if>
+											</foreach>
+										</ul>
+									</li>
+								</foreach>
+							</ul>
+						</div>
+					</div>
+					<!--Shop Product Categorie End-->
+					<!--Brand Categorie Widget Start-->
+					<div class="shop-sidebar mb-20">
+						<h3>品牌</h3>
+						<div class="shop-checkbox">
+							<ul>
+								<foreach name="brands" item="brand_list">
+									<li><input name="product-categori" type="checkbox"><a href="{:U('home/prodlist/listwithbrand',array('brand_id'=>$brd_list[brand_id]))}">{$brand_list.brand_name}</a></li>
+								</foreach>
+							</ul>
+						</div>
+					</div>
+					<!--Brand Categorie Widget End-->
+				</div>
+				<div class="col-lg-9 order-1 order-lg-2">
+					<div class="shop-layout">
+						<!--Grid & List View Start-->
+						<div class="shop-topbar-wrapper mb-30 d-md-flex justify-content-md-between align-items-center">
+							<div class="grid-list-option">
+								<ul class="nav">
+									<li>
+										<a class="active" data-toggle="tab" href="#grid"><i class="ion-grid show_grid"></i></a>
+									</li>
+									<li>
+										<a data-toggle="tab" href="#list"><i class="ion-android-menu show_list"></i></a>
+									</li>
+								</ul>
+								<!-- <p class="show-product">Showing 1–9 of 42 results</p> -->
+							</div>
+							<!--Toolbar Short Area Start-->
+							<!-- <div class="toolbar-short-area d-md-flex align-items-center">
+                                <div class="toolbar-shorter">
+                                   <label>Sort By:</label>
+                                    <select class="wide nice-select">
+                                        <option data-display="Select">Nothing</option>
+                                        <option value="Relevance">Relevance</option>
+                                        <option value="Name, A to Z">Name, A to Z</option>
+                                        <option value="Name, Z to A">Name, Z to A</option>
+                                        <option value="Price, low to high">Price, low to high</option>
+                                        <option value="Price, high to low">Price, high to low</option>
+                                    </select>
+                                </div>
+                            </div> -->
+							<!--Toolbar Short Area End-->
+						</div>
+						<!--Grid & List View End-->
+						<!--Shop Product Start-->
+						<div class="shop-product">
+							<div id="myTabContent-2" class="tab-content">
+								<div id="grid" class="tab-pane fade show active">
+									<div class="product-grid-view">
+										<div class="row">
+											<foreach name="product" item="prod_list">
+												<div class="col-lg-4 col-xl-4 col-md-4">
+													<!--Single Product Start-->
+													<div class="single-product mb-30">
+														<div class="product-img">
+															<a href="{:U('home/product/product',array('product_id'=>$prod_list[product_id]))}">
+																<img class="first-img" src="__PUBLIC__{$prod_list.product_pic300}" alt="">
+																<!-- <img class="hover-img" src="__PUBLIC__/img/product/product7.jpg" alt=""> -->
+															</a>
+															<span class="sticker">New</span>
 
-                                                        </div>
-                                                        <div class="product-content">
-                                                            <h4><a href="single-product.html">{$prod_list.product_name}</a></h4>
-                                                            <div class="product-price">
-                                                                <span class="price">{$prod_list.brand_name}</span>
-                                                            </div>
-                                                            <div class="product-reviews">
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                                <i class="ion-android-star"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--Single Product End-->
-                                              </div>
-																							</foreach>
-		                                    </div>
-		                                </div>
-		                            </div>
-		                            <div id="list" class="tab-pane fade">
-		                                <div class="product-list-view">
-		                                    <div class="product-list-item mb-40">
-		                                        <div class="row">
-		                                            <!--Single List Product Start-->
-																								<foreach name="product" item="prod_list">
-			                                            <div class="col-md-4">
-			                                                <div class="single-product">
-			                                                    <div class="product-img">
-			                                                        <a href="single-product.html">
-	                                                                    <img class="first-img" src="__PUBLIC__{$prod_list.product_pic300}" alt="">
-	                                                                    <!-- <img class="hover-img" src="__PUBLIC__/img/product/product7.jpg" alt=""> -->
-	                                                                </a>
-	                                                                <span class="sticker">New</span>
-			                                                    </div>
-			                                                </div>
-			                                            </div>
-			                                            <div class="col-md-8">
-			                                                <div class="product-content shop-list">
-			                                                    <h4><a href="single-product.html">{$prod_list.product_name}</a></h4>
-	                                                            <div class="product-price">
-	                                                                <span class="price">{$prod_list.brand_name}</span>
-	                                                            </div>
-	                                                            <div class="product-reviews">
-	                                                                <i class="ion-android-star"></i>
-	                                                                <i class="ion-android-star"></i>
-	                                                                <i class="ion-android-star"></i>
-	                                                                <i class="ion-android-star"></i>
-	                                                                <i class="ion-android-star"></i>
-	                                                            </div>
-	                                                            <div class="product-description">
-	                                                                <p>{$prod_list.product_desc}</p>
-	                                                            </div>
-	                                                             <!-- <div class="product-list-action">
-	                                                                <ul>
-	                                                                    <li><a class="pro-add-btn" href="#"><i class="ion-bag"></i>Add to cart</a></li>
-	                                                                    <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
-	                                                                    <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
-	                                                                </ul>
-	                                                            </div> -->
-			                                                </div>
-			                                            </div>
-																							  </foreach>
-		                                            <!--Single List Product End-->
-		                                        </div>
-		                                    </div>
+														</div>
+														<div class="product-content">
+															<h4><a href="{:U('home/product/product',array('product_id'=>$prod_list[product_id]))}">{$prod_list.product_name}</a></h4>
+															<div class="product-price">
+																<span class="price">{$prod_list.brand_name}</span>
+															</div>
+															<div class="product-reviews">
+																<i class="ion-android-star"></i>
+																<i class="ion-android-star"></i>
+																<i class="ion-android-star"></i>
+																<i class="ion-android-star"></i>
+																<i class="ion-android-star"></i>
+															</div>
+														</div>
+													</div>
+													<!--Single Product End-->
+												</div>
+											</foreach>
+										</div>
+									</div>
+								</div>
+								<div id="list" class="tab-pane fade">
+									<div class="product-list-view">
+										<div class="product-list-item mb-40">
+											<div class="row">
+												<!--Single List Product Start-->
+												<foreach name="product" item="prod_list">
+													<div class="col-md-4">
+														<div class="single-product">
+															<div class="product-img">
+																<a href="{:U('home/product/product',array('product_id'=>$prod_list[product_id]))}">
+																	<img class="first-img" src="__PUBLIC__{$prod_list.product_pic300}" alt="">
+																	<!-- <img class="hover-img" src="__PUBLIC__/img/product/product7.jpg" alt=""> -->
+																</a>
+																<span class="sticker">New</span>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-8">
+														<div class="product-content shop-list">
+															<h4><a href="{:U('home/product/product',array('product_id'=>$prod_list[product_id]))}">{$prod_list.product_name}</a></h4>
+															<div class="product-price">
+																<span class="price">{$prod_list.brand_name}</span>
+															</div>
+															<div class="product-reviews">
+																<i class="ion-android-star"></i>
+																<i class="ion-android-star"></i>
+																<i class="ion-android-star"></i>
+																<i class="ion-android-star"></i>
+																<i class="ion-android-star"></i>
+															</div>
+															<div class="product-description">
+																<p>{$prod_list.product_desc}</p>
+															</div>
+															<!-- <div class="product-list-action">
+                                                               <ul>
+                                                                   <li><a class="pro-add-btn" href="#"><i class="ion-bag"></i>Add to cart</a></li>
+                                                                   <li><a href="#open-modal" data-toggle="modal"><i class="ion-eye"></i></a></li>
+                                                                   <li><a href="#"><i class="ion-ios-copy-outline"></i></a></li>
+                                                               </ul>
+                                                           </div> -->
+														</div>
+													</div>
+												</foreach>
+												<!--Single List Product End-->
+											</div>
+										</div>
 
-		                                </div>
-		                            </div>
-		                            <!--Pagination Start-->
-                                    <!-- <div class="pagination-product d-md-flex justify-content-md-between align-items-center">
-                                      <div class="showing-product">
-                                          <p> Showing 1-12 of 13 item(s) </p>
-                                      </div>
-                                      <div class="page-list">
-                                          <ul>
-                                              <li class="prev"><a href="#"><i class="ion-ios-arrow-left"></i>Previous</a></li>
-                                              <li class="active"><a href="#">1</a></li>
-                                              <li><a href="#">2</a></li>
-                                              <li class="next"><a href="#">Next<i class="ion-ios-arrow-right"></i></a></li>
-                                          </ul>
-                                      </div>
-                                    </div> -->
-		                            <!--Pagination End-->
-		                        </div>
-		                    </div>
-		                    <!--Shop Product End-->
-		                </div>
-		            </div>
-		        </div>
-		    </div>
+									</div>
+								</div>
+								<!--Pagination Start-->
+								<!-- <div class="pagination-product d-md-flex justify-content-md-between align-items-center">
+                                  <div class="showing-product">
+                                      <p> Showing 1-12 of 13 item(s) </p>
+                                  </div>
+                                  <div class="page-list">
+                                      <ul>
+                                          <li class="prev"><a href="#"><i class="ion-ios-arrow-left"></i>Previous</a></li>
+                                          <li class="active"><a href="#">1</a></li>
+                                          <li><a href="#">2</a></li>
+                                          <li class="next"><a href="#">Next<i class="ion-ios-arrow-right"></i></a></li>
+                                      </ul>
+                                  </div>
+                                </div> -->
+								<!--Pagination End-->
+							</div>
+						</div>
+						<!--Shop Product End-->
+					</div>
+				</div>
+			</div>
 		</div>
-		<!--Shop Area End-->
-		<!--Feature Area End-->
-		<!-- copy -->
-				<!--Feature Area Start-->
+	</div>
+	<!--Shop Area End-->
+	<!--Feature Area End-->
+	<!-- copy -->
+	<!--Feature Area Start-->
 	<!--Feature Area End-->
 	<div class="feature-area">
 		<div class="container">

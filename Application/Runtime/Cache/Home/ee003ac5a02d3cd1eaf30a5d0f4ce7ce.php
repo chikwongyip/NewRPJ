@@ -183,9 +183,9 @@
 		        <div class="row">
 		            <div class="col-12">
 		                <div class="breadcrumb-content text-center">
-                            <h1 class="breadmome-name">Shop</h1>
+                            <h1 class="breadmome-name">产品</h1>
 		                    <ul>
-		                        <li><a href="index.html">主页</a></li>
+		                        <li><a href="<?php echo U('home/index/index');?>">主页</a></li>
 		                        <li class="active">产品列表</li>
 		                    </ul>
 		                </div>
@@ -204,11 +204,11 @@
 		                    <h3>产品分类</h3>
 		                    <div id="shop-cate-toggle" class="category-menu sidebar-menu sidbar-style">
 		                        <ul class="category-sub-menu">
-														 <?php if(is_array($category)): foreach($category as $key=>$cate_list): ?><li class="has-sub"><a href="#"><?php echo ($cate_list["category_name"]); ?></a>
+								 <?php if(is_array($category)): foreach($category as $key=>$cate_list): ?><li class="has-sub"><a href="<?php echo U('home/prodlist/listwithcategory',array('category_id'=>$cat_list[category_id]));?>"><?php echo ($cate_list["category_name"]); ?></a>
 		                             <ul class="category-sub">
-																	 <?php if(is_array($brand)): foreach($brand as $key=>$brand_list): if($brand_list['category_id']=$cate_list['category_id']): ?><li><a href="shop.html"><?php echo ($brand_list["brand_name"]); ?></a></li><?php endif; endforeach; endif; ?>
-                                  </ul>
-			                         </li><?php endforeach; endif; ?>
+									  <?php if(is_array($brands)): foreach($brands as $key=>$brand_list): if($brand_list['category_id']=$cate_list['category_id']): ?><li><a href="<?php echo U('home/prodlist/listwithboth',array('brand_id'=>$brand_list[brand_id],'category_id'=>$cat_list[category_id]));?>"><?php echo ($brand_list["brand_name"]); ?></a></li><?php endif; endforeach; endif; ?>
+							    	 </ul>
+								  </li><?php endforeach; endif; ?>
 		                     </ul>
 		                   </div>
 		                </div>
@@ -218,7 +218,7 @@
 		                    <h3>品牌</h3>
 		                    <div class="shop-checkbox">
 		                        <ul>
-																<?php if(is_array($brands)): foreach($brands as $key=>$brand_list): ?><li><input name="product-categori" type="checkbox"><a href="#"><?php echo ($brand_list["brand_name"]); ?></a></li><?php endforeach; endif; ?>
+								<?php if(is_array($brands)): foreach($brands as $key=>$brand_list): ?><li><input name="product-categori" type="checkbox"><a href="<?php echo U('home/prodlist/listwithbrand',array('brand_id'=>$brand_list[brand_id]));?>"><?php echo ($brand_list["brand_name"]); ?></a></li><?php endforeach; endif; ?>
 		                        </ul>
 		                    </div>
 		                </div>
@@ -262,11 +262,11 @@
 		                            <div id="grid" class="tab-pane fade show active">
 		                                <div class="product-grid-view">
 		                                    <div class="row">
-																							<?php if(is_array($product)): foreach($product as $key=>$prod_list): ?><div class="col-lg-4 col-xl-4 col-md-4">
+											 <?php if(is_array($product)): foreach($product as $key=>$prod_list): ?><div class="col-lg-4 col-xl-4 col-md-4">
                                                     <!--Single Product Start-->
                                                     <div class="single-product mb-30">
                                                         <div class="product-img">
-                                                            <a href="single-product.html">
+                                                            <a href="<?php echo U('home/product/product',array('product_id'=>$prod_list[product_id]));?>">
                                                                 <img class="first-img" src="/NewRPJ/Public<?php echo ($prod_list["product_pic300"]); ?>" alt="">
                                                                 <!-- <img class="hover-img" src="/NewRPJ/Public/img/product/product7.jpg" alt=""> -->
                                                             </a>
@@ -274,7 +274,7 @@
 
                                                         </div>
                                                         <div class="product-content">
-                                                            <h4><a href="single-product.html"><?php echo ($prod_list["product_name"]); ?></a></h4>
+                                                            <h4><a href="<?php echo U('home/product/product',array('product_id'=>$prod_list[product_id]));?>"><?php echo ($prod_list["product_name"]); ?></a></h4>
                                                             <div class="product-price">
                                                                 <span class="price"><?php echo ($prod_list["brand_name"]); ?></span>
                                                             </div>
@@ -300,7 +300,7 @@
 																								<?php if(is_array($product)): foreach($product as $key=>$prod_list): ?><div class="col-md-4">
 			                                                <div class="single-product">
 			                                                    <div class="product-img">
-			                                                        <a href="single-product.html">
+			                                                        <a href="<?php echo U('home/product/product',array('product_id'=>$prod_list[product_id]));?>">
 	                                                                    <img class="first-img" src="/NewRPJ/Public<?php echo ($prod_list["product_pic300"]); ?>" alt="">
 	                                                                    <!-- <img class="hover-img" src="/NewRPJ/Public/img/product/product7.jpg" alt=""> -->
 	                                                                </a>
@@ -310,7 +310,7 @@
 			                                            </div>
 			                                            <div class="col-md-8">
 			                                                <div class="product-content shop-list">
-			                                                    <h4><a href="single-product.html"><?php echo ($prod_list["product_name"]); ?></a></h4>
+			                                                    <h4><a href="<?php echo U('home/product/product',array('product_id'=>$prod_list[product_id]));?>"><?php echo ($prod_list["product_name"]); ?></a></h4>
 	                                                            <div class="product-price">
 	                                                                <span class="price"><?php echo ($prod_list["brand_name"]); ?></span>
 	                                                            </div>

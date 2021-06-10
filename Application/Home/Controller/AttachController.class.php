@@ -9,7 +9,7 @@ class AttachController extends Controller
         $model = M('Rpj_company');
         $modelProduct = M('Rpj_product');
         $modelBrands  = M('Rpj_brand');
-        $modelAttch = M('Rpj_attachment');
+        $modelAttch = M('Rpj_prod_att');
         $attchCount = $modelAttch->field('product_id,count(product_id) as count')->group('product_id')->select();
         //var_dump($attchCount);exit;
         $category = getCategoryData();
@@ -36,7 +36,7 @@ class AttachController extends Controller
            $model = M('Rpj_company');
            $modelProduct = M('Rpj_product');
            $modelBrands  = M('Rpj_brand');
-           $modelAttch = M('Rpj_attachment');
+           $modelAttch = M('Rpj_prod_att');
            $attchCount = $modelAttch->field('product_id,count(product_id) as count')->group('product_id')->select();
            $category = getCategoryData();
            $brand = getBrandData();
@@ -59,6 +59,7 @@ class AttachController extends Controller
            else 
            {
                 $attch = $modelAttch->select();
+                var_dump($attch);exit();
            }
            
        // assign data html
