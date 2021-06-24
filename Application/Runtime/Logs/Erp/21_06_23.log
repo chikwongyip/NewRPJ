@@ -1,0 +1,9 @@
+[ 2021-06-23T21:15:47+08:00 ] ::1 /NewRPJ/index.php/erp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000274s ]
+ERR: 无法加载控制器:Index
+
