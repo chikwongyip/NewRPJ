@@ -1,5 +1,5 @@
 <?php
-namespace Home\Controller;
+namespace Erp\Controller;
 use Think\Controller;
 class CategoryController extends Controller{
     public function category(){
