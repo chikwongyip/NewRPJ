@@ -267,7 +267,7 @@
                                                     <div class="single-product mb-30">
                                                         <div class="product-img">
                                                             <a href="<?php echo U('home/product/product',array('product_id'=>$prod_list[product_id]));?>">
-                                                                <img class="first-img" src="/NewRPJ/Public<?php echo ($prod_list["product_pic300"]); ?>" alt="">
+                                                                <img class="first-img" src="/NewRPJ/Public<?php echo ($prod_list["product_pic"]); ?>" alt="">
                                                                 <!-- <img class="hover-img" src="/NewRPJ/Public/img/product/product7.jpg" alt=""> -->
                                                             </a>
                                                             <span class="sticker">New</span>
@@ -301,7 +301,7 @@
 			                                                <div class="single-product">
 			                                                    <div class="product-img">
 			                                                        <a href="<?php echo U('home/product/product',array('product_id'=>$prod_list[product_id]));?>">
-	                                                                    <img class="first-img" src="/NewRPJ/Public<?php echo ($prod_list["product_pic300"]); ?>" alt="">
+	                                                                    <img class="first-img" src="/NewRPJ/Public<?php echo ($prod_list["product_pic"]); ?>" alt="">
 	                                                                    <!-- <img class="hover-img" src="/NewRPJ/Public/img/product/product7.jpg" alt=""> -->
 	                                                                </a>
 	                                                                <span class="sticker">New</span>

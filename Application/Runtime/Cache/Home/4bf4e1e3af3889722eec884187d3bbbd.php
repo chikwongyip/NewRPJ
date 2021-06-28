@@ -175,7 +175,198 @@
 		</div>
 		<!--Header Bottom Area End-->
 	</header>
-		<!-- copy -->
+	<!-- copy -->
+	<!--Footer Area End-->
+	<!-- Modal Area Strat -->
+	<div class="modal fade" id="open-modal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<!--Modal Img-->
+						<div class="col-md-5">
+							<!--Modal Tab Content Start-->
+							<div class="tab-content product-details-large" id="myTabContent">
+								<div class="tab-pane fade show active" id="single-slide1" role="tabpanel" aria-labelledby="single-slide-tab-1">
+									<!--Single Product Image Start-->
+									<div class="single-product-img img-full">
+										<img src="/NewRPJ/Public/img/single-product/large/large1.jpg" alt="">
+									</div>
+									<!--Single Product Image End-->
+								</div>
+								<div class="tab-pane fade" id="single-slide2" role="tabpanel" aria-labelledby="single-slide-tab-2">
+									<!--Single Product Image Start-->
+									<div class="single-product-img img-full">
+										<img src="/NewRPJ/Public/img/single-product/large/large2.jpg" alt="">
+									</div>
+									<!--Single Product Image End-->
+								</div>
+								<div class="tab-pane fade" id="single-slide3" role="tabpanel" aria-labelledby="single-slide-tab-3">
+									<!--Single Product Image Start-->
+									<div class="single-product-img img-full">
+										<img src="/NewRPJ/Public/img/single-product/large/large3.jpg" alt="">
+									</div>
+									<!--Single Product Image End-->
+								</div>
+								<div class="tab-pane fade" id="single-slide4" role="tabpanel" aria-labelledby="single-slide-tab-4">
+									<!--Single Product Image Start-->
+									<div class="single-product-img img-full">
+										<img src="/NewRPJ/Public/img/single-product/large/large4.jpg" alt="">
+									</div>
+									<!--Single Product Image End-->
+								</div>
+							</div>
+							<!--Modal Content End-->
+							<!--Modal Tab Menu Start-->
+							<div class="single-product-menu">
+								<div class="nav single-slide-menu" role="tablist">
+									<div class="single-tab-menu img-full">
+										<a class="active" data-toggle="tab" id="single-slide-tab-1" href="#single-slide1"><img src="/NewRPJ/Public/img/single-product/small/small1.jpg" alt=""></a>
+									</div>
+									<div class="single-tab-menu img-full">
+										<a data-toggle="tab" id="single-slide-tab-2" href="#single-slide2"><img src="/NewRPJ/Public/img/single-product/small/small2.jpg" alt=""></a>
+									</div>
+									<div class="single-tab-menu img-full">
+										<a data-toggle="tab" id="single-slide-tab-3" href="#single-slide3"><img src="/NewRPJ/Public/img/single-product/small/small3.jpg" alt=""></a>
+									</div>
+									<div class="single-tab-menu img-full">
+										<a data-toggle="tab" id="single-slide-tab-4" href="#single-slide4"><img src="/NewRPJ/Public/img/single-product/small/small4.jpg" alt=""></a>
+									</div>
+								</div>
+							</div>
+							<!--Modal Tab Menu End-->
+						</div>
+						<!--Modal Img-->
+						<!--Modal Content-->
+						<div class="col-md-7">
+							<div class="single-product-content">
+								<h1 class="single-product-name">Printed Chiffon Dress</h1>
+								<div class="single-product-reviews">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<div class="single-product-price">
+									<div class="product-discount">
+										<span class="regular-price">$20.50</span>
+										<span class="price">$16.40</span>
+										<span class="discount">-20%</span>
+									</div>
+								</div>
+								<div class="product-info">
+									<p>Long printed dress with thin adjustable straps. V-neckline and wiring under the bust with ruffles at the bottom of the dress.</p>
+								</div>
+								<div class="single-product-action">
+									<form action="#">
+										<div class="product-variants">
+											<div class="product-variants-item">
+												<span class="control-label">Size</span>
+												<select class="nice-select" name="size">
+													<option value="1">S</option>
+													<option value="2">M</option>
+													<option value="3">X</option>
+													<option value="4">XL</option>
+												</select>
+											</div>
+											<div class="product-variants-item">
+												<span class="control-label">Color</span>
+												<select class="nice-select" name="color">
+													<option value="1">Red</option>
+													<option value="2">Green</option>
+													<option value="3">Blue</option>
+													<option value="4">White</option>
+												</select>
+											</div>
+										</div>
+										<div class="product-add-to-cart">
+											<span class="control-label">Quantity</span>
+											<div class="cart-plus-minus">
+												<input class="cart-plus-minus-box" type="text" name="qtybutton" value="0">
+											</div>
+											<div class="add">
+												<button class="add-to-cart"><i class="zmdi zmdi-shopping-cart-plus"></i> add-to-cart</button>
+												<span class="product-availability"><i class="zmdi zmdi-check"></i> In stock</span>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<!--Modal Content-->
+					</div>
+				</div>
+				<!--						<div class="modal-footer">-->
+				<!--							&lt;!&ndash;Single Product Share&ndash;&gt;-->
+				<!--							<div class="single-product-share">-->
+				<!--									<ul>-->
+				<!--										 <li class="categories-title">Share :</li>-->
+				<!--											<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+				<!--											<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+				<!--											<li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
+				<!--											<li><a href="#"><i class="fa fa-pinterest"></i></a></li>-->
+				<!--									</ul>-->
+				<!--							</div>-->
+				<!--							&lt;!&ndash;Single Product Share&ndash;&gt;-->
+				<!--						</div>-->
+			</div>
+		</div>
+	</div>
+	<!-- Modal Area End -->
+</div>
+
+
+
+
+
+<!--All Js Here-->
+
+<!--Jquery 1.12.4-->
+<script src="/NewRPJ/Public/scripts/vendor/jquery-1.12.4.min.js"></script>
+<!--Imagesloaded-->
+<script src="/NewRPJ/Public/scripts/imagesloaded.pkgd.min.js"></script>
+<!--Isotope-->
+<script src="/NewRPJ/Public/scripts/isotope.pkgd.min.js"></script>
+<!--Waypoints-->
+<script src="/NewRPJ/Public/scripts/waypoints.min.js"></script>
+<!--Counterup-->
+<script src="/NewRPJ/Public/scripts/jquery.counterup.min.js"></script>
+<!--Countdown-->
+<script src="/NewRPJ/Public/scripts/jquery.countdown.min.js"></script>
+<!--Carousel-->
+<script src="/NewRPJ/Public/scripts/owl.carousel.min.js"></script>
+<!--Slick-->
+<script src="/NewRPJ/Public/scripts/slick.min.js"></script>
+<!--Meanmenu-->
+<script src="/NewRPJ/Public/scripts/jquery.meanmenu.min.js"></script>
+<!--Instafeed-->
+<!--<script src="js/instafeed.min.js"></script>-->
+<!--Nice Select-->
+<script src="/NewRPJ/Public/scripts/jquery.nice-select.min.js"></script>
+<!--ScrollUp-->
+<script src="/NewRPJ/Public/scripts/jquery.scrollUp.min.js"></script>
+<!--Wow-->
+<script src="/NewRPJ/Public/scripts/wow.min.js"></script>
+<!--Venobox-->
+<script src="/NewRPJ/Public/scripts/venobox.min.js"></script>
+<!--Popper-->
+<script src="/NewRPJ/Public/scripts/popper.min.js"></script>
+<!--Bootstrap-->
+<script src="/NewRPJ/Public/scripts/bootstrap.min.js"></script>
+<!--Plugins-->
+<script src="/NewRPJ/Public/scripts/plugins.js"></script>
+<!--Main Js-->
+<script src="/NewRPJ/Public/scripts/main.js"></script>
+</body>
+</html>
+
+<!-- copy -->
 		<!--Header Area End-->
 		<!--Breadcrumb Area Start-->
 		<div class="breadcrumb-area">

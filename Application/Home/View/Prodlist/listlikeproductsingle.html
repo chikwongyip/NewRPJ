@@ -225,9 +225,9 @@
 								<foreach name="category" item="cate_list">
 									<li class="has-sub"><a href="{:U('home/prodlist/listwithcategory',array('category_id'=>$cat_list[category_id]))}">{$cate_list.category_name}</a>
 										<ul class="category-sub">
-											<foreach name="brand" item="brand_list">
+											<foreach name="brands" item="brand_list">
 												<if condition="$brand_list['category_id']=$cate_list['category_id']">
-													<li><a href="{:U('home/prodlist/listwithbrand',array('brand_id'=>$brd_list[brand_id]))}">{$brand_list.brand_name}</a></li>
+													<li><a href="{:U('home/prodlist/listwithboth',array('brand_id'=>$brand_list[brand_id],'category_id'=>$cat_list[category_id]))}">{$brand_list.brand_name}</a></li>
 												</if>
 											</foreach>
 										</ul>
@@ -243,7 +243,7 @@
 						<div class="shop-checkbox">
 							<ul>
 								<foreach name="brands" item="brand_list">
-									<li><input name="product-categori" type="checkbox"><a href="{:U('home/prodlist/listwithbrand',array('brand_id'=>$brd_list[brand_id]))}">{$brand_list.brand_name}</a></li>
+									<li><input name="product-categori" type="checkbox"><a href="{:U('home/prodlist/listwithbrand',array('brand_id'=>$brand_list[brand_id]))}">{$brand_list.brand_name}</a></li>
 								</foreach>
 							</ul>
 						</div>
@@ -294,7 +294,7 @@
 													<div class="single-product mb-30">
 														<div class="product-img">
 															<a href="{:U('home/product/product',array('product_id'=>$prod_list[product_id]))}">
-																<img class="first-img" src="__PUBLIC__{$prod_list.product_pic300}" alt="">
+																<img class="first-img" src="__PUBLIC__{$prod_list.product_pic}" alt="">
 																<!-- <img class="hover-img" src="__PUBLIC__/img/product/product7.jpg" alt=""> -->
 															</a>
 															<span class="sticker">New</span>
@@ -330,7 +330,7 @@
 														<div class="single-product">
 															<div class="product-img">
 																<a href="{:U('home/product/product',array('product_id'=>$prod_list[product_id]))}">
-																	<img class="first-img" src="__PUBLIC__{$prod_list.product_pic300}" alt="">
+																	<img class="first-img" src="__PUBLIC__{$prod_list.product_pic}" alt="">
 																	<!-- <img class="hover-img" src="__PUBLIC__/img/product/product7.jpg" alt=""> -->
 																</a>
 																<span class="sticker">New</span>
@@ -724,3 +724,4 @@
 <script src="__PUBLIC__/scripts/main.js"></script>
 </body>
 </html>
+
