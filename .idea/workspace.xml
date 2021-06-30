@@ -1,114 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13f02ca5-72ea-4eda-9ef7-6f6a0dbca702" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/21_06_28.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-05-04/6091276dabb8d.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-05-07/60953b9cbac17.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-10/60c173c36d580.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-10/60c173c3703c2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-10/60c173eba6cbf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-10/60c174564bb6a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-10/60c1746981962.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-10/60c1750ae9ac6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-10/60c1750aec4e4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-10/60c17571e09dc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-10/60c17571e3469.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-10/60c176f9c0b71.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-10/60c176f9c3588.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-15/60c85078c24d4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-15/60c8507faaf56.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-15/60c850c60c268.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-15/60c8534165db4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-15/60c853512f82c.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-15/60c8535c9880c.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-15/60c8546a6fe13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-15/60c854c871c65.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-15/60c8555e94081.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-15/60c855668e770.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-15/60c8558f26c38.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-15/60c855b699d95.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-15/60c855cb1f846.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-15/60c8569e182b1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-15/60c856a635335.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-15/60c856f9ccbb7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-15/60c8570324c94.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-15/60c8570b3dc77.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-16/60c99c0448230.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-16/60c99c0448fba.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-16/60c99c1b0361c.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-16/60c99c2421d67.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-16/60c99cbfe7124.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-16/60c99cbfe7f45.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-16/60c99cce6ccc8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-16/60c99cf4eb20a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-16/60c99d760d44d.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-16/60c99d760fc88.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-16/60c99d8978ab9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-16/60c99d91ae249.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-16/60c99e2805b45.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-16/60c99e2808795.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-16/60c99e348b3a2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-16/60c99e41be3ec.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-16/60c99e499337f.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-22/60d149d97ac87.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-22/60d149d97d00e.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-22/60d14c2fc7bc7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-22/60d14c39eedbe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-22/60d14c4369b5b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-23/60d2e6bd55566.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-23/60d2e6bd578f6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-23/60d2e6cf52721.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-23/60d2f06b482b3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-23/60d2f06b4a5a3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-23/60d2f0bf5e725.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/2021-06-23/60d2f0c6e410d.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60c85078c24d4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60c8507faaf56.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60c850c60c268.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60c8534165db4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60c853512f82c.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60c8535c9880c.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60c8546a6fe13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60c854c871c65.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60c8555e94081.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60c855668e770.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60c8558f26c38.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60c855b699d95.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60c855cb1f846.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60c8569e182b1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60c856a635335.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60c856f9ccbb7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60c8570324c94.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60c8570b3dc77.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60c99c1b0361c.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60c99c2421d67.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60c99cce6ccc8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60c99cf4eb20a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60c99d8978ab9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60c99d91ae249.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60c99e348b3a2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60c99e41be3ec.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60c99e499337f.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60d14c2fc7bc7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60d14c39eedbe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60d14c4369b5b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60d2e6cf52721.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60d2f0bf5e725.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Upload/thumb/thumb_60d2f0c6e410d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/View/About/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/View/About/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/View/Prodlist/listlikeproduct.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/View/Prodlist/listlikeproduct.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/View/Prodlist/listlikeproductsingle.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/View/Prodlist/listlikeproductsingle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/View/Prodlist/listwithboth.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/View/Prodlist/listwithboth.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/View/Prodlist/listwithbrand.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/View/Prodlist/listwithbrand.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/View/Prodlist/listwithcategory.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/View/Prodlist/listwithcategory.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/View/Prodlist/prodlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/View/Prodlist/prodlist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/4bf0851301a9f27963ecf0ca89bd7403.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/4bf0851301a9f27963ecf0ca89bd7403.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/4bf4e1e3af3889722eec884187d3bbbd.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/4bf4e1e3af3889722eec884187d3bbbd.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/ad036a5b813c49601d6c6758e013fa38.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/ad036a5b813c49601d6c6758e013fa38.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/ee003ac5a02d3cd1eaf30a5d0f4ce7ce.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/ee003ac5a02d3cd1eaf30a5d0f4ce7ce.php" afterDir="false" />
-    </list>
+    <list default="true" id="13f02ca5-72ea-4eda-9ef7-6f6a0dbca702" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -212,7 +105,7 @@
       <workItem from="1624542777658" duration="34000" />
       <workItem from="1624887640964" duration="1785000" />
       <workItem from="1624889447991" duration="558000" />
-      <workItem from="1624919113151" duration="6000" />
+      <workItem from="1624919113151" duration="311000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1607852140506</created>
@@ -354,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624887794917</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="fixed bugs">
+      <created>1624919130415</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1624919130415</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
