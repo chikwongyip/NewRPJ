@@ -1,0 +1,1 @@
+a:7:{i:0;s:6:"att_id";i:1;s:10:"product_id";i:2;s:4:"name";i:3;s:3:"url";i:4;s:8:"att_desc";s:3:"_pk";s:6:"att_id";s:5:"_type";a:5:{s:6:"att_id";s:11:"tinyint(10)";s:10:"product_id";s:10:"tinyint(5)";s:4:"name";s:11:"varchar(32)";s:3:"url";s:12:"varchar(200)";s:8:"att_desc";s:13:"varchar(1000)";}}

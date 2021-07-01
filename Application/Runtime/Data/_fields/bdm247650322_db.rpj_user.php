@@ -1,0 +1,1 @@
+a:4:{i:0;s:8:"username";i:1;s:8:"password";s:3:"_pk";s:8:"username";s:5:"_type";a:2:{s:8:"username";s:8:"char(10)";s:8:"password";s:8:"char(20)";}}
