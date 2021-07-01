@@ -1,0 +1,498 @@
+[ 2021-06-29T10:10:27+08:00 ] ::1 /NewRPJ/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0885s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0698s ]
+SQL: select distinct rpj_product.category_id,
+                                                     rpj_procategory.category_name
+                                     from rpj_product
+                                     inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                     group by rpj_product.category_id [ RunTime:0.0988s ]
+SQL: select distinct rpj_product.brand_id,
+                                             rpj_product.category_id,
+                                             brand_name
+                            from rpj_product
+                            inner join rpj_brand
+                            on rpj_brand.brand_id = rpj_product.brand_id [ RunTime:0.0840s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0804s ]
+SQL: select * from rpj_product
+                                  inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                  inner join rpj_brand       on rpj_product.brand_id    = rpj_brand.brand_id [ RunTime:0.0890s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0828s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8192] Required parameter $extend follows optional parameter $vars C:\Users\Administrator\Documents\GitHub\NewRPJ\ThinkPHP\Library\Think\Template.class.php 第 666 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.003237s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003279s ]
+ERR: Undefined constant "brand_id"
+
+[ 2021-06-29T10:10:37+08:00 ] ::1 /NewRPJ/index.php/home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0786s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0844s ]
+SQL: select distinct rpj_product.category_id,
+                                                     rpj_procategory.category_name
+                                     from rpj_product
+                                     inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                     group by rpj_product.category_id [ RunTime:0.0966s ]
+SQL: select distinct rpj_product.brand_id,
+                                             rpj_product.category_id,
+                                             brand_name
+                            from rpj_product
+                            inner join rpj_brand
+                            on rpj_brand.brand_id = rpj_product.brand_id [ RunTime:0.0896s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0949s ]
+SQL: select * from rpj_product
+                                  inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                  inner join rpj_brand       on rpj_product.brand_id    = rpj_brand.brand_id [ RunTime:0.1546s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.1442s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8192] Required parameter $extend follows optional parameter $vars C:\Users\Administrator\Documents\GitHub\NewRPJ\ThinkPHP\Library\Think\Template.class.php 第 666 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+ERR: Undefined constant "brand_id"
+
+[ 2021-06-29T10:11:31+08:00 ] ::1 /NewRPJ/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0819s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0789s ]
+SQL: select distinct rpj_product.category_id,
+                                                     rpj_procategory.category_name
+                                     from rpj_product
+                                     inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                     group by rpj_product.category_id [ RunTime:0.0877s ]
+SQL: select distinct rpj_product.brand_id,
+                                             rpj_product.category_id,
+                                             brand_name
+                            from rpj_product
+                            inner join rpj_brand
+                            on rpj_brand.brand_id = rpj_product.brand_id [ RunTime:0.0712s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0882s ]
+SQL: select * from rpj_product
+                                  inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                  inner join rpj_brand       on rpj_product.brand_id    = rpj_brand.brand_id [ RunTime:0.1703s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0802s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8192] Required parameter $extend follows optional parameter $vars C:\Users\Administrator\Documents\GitHub\NewRPJ\ThinkPHP\Library\Think\Template.class.php 第 666 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+ERR: Undefined constant "brand_id"
+
+[ 2021-06-29T10:11:38+08:00 ] ::1 /NewRPJ/index.php/home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0694s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0774s ]
+SQL: select distinct rpj_product.category_id,
+                                                     rpj_procategory.category_name
+                                     from rpj_product
+                                     inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                     group by rpj_product.category_id [ RunTime:0.0860s ]
+SQL: select distinct rpj_product.brand_id,
+                                             rpj_product.category_id,
+                                             brand_name
+                            from rpj_product
+                            inner join rpj_brand
+                            on rpj_brand.brand_id = rpj_product.brand_id [ RunTime:0.0715s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0813s ]
+SQL: select * from rpj_product
+                                  inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                  inner join rpj_brand       on rpj_product.brand_id    = rpj_brand.brand_id [ RunTime:0.1578s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0816s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8192] Required parameter $extend follows optional parameter $vars C:\Users\Administrator\Documents\GitHub\NewRPJ\ThinkPHP\Library\Think\Template.class.php 第 666 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+ERR: Undefined constant "brand_id"
+
+[ 2021-06-29T10:11:44+08:00 ] ::1 /NewRPJ/index.php/home/prodlist/prodlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0927s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0685s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0793s ]
+SQL: select distinct rpj_product.category_id,
+                                                     rpj_procategory.category_name
+                                     from rpj_product
+                                     inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                     group by rpj_product.category_id [ RunTime:0.0911s ]
+SQL: select rpj_product.brand_id,
+                                      rpj_product.category_id,
+                                      rpj_brand.brand_name,
+                                      rpj_procategory.category_name
+                                from rpj_product
+                                inner join rpj_brand on rpj_product.brand_id = rpj_brand.brand_id
+                                inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                group by rpj_product.brand_id,rpj_product.category_id [ RunTime:0.0884s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0781s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0905s ]
+SQL: select * from rpj_product
+                                  inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                  inner join rpj_brand       on rpj_product.brand_id    = rpj_brand.brand_id [ RunTime:0.1505s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8192] Required parameter $extend follows optional parameter $vars C:\Users\Administrator\Documents\GitHub\NewRPJ\ThinkPHP\Library\Think\Template.class.php 第 666 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+ERR: Undefined constant "brand_id"
+
+[ 2021-06-29T10:11:50+08:00 ] ::1 /NewRPJ/index.php/home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001522s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0812s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0817s ]
+SQL: select distinct rpj_product.category_id,
+                                                     rpj_procategory.category_name
+                                     from rpj_product
+                                     inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                     group by rpj_product.category_id [ RunTime:0.0859s ]
+SQL: select distinct rpj_product.brand_id,
+                                             rpj_product.category_id,
+                                             brand_name
+                            from rpj_product
+                            inner join rpj_brand
+                            on rpj_brand.brand_id = rpj_product.brand_id [ RunTime:0.0696s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0918s ]
+SQL: select * from rpj_product
+                                  inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                  inner join rpj_brand       on rpj_product.brand_id    = rpj_brand.brand_id [ RunTime:0.1685s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0795s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8192] Required parameter $extend follows optional parameter $vars C:\Users\Administrator\Documents\GitHub\NewRPJ\ThinkPHP\Library\Think\Template.class.php 第 666 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+ERR: Undefined constant "brand_id"
+
+[ 2021-06-29T10:11:55+08:00 ] ::1 /NewRPJ/index.php/home/prodlist/prodlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0889s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.1006s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0910s ]
+SQL: select distinct rpj_product.category_id,
+                                                     rpj_procategory.category_name
+                                     from rpj_product
+                                     inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                     group by rpj_product.category_id [ RunTime:0.0844s ]
+SQL: select rpj_product.brand_id,
+                                      rpj_product.category_id,
+                                      rpj_brand.brand_name,
+                                      rpj_procategory.category_name
+                                from rpj_product
+                                inner join rpj_brand on rpj_product.brand_id = rpj_brand.brand_id
+                                inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                group by rpj_product.brand_id,rpj_product.category_id [ RunTime:0.0858s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0682s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0914s ]
+SQL: select * from rpj_product
+                                  inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                  inner join rpj_brand       on rpj_product.brand_id    = rpj_brand.brand_id [ RunTime:0.1475s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8192] Required parameter $extend follows optional parameter $vars C:\Users\Administrator\Documents\GitHub\NewRPJ\ThinkPHP\Library\Think\Template.class.php 第 666 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+ERR: Undefined constant "brand_id"
+
+[ 2021-06-29T10:11:56+08:00 ] ::1 /NewRPJ/index.php/home/prodlist/prodlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0803s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0882s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0917s ]
+SQL: select distinct rpj_product.category_id,
+                                                     rpj_procategory.category_name
+                                     from rpj_product
+                                     inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                     group by rpj_product.category_id [ RunTime:0.0822s ]
+SQL: select rpj_product.brand_id,
+                                      rpj_product.category_id,
+                                      rpj_brand.brand_name,
+                                      rpj_procategory.category_name
+                                from rpj_product
+                                inner join rpj_brand on rpj_product.brand_id = rpj_brand.brand_id
+                                inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                group by rpj_product.brand_id,rpj_product.category_id [ RunTime:0.0805s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0802s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0775s ]
+SQL: select * from rpj_product
+                                  inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                  inner join rpj_brand       on rpj_product.brand_id    = rpj_brand.brand_id [ RunTime:0.1802s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8192] Required parameter $extend follows optional parameter $vars C:\Users\Administrator\Documents\GitHub\NewRPJ\ThinkPHP\Library\Think\Template.class.php 第 666 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+ERR: Undefined constant "brand_id"
+
+[ 2021-06-29T10:11:58+08:00 ] ::1 /NewRPJ/index.php/home/prodlist/prodlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0825s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0755s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0623s ]
+SQL: select distinct rpj_product.category_id,
+                                                     rpj_procategory.category_name
+                                     from rpj_product
+                                     inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                     group by rpj_product.category_id [ RunTime:0.0863s ]
+SQL: select rpj_product.brand_id,
+                                      rpj_product.category_id,
+                                      rpj_brand.brand_name,
+                                      rpj_procategory.category_name
+                                from rpj_product
+                                inner join rpj_brand on rpj_product.brand_id = rpj_brand.brand_id
+                                inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                group by rpj_product.brand_id,rpj_product.category_id [ RunTime:0.0869s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0690s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0869s ]
+SQL: select * from rpj_product
+                                  inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                  inner join rpj_brand       on rpj_product.brand_id    = rpj_brand.brand_id [ RunTime:0.1693s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8192] Required parameter $extend follows optional parameter $vars C:\Users\Administrator\Documents\GitHub\NewRPJ\ThinkPHP\Library\Think\Template.class.php 第 666 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+ERR: Undefined constant "brand_id"
+
+[ 2021-06-29T10:11:59+08:00 ] ::1 /NewRPJ/index.php/home/prodlist/prodlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0815s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0793s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0860s ]
+SQL: select distinct rpj_product.category_id,
+                                                     rpj_procategory.category_name
+                                     from rpj_product
+                                     inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                     group by rpj_product.category_id [ RunTime:0.1102s ]
+SQL: select rpj_product.brand_id,
+                                      rpj_product.category_id,
+                                      rpj_brand.brand_name,
+                                      rpj_procategory.category_name
+                                from rpj_product
+                                inner join rpj_brand on rpj_product.brand_id = rpj_brand.brand_id
+                                inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                group by rpj_product.brand_id,rpj_product.category_id [ RunTime:0.2190s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.1177s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0661s ]
+SQL: select * from rpj_product
+                                  inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                  inner join rpj_brand       on rpj_product.brand_id    = rpj_brand.brand_id [ RunTime:0.1496s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8192] Required parameter $extend follows optional parameter $vars C:\Users\Administrator\Documents\GitHub\NewRPJ\ThinkPHP\Library\Think\Template.class.php 第 666 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+ERR: Undefined constant "brand_id"
+
+[ 2021-06-29T10:12:07+08:00 ] ::1 /NewRPJ/index.php/home/prodlist/prodlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0831s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0761s ]
+SQL: SHOW COLUMNS FROM `rpj_product` [ RunTime:0.0818s ]
+SQL: select distinct rpj_product.category_id,
+                                                     rpj_procategory.category_name
+                                     from rpj_product
+                                     inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                     group by rpj_product.category_id [ RunTime:0.0884s ]
+SQL: select rpj_product.brand_id,
+                                      rpj_product.category_id,
+                                      rpj_brand.brand_name,
+                                      rpj_procategory.category_name
+                                from rpj_product
+                                inner join rpj_brand on rpj_product.brand_id = rpj_brand.brand_id
+                                inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                group by rpj_product.brand_id,rpj_product.category_id [ RunTime:0.0785s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0688s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0993s ]
+SQL: select * from rpj_product
+                                  inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                  inner join rpj_brand       on rpj_product.brand_id    = rpj_brand.brand_id [ RunTime:0.2101s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8192] Required parameter $extend follows optional parameter $vars C:\Users\Administrator\Documents\GitHub\NewRPJ\ThinkPHP\Library\Think\Template.class.php 第 666 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+ERR: Undefined constant "brand_id"
+
+[ 2021-06-29T10:12:16+08:00 ] ::1 /NewRPJ/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0793s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0734s ]
+SQL: select distinct rpj_product.category_id,
+                                                     rpj_procategory.category_name
+                                     from rpj_product
+                                     inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                     group by rpj_product.category_id [ RunTime:0.1005s ]
+SQL: select distinct rpj_product.brand_id,
+                                             rpj_product.category_id,
+                                             brand_name
+                            from rpj_product
+                            inner join rpj_brand
+                            on rpj_brand.brand_id = rpj_product.brand_id [ RunTime:0.0769s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0809s ]
+SQL: select * from rpj_product
+                                  inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                  inner join rpj_brand       on rpj_product.brand_id    = rpj_brand.brand_id [ RunTime:0.1584s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0830s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8192] Required parameter $extend follows optional parameter $vars C:\Users\Administrator\Documents\GitHub\NewRPJ\ThinkPHP\Library\Think\Template.class.php 第 666 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+ERR: Undefined constant "brand_id"
+
+[ 2021-06-29T10:14:44+08:00 ] ::1 /NewRPJ/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001211s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0743s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0783s ]
+SQL: select distinct rpj_product.category_id,
+                                                     rpj_procategory.category_name
+                                     from rpj_product
+                                     inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                     group by rpj_product.category_id [ RunTime:0.0914s ]
+SQL: select distinct rpj_product.brand_id,
+                                             rpj_product.category_id,
+                                             brand_name
+                            from rpj_product
+                            inner join rpj_brand
+                            on rpj_brand.brand_id = rpj_product.brand_id [ RunTime:0.0683s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0782s ]
+SQL: select * from rpj_product
+                                  inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                  inner join rpj_brand       on rpj_product.brand_id    = rpj_brand.brand_id [ RunTime:0.1605s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0791s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8192] Required parameter $extend follows optional parameter $vars C:\Users\Administrator\Documents\GitHub\NewRPJ\ThinkPHP\Library\Think\Template.class.php 第 666 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+ERR: Undefined constant "brand_id"
+
+[ 2021-06-29T10:21:42+08:00 ] ::1 /NewRPJ/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002312s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0764s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0777s ]
+SQL: select distinct rpj_product.category_id,
+                                                     rpj_procategory.category_name
+                                     from rpj_product
+                                     inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                     group by rpj_product.category_id [ RunTime:0.0863s ]
+SQL: select distinct rpj_product.brand_id,
+                                             rpj_product.category_id,
+                                             brand_name
+                            from rpj_product
+                            inner join rpj_brand
+                            on rpj_brand.brand_id = rpj_product.brand_id [ RunTime:0.0707s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0685s ]
+SQL: select * from rpj_product
+                                  inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                  inner join rpj_brand       on rpj_product.brand_id    = rpj_brand.brand_id [ RunTime:0.1795s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0798s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8192] Required parameter $extend follows optional parameter $vars C:\Users\Administrator\Documents\GitHub\NewRPJ\ThinkPHP\Library\Think\Template.class.php 第 666 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.003286s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003320s ]
+ERR: Undefined constant "brand_id"
+
+[ 2021-06-29T10:22:57+08:00 ] ::1 /NewRPJ/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+SQL: SHOW COLUMNS FROM `rpj_company` [ RunTime:0.0813s ]
+SQL: SHOW COLUMNS FROM `rpj_brand` [ RunTime:0.0887s ]
+SQL: select distinct rpj_product.category_id,
+                                                     rpj_procategory.category_name
+                                     from rpj_product
+                                     inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                     group by rpj_product.category_id [ RunTime:0.0829s ]
+SQL: select distinct rpj_product.brand_id,
+                                             rpj_product.category_id,
+                                             brand_name
+                            from rpj_product
+                            inner join rpj_brand
+                            on rpj_brand.brand_id = rpj_product.brand_id [ RunTime:0.0761s ]
+SQL: SELECT * FROM `rpj_company` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0698s ]
+SQL: select * from rpj_product
+                                  inner join rpj_procategory on rpj_product.category_id = rpj_procategory.category_id
+                                  inner join rpj_brand       on rpj_product.brand_id    = rpj_brand.brand_id [ RunTime:0.1595s ]
+SQL: SELECT * FROM `rpj_brand`  [ RunTime:0.0797s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8192] Required parameter $extend follows optional parameter $vars C:\Users\Administrator\Documents\GitHub\NewRPJ\ThinkPHP\Library\Think\Template.class.php 第 666 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+ERR: Undefined constant "brand_id"
+
